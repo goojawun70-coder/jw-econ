@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-08-17</title>
+<meta name="description" content="PPI 안정 속 코스피 7000 터치, 방산·AI칩 실적 랠리 — 오늘의 세계 경제 뉴스와 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>PPI 안정 속 코스피 7000 터치, 방산·AI칩 실적 랠리</h1>
+    <div class="date">2026년 8월 17일 월요일 · 매일 아침 발행</div>
+    <p class="thesis">지난 금요일 국내 증시는 외국인 대규모 매수에 힘입어 코스피가 장중 7,000선을 터치했습니다. AMD·존슨앤드존슨의 실적 서프라이즈가 이어지는 가운데, 한국은행 금융통화위원회(기준금리를 결정하는 한국은행 회의체)는 8월 27일로 예정되어 있습니다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>AMD, 데이터센터 매출 2배 증가하며 사상 최대 실적</strong>
+      <p>2분기 매출 115억달러(전년比 +50%), 데이터센터 부문 매출이 67억달러로 전년比 +107% 급증. 3분기 가이던스도 시장 평균 예상치(컨센서스) 125억달러를 웃도는 127억~133억달러로 제시.</p>
+      <span class="src">Yahoo Finance</span>
+    </div>
+    <div class="news-item">
+      <strong>존슨앤드존슨(JNJ), 2분기 실적 서프라이즈 후 연간 가이던스 상향</strong>
+      <p>조정 주당순이익(EPS, 높을수록 좋음) $2.90(컨센서스 $2.85 상회), 매출 253.1억달러(전년比 +6.6%). 연간 매출 가이던스를 1,008억~1,014억달러로 상향.</p>
+      <span class="src">JNJ 공식 발표</span>
+    </div>
+    <div class="news-item">
+      <strong>한국은행 8월 금통위, 8월 27일로 확정</strong>
+      <p>미국 물가 둔화로 Fed(미국 연방준비제도, 미국의 중앙은행) 금리 인상 기대는 후퇴했지만, 국내 주택가격 상승·가계부채 등 금융불균형 우려로 기준금리 추가 인상 여부를 두고 고심 지속.</p>
+      <span class="src">데일리안</span>
+    </div>
+    <div class="news-item">
+      <strong>한화에어로스페이스, 분기 영업이익 첫 1조원 돌파</strong>
+      <p>2분기 매출 9조 2,929억원(전년比 +47.2%), 영업이익 1조 3,655억원(전년比 +58.5%)으로 역대 최대. 지상 방산·조선 부문이 쌍끌이 성장 견인.</p>
+    </div>
+    <div class="news-item">
+      <strong>세계 경제성장률 전망, 기관별 시각차 확대</strong>
+      <p>일부 투자은행은 2026년 글로벌 성장률을 3.1%→2.9%로 하향 전망하는 반면, IMF는 AI 투자 확대를 근거로 상향 조정하는 등 전망이 엇갈리는 상황.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 최근 영업일 기준</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피 (8/14)</td><td>6,977.94</td><td class="chg up">+2.42%</td><td class="plain">외국인 3조원 순매수, 장중 7,000선 터치</td></tr>
+          <tr><td>코스닥 (8/14)</td><td>864.65</td><td class="chg up">+0.38%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>상하이종합 (8/14)</td><td>3,927.18</td><td class="chg up">+0.01%</td><td class="plain">AI 인프라·광통신 강세</td></tr>
+          <tr><td>미국 3대지수</td><td>—</td><td class="chg" style="color:var(--ink-faint);">혼조</td><td class="plain">오늘 개장 전, 확정치 미확인</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러</dt><dd>1,417원대</dd></div>
+      <div class="stat"><dt>금</dt><dd>$4,432/oz</dd></div>
+      <div class="stat"><dt>Fed 기준금리</dt><dd>3.50–3.75%</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">Fed는 7월까지 5회 연속 동결 유지 전망. 한국은행은 8월 27일 금통위에서 추가 인상 여부 결정 예정.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증권사 리포트 하이라이트</div><div class="label-en">Research Notes</div></div>
+    <ul class="points" style="display:grid;gap:10px;">
+      <li style="padding-left:0;"><b>국내 증권가</b> — 방산(한화에어로스페이스), 반도체 서플라이체인 중심의 실적 장세 지속 전망.</li>
+      <li style="padding-left:0;"><b>골드만삭스</b> — AMD 2026년 목표주가를 $450 → $640으로 대폭 상향.</li>
+      <li style="padding-left:0;"><b>씨티(Citi)</b> — AMD 투자의견을 중립 → 매수로 상향, 목표주가 $575 제시.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">한화에어로스페이스</span><span class="stock-code mono">012450</span></div>
+        <div class="stock-price mono">1,097,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/7 종가)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">방산</span></div>
+      <p class="why"><b>선정 이유</b> — 지정학적 리스크 고조 속 K-방산 수출 확대 수혜, 분기 영업이익 첫 1조원 돌파.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">매출(2Q)</div><div class="v">9.29조원</div></div>
+        <div class="f"><div class="k">영업이익(2Q)</div><div class="v">1.37조원</div></div>
+        <div class="f"><div class="k">영업이익 성장</div><div class="v" style="color:var(--rise);">+58.5%</div></div>
+        <div class="f"><div class="k">수주잔고</div><div class="v">38.3조원</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>지상 방산·조선 부문 쌍끌이 성장</li>
+        <li>2028년까지 11조원 이상 투자 계획으로 성장 지속성 확보</li>
+        <li>유럽向 수출 확대로 글로벌 방산 시장 공략 가속</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>방산 수주는 지정학적 상황에 따른 변동성 존재</li>
+        <li>밸류에이션(PER·PBR) 지표 미확인 — 고평가 여부 판단 제한적</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 실적·수주 모두 견조하나 밸류에이션 확인은 별도 필요.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">AMD</span><span class="stock-code mono">NASDAQ:AMD</span></div>
+        <div class="stock-price mono">$514.39</div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">AI 반도체</span></div>
+      <p class="why"><b>선정 이유</b> — 엔비디아에 이은 AI GPU 2위 사업자로, 데이터센터 매출 2배 급증하며 실적 모멘텀 부각.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">매출(2Q)</div><div class="v">$11.5B</div></div>
+        <div class="f"><div class="k">데이터센터 매출</div><div class="v" style="color:var(--rise);">+107%</div></div>
+        <div class="f"><div class="k">Non-GAAP EPS</div><div class="v">$1.66</div></div>
+        <div class="f"><div class="k">목표주가 괴리율</div><div class="v" style="color:var(--rise);">+21%</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>첫 랙(rack) 단위 AI 시스템 'Helios' 출하 개시(메타·오픈AI·오라클向)</li>
+        <li>골드만삭스 목표주가 $450 → $640 대폭 상향</li>
+        <li>데이터센터 매출 비중 확대로 수익성 개선</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>목표주가 편차 극심($320~$1,250) — 컨센서스 신뢰도 낮음</li>
+        <li>엔비디아 대비 경쟁 열위 논란 지속</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 실적 모멘텀은 강하나 목표주가 편차가 크므로 분할 접근 권장.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">현대차</span><span class="stock-code mono">005380</span></div>
+        <div class="stock-price mono">443,500원</div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">완성차</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체·방산 테마와 무관한 완성차 업종, 분기 최대 매출 경신에도 판매대수는 감소하는 엇갈린 흐름.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">매출(2Q)</div><div class="v">49.2조원</div></div>
+        <div class="f"><div class="k">영업이익률</div><div class="v">5.8%</div></div>
+        <div class="f"><div class="k">글로벌 판매</div><div class="v" style="color:var(--fall);">-6.9%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v">676,843원</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>판매량 감소에도 고부가 차종 믹스 개선으로 수익성 방어</li>
+        <li>애널리스트 26명 전원 매수 의견</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>글로벌 판매대수 감소 추세 지속 시 장기 성장성 우려</li>
+        <li>전기차 전환 경쟁 심화</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 수익성 방어는 긍정적이나 판매량 추세 확인 필요.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">존슨앤드존슨</span><span class="stock-code mono">NYSE:JNJ</span></div>
+        <div class="stock-price mono">$259~$262</div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">헬스케어</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체·자동차 테마와 무관한 헬스케어 대표주, 2분기 실적 서프라이즈로 연간 가이던스 상향.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">매출(2Q)</div><div class="v">$25.3B</div></div>
+        <div class="f"><div class="k">매출 성장</div><div class="v" style="color:var(--rise);">+6.6%</div></div>
+        <div class="f"><div class="k">조정 EPS</div><div class="v">$2.90</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v">$272.50</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>매출·이익 모두 컨센서스 상회하는 안정적 서프라이즈</li>
+        <li>연간 가이던스 상향으로 실적 신뢰도 제고</li>
+        <li>8/25 배당락, 주당 $1.34 배당 지급</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>헬스케어 업종 특성상 주가 모멘텀 제한적</li>
+        <li>52주 고점($274.90) 근접한 밸류에이션 부담</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립~긍정적.</b> 안정적이나 상승 여력은 제한적.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">08/25</span><span>존슨앤드존슨(JNJ) 배당락</span></li>
+      <li><span class="when mono">08/26</span><span>엔비디아 실적 발표</span></li>
+      <li><span class="when mono">08/27</span><span>한국은행 금융통화위원회 — 기준금리 추가 인상 여부 결정</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-08-17 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
