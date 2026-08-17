@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제</title>
+<meta name="description" content="매일 아침 발행되는 세계 경제 뉴스·증권사 리포트·종목 심층분석 아카이브">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF; --surface:#FFFFFF;
+    --ink:#17231F; --ink-soft:#4B5B54; --ink-faint:#7C8A82;
+    --brand:#1F6E52; --brand-ink:#0F4A36; --brand-soft:#DCEAE2;
+    --line:rgba(23,35,31,0.14); --line-strong:rgba(23,35,31,0.28);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-ink);}
+  a:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:720px;margin:0 auto;padding:0 20px 96px;}
+  .masthead{padding:56px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand); display:inline-block;}
+  .masthead h1{font-size:clamp(30px,6vw,42px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead p{font-size:15.5px; color:var(--ink-soft); max-width:56ch; margin:0;}
+
+  .list{list-style:none; margin:32px 0 0; padding:0; display:grid; gap:0;}
+  .list li{border-top:1px solid var(--line); padding:20px 0;}
+  .list li:first-child{border-top:none;}
+  .entry{display:flex; gap:18px; text-decoration:none; color:inherit; align-items:baseline;}
+  .entry:hover .title{color:var(--brand-ink);}
+  .entry .date{flex:0 0 96px; font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,monospace; font-variant-numeric: tabular-nums; font-size:13px; font-weight:700; color:var(--ink-faint); padding-top:2px;}
+  .entry .body{flex:1;}
+  .entry .title{font-size:16.5px; font-weight:700;}
+  .entry .desc{margin:4px 0 0; font-size:14px; color:var(--ink-soft);}
+
+  footer.page-foot{padding-top:40px; font-size:12.5px; color:var(--ink-faint);}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>Jw경제</h1>
+    <p>매일 아침 세계 경제 뉴스와 증권사 리포트, 종목 4개 심층 분석을 정리해 발행합니다. 최신 순으로 이어집니다.</p>
+  </header>
+
+  <ul class="list">
+    <li>
+      <a class="entry" href="posts/2026-08-17.html">
+        <span class="date">2026-08-17</span>
+        <span class="body">
+          <span class="title">PPI 안정 속 코스피 7000 터치, 방산·AI칩 실적 랠리</span>
+          <p class="desc">한화에어로스페이스·AMD·현대차·존슨앤드존슨 4종목 심층 분석</p>
+        </span>
+      </a>
+    </li>
+  </ul>
+
+  <footer class="page-foot">Jw경제 · 매일 아침 새 글이 맨 위에 추가됩니다.</footer>
+</div>
+</body>
+</html>
