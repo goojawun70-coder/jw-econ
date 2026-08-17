@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-08-14</title>
+<meta name="description" content="S&P500 사상 최고, LG이노텍·삼양식품 실적 서프라이즈 — 오늘의 세계 경제 뉴스와 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF; --surface:#FFFFFF; --surface-2:#EAEDE7;
+    --ink:#17231F; --ink-soft:#4B5B54; --ink-faint:#7C8A82;
+    --brand:#1F6E52; --brand-ink:#0F4A36; --brand-soft:#DCEAE2;
+    --gold:#9A7226; --gold-soft:#F1E6CC;
+    --rise:#B5382C; --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14); --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>S&amp;P500 사상 최고, LG이노텍·삼양식품 실적 서프라이즈</h1>
+    <div class="date">2026년 8월 14일 금요일 · 매일 아침 발행</div>
+    <p class="thesis">미국 7월 PPI(생산자물가지수)가 예상치를 밑돌며 9월 Fed 금리 동결 기대가 커졌고, S&amp;P500이 사상 최고치를 경신했습니다. 국내 반도체 부품·전자 서플라이체인과 K-푸드 수출주의 실적 서프라이즈가 부각됐습니다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>美 PPI 예상 하회, 9월 금리 동결 기대 확산</strong>
+      <p>7월 생산자물가지수가 시장 예상보다 온건하게 나오며 Fed가 다음 회의에서 금리를 올리지 않을 것이라는 전망이 힘을 얻었습니다.</p>
+      <span class="src">뉴스핌</span>
+    </div>
+    <div class="news-item">
+      <strong>S&amp;P500 사상 최고치 경신</strong>
+      <p>PPI 발표 이후 뉴욕 3대 지수가 일제히 상승, S&amp;P500이 역대 최고 기록을 새로 썼습니다.</p>
+    </div>
+    <div class="news-item">
+      <strong>LG이노텍, 2분기 영업이익 전년比 2,057% 급증</strong>
+      <p>매출 5조 5,272억원(전년比 +40.5%, 2분기 기준 역대 최대), 영업이익 2,458억원. AI 서버향 반도체 기판(FC-BGA) 수요 확대가 견인.</p>
+    </div>
+    <div class="news-item">
+      <strong>삼양식품, 해외 매출 사상 첫 6천억원 돌파</strong>
+      <p>2분기 매출 7,703억원(전년比 +39.3%), 영업이익 1,762억원(전년比 +46.7%). 미주·유럽 시장에서 폭발적 성장.</p>
+    </div>
+    <div class="news-item">
+      <strong>브로드컴(AVGO), AI 커스텀칩 수주잔고 확대</strong>
+      <p>2분기 AI 부문 수주가 300억달러를 상회, 실제 출하는 108억달러로 2028 회계연도까지 이어지는 대규모 백로그 확보.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>S&amp;P500 (8/13)</td><td>7,798.99</td><td class="chg up">+0.65%</td><td class="plain">사상 최고치</td></tr>
+          <tr><td>나스닥 (8/13)</td><td>26,803.03</td><td class="chg up">+0.81%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>다우 (8/13)</td><td>53,839.99</td><td class="chg up">+0.13%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>코스피 (8/13)</td><td>6,813.34</td><td class="chg up">+3.56%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>코스닥 (8/13)</td><td>861.37</td><td class="chg up">+0.29%</td><td class="plain">&nbsp;</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러</dt><dd>1,417~1,422원</dd></div>
+      <div class="stat"><dt>금</dt><dd>$4,432/oz</dd></div>
+      <div class="stat"><dt>Fed 기준금리</dt><dd>3.50–3.75%</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">PPI 호조로 9월 추가 인상 가능성 낮아짐. 한국은행은 7월 2.75% 인상 후 8월 연속 인상 여부가 물가지표에 달려 있음.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증권사 리포트 하이라이트</div><div class="label-en">Research Notes</div></div>
+    <ul class="points" style="display:grid;gap:10px;">
+      <li style="padding-left:0;"><b>유안타증권</b> — 2026년 하반기 주도업종으로 반도체, 조선·기계·상사(방산), IT하드웨어, 은행, 증권 제시.</li>
+      <li style="padding-left:0;"><b>KB증권</b> — LG이노텍 목표주가 95만원(2027E PER 20배·PBR 3배 근거).</li>
+      <li style="padding-left:0;"><b>골드만삭스</b> — 엔비디아 2026·2027년 이익 추정치를 컨센서스 대비 각각 +6%, +19% 높게 제시.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">LG이노텍</span><span class="stock-code mono">011070</span></div>
+        <div class="stock-price mono">PER 26~28배<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (6월 기준)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">반도체 기판/카메라모듈</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체 기판(FC-BGA)·AI 서버향 부품 수요 확대 수혜주로 2분기 어닝서프라이즈.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">매출(2Q)</div><div class="v">5.53조원</div></div>
+        <div class="f"><div class="k">영업이익(2Q)</div><div class="v">2,458억원</div></div>
+        <div class="f"><div class="k">영업이익 성장</div><div class="v" style="color:var(--rise);">+2,057%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v">95만원</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2027년 미국 휴머노이드 3개사에 비전센싱모듈 공급 예정</li>
+        <li>AI 서버 확산에 따른 고부가 기판 수요 지속</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>연초 대비 밸류에이션 크게 상승(재평가 부담)</li>
+        <li>52주 주가 변동성 매우 큼</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 실적은 강하나 밸류에이션 재평가 부담 유의.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">브로드컴</span><span class="stock-code mono">NASDAQ:AVGO</span></div>
+        <div class="stock-price mono">목표주가 $527.88</div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">AI 커스텀칩</span></div>
+      <p class="why"><b>선정 이유</b> — AI 커스텀칩·네트워킹 반도체 대장주로 9/2 실적 발표를 앞두고 목표주가 상향이 잇따름.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">3Q 매출 컨센서스</div><div class="v">$29.4B</div></div>
+        <div class="f"><div class="k">AI 매출 성장</div><div class="v" style="color:var(--rise);">+200%</div></div>
+        <div class="f"><div class="k">AI 수주(2Q)</div><div class="v">$30B</div></div>
+        <div class="f"><div class="k">목표주가 괴리율</div><div class="v" style="color:var(--rise);">+26%</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>하이퍼스케일러向 커스텀 AI칩 대규모 수주잔고</li>
+        <li>최근 3개월 주가 조정으로 밸류에이션 부담 완화</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>9/2 실적 발표 전후 변동성 확대 가능</li>
+        <li>AI 반도체 의존도 심화에 따른 경기 민감도</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 백로그 가시성이 높아 중장기 관점에서 긍정적.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">삼양식품</span><span class="stock-code mono">003230</span></div>
+        <div class="stock-price mono">해외매출 6,458억원</div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">식품/라면 수출</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체·AI 테마와 무관한 식품(라면 수출) 업종, 해외 매출 사상 첫 6천억원 돌파.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">매출(2Q)</div><div class="v">7,703억원</div></div>
+        <div class="f"><div class="k">영업이익(2Q)</div><div class="v">1,762억원</div></div>
+        <div class="f"><div class="k">영업이익 성장</div><div class="v" style="color:var(--rise);">+46.7%</div></div>
+        <div class="f"><div class="k">유럽 매출 성장</div><div class="v" style="color:var(--rise);">+155.3%</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>미주·유럽 등 신규 시장 침투로 성장 다변화</li>
+        <li>'불닭' 브랜드 글로벌 누적 판매 100억 개 돌파</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>환율 변동에 따른 해외 매출 원화환산 리스크</li>
+        <li>경쟁 심화 시 마진 압박 가능성</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 해외 성장 다변화가 뚜렷.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">프록터앤갬블</span><span class="stock-code mono">NYSE:PG</span></div>
+        <div class="stock-price mono">목표주가 $175.71</div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">필수소비재</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체·식품 테마와 무관한 필수소비재 대표주, 4분기 실적 발표로 관심 재부각.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">조정 EPS</div><div class="v">$1.43</div></div>
+        <div class="f"><div class="k">매출(4Q)</div><div class="v">$21.2B</div></div>
+        <div class="f"><div class="k">선행 PER</div><div class="v">21.1배</div></div>
+        <div class="f"><div class="k">컨센서스</div><div class="v">Moderate Buy</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>이익률 관리 능력 우수(EPS 서프라이즈)</li>
+        <li>경기 방어적 필수소비재로 변동성 낮음</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>매출 성장 정체(컨센서스 소폭 하회)</li>
+        <li>원자재·물류비발 마진 압박 우려 지속</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 안정적이나 상승 모멘텀은 제한적.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">08/26</span><span>엔비디아 실적 발표</span></li>
+      <li><span class="when mono">09/02</span><span>브로드컴 실적 발표</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-08-14 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
