@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-08-13</title>
+<meta name="description" content="美 CPI 안정에 코스피 6813 마감, 반도체 슈퍼사이클 랠리 — 오늘의 세계 경제 뉴스와 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF; --surface:#FFFFFF; --surface-2:#EAEDE7;
+    --ink:#17231F; --ink-soft:#4B5B54; --ink-faint:#7C8A82;
+    --brand:#1F6E52; --brand-ink:#0F4A36; --brand-soft:#DCEAE2;
+    --gold:#9A7226; --gold-soft:#F1E6CC;
+    --rise:#B5382C; --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14); --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>美 CPI 안정에 코스피 6813 마감, 반도체 슈퍼사이클 랠리</h1>
+    <div class="date">2026년 8월 13일 목요일 · 매일 아침 발행</div>
+    <p class="thesis">미국 7월 CPI(소비자물가지수)가 예상치에 부합하며 금리 인상 우려가 완화됐고, 이 훈풍을 타고 국내 증시가 큰 폭으로 상승했습니다. 다만 미·이란 전쟁 지속과 호르무즈 해협 봉쇄 이슈가 유가·물류 리스크로 계속 작용 중입니다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>美 CPI 예상 부합, 증시 훈풍</strong>
+      <p>7월 헤드라인 CPI는 전월비 +0.1%, 근원 CPI는 +0.2%로 시장 예상에 부합하며 연준의 추가 긴축 우려가 완화됐습니다.</p>
+      <span class="src">Charles Schwab</span>
+    </div>
+    <div class="news-item">
+      <strong>미·이란 전쟁 및 호르무즈 해협 봉쇄 지속</strong>
+      <p>글로벌 무역 흐름이 계속 제약받는 가운데, 덴마크 해운사 머스크(Maersk)는 2026년 실적 가이던스를 올해 두 번째로 상향 조정, 주가 7% 급등했습니다.</p>
+      <span class="src">Bloomberg</span>
+    </div>
+    <div class="news-item">
+      <strong>웬디스(Wendy's) 비상장화 추진설</strong>
+      <p>행동주의 투자자 넬슨 펠츠(Trian Fund Management)가 웬디스 비상장화(private) 인수를 추진 중이라는 보도에 주가가 장중 13% 이상 급등했습니다.</p>
+    </div>
+    <div class="news-item">
+      <strong>오늘(8/13) 미국 7월 PPI 발표 예정</strong>
+      <p>한국시간 이날 밤 21:30 발표. CPI에 이어 물가 흐름을 재확인하는 중요 지표로 주목받았습니다.</p>
+      <span class="src">XTB Economic Calendar</span>
+    </div>
+    <div class="news-item">
+      <strong>중국, AI 관련주로 자금 재유입</strong>
+      <p>광섬유·CPO(광트랜시버) 관련주 중심으로 자금이 몰리며 상승, 부동산 관련주도 반등 조짐을 보였습니다.</p>
+      <span class="src">뉴스핌</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 8/12~8/13 기준</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피 (8/13)</td><td>6,813.34</td><td class="chg up">+3.56%</td><td class="plain">삼성전자·SK하이닉스가 견인</td></tr>
+          <tr><td>코스닥 (8/13)</td><td>1,419.40</td><td class="chg up">+0.29%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>다우 (8/12)</td><td>53,770.27</td><td class="chg down">-0.04%</td><td class="plain">약보합</td></tr>
+          <tr><td>S&amp;P500 (8/12)</td><td>7,748.50</td><td class="chg up">+0.26%</td><td class="plain">사흘 만에 반등</td></tr>
+          <tr><td>나스닥 (8/12)</td><td>26,588.49</td><td class="chg up">+0.54%</td><td class="plain">기술주 반등</td></tr>
+          <tr><td>상하이종합 (8/12)</td><td>3,946.68</td><td class="chg up">+0.32%</td><td class="plain">AI 관련주 강세</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러</dt><dd>1,417원대</dd></div>
+      <div class="stat"><dt>브렌트유</dt><dd>$87.17</dd></div>
+      <div class="stat"><dt>Fed 기준금리</dt><dd>3.50–3.75%</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">브렌트유는 미·이란 전쟁 지속 속 수요 둔화 우려로 -2% 하락. 한국은행은 7월 2.75%로 인상, 8월 연속 인상 가능성이 커진 상태로 물가지표가 주요 변수.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증권사 리포트 하이라이트</div><div class="label-en">Research Notes</div></div>
+    <ul class="points" style="display:grid;gap:10px;">
+      <li style="padding-left:0;"><b>삼성증권</b> — 2026년 유망 업종 설문에서 'AI/반도체'가 31.8%로 압도적 1위 선정.</li>
+      <li style="padding-left:0;"><b>미래에셋증권</b> — 상반기는 반도체 중심 실적 개선과 환율 효과로 이익 모멘텀 개선 지속 전망, 최선호주로 삼성전자·SK하이닉스·삼성전기·LG이노텍 제시.</li>
+      <li style="padding-left:0;"><b>KB증권</b> — 메모리·AI 기판 공급 부족이 향후 3년간 불가피할 것으로 전망.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">SK하이닉스</span><span class="stock-code mono">000660</span></div>
+        <div class="stock-price mono">1,593,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (+5.92%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">AI/반도체</span></div>
+      <p class="why"><b>선정 이유</b> — HBM(고대역폭메모리, AI 서버용 고성능 D램) 슈퍼사이클 수혜주로 미래에셋·KB증권 등이 공통 최선호주 지목.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">매출(2Q)</div><div class="v">79.3조원</div></div>
+        <div class="f"><div class="k">영업이익(2Q)</div><div class="v">60.5조원</div></div>
+        <div class="f"><div class="k">영업이익 성장</div><div class="v" style="color:var(--rise);">+557%</div></div>
+        <div class="f"><div class="k">PBR</div><div class="v">16.5배</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>AI 인프라 투자 확대에 따른 HBM 수요·가격 동반 강세</li>
+        <li>상반기 누적 매출 첫 100조원 돌파</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>PBR 16배대로 밸류에이션 부담</li>
+        <li>증권사 간 목표주가 편차 큼(130만~380만원)</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 실적 모멘텀은 강하나 밸류에이션 부담과 변동성 유의.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">마이크론 테크놀로지</span><span class="stock-code mono">NASDAQ:MU</span></div>
+        <div class="stock-price mono">$966.01<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (+6%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">AI/반도체</span></div>
+      <p class="why"><b>선정 이유</b> — SK하이닉스와 같은 AI 메모리(HBM4) 테마의 미국 대표주, 어닝서프라이즈로 IB들의 목표주가 상향 이어짐.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">매출(3Q)</div><div class="v">$41.5B</div></div>
+        <div class="f"><div class="k">GAAP 순이익</div><div class="v">$28.2B</div></div>
+        <div class="f"><div class="k">매출총이익률</div><div class="v">84.6%</div></div>
+        <div class="f"><div class="k">목표주가 괴리율</div><div class="v" style="color:var(--rise);">+73%</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>AI 서버향 HBM4 수요 폭발적 증가</li>
+        <li>애널리스트 43명 중 41명 매수 의견</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>목표주가 편차 극심($361~$2,200)</li>
+        <li>반도체 업황 특성상 가격 사이클 급변 가능성</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 실적은 견조하나 컨센서스 불확실성 유의.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">웬디스</span><span class="stock-code mono">NASDAQ:WEN</span></div>
+        <div class="stock-price mono">$8.50<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (+12~13%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">외식/프랜차이즈</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체 테마와 무관한 외식업종, 넬슨 펠츠(Trian)의 비상장화 인수설로 급등한 이벤트 드리븐 종목.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER</div><div class="v">10.6배</div></div>
+        <div class="f"><div class="k">부채/자본</div><div class="v">35.6배</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v">$7.76~$9.66</div></div>
+        <div class="f"><div class="k">컨센서스</div><div class="v">Hold</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>인수·비상장화 프리미엄 기대감</li>
+        <li>대형 프랜차이지(Flynn Group) 참여로 실행 가능성</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>공식 인수 제안 없는 "설"에 불과 — 무산 시 되돌림 위험</li>
+        <li>시가총액 대비 부채 부담 과도</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 주의.</b> 이벤트 드리븐 성격이 강해 단기 변동성 매우 큼.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">KB금융지주</span><span class="stock-code mono">105560</span></div>
+        <div class="stock-price mono">168,500원</div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">은행/금융지주</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체 테마와 무관한 은행업, '코리아 밸류업' 정책 핵심 수혜주로 재평가 중이며 업종 평균 PBR 0.69배로 저평가.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">순이익(상반기)</div><div class="v">3.88조원</div></div>
+        <div class="f"><div class="k">순이익 성장</div><div class="v" style="color:var(--rise);">+13.1%</div></div>
+        <div class="f"><div class="k">ROE</div><div class="v">14.09%</div></div>
+        <div class="f"><div class="k">주주환원</div><div class="v">3.7조원</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>밸류업 정책·MSCI 선진국 지수 편입 기대감</li>
+        <li>배당+자사주 매입 병행하는 적극적 주주환원</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>금리 사이클 반전 시 이자이익 둔화 가능</li>
+        <li>국내 경기·부동산 익스포저에 따른 대손비용 변동성</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 실적·주주환원 견조, 저평가 매력 있으나 상승 모멘텀은 완만.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">08/13</span><span>美 7월 PPI(생산자물가지수) 발표 — 한국시간 밤 21:30</span></li>
+      <li><span class="when mono">08월</span><span>한국은행 8월 금통위 기준금리 결정 임박</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-08-13 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
