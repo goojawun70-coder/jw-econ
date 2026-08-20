@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-08-20</title>
+<meta name="description" content="美 국채금리 쇼크에 전세계 증시 초토화, 코스피 매도사이드카 발동 6,471 급락 — 오늘의 세계 경제 뉴스와 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>美 국채금리 쇼크에 전세계 증시 초토화, 코스피 매도사이드카 발동 6,471 급락</h1>
+    <div class="date">2026년 8월 20일 목요일 · 매일 아침 발행</div>
+    <p class="thesis">미국 30년물 국채금리가 장중 5.33%까지 치솟아 19년 만에 최고치를 기록했습니다. 국채 공급 부담과 각국 재정적자 우려에 중동전쟁 장기화에 따른 인플레이션 경계감이 겹친 결과입니다. 그 여파로 코스피는 개장 직후 매도 사이드카(프로그램 매도호가 일시 효력정지 조치)가 발동되며 전 거래일 대비 5.80% 급락한 6,471.17에 마감했고, 니케이225도 반도체·AI주를 중심으로 3.16% 무너졌습니다. 안전자산 선호가 강해지며 국제유가와 금은 동반 상승했습니다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>美 30년물 국채금리 5.33% 돌파, 19년 만에 최고치</strong>
+      <p>국채 공급 확대와 재정적자 우려, 중동전쟁 장기화에 따른 인플레이션 경계감이 겹치며 글로벌 장기금리가 일제히 치솟았다. 한국 30년물·50년물 국고채 금리도 18일 각각 4.751%, 4.661%로 역대 최고치를 기록했다.</p>
+      <span class="src">파이낸셜뉴스</span>
+    </div>
+    <div class="news-item">
+      <strong>코스피, 매도 사이드카 발동 속 5.80% 급락한 6,471.17 마감</strong>
+      <p>한국거래소는 19일 오전 9시 6분 코스피200 선물 가격이 5% 이상 하락하자 매도 사이드카를 발동했다. 외국인·기관이 각각 4조 242억원, 1조 7,926억원을 순매도하며 지수를 끌어내렸다.</p>
+      <span class="src">뉴스핌</span>
+    </div>
+    <div class="news-item">
+      <strong>니케이225, 반도체·AI주 '검은 수요일'에 3.16% 급락</strong>
+      <p>소프트뱅크그룹·어드반테스트·도쿄일렉트론 등 AI·반도체 관련주가 일제히 무너지며 65,326.42로 마감, 이틀간 4,000포인트 가까이 증발했다.</p>
+      <span class="src">뉴스핌</span>
+    </div>
+    <div class="news-item">
+      <strong>국제유가·금 동반 상승, 안전자산 선호 뚜렷</strong>
+      <p>WTI는 3.0% 오른 배럴당 86.83달러, 브렌트유는 3.4% 상승한 94.07달러를 기록했다. 금은 2거래일 연속 상승하며 온스당 4,151.9달러에 거래됐다.</p>
+      <span class="src">이투데이</span>
+    </div>
+    <div class="news-item">
+      <strong>SK하이닉스, 40조원 규모 자사주 매입·소각 공시</strong>
+      <p>8월 20일부터 11월 19일까지 시가총액의 3.6%에 해당하는 자사주를 매입한 뒤 1~2주 내 신속 소각하기로 했다. 고정배당·특별배당 확대 방안도 함께 검토 중이다.</p>
+      <span class="src">하나증권</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 최근 영업일 기준</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피 (8/19)</td><td>6,471.17</td><td class="chg down">-5.80%</td><td class="plain">매도 사이드카 발동, 외인·기관 동반 매도</td></tr>
+          <tr><td>코스닥 (8/19)</td><td>—</td><td class="chg down">-1.17%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>니케이225 (8/19)</td><td>65,326.42</td><td class="chg down">-3.16%</td><td class="plain">반도체·AI주 급락, 이틀간 4,000p 증발</td></tr>
+          <tr><td>상하이종합 (8/19)</td><td>3,894.42</td><td class="chg down">-2.40%</td><td class="plain">성장·기술주 6%대 급락</td></tr>
+          <tr><td>다우 (8/19)</td><td>53,343.40</td><td class="chg down">-0.22%</td><td class="plain">국채금리 급등 여파</td></tr>
+          <tr><td>S&amp;P500 (8/19)</td><td>7,691.76</td><td class="chg down">-0.69%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>나스닥 (8/19)</td><td>26,289.71</td><td class="chg down">-1.33%</td><td class="plain">&nbsp;</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러</dt><dd>1,397.7원</dd></div>
+      <div class="stat"><dt>원/100엔</dt><dd>891.26원</dd></div>
+      <div class="stat"><dt>국제 금</dt><dd>$4,151.9/oz</dd></div>
+      <div class="stat"><dt>WTI</dt><dd>$86.83/배럴</dd></div>
+      <div class="stat"><dt>美 30년물 국채금리</dt><dd>5.33%</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러 환율은 오히려 원화 강세(환율 하락)로 마감했다. 8월 27일 한국은행 금융통화위원회(기준금리를 결정하는 회의체)를 앞두고, 국채금리 급등이 국내 재정·통화정책에 미칠 파장에 시장의 관심이 쏠리고 있다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증권사 리포트 하이라이트</div><div class="label-en">Research Notes</div></div>
+    <ul class="points" style="display:grid;gap:10px;">
+      <li style="padding-left:0;"><b>하나증권 (SK하이닉스, 목표가 360만원·매수)</b> — 40조원 규모 자사주 취득·소각 공시. 8/20~11/19 매입 후 1~2주 내 신속 소각, 고정·특별배당 확대 방안도 검토 중.</li>
+      <li style="padding-left:0;"><b>하나증권 (NAVER, 목표가 40만원·매수)</b> — 엔비디아가 직접 지분투자하는 AI 데이터센터 전진기지. 브룩필드 자금조달과 함께 3분기 내 200MW 수주 계약 발표 예상, "확신의 매수 구간".</li>
+      <li style="padding-left:0;"><b>대신증권 (이마트, 목표가 10.8만원·매수)</b> — 목표가 28% 하향에도 매수 유지. 대형마트 본업은 7월 기존점 성장률 8.6%로 개선 중이나 자회사 실적 불확실성이 발목.</li>
+    </ul>
+    <p style="font-size:12.5px;color:var(--ink-faint);margin-top:10px;">※ 네이버금융 종목분석 리포트(2026.08.20 게시) 원문 기준</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">신한지주</span><span class="stock-code mono">055550</span></div>
+        <div class="stock-price mono">105,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/19 종가)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">금융지주</span></div>
+      <p class="why"><b>선정 이유</b> — 국채금리 급등 국면에서 순이자마진(NIM) 개선 기대를 받는 은행주 대표. 저PBR·고배당 매력도 부각.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">영업이익(2Q)</div><div class="v">2조 1,545억원(+94%)</div></div>
+        <div class="f"><div class="k">PER(TTM) · 추정PER</div><div class="v">9.85배 · 8.00배</div></div>
+        <div class="f"><div class="k">PBR · ROE</div><div class="v">0.83배 · 8.81%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">137,000원(+30%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2분기 영업이익 전년比 94% 급증, 은행업종 내에서도 이익 모멘텀 두드러짐</li>
+        <li>배당수익률 2.51%에 자사주 매입 등 주주환원 병행, PBR 0.83배로 여전히 저평가 구간</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>국채금리 급등은 보유채권 평가손실 우려로 이어질 수 있음</li>
+        <li>오늘 장중 -1.62% 하락하며 시장 전반의 급락 국면에 동조화</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 이익 체력과 밸류에이션 매력은 뚜렷하나 금리 변동성에 따른 단기 주가 흔들림은 불가피.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Newmont</span><span class="stock-code mono">NYSE:NEM</span></div>
+        <div class="stock-price mono">$125.08<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/19 종가, +7.85%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">금광·귀금속</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 안전자산 랠리(금 온스당 4,150달러대)의 직접 수혜주로 하루 만에 7.85% 급등.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">EPS(TTM)</div><div class="v">$7.90(+42.3%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">15.83배 · 12.40배</div></div>
+        <div class="f"><div class="k">시가총액</div><div class="v">$131.44B</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v">$132.44(+5.9%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2분기 조정 EBITDA $3.8B·잉여현금흐름 $2.2B로 견조한 실적, 금값 상승 사이클의 직접 수혜</li>
+        <li>23명 애널리스트 컨센서스 '매수', 최근 목표주가 잇단 상향 조정</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>목표주가 괴리율이 5.9%에 불과해 단기 급등 이후 추가 상승 여력은 제한적</li>
+        <li>금값이 되돌림을 보이면 주가 변동성도 커질 수 있음</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립~긍정적.</b> 안전자산 수요의 직접 수혜는 뚜렷하나 이미 하루 만에 급등해 밸류에이션 부담이 커진 상태.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">KT&amp;G</span><span class="stock-code mono">033780</span></div>
+        <div class="stock-price mono">175,500원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/19 종가)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">담배·필수소비재</span></div>
+      <p class="why"><b>선정 이유</b> — 국채금리·반도체 이슈와 무관한 대표 방어주. 오늘 같은 급락장에서 상대적 안정성이 부각되는 업종.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">영업이익(2Q)</div><div class="v">3,645억원</div></div>
+        <div class="f"><div class="k">영업이익률</div><div class="v">21.40%</div></div>
+        <div class="f"><div class="k">PER(TTM) · PBR</div><div class="v">17.08배 · 1.94배</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">240,000원(+37%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>궐련·전자담배 사업의 안정적인 20%대 영업이익률, ROE 13.25%로 담배 업종 내 견조</li>
+        <li>배당수익률 3.46%로 방어적 성격의 고배당주, 홍삼 등 사업 다각화</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>자사주 출연 관련 소송 등 지배구조 이슈가 일부 잔존(1심 승소했으나 항소 가능성)</li>
+        <li>오늘도 -1.20% 하락하며 시장 전반의 조정 국면에서 완전히 자유롭지는 않음</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 방어적 이익 체력과 배당 매력이 뚜렷해 변동성 장세에서 관심 가질 만한 종목.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">코카콜라</span><span class="stock-code mono">NYSE:KO</span></div>
+        <div class="stock-price mono">$90.35<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/19 종가, +1.72%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">음료·필수소비재</span></div>
+      <p class="why"><b>선정 이유</b> — 유가·반도체 테마와 무관한 대표 방어주로, 52주 최고가 부근에서 견조한 흐름을 이어가는 중.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">EPS(TTM)</div><div class="v">$3.33(+18.0%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">27.15배 · 26.58배</div></div>
+        <div class="f"><div class="k">시가총액</div><div class="v">$388.74B</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v">$94.70(+4.8%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2분기 매출·이익 컨센서스 상회 후 연간 가이던스 상향, FIFA 월드컵 마케팅 효과로 판매량 호조</li>
+        <li>24명 애널리스트 컨센서스 '매수', 배당수익률 2.35%의 안정적 배당주</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>PER 27배로 필수소비재 업종 내에서는 밸류에이션 부담이 있는 편</li>
+        <li>52주 최고가($90.92)에 근접해 있어 추가 상승 여력은 제한적</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립~긍정적.</b> 실적 모멘텀은 긍정적이나 이미 높은 밸류에이션이 상당 부분 반영된 구간.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">08/25</span><span>존슨앤드존슨(JNJ) 배당락</span></li>
+      <li><span class="when mono">08/26</span><span>엔비디아 2분기 실적 발표</span></li>
+      <li><span class="when mono">08/27</span><span>한국은행 금융통화위원회 — 기준금리 결정(2.75% 동결 유력)</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-08-20 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
