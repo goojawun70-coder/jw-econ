@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-08-25</title>
+<meta name="description" content="코스피 이틀째 폭락 6500대 — 삼성전자 주주환원 실망 이어 '뉴욕발 반도체 쇼크'까지 겹악재. 오늘의 세계 경제 뉴스와 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>코스피 이틀째 폭락 6500대, 삼성전자 실망 이어 '뉴욕발 반도체 쇼크'까지 겹악재</h1>
+    <div class="date">2026년 8월 25일 화요일 · 매일 아침 발행</div>
+    <p class="thesis">어제(8/24) 삼성전자가 역대 최대인 110조원 규모 주주환원 계획을 내놓고도 자사주 소각 규모가 빠졌다는 실망감에 8.70% 폭락하면서 코스피는 3.12% 급락한 6,696.96으로 6,700선을 내줬습니다. 이 충격은 밤사이 뉴욕 증시로 번져 마이크론(-5.83%)·샌디스크 등 메모리 반도체주가 동반 급락했고, 오늘(8/25) 코스피는 개장과 함께 '뉴욕발 반도체 쇼크'를 다시 얻어맞아 삼성전자·SK하이닉스가 추가로 4~6%대 급락하며 오전 10시 기준 6,541까지 밀렸습니다. 시장은 이를 두고 '검은 화요일'이라 부르고 있습니다. 엔비디아 실적(8/26)을 하루 앞두고 반도체 밸류체인 전반의 변동성이 최고조에 달한 상황입니다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>'검은 화요일' 코스피 이틀째 폭락 — 삼성전자 실망 매물에 뉴욕발 반도체 쇼크까지 겹악재</strong>
+      <p>어제 3.12% 급락(6,696.96 마감)한 코스피가 오늘도 개장과 함께 2%대 추가 하락, 오전 10시 기준 6,541.32까지 밀렸다. 코스닥도 전일 2차전지주 강세로 1.42% 반등했다가 오늘은 1.80% 하락 전환했다. 뉴스1은 이를 "뉴욕발 반도체 쇼크"라 표현했다.</p>
+      <span class="src">뉴스1 · 매일경제 · 연합뉴스</span>
+    </div>
+    <div class="news-item">
+      <strong>삼성전자, 역대 최대 110조 주주환원에도 자사주 소각 미정에 8.70% 급락</strong>
+      <p>삼성전자는 2024~26년 잉여현금흐름(FCF)의 50%를 환원한다는 기존 원칙을 유지하며 현금배당에 무게를 실었다. 시장이 기대했던 자사주 소각 규모·시점이 빠지고, 자사주 매입분도 결국 임직원 성과급으로 재유통될 것이란 전망이 겹치며 실망 매물이 쏟아졌다. SK하이닉스가 주주환원 비율을 '50% 이상'으로 상향한 것과 대비된다는 평가다.</p>
+      <span class="src">시사저널 · 아시아타임</span>
+    </div>
+    <div class="news-item">
+      <strong>뉴욕 메모리 반도체주 급락 — 마이크론 -5.83%, 애플의 中 메모리 사용 우려까지 겹쳐</strong>
+      <p>마이크론은 8/24 종가 $910.43으로 5.83% 급락했고, 샌디스크·SK하이닉스 ADR도 동반 하락했다. Invezz는 애플이 중국산 메모리 칩 사용을 검토 중이라는 우려, 삼성전자의 실망스런 주주환원 발표, 최근 급등에 따른 차익실현이 겹친 결과라고 분석했다. 엔비디아 실적(8/26 수요일)을 앞둔 경계감도 반도체 밸류체인 전반의 매도세를 키웠다.</p>
+      <span class="src">Invezz · TipRanks</span>
+    </div>
+    <div class="news-item">
+      <strong>한화, 인적분할 완료 오늘 재상장·신규상장 — 방산·조선 중심으로 재편</strong>
+      <p>한화는 8월 1일 인적분할로 비전·갤러리아·호텔앤드리조트 등 5개 사업부(장부가 7,847억원)를 신설법인 '한화머시너리앤서비스홀딩스'로 이관했으며, 오늘 존속법인은 변경 재상장, 신설법인은 신규상장한다. 차입 부채는 대부분 존속법인에 남아, 존속법인은 방산·조선·에너지·금융 중심으로 재편된다.</p>
+      <span class="src">미래에셋증권 리서치(8/25)</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 코스피·코스닥 8/24 종가, 美 지수 8/24 종가</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피 (8/24)</td><td>6,696.96</td><td class="chg down">-3.12%</td><td class="plain">삼성전자 실망 매물, 6,700선 붕괴</td></tr>
+          <tr><td>코스닥 (8/24)</td><td>813.33</td><td class="chg up">+1.42%</td><td class="plain">2차전지주 강세</td></tr>
+          <tr><td>니케이225 (8/21)</td><td>66,016.36</td><td class="chg down">-0.30%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>상하이종합 (8/21)</td><td>3,905.2</td><td class="chg up">+0.04%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>다우 (8/24)</td><td>53,417</td><td class="chg up">+0.30%</td><td class="plain">반도체 외 업종 순환매</td></tr>
+          <tr><td>S&amp;P500 (8/24)</td><td>7,652.86</td><td class="chg down">-0.28%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>나스닥 (8/24)</td><td>25,980.19</td><td class="chg down">-0.76%</td><td class="plain">반도체주 급락</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">코스피·코스닥은 오늘(8/25) 장중 추가 하락 중입니다 — 오전 10시 57분 기준 코스피 6,541.32(전일比 -2.32%), 코스닥 798.68(전일比 -1.80%). 삼성전자(-4%대)·SK하이닉스(-6%대) 등 반도체 대형주가 낙폭을 주도하고 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (8/21)</dt><dd>1,386.5원</dd></div>
+      <div class="stat"><dt>원/100엔 (8/21)</dt><dd>약 869원</dd></div>
+      <div class="stat"><dt>국제 금 (8/21)</dt><dd>$4,600+/oz</dd></div>
+      <div class="stat"><dt>WTI (8/21)</dt><dd>보합, $87선</dd></div>
+      <div class="stat"><dt>연준 9월 회의 전망</dt><dd>JPM: 인상 기본 시나리오</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">외환·상품 시장 수치는 신뢰 가능한 전용 소스로 아직 갱신 확인이 안 돼 최근 검증된 거래일(8/21) 기준을 유지합니다. 오늘 증시 급락으로 위험회피(리스크오프) 심리가 강해진 만큼, 원/달러·금값 변동성이 확대될 수 있어 다음 호에서 갱신하겠습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증권사 리포트 하이라이트</div><div class="label-en">Research Notes</div></div>
+    <ul class="points" style="display:grid;gap:10px;">
+      <li style="padding-left:0;"><b>미래에셋증권 (한화, 목표가 18.5만원·매수)</b> — 8/1 인적분할로 비전·갤러리아 등 5개 사업부가 신설법인 '한화머시너리앤서비스홀딩스'로 이관(분할비율 약 0.76:0.24), 오늘 존속·신설법인 동시 상장. 차입 부채는 존속법인에 집중되며 방산·조선·에너지 중심 재편, "할인율 축소를 향한 분명한 경로"로 평가.</li>
+      <li style="padding-left:0;"><b>유안타증권 (HD한국조선해양, 목표가 53.2만원·Buy)</b> — 투자의견 BUY 유지, 목표주가는 소폭 하향. 상장 계열사는 지분가치에 지주사 할인율 50% 적용, 비상장 HD현대삼호는 배당할인모형(DDM)으로 적정가치 18.5조원 산정. "무적의 손익비, 주주환원 확대의 적기"로 평가.</li>
+    </ul>
+    <p style="font-size:12.5px;color:var(--ink-faint);margin-top:10px;">※ 네이버금융 종목분석 리포트(2026.08.25 게시) 원문 기준</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">SK하이닉스</span><span class="stock-code mono">000660</span></div>
+        <div class="stock-price mono">1,595,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/25 장중, -4.55%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">메모리 반도체</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 폭락장의 진앙 중 하나. 삼성전자 주주환원 실망과 뉴욕발 반도체 쇼크가 겹치며 급락했지만, HBM(고대역폭메모리) 중심 AI 메모리 수요는 구조적으로 유효하다는 평가가 나온다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER(TTM) · 추정PER</div><div class="v">7.11배 · 5.00배</div></div>
+        <div class="f"><div class="k">PBR · ROE</div><div class="v">4.31배 · 92.68%</div></div>
+        <div class="f"><div class="k">부채비율</div><div class="v">32.80%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">3,317,917원(매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026.06분기 영업이익 605,426억원(전년比 +60.97%), 영업이익률 76.33%로 AI 메모리 슈퍼사이클 수혜 지속</li>
+        <li>추정PER 5.00배로 밸류에이션 부담이 크지 않고, 컨센서스 투자의견도 매수(5점 만점 4.00) 우세</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>오늘 하루만 -4.55% 등 단기 변동성이 극심, 메모리는 대표적 경기순환 업종이라 가격 조정 국면 진입 가능성 상존</li>
+        <li>PBR 4.31배로 이미 높은 밸류에이션, 애플의 중국산 메모리 사용 검토설 등 업종 전반 투심 악화 요인이 산재</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 변동성 극심, 중장기 구조적 스토리는 유효.</b> AI 메모리 수요라는 큰 그림은 살아있으나, 엔비디아 실적(8/26) 전까지 단기 낙폭이 더 커질 수 있음.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Micron Technology</span><span class="stock-code mono">NASDAQ:MU</span></div>
+        <div class="stock-price mono">$910.43<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/24 종가, -5.83%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">메모리 반도체</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 아시아 반도체주 폭락을 촉발한 "뉴욕발 반도체 쇼크"의 진원지. AI 메모리 슈퍼사이클의 최대 수혜주이자, 이번 조정의 핵심 종목.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">EPS(TTM)</div><div class="v">$44.31(+705.7%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">20.55배 · 6.33배</div></div>
+        <div class="f"><div class="k">시가총액</div><div class="v">$1.03T(+680.7%)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$1,515.11(+66.4%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>EPS 전년比 705.7% 폭증, Forward PER 6.33배로 실적 대비 밸류에이션 매력 여전, 47개 증권사 컨센서스 "Strong Buy"</li>
+        <li>목표주가 괴리율 66.4%로 상승 여력 큰 편, "AI 없이는 메모리 없다"는 경영진의 수요 전망은 유효</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>52주 최고($1,255) 대비 이미 27% 하락, 애플의 中 메모리 사용 검토설 등 수요처 다변화 우려가 신규 악재로 부상</li>
+        <li>삼성전자·SK하이닉스 등 경쟁사발 업종 전반 투심 악화와 차익실현 매물이 겹쳐 단기 변동성이 매우 큼</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 조정 국면이나 구조적 성장 스토리 유효.</b> 엔비디아 실적(8/26)이 반도체 업종 전반의 방향을 결정할 다음 변수.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">오뚜기</span><span class="stock-code mono">007310</span></div>
+        <div class="stock-price mono">333,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/25 장중, 보합)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">식품(라면·소스)</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체 테마와 무관한 필수소비재 대표주. 오늘처럼 반도체 대형주가 급락하는 날, 낮은 변동성의 방어주 대안으로 살펴볼 만하다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER(TTM)</div><div class="v">18.28배</div></div>
+        <div class="f"><div class="k">PBR · ROE</div><div class="v">0.54배 · 3.48%</div></div>
+        <div class="f"><div class="k">부채비율</div><div class="v">69.83%</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">2.70%</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>PBR 0.54배로 자산가치 대비 저평가, 배당수익률 2.70%로 하락장에서 상대적으로 안정적인 흐름 기대</li>
+        <li>반도체·AI 테마와 무관한 사업구조로 오늘 같은 업종 쏠림 급락장에서 변동성이 낮은 편</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>2026.06분기 영업이익 전년比 -23.78%로 원가 부담(원자재값 상승)이 실적을 짓누르는 중</li>
+        <li>증권사 목표주가 컨센서스 자체가 형성돼 있지 않아(N/A), 밸류에이션 판단에 참고할 외부 지표가 제한적</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적 방어주.</b> 저평가·배당 매력은 있으나 원가 부담에 따른 이익 감소가 발목을 잡고 있어 성장 모멘텀은 약함.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">McDonald's</span><span class="stock-code mono">NYSE:MCD</span></div>
+        <div class="stock-price mono">$272.54<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/24 종가, +0.59%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">외식(프랜차이즈)</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체 사이클과 무관한 대표 방어주 겸 배당주. 뉴욕 반도체주가 급락한 어제도 소폭 상승 마감하며 상대적 견조함을 보였다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">EPS(TTM)</div><div class="v">$12.31(+5.5%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">22.14배 · 20.54배</div></div>
+        <div class="f"><div class="k">시가총액</div><div class="v">$192.86B(-13.9%)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v">$316.06(+16.0%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>배당수익률 2.73%의 안정적 배당주, 목표주가 괴리율 16.0%로 상승 여력도 갖춘 편, 컨센서스 투자의견 "Buy"</li>
+        <li>반도체·AI 테마와 무관해 오늘 같은 업종 쏠림 급락장에서 포트폴리오 분산 효과를 기대할 수 있음</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>저소득층 고객 이탈과 버거킹 등 경쟁 심화로 2분기 미국 매출 성장이 시장 기대를 하회, 밸류 메뉴 전략도 고전 중</li>
+        <li>시가총액 전년比 -13.9%로 우하향 추세, TTM PER 22.14배는 성장 둔화를 감안하면 부담스러운 구간</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> 방어주로서의 안정성은 유효하나, 본업(매장 트래픽) 둔화가 해소되기 전까지 상단이 제한될 가능성.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">08/25</span><span>한화, 인적분할 후 존속·신설법인(한화머시너리앤서비스홀딩스) 동시 상장</span></li>
+      <li><span class="when mono">08/26</span><span>엔비디아(NVDA) 2분기 실적 발표</span></li>
+      <li><span class="when mono">08/27~28</span><span>잭슨홀 심포지엄 — 케빈 워시 신임 연준 의장 첫 키노트 연설</span></li>
+      <li><span class="when mono">08월 말</span><span>7월 PCE(개인소비지출) 물가지수 발표</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-08-25 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
