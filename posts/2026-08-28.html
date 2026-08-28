@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-08-28</title>
+<meta name="description" content="코스피 이틀 연속 랠리 후 6,912.37 마감, 오늘 아침엔 차익실현 매물로 6,833대 반락. 오늘 밤 케빈 워시 연준 의장 첫 잭슨홀 연설 예정. CrowdStrike 어닝서프라이즈에 사이버보안株 급등. 오늘의 세계 경제 뉴스와 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>코스피 6,912 마감 후 차익실현 매물, 오늘 밤 케빈 워시 첫 잭슨홀 연설 대기</h1>
+    <div class="date">2026년 8월 28일 금요일 · 매일 아침 발행</div>
+    <p class="thesis">어제(8/27) 코스피는 엔비디아발 반도체 훈풍이 이어지며 전일 대비 1.53% 오른 6,912.37로 마감, 이틀 연속 랠리를 이어갔습니다. 코스닥도 1.30% 상승한 837.65로 동반 강세를 보였습니다. 하지만 오늘(8/28) 아침에는 차익실현 매물과 오늘 밤 예정된 케빈 워시 신임 연준 의장의 취임 후 첫 잭슨홀 키노트 연설(현지시간 오전 10시, 한국시간 오후 11시)을 앞둔 관망 심리가 겹치며 코스피는 오전 9시 16분 기준 6,833.94(-1.13%)로 반락해 거래되고 있습니다. 간밤 뉴욕증시에서는 CrowdStrike가 "역대 최고 분기" 실적을 발표하며 주가가 20.5% 급등, 사이버보안 업종 전반에 훈풍을 불어넣었습니다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>CrowdStrike, 2분기 "역대 최고 분기" 실적에 주가 20.5% 급등 — 사이버보안 업종 전반 랠리</strong>
+      <p>CrowdStrike는 어제(현지시간 목요일) 2분기 실적 발표에서 조지 커츠 CEO가 "회사 역사상 최고의 분기"라고 밝히며 가이던스를 상향했다. 주가는 전일 대비 20.50% 급등한 $227.96에 마감했다. 커츠 CEO는 "AI가 레거시 보안 도구로는 막을 수 없는 위험한 격차를 드러내고 있다"고 진단했고, 이 여파로 Okta(+20%), Palo Alto Networks(+10%) 등 경쟁사도 동반 급등했다. 실적 발표 후 스코샤뱅크·RBC캐피탈·니덤·스티펠 등 다수 증권사가 목표주가를 잇달아 상향했다.</p>
+      <span class="src">CNBC · Investopedia · TheFly</span>
+    </div>
+    <div class="news-item">
+      <strong>케빈 워시 연준 의장, 오늘 밤 11시(한국시간) 취임 후 첫 잭슨홀 키노트 연설</strong>
+      <p>지난 5월 취임한 케빈 워시 연준 의장이 오늘 오전 10시(현지시간, 한국시간 오후 11시) 와이오밍주 잭슨홀에서 열리는 연준 연례 정책심포지엄에서 의장 자격으로는 처음으로 기조연설에 나선다. 7월 PCE 물가(전년比 3.7%)가 연준 목표(2%)를 웃도는 가운데, 워시 의장이 통화정책 방향에 대해 어떤 힌트를 내놓을지가 시장의 최대 관심사다. 워시 의장은 그동안 구체적인 금리 경로 제시보다 시장이 지표를 보고 스스로 판단하도록 하는 소통 방식을 선호해왔다.</p>
+      <span class="src">서울경제 · Radio Seoul · 베타뉴스</span>
+    </div>
+    <div class="news-item">
+      <strong>코스피, 엔비디아 훈풍 속 1.53% 오른 6,912.37 마감 — 이틀 연속 랠리</strong>
+      <p>어제 코스피는 전일 대비 104.16포인트(1.53%) 오른 6,912.37에 마감하며 이틀 연속 상승세를 이어갔다. 장중 한때 6,930선을 넘어서기도 했다. 엔비디아의 어닝 서프라이즈 여진이 반도체·AI 관련주 전반에 훈풍을 불어넣었다. 코스닥도 1.30%(10.78p) 오른 837.65로 동반 강세를 보였다.</p>
+      <span class="src">네이버금융</span>
+    </div>
+    <div class="news-item">
+      <strong>뉴욕증시, 소프트웨어주 강세 속 3대 지수 동반 상승 — 나스닥 1.57%↑</strong>
+      <p>어제(현지시간 목요일) 뉴욕증시는 CrowdStrike·Okta 등 소프트웨어주 급등에 힘입어 3대 지수가 동반 상승했다. 다우는 0.20% 오른 53,569.44, S&amp;P500은 0.71% 오른 7,730선, 나스닥은 1.57% 오른 26,541.35에 마감했다(S&amp;P500 추종 SPY ETF는 0.66% 상승한 $771.10 마감으로 유사한 흐름을 보였다). 워시 의장의 잭슨홀 연설을 앞두고 기술주 랠리가 지수를 견인했다.</p>
+      <span class="src">stockanalysis.com · 네이버금융 · TipRanks</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 코스피·코스닥·니케이·상하이·美 지수 8/27 종가</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피 (8/27)</td><td>6,912.37</td><td class="chg up">+1.53%</td><td class="plain">이틀 연속 랠리, 장중 6,930선 터치</td></tr>
+          <tr><td>코스닥 (8/27)</td><td>837.65</td><td class="chg up">+1.30%</td><td class="plain">동반 강세</td></tr>
+          <tr><td>니케이225 (8/27)</td><td>66,131.98</td><td class="chg up">+0.20%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>상하이종합 (8/27)</td><td>3,956.57</td><td class="chg up">+1.13%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>다우 (8/27)</td><td>53,569</td><td class="chg up">+0.20%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>S&amp;P500 (8/27)</td><td>7,730</td><td class="chg up">+0.71%</td><td class="plain">SPY ETF +0.66%로 유사 확인</td></tr>
+          <tr><td>나스닥 (8/27)</td><td>26,541</td><td class="chg up">+1.57%</td><td class="plain">CrowdStrike 등 소프트웨어주 급등</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">오늘(8/28) 코스피는 어제 급등에 따른 차익실현 매물과 오늘 밤 케빈 워시 연설을 앞둔 관망 심리로 오전 9시 16분 기준 6,833.94(-1.13%)로 반락해 거래되고 있습니다. 코스닥도 833.61(-0.48%)로 동반 조정 중입니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (8/21)</dt><dd>1,386.5원</dd></div>
+      <div class="stat"><dt>원/100엔 (8/21)</dt><dd>약 869원</dd></div>
+      <div class="stat"><dt>국제 금 (8/21)</dt><dd>$4,600+/oz</dd></div>
+      <div class="stat"><dt>WTI (8/21)</dt><dd>보합, $87선</dd></div>
+      <div class="stat"><dt>7월 PCE(전년比)</dt><dd>3.7% (예상 상회)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">외환·상품 시장 수치는 신뢰 가능한 전용 소스로 오늘자 갱신 확인이 안 돼 최근 검증된 거래일(8/21) 기준을 유지합니다. 다만 어제(8/27) "코스피·코스닥 상승 마감…원/달러 환율 하락"이라는 보도가 있어 원화가 강세를 보인 것으로 파악되나, 정확한 수치는 검증되는 대로 다음 호에서 갱신하겠습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증권사 리포트 하이라이트</div><div class="label-en">Research Notes</div></div>
+    <ul class="points" style="display:grid;gap:10px;">
+      <li style="padding-left:0;"><b>유안타증권 (S-Oil, 목표가 205,000원·매수)</b> — "미국 Valero 마진을 넘어서다!". 2026년 하반기에만 영업이익 3조원 이상(3분기 1.3조원·4분기 1.7조원 추정) 가능하다고 전망. 이란·우크라이나 전쟁에 따른 글로벌 정유제품 생산차질(호르무즈 원유 공급 감소, 중동·러시아 정유설비 파손 등)이 지속되는 점을 근거로 제시.</li>
+      <li style="padding-left:0;"><b>미래에셋증권 (SK텔레콤, 목표가 150,000원·매수)</b> — "SK호라이즌과 SK하이퍼의 시너지 효과 본격화". 목표주가를 기존 12만원에서 15만원으로 25% 상향하며 통신 섹터 내 탑픽 유지. SK텔레콤 사업가치 22.9조원, SK호라이즌 사업가치 5.1조원, 앤스로픽 지분가치 4.3조원 합산으로 산정.</li>
+    </ul>
+    <p style="font-size:12.5px;color:var(--ink-faint);margin-top:10px;">※ 네이버금융 종목분석 리포트(2026.08.28 게시) 원문 기준</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">두산에너빌리티</span><span class="stock-code mono">034020</span></div>
+        <div class="stock-price mono">87,200원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/28 장중, +1.51%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">원전·전력설비</span></div>
+      <p class="why"><b>선정 이유</b> — 원전·전력설비 슈퍼사이클 기대감 속 코스피 인기검색어·기관 순매수 상위권에 꾸준히 오르는 종목. 다만 오늘 아침 네팔 수력발전소 건설현장 홍수 피해 소식이 새로운 변수로 떠올랐다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER(TTM) · 추정PER</div><div class="v">308.13배 · 175.00배</div></div>
+        <div class="f"><div class="k">PBR · ROE</div><div class="v">6.83배 · 2.30%</div></div>
+        <div class="f"><div class="k">부채비율</div><div class="v">136.43%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">129,000원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>원전·전력설비 투자 사이클 확대 기대감으로 최근 국내 시가총액 상위권 인기검색어·기관 순매수 상위에 지속 등장, 목표주가 대비 상승여력 약 48%</li>
+        <li>추정PER이 TTM PER(308.13배) 대비 175.00배로 낮아져 향후 이익 정상화(레퍼런스) 기대가 반영되고 있음</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>네팔 수력발전소 건설현장에서 홍수로 위어댐이 90% 이상 손실되는 피해가 발생해 긴급대응팀을 급파한 상태로, 복구비용·공기 지연 등 추가 손실 규모는 아직 확정되지 않음</li>
+        <li>PER 308.13배·부채비율 136.43%로 현재 실적 기준 밸류에이션 부담과 재무 레버리지가 상당히 높은 수준</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> 원전·전력설비 테마 모멘텀은 유효하나, 네팔 현장 피해 규모가 확인되기 전까지는 리스크 관리가 필요.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">CrowdStrike Holdings</span><span class="stock-code mono">NASDAQ:CRWD</span></div>
+        <div class="stock-price mono">$227.96<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/27 종가, +20.50%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">AI 사이버보안</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 세계 경제 뉴스 1위 소식의 당사자. "역대 최고 분기" 실적과 AI발 신규 보안 수요 확대 스토리로 사이버보안 업종 전반의 랠리를 이끈 종목.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">EPS(TTM)</div><div class="v">$0.04</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">5,133.95배 · 134.33배</div></div>
+        <div class="f"><div class="k">시가총액</div><div class="v">$232.12B(+122.4%)</div></div>
+        <div class="f"><div class="k">목표주가(컨센서스)</div><div class="v">$222.35(-2.46%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>51개 증권사 컨센서스 "Buy". 2분기 순이익 흑자전환과 함께 매출 가이던스를 상향했고, 실적 발표 후 스코샤뱅크($250)·RBC캐피탈($260)·니덤($250) 등 다수 증권사가 목표주가를 대폭 상향</li>
+        <li>AI 확산에 따른 사이버 위협 증가로 보안 지출이 구조적으로 늘어나는 흐름의 최대 수혜주 중 하나로 부각</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>PER 5,133.95배는 순이익이 $45.00M로 극히 미미해 사실상 밸류에이션 지표로서 의미가 없는 수준이며, Forward PER(134.33배)도 여전히 매우 높음</li>
+        <li>페이지에 표시된 평균 목표주가($222.35)는 실적 발표 직후 개별 상향분이 아직 충분히 반영되지 않아 현재가 대비 오히려 낮게 나타나는 시차가 있어, 단기 급등에 따른 과열 우려도 상존</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적이나 단기 과열 주의.</b> AI 보안 수요 확대의 구조적 수혜주지만, 하루 만에 20% 넘게 오른 만큼 밸류에이션과 변동성 관리가 필요.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">유한양행</span><span class="stock-code mono">000100</span></div>
+        <div class="stock-price mono">81,800원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/28 장중, -1.09%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">제약</span></div>
+      <p class="why"><b>선정 이유</b> — AI·반도체 테마와 무관한 국내 대표 제약사. 폐암 치료제 렉라자(Leclaza)의 글로벌 확장이 지속되는 실적 모멘텀을 보유해, 오늘 같은 특정 업종 쏠림 장세에서 분산 투자 대안으로 선정.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER(TTM) · 추정PER</div><div class="v">27.95배 · 39.00배</div></div>
+        <div class="f"><div class="k">PBR · ROE</div><div class="v">2.56배 · 10.45%</div></div>
+        <div class="f"><div class="k">부채비율(2026.03)</div><div class="v">40.03%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">122,333원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>목표주가 대비 상승여력 약 49.5%, 부채비율 40.03%로 재무구조가 안정적</li>
+        <li>렉라자의 미국 허가 이후 글로벌 매출 확대가 이어지고 있어 반도체·AI 사이클과 무관한 독립적 성장 동력을 보유</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>추정PER이 39.00배로 TTM PER(27.95배) 대비 높아, 향후 이익 성장에 대한 기대가 이미 상당 부분 주가에 반영</li>
+        <li>배당수익률 0.73%로 낮아 배당 매력은 제한적이며, 신약 파이프라인 임상 결과에 따른 주가 변동성이 상존</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 반도체·AI 테마와 무관한 독자적 성장 스토리를 갖춘 방어적 대안이나, 밸류에이션 부담은 유의할 필요.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">The Coca-Cola Company</span><span class="stock-code mono">NYSE:KO</span></div>
+        <div class="stock-price mono">$89.06<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/27 종가, -1.13%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">음료·필수소비재</span></div>
+      <p class="why"><b>선정 이유</b> — AI·사이버보안 랠리와 무관한 초우량 방어주. 최근 사상 최고가권에서 거래되며 안정적 배당과 실적 성장을 동시에 보여주는 종목.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">EPS(TTM)</div><div class="v">$3.33(+18.0%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">26.77배 · 26.20배</div></div>
+        <div class="f"><div class="k">시가총액</div><div class="v">$383.19B(+29.2%)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$94.70(+6.33%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>배당수익률 2.38%($2.12)의 안정적 배당주, EPS 전년比 18.0% 증가로 견조한 실적 성장세를 유지</li>
+        <li>24개 증권사 컨센서스 "Buy", AI·반도체 사이클과 완전히 무관해 오늘 같은 특정 업종 쏠림 장세에서 방어적</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>PER 26.77배는 필수소비재 업종 평균 대비 높은 수준으로, 이미 연초 이후 큰 폭 상승한 데 따른 밸류에이션 부담이 있음</li>
+        <li>목표주가 괴리율이 6.33%에 그쳐 추가 상승 여력이 크지 않으며, 오늘도 -1.13%로 조정받는 등 단기 상단이 제한적</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> 안정적 배당과 실적은 매력적이나, 밸류에이션 부담을 감안하면 상단이 제한된 전형적 방어주.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">08/28 밤 11시</span><span>케빈 워시 연준 의장, 취임 후 첫 잭슨홀 키노트 연설(현지시간 오전 10시)</span></li>
+      <li><span class="when mono">08/27~29</span><span>잭슨홀 심포지엄(캔자스시티 연은 주최) 계속 진행 중</span></li>
+      <li><span class="when mono">08월 말</span><span>7월 PCE 물가지수 발표(완료) — 헤드라인 3.7%, 근원 3.3%</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-08-28 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
