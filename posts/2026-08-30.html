@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-08-30</title>
+<meta name="description" content="주말 특집 — 마벨 테크놀로지, 매출 37% 급증에도 가이던스 실망에 10%대 급락. 9월 FOMC는 15~16일로 확정. 삼성전기는 이틀 연속 인기검색 1위. 오늘의 세계 경제 뉴스와 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>주말 특집 Ⅱ — 마벨, 매출 37% 급증에도 가이던스 실망에 10%대 급락</h1>
+    <div class="date">2026년 8월 30일 일요일 · 매일 아침 발행</div>
+    <p class="thesis">국내외 증시는 이번 주말도 계속 휴장 중이며(최근 실제 거래일은 8/28 금요일), 다음 거래일은 월요일입니다. 지난 금요일 워시 의장의 매파적 잭슨홀 연설 여진 속에서 AI 반도체株 마벨 테크놀로지가 2분기 매출 37% 급증이라는 호실적에도 불구하고 미온적인 가이던스와 구글 AI 칩 협력 성과 지연 우려에 하루 만에 10.28% 급락했습니다. 반면 국내에서는 삼성전기가 MLCC 가격 인상과 AI 서버향 수요 확대에 힘입어 이틀 연속 코스피 인기검색 상위권에 올랐습니다. 다음 주 최대 이벤트는 화요일(9/1) 팔로알토네트웍스 실적 발표이며, 9월 FOMC 정례회의 날짜도 9월 15~16일로 확정되며 시장의 시선이 그쪽으로 옮겨가고 있습니다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>마벨 테크놀로지, 매출 37% 급증에도 가이던스 실망에 10.28% 급락 — 구글 AI 칩 협력 성과 지연 우려</strong>
+      <p>마벨은 지난 목요일 2분기 실적에서 매출이 전년比 37% 급증했다고 발표했지만, 시장은 향후 가이던스와 구글과의 1,200억달러 규모 AI 칩 협력이 언제 본격적인 매출로 이어질지에 더 주목했다. 이 여파로 주가는 금요일 하루 만에 10.28% 급락한 $216.62에 마감했다. 로젠블라트 등 일부 증권사는 "이번 급락을 저가 매수 기회"로 평가하며 목표주가를 오히려 상향했다.</p>
+      <span class="src">CNBC · Reuters · TipRanks</span>
+    </div>
+    <div class="news-item">
+      <strong>킴벌리클라크, 켄뷰(타이레놀 제조사) 400억달러 인수 위해 EU 규제당국에 승인 신청</strong>
+      <p>킴벌리클라크는 지난해 11월 발표한 켄뷰 인수(약 400억달러 규모)에 대해 EU 규제당국에 승인을 신청했다고 밝혔다. 앞서 2분기 실적에서는 중국 SNS발 유해성 루머(허위로 판명)로 하기스 매출이 타격을 입어 연간 가이던스를 하향 조정한 바 있다.</p>
+      <span class="src">Reuters · TheFly</span>
+    </div>
+    <div class="news-item">
+      <strong>삼성전기, 이틀 연속 코스피 인기검색 상위권 — MLCC 가격 인상·AI 서버 수요 확대</strong>
+      <p>삼성전기는 지난 금요일 2.60% 오른 1,421,000원에 마감하며 이틀째 코스피 인기검색 상위 5위 안에 이름을 올렸다. MLCC(적층세라믹콘덴서) 가격이 전방위로 오르고 있다는 소식과 AI 투자 확대 속 반도체 패키지기판 고객 다변화 성공 소식이 겹쳤다. 2분기 영업이익은 전년比 56.95% 급증했다.</p>
+      <span class="src">한국경제 · 매일경제</span>
+    </div>
+    <div class="news-item">
+      <strong>워시 잭슨홀 발언 여진 지속 — 9월 FOMC 정례회의는 9월 15~16일로 확정</strong>
+      <p>케빈 워시 연준 의장의 매파적 잭슨홀 연설 이후 재부각된 9월 금리인상 가능성(선물시장 기준 약 57%)이 주말 내내 시장의 화두로 이어지고 있다. 9월 FOMC(연방공개시장위원회) 정례회의는 9월 15~16일로 예정돼 있으며, 이번 주 발표되는 고용·물가 지표가 결과를 가늠할 마지막 단서가 될 전망이다.</p>
+      <span class="src">한국경제 · Investing.com</span>
+    </div>
+    <div class="news-item">
+      <strong>일본 7월 산업생산·소매판매, 내일(월) 오전 발표 — 국내외 증시 재개장</strong>
+      <p>도쿄증권거래소 기준 내일 오전 8시 50분(현지시간) 일본의 7월 산업생산과 소매판매 지표가 발표된다. 국내외 주요 증시는 주말 휴장을 마치고 월요일 일제히 재개장하며, 지난 금요일 낙폭(코스피 -1.79%)을 딛고 반등할지가 관전 포인트다.</p>
+      <span class="src">Yahoo Finance</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 최근 영업일(8/28, 금) 기준 — 주말 이틀째 휴장</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피 (8/28)</td><td>6,788.88</td><td class="chg down">-1.79%</td><td class="plain">이틀 연속 랠리 뒤 차익실현</td></tr>
+          <tr><td>코스닥 (8/28)</td><td>838.41</td><td class="chg up">+0.09%</td><td class="plain">코스피와 디커플링</td></tr>
+          <tr><td>니케이225 (8/28)</td><td>66,405.56</td><td class="chg up">+0.41%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>상하이종합 (8/28)</td><td>3,952.18</td><td class="chg down">-0.11%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>다우 (8/28)</td><td>53,560</td><td class="chg down">-0.02%</td><td class="plain">워시 발언에 소폭 하락</td></tr>
+          <tr><td>S&amp;P500 (8/28)</td><td>7,712</td><td class="chg down">-0.25%</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>나스닥 (8/28)</td><td>26,402</td><td class="chg down">-0.52%</td><td class="plain">마벨 급락 등 반도체 약세</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">위 수치는 가장 최근 실제 거래일(8/28, 금)의 종가로, 주말 이틀째라 갱신되지 않았습니다. 국내외 증시는 내일(월) 재개장합니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (8/28)</dt><dd>1,380.5원</dd></div>
+      <div class="stat"><dt>원/100엔 (8/28)</dt><dd>862.5원</dd></div>
+      <div class="stat"><dt>국제 금 (8/28)</dt><dd>약 $4,445/oz</dd></div>
+      <div class="stat"><dt>WTI (8/28)</dt><dd>보합, $80대 초반</dd></div>
+      <div class="stat"><dt>9월 FOMC 일정</dt><dd>9/15~16, 인상확률 57%</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">환율·원자재 수치 역시 가장 최근 거래일(8/28) 기준이며 주말 동안 갱신되지 않았습니다. 워시 의장의 매파 발언으로 촉발된 금값 급락과 달러 강세 흐름이 월요일 재개장 이후에도 이어질지 주목됩니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증권사 리포트 하이라이트</div><div class="label-en">Research Notes</div></div>
+    <ul class="points" style="display:grid;gap:10px;">
+      <li style="padding-left:0;"><b>신한투자증권 (클래시스, 목표가 62,000원·매수)</b> — "NDR 후기: 눈높이 하향 반영 완료". 실적 눈높이 하향은 이미 주가에 반영이 끝났다고 평가하며, 3분기 남미 영업 정상화가 주가 반등의 트리거가 될 것으로 전망.</li>
+      <li style="padding-left:0;"><b>신한투자증권 (한온시스템, 투자의견 중립)</b> — "조금씩 달라지고 있는 이익의 퀄리티". 매출원가율 개선과 연구개발비 자산화율 축소를 동시에 달성해 비용·투자·재무구조 정상화는 확인됐으나, 재평가를 위해선 신규 수주와 고객 다변화가 필요하다고 지적. 목표주가는 제시하지 않음.</li>
+    </ul>
+    <p style="font-size:12.5px;color:var(--ink-faint);margin-top:10px;">※ 네이버금융 종목분석 리포트(2026.08.28 게시, 주말 동안 신규 리포트 없어 최신 유지) 원문 기준</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 주 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">삼성전기</span><span class="stock-code mono">009150</span></div>
+        <div class="stock-price mono">1,421,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/28 종가, +2.60%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">AI 전자부품(MLCC·패키지기판)</span></div>
+      <p class="why"><b>선정 이유</b> — MLCC(적층세라믹콘덴서)·반도체 패키지기판 국내 대표주로, AI 서버 투자 확대와 MLCC 가격 인상 흐름의 직접 수혜주. 이틀 연속 코스피 인기검색 상위권에 올랐다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">영업이익(2026.06)</div><div class="v">4,404억원(+56.95%)</div></div>
+        <div class="f"><div class="k">PER(TTM) · 추정PER</div><div class="v">109.44배 · 72.00배</div></div>
+        <div class="f"><div class="k">PBR · ROE</div><div class="v">10.49배 · 10.60%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">2,350,500원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026.06분기 영업이익 전년比 56.95% 급증, 반도체 기판 고객 다변화 성공과 MLCC 가격 인상 흐름이 동시에 진행 중</li>
+        <li>목표주가 대비 상승여력 약 65%, 코스피 시가총액 5위로 대형주 중에서도 AI 밸류체인 핵심 종목으로 부각</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>PER 109.44배·PBR 10.49배로 이미 상당한 성장 기대가 주가에 반영된 고밸류에이션 구간</li>
+        <li>52주 최고가(2,417,000원) 대비는 조정된 상태지만, AI 투자 사이클 둔화 시 밸류에이션 되돌림 리스크가 큰 편</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적이나 밸류에이션 유의.</b> AI 서버·MLCC 수요 확대의 구조적 수혜주지만, 이미 높은 밸류에이션을 감안하면 변동성 관리가 필요.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Marvell Technology</span><span class="stock-code mono">NASDAQ:MRVL</span></div>
+        <div class="stock-price mono">$216.62<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/28 종가, -10.28%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">AI 반도체(커스텀 실리콘)</span></div>
+      <p class="why"><b>선정 이유</b> — 2분기 매출 37% 급증이라는 호실적에도 가이던스 실망과 구글 AI 칩 협력 성과 지연 우려로 하루 만에 10% 넘게 급락한 종목. "실적은 좋은데 주가는 급락"한 대표 사례로 다음 주 반등 여부가 관전 포인트.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">매출(TTM)</div><div class="v">$9.45B(+30.6%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">72.78배 · 40.03배</div></div>
+        <div class="f"><div class="k">시가총액</div><div class="v">$189.96B(+194.6%)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$278.89(+28.75%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>44개 증권사 컨센서스 "Strong Buy", 목표주가 괴리율 28.75%. 로젠블라트·크레이그할럼 등은 이번 급락을 "매수 기회"로 평가하며 목표주가를 오히려 상향(각각 $350, $300)</li>
+        <li>구글과 1,200억달러 규모 AI 커스텀칩 협력을 진행 중이며, CEO는 실적 발표에서 "AI 관련 수주가 매우 견조하다"고 언급</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>골드만삭스는 "강한 실적에도 주가는 박스권에 머물 수 있다"며 중립(Neutral) 의견과 목표주가 $195를 제시, 구글 딜의 매출 기여 시점 불확실성이 여전히 부담</li>
+        <li>PER 72.78배로 밸류에이션 부담이 있고, 베타 2.25로 시장 대비 변동성이 매우 큰 종목</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적이나 단기 변동성 유의.</b> AI 커스텀칩 수요 확대의 구조적 수혜주라는 스토리는 유효하나, 구글 딜의 실제 매출 기여 시점을 확인하기 전까지는 변동성이 클 수 있음.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">KT</span><span class="stock-code mono">030200</span></div>
+        <div class="stock-price mono">54,500원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/28 종가, +1.11%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">통신</span></div>
+      <p class="why"><b>선정 이유</b> — AI 반도체 밸류에이션 부담과 무관한 국내 대표 통신사. 서울대·KAIST와의 AI 공동연구, SKT·카카오와 함께 "모두의 AI" 서비스에 낙점되는 등 AICT(AI+ICT) 전환도 진행 중이라 방어주이면서 AI 테마 곁가지 노출도 있는 종목.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER(TTM) · 추정PER</div><div class="v">10.60배 · 10.00배</div></div>
+        <div class="f"><div class="k">PBR · ROE</div><div class="v">0.70배 · 7.26%</div></div>
+        <div class="f"><div class="k">부채비율</div><div class="v">118.71%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">74,632원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>배당수익률 4.40%의 고배당주, 목표주가 대비 상승여력 약 37%. PBR 0.70배로 밸류에이션 부담도 크지 않음</li>
+        <li>2026.06분기 영업이익 전년比 34.31% 증가, AI 전환(AICT) 스토리로 통신 3사 중 AI 밸류체인 노출도가 상대적으로 부각</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>부채비율 118.71%로 통신업 특성상 재무 레버리지가 높은 편, 자사주 매입 목적과 대표이사 관련 잡음이 종목토론방에서 계속 제기되는 중</li>
+        <li>통신 3사 간 요금제·마케팅 경쟁 심화로 본업 성장성은 제한적, 폴더블 아이폰 출시를 앞두고 보조금 경쟁이 재점화될 가능성</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 고배당·저밸류에이션의 전형적 방어주로, AI 전환 스토리가 더해지며 완만한 재평가가 기대되나 지배구조 관련 잡음은 계속 지켜봐야 함.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Kimberly-Clark</span><span class="stock-code mono">NASDAQ:KMB</span></div>
+        <div class="stock-price mono">$109.55<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (8/28 종가, -0.39%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">생활용품</span></div>
+      <p class="why"><b>선정 이유</b> — AI·반도체 밸류에이션 논쟁과 완전히 무관한 초우량 생활용품 방어주. 타이레놀 제조사 켄뷰(Kenvue) 400억달러 인수를 위해 EU 규제당국에 승인을 신청하며 대형 M&amp;A 스토리가 진행 중이다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">EPS(TTM)</div><div class="v">$5.86(-19.4%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">21.69배 · 15.42배</div></div>
+        <div class="f"><div class="k">시가총액</div><div class="v">$36.43B(-15.7%)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$118.60(+8.26%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>배당수익률 4.67%의 고배당 방어주, Forward PER 15.42배로 TTM(21.69배) 대비 밸류에이션 정상화 여지</li>
+        <li>켄뷰 인수가 완료되면 타이레놀 등 대형 브랜드를 포트폴리오에 추가해 사업 다각화 효과 기대</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>2분기 중국 SNS발 하기스 유해성 루머(허위 판명)로 매출 타격을 입어 연간 가이던스를 하향, 순이익도 전년比 19.5% 감소</li>
+        <li>400억달러 규모 켄뷰 인수는 아직 EU 등 규제당국 승인이 필요한 초기 단계로, 불발되거나 지연될 경우 관련 기대감이 되돌려질 수 있음</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립~긍정적.</b> 안정적 배당과 밸류에이션 정상화 여지는 매력적이나, 켄뷰 인수 불확실성과 최근 매출 타격은 계속 확인이 필요.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 주 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">08/31(월)</span><span>일본 7월 산업생산·소매판매 발표(오전 8:50 JST), 국내외 증시 재개장</span></li>
+      <li><span class="when mono">09/01(화)</span><span>Palo Alto Networks(PANW) 2026 회계연도 4분기 실적 발표(장 마감 후)</span></li>
+      <li><span class="when mono">09/15~16</span><span>9월 FOMC(연방공개시장위원회) 정례회의 — 인상 확률 약 57%(선물시장 기준)</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-08-30 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
