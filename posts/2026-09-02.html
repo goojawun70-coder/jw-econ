@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-09-02 저녁</title>
+<meta name="description" content="국고채 금리 4% 근접, 근원물가 급등에 따른 한은 추가 금리인상 우려로 코스피 6,562(-3.99%)·코스닥 803(-2.10%) 동반 급락. 중동發 공급 불안에 유가는 급등, 금은 투매. 하나금융지주·Charles Schwab·컴투스·Cigna 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>국고채 4% 근접·중동發 유가 급등에 코스피 6,562 '패닉' 마감…코스닥도 2%대 급락</h1>
+    <div class="date">2026년 9월 2일 수요일 · 매일 저녁 발행(장마감 결산)</div>
+    <p class="thesis">오늘 코스피는 근원물가 급등에 따른 한국은행 연내 추가 금리인상 우려로 국고채 금리가 4%에 근접하자 6,562.72(-3.99%)로 큰 폭 하락 마감했습니다. 코스닥도 803.98(-2.10%)로 동반 약세를 보였습니다. 여기에 중동 지역 공급망 불안까지 겹치며 WTI 연동 USO가 +5.46% 급등한 반면, 금리 상승 부담에 금 연동 GLD는 -2.86% 하락하는 등 안전자산 내에서도 자산별 반응이 엇갈렸습니다. 개별 종목 장에서는 금리 상승 국면의 대표 수혜주인 하나금융지주에 대한 신한투자증권의 목표가 상향 리포트와, 신작 '제우스: 오만의 신'의 흥행으로 목표주가가 상향된 컴투스가 주목받았습니다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>국고채 금리 4% 다시 눈앞 — "기업·가계 이자 청구서 커진다"</strong>
+      <p>근원물가 상승세가 예상보다 가파르게 나타나며 한국은행이 연내 추가 금리인상에 나설 수 있다는 우려가 채권시장에 반영되고 있다. 국고채 금리가 4%대에 다시 근접하면서 기업 대출·가계대출 이자 부담이 커질 것이라는 우려가 코스피·코스닥 동반 급락의 주된 배경으로 지목된다.</p>
+      <span class="src">한국경제 2026-09-02</span>
+    </div>
+    <div class="news-item">
+      <strong>근원물가 급등…한은 연내 금리 또 올리나</strong>
+      <p>근원물가지수가 시장 예상치를 웃돌며 상승한 것으로 나타나자, 한국은행이 물가 안정을 위해 연내 추가 기준금리 인상 카드를 만지작거릴 수 있다는 전망이 확산됐다. 이는 국고채 금리 상승과 은행주 강세, 그리고 성장주 중심의 코스피·코스닥 조정으로 이어지는 흐름을 만들었다.</p>
+      <span class="src">SBS Biz 2026-09-02</span>
+    </div>
+    <div class="news-item">
+      <strong>중동 공급망 불안에 국제유가 급등, 안전자산 내 자산별 반응 엇갈려</strong>
+      <p>중동 지역의 지정학적 긴장이 고조되며 원유 공급 차질 우려가 커졌고, WTI 선물을 추종하는 USO가 하루 만에 +5.46% 급등했다. 반면 미 국채금리 상승 부담이 커지며 금 연동 GLD는 -2.86% 하락, 같은 '안전자산'으로 묶이는 두 원자재의 흐름이 엇갈리는 모습을 보였다.</p>
+      <span class="src">Kitco·stockanalysis.com News 2026-09-02</span>
+    </div>
+    <div class="news-item">
+      <strong>컴투스 신작 '제우스: 오만의 신' 흥행 — 일평균 매출 15억원</strong>
+      <p>컴투스의 신규 MMORPG '제우스: 오만의 신'이 출시 초반 일평균 매출 15억원을 기록하며 흥행 조짐을 보이고 있다. 이마트24와의 협업 이벤트, PC방 순위권 진입 등 초반 화제성도 이어지고 있으며, 키움증권은 이를 반영해 목표주가를 기존 4.7만원에서 5만원으로 상향 조정했다.</p>
+      <span class="src">뉴시스·네이버금융 종목분석(키움증권) 2026-09-02</span>
+    </div>
+    <div class="news-item">
+      <strong>17조원 인천시금고 경쟁 — 1금고 신한·하나 맞대결</strong>
+      <p>17조원 규모의 인천시 시금고 유치를 둘러싸고 신한은행과 하나은행이 1금고 자리를 두고 맞대결을 벌이고 있는 것으로 전해졌다. 시중은행 간 지자체 예산 유치 경쟁이 치열해지는 가운데, 금리 상승 국면과 맞물려 은행권의 수신 확보 경쟁도 주목받고 있다.</p>
+      <span class="src">이데일리 2026-09-02</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 국내는 9/2 장마감, 해외는 최근 영업일(9/1) 기준</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가/현재가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피 (9/2 장마감)</td><td>6,562.72</td><td class="chg down">-3.99%</td><td class="plain">국고채 금리 상승 우려에 급락</td></tr>
+          <tr><td>코스닥 (9/2 장마감)</td><td>803.98</td><td class="chg down">-2.10%</td><td class="plain">코스피와 동반 약세</td></tr>
+          <tr><td>다우 (9/1)</td><td>52,829</td><td class="chg down">-0.72%</td><td class="plain">美 증시 미개장(9/2 저녁 기준), 9/1 종가 기준(DIA 환산)</td></tr>
+          <tr><td>S&amp;P500 (9/1)</td><td>7,636</td><td class="chg down">-0.69%</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (9/1)</td><td>26,095</td><td class="chg down">-1.00%</td><td class="plain">ONEQ 환산</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내 지수는 9/2 정규장 마감 기준입니다. 미국 지수는 한국시간 9/2 저녁 시점 아직 개장 전이라, 가장 최근 실제 거래일(9/1)의 DIA·SPY·ONEQ 등락률을 직전 검증된 종가에 곱해 환산한 값입니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (9/2)</dt><dd>1,367.30원</dd></div>
+      <div class="stat"><dt>원/100엔 (9/2)</dt><dd>855.23원</dd></div>
+      <div class="stat"><dt>국제 금 (9/1, GLD)</dt><dd>$396.75 (-2.86%)</dd></div>
+      <div class="stat"><dt>WTI(USO, 9/1)</dt><dd>$141.00 (+5.46%)</dd></div>
+      <div class="stat"><dt>국고채 금리</dt><dd>4%대 근접</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러는 1,367.30원(전일대비 -8.20원)으로 원화가 소폭 강세를 보였고, 원/100엔도 855.23원(-3.46원)으로 내렸습니다. 반면 국내 채권시장에서는 국고채 금리가 4%대에 근접하며 금리 상승 압력이 확인됐습니다. 원자재는 중동發 공급 불안에 유가는 급등, 금리 상승 부담에 금은 하락하는 상반된 흐름을 보였습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증권사 리포트 하이라이트</div><div class="label-en">Research Notes</div></div>
+    <ul class="points" style="display:grid;gap:10px;">
+      <li style="padding-left:0;"><b>신한투자증권 (하나금융지주, 목표가 160,000원·매수)</b> — "낮아진 환율, 높아질 실적". 상반기보다 나은 하반기 실적을 전망하며, 분기 실적 Peak-out 우려는 제한적이라고 평가. PBR 0.80배의 낮은 밸류에이션 매력에 주목.</li>
+      <li style="padding-left:0;"><b>키움증권 (컴투스, 목표가 50,000원·Buy, 상향)</b> — "신작의 현실적 반영". 목표주가를 기존 4.7만원에서 5만원으로 상향하고 Buy 의견 유지. 신규 목표주가는 2027년 예상(27E) 지배주주지분에 목표 PER 12.5배·연 할인율 10%를 적용해 산출했으며, 메이저 신작 '제우스: 오만의 신'의 온기 성과가 반영되는 2027년을 밸류에이션 기준 시점으로 설정.</li>
+    </ul>
+    <p style="font-size:12.5px;color:var(--ink-faint);margin-top:10px;">※ 네이버금융 종목분석 리포트(2026.09.02 게시) 원문 기준</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">하나금융지주</span><span class="stock-code mono">086790</span></div>
+        <div class="stock-price mono">134,900원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (9/2 장마감, -1.82%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">금융지주·은행</span></div>
+      <p class="why"><b>선정 이유</b> — 근원물가 급등에 따른 한은 추가 금리인상 우려로 국고채 금리가 4%대에 근접한 오늘, 금리 상승 국면의 대표 수혜 업종인 은행지주 대표주로 선정했다. 신한투자증권이 목표가를 160,000원으로 제시하며 밸류에이션 매력을 짚었다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">영업이익(2026.06)</div><div class="v">16,536억원(+85.71%)</div></div>
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">9.16배 · 8.00배</div></div>
+        <div class="f"><div class="k">PBR · ROE</div><div class="v">0.80배 · 9.20%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">164,737원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>신한투자증권, 목표가 160,000원·매수 제시 — "낮아진 환율, 높아질 실적". 상반기 대비 나은 하반기 실적과 PBR 0.80배의 낮은 밸류에이션 매력 부각</li>
+        <li>2026.06분기 영업이익 전년比 85.71% 급증, 동종업종(은행) 평균 PER 9.07배 수준에서 크게 벗어나지 않는 안정적 밸류에이션</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>오늘 주가는 코스피 전체 급락(-3.99%) 속에 -1.82% 하락 — 업종 전반의 시장 심리 악화 영향에서 완전히 자유롭지 못함</li>
+        <li>부채비율 1,377.89%로 매우 높은 수준(금융지주 업종 특성상 통상적이나 금리 변동에 따른 조달비용 민감도 주시 필요)</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 금리 상승 국면의 수혜와 낮은 밸류에이션이 겹치나, 단기적으로는 시장 전반의 급락 심리에 연동될 가능성에 유의.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Charles Schwab</span><span class="stock-code mono">NYSE:SCHW</span></div>
+        <div class="stock-price mono">$108.28<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (9/1 종가, -1.40%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">증권·자산관리</span></div>
+      <p class="why"><b>선정 이유</b> — 미 국채금리 상승 국면에서 순이자마진(NIM) 개선이 기대되는 대형 증권·자산관리사. 최근 암호화폐 거래 서비스 확대 소식과 함께 월가의 목표가 상향이 이어지고 있어 하나금융지주와 함께 금리 상승 수혜 테마로 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$187.25B(+7.6%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">19.72배 · 14.98배</div></div>
+        <div class="f"><div class="k">EPS(TTM)</div><div class="v">$5.49(+47.6%)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$124.95(+15.4%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>Solana·Avalanche·Chainlink 등 암호화폐 거래 서비스 확대 발표, $12조 이상 고객자산을 기반으로 한 신사업 확장 지속</li>
+        <li>2분기 실적에서 변동성 장세 속 리테일 트레이딩 급증으로 기록적인 순이익 달성, 애널리스트 22명 컨센서스 "Buy"</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>프리마켓에서는 +0.20% 소폭 반등했으나 정규장은 -1.40%로 마감, 금리·거시 불확실성에 따른 단기 변동성 확대 국면</li>
+        <li>Forward PER 14.98배로 TTM(19.72배) 대비 낮아졌지만 절대적으로는 낮은 밸류에이션이 아니어서 추가 상승 위해서는 실적 개선 지속이 관건</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 금리 상승과 거래대금 증가 국면의 이중 수혜가 기대되나, 단기적으로는 거시 변동성에 연동될 가능성 존재.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">컴투스</span><span class="stock-code mono">078340</span></div>
+        <div class="stock-price mono">34,050원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (9/2 장마감, -1.30%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">모바일 게임</span></div>
+      <p class="why"><b>선정 이유</b> — 금리·거시 이슈와 무관하게 신작 흥행이라는 자체 모멘텀으로 움직이는 게임주. 신규 MMORPG '제우스: 오만의 신'이 일평균 매출 15억원을 기록하며 화제성을 이어가고 있어 오늘 심층분석 종목으로 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">영업이익(2026.06)</div><div class="v">72억원(+39.39%)</div></div>
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">34.32배 · 34.00배</div></div>
+        <div class="f"><div class="k">PBR · ROE</div><div class="v">0.40배 · 1.27%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">43,571원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>신작 '제우스: 오만의 신' 출시 초반 일평균 매출 15억원 기록, 이마트24 협업·PC방 순위권 진입 등 화제성 지속</li>
+        <li>키움증권, 목표주가를 기존 4.7만원에서 5만원으로 상향(Buy 유지) — 신작의 2027년(27E) 온기 성과 반영</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>PER 34.32배로 동종업종(게임엔터테인먼트) 평균 대비 높은 편, 신작 초반 흥행이 장기 매출로 이어질지는 추가 확인 필요</li>
+        <li>PBR 0.40배로 절대 저평가 상태지만 ROE도 1.27%로 낮아 자본 효율성 개선이 뒷받침돼야 밸류에이션 재평가 가능</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 신작 흥행에 따른 단기 모멘텀은 뚜렷하나, 높은 PER 대비 낮은 ROE 구조상 실적으로 증명해야 하는 국면.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Cigna</span><span class="stock-code mono">NYSE:CI</span></div>
+        <div class="stock-price mono">$283.06<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (9/1 종가, +2.53%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">건강보험</span></div>
+      <p class="why"><b>선정 이유</b> — 금리·지정학 리스크와 무관하게 실적 개선 자체로 상승한 미국 대표 건강보험사. 2분기 실적 호조로 연간 가이던스를 상향한 이후 여전히 견조한 주가 흐름을 보이고 있어 안정적인 방어주로 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">매출(TTM)</div><div class="v">$282.38B(+7.8%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">11.70배 · 8.93배</div></div>
+        <div class="f"><div class="k">EPS(TTM)</div><div class="v">$24.18(+32.6%)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$341.42(+20.62%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2분기 매출 $71.7B(+7%), 순이익 $17억 기록하며 연간 조정 EPS 가이던스를 최소 $30.35에서 $30.45로 상향</li>
+        <li>PER 11.70배·Forward PER 8.93배로 절대 밸류에이션 낮은 편, 24명 애널리스트 컨센서스 "Buy"에 목표주가 여전히 20.6% 추가 상승 여력</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>Jefferies·Raymond James 등 일부 증권사는 최근 목표가를 오히려 하향하며 "컨센서스 기대치가 다소 높다"는 우려 제기</li>
+        <li>건강보험업 특성상 의료비 상승 압력이 지속될 경우 손해율 관리 부담이 커질 수 있음</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 실적 개선과 가이던스 상향이 뒷받침되는 방어주 성격이 뚜렷하나, 일부 증권사의 눈높이 조정에는 유의할 필요.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">내일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">09/03(목)</span><span>미국 8월 ISM 제조업지수 발표 — 금리 인상 경로에 대한 시장 재평가 여부 주목</span></li>
+      <li><span class="when mono">09/03(목)</span><span>국고채 금리 4%대 안착 여부 및 한국은행 추가 인상 시그널 확인</span></li>
+      <li><span class="when mono">진행 중</span><span>중동 지역 공급망 불안 지속 여부와 국제유가(WTI) 추가 변동성</span></li>
+      <li><span class="when mono">진행 중</span><span>컴투스 '제우스: 오만의 신' 흥행 지속 여부 및 후속 업데이트 반응</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-09-02 저녁 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
