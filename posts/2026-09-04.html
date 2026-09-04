@@ -126,6 +126,18 @@
   .cal li{display:flex; gap:14px; font-size:14.5px;}
   .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
 
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
   .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
   footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
   footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
@@ -192,6 +204,19 @@
       </table>
     </div>
     <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내 지수는 9/4 정규장 마감 기준입니다. 미국 지수는 한국시간 9/4 저녁 시점 아직 개장 전이라, 가장 최근 실제 거래일(9/3)의 DIA·SPY·ONEQ 등락률을 직전 검증된 종가에 곱해 환산한 값입니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-low">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">14.2</span>
+        <span class="vix-label">저변동</span>
+      </div>
+      <p class="vix-msg">VIX 14.2(전일比 -0.1pt)로 변동성이 매우 낮은 구간입니다. 시장이 과도하게 낙관적일 수 있어 단기 되돌림에 유의하세요.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다. 오늘 코스피·코스닥 급등, 美 3대 지수 반등과 함께 VIX도 연중 최저권에 머물러 있어, 위 4종목 분석의 "리스크" 항목에서 언급한 단기 변동성 요인들을 함께 참고하시기 바랍니다.</p>
+    </div>
   </section>
 
   <section>
