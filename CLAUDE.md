@@ -8,6 +8,7 @@
 - **템플릿 재사용**: 신규 파일은 처음부터 새로 만들지 말고 가장 최근 `posts/*.html`을 읽어 CSS(:root 토큰, 라이트/다크 테마)와 클래스 구조를 그대로 복사해 내용만 교체.
 - **종목 중복 회피**: `posts/` 디렉토리의 최근 5~7개 글에서 다룬 종목과 겹치지 않게 오늘의 심층분석 종목(인기 테마 국내1·미국1 + 비인기 업종 국내1·미국1)을 선정.
 - **종목코드 먼저 확인**: 가격 검색 전에 "{회사명} 종목코드"로 정확한 코드를 확인하고, 시가총액·업종으로 교차 확인 후 가격을 검색 (지주회사·계열사 혼동 주의 — 예: 아모레퍼시픽 090430 vs 아모레퍼시픽홀딩스 002790).
+- **VIX 공포지수 섹션 필수 포함** (2026-09-04 추가): 아래 "VIX(공포지수) 섹션" 항목을 매일 반드시 포함할 것. 상세 절차는 해당 섹션 참조.
 
 ## 증권사 리포트 소스 — 한경컨센서스 대신 네이버금융 리서치 사용
 
@@ -67,7 +68,63 @@ WebSearch로 "다우존스 S&P500 나스닥 {날짜} 마감"류를 검색하면,
 
 이 표에서 원하는 날짜의 등락률(%)을 확인하고, 직전 영업일의 (이미 검증된) 지수 종가에 그 등락률을 곱해서 지수 값을 산출한다. ETF 종가를 배율로 환산한 값과, WebSearch로 찾은 명시적 지수 수치("OOO에 마감", "OOO까지 하락" 등 기사 인용문)가 서로 맞아떨어지는지 반드시 교차 검증할 것 — 두 값이 크게 어긋나면(50pt 이상) WebSearch 쪽을 버리고 ETF 히스토리 기준으로 쓴다.
 
-## 기타 리서치 시 주의
+## VIX(공포지수) 섹션 — 매일 필수 포함 (2026-09-04 추가)
 
-- WebSearch 결과는 날짜가 뒤섞여 나오는 경우가 잦다 (예: 몇 달 전 FOMC 기사가 "오늘 뉴스"처럼 반환됨). 기사 URL의 날짜나 본문 명시 날짜를 반드시 대조할 것.
-- 국내 지수(코스피/코스닥)는 공휴일·주말에는 갱신되지 않으므로, 최근 실제 거래일 종가를 쓰고 표에 날짜를 명기.
+"증시 동향" 섹션 바로 다음, "환율·원자재·금리" 섹션 앞에 VIX(CBOE Volatility Index, 변동성지수) 신호등 카드를 매일 추가한다. 사용자가 명시적으로 요청한 상시 섹션이므로 절대 생략하지 말 것.
+
+### 데이터 소스 (WebSearch 합성 답변 신뢰 금지 — 위 美 지수 섹션과 동일한 이유)
+
+VIX를 그대로 추종하는 ETF는 없다(VIXY·UVXY 등은 선물 만기 롤오버로 인한 콘탱고 감가 때문에 지수 수준과 크게 괴리되므로 절대 대용치로 쓰지 말 것 — 금/유가 ETF와는 다른 케이스). 대신 아래 두 지수 전용 페이지를 `apify--rag-web-browser`로 스크래핑해서 서로 교차 확인한다:
+
+- `https://www.cnbc.com/quotes/.VIX`
+- `https://finance.yahoo.com/quote/%5EVIX/`
+
+두 값이 1pt 이상 차이 나면(장중 변동 때문일 수 있음) 더 최근 갱신 시각의 값을 쓰고, 두 소스 다 스크래핑이 안 되면(빈 페이지 등) WebSearch로 대체하되 기사 날짜가 오늘/최근 영업일인지 반드시 대조 확인 후 "정확도 낮음"을 내부적으로 인지하고 보수적으로 (전일 대비 급변 언급 자제) 서술할 것. 이 방법으로 새로운 신뢰 가능한 소스를 찾으면 이 섹션에 갱신해서 기록할 것 (다른 섹션들처럼).
+
+### 등급 구간 및 표시 문구 (고정 — 임의로 바꾸지 말 것)
+
+| VIX 값 | 등급 | 신호등 색 | 문구 (그대로 사용) |
+|---|---|---|---|
+| 30 초과 | 공포 (Fear) | 빨강 (`--rise`) | "공포 지수가 매우 높습니다. 매수하기에 매력 있습니다." |
+| 20 이상 30 이하 | 경계 (Caution) | 노랑/골드 (`--gold`) | "변동성이 확대되고 있습니다. 시장 불확실성에 유의하세요." |
+| 15 이상 20 미만 | 안정 (Stable) | 초록 (`--brand`) | "시장 공포 지수가 안정적입니다." |
+| 15 미만 | 저변동 (Low) | 파랑 (`--fall`) | "변동성이 매우 낮은 구간입니다. 시장이 과도하게 낙관적일 수 있어 단기 되돌림에 유의하세요." |
+
+문구는 위 표를 그대로 쓰고, 그 뒤에 그날의 구체적 수치·전일 대비 등락만 한 문장 덧붙인다 (예: "VIX 15.2(전일比 -0.8pt)로 시장 공포 지수가 안정적입니다.").
+
+### HTML/CSS 템플릿 (그대로 복사해서 값만 채울 것)
+
+CSS — 매일 발행 시 `<style>` 안에 아래 블록을 (없으면) 추가:
+
+```css
+.vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+.vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+.vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+.vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+.vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+.vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+.vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+.vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+.vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+.vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+.vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+```
+
+HTML — "증시 동향" `</section>` 바로 다음에 삽입 (등급에 맞는 클래스 하나만 `vix-low`/`vix-stable`/`vix-caution`/`vix-fear` 중 골라서 `.vix-card`에 적용, 라벨 텍스트도 등급에 맞게 교체):
+
+```html
+<section>
+  <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+  <div class="vix-card vix-stable">
+    <div class="vix-top">
+      <span class="vix-light"></span>
+      <span class="vix-value mono">15.2</span>
+      <span class="vix-label">안정</span>
+    </div>
+    <p class="vix-msg">VIX 15.2(전일比 -0.8pt)로 시장 공포 지수가 안정적입니다.</p>
+    <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다.</p>
+  </div>
+</section>
+```
+
+라벨 텍스트: 빨강="공포", 노랑="경계", 초록="안정", 파랑="저변동". `.vix-value`는 항상 소수 첫째 자리까지 표기.
