@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-09-05 주말 특집</title>
+<meta name="description" content="주말 특집 — 코스피 한 주간 롤러코스터(6,835→6,562→6,579→6,687) 끝에 강세 마감, 코스닥도 4일 만에 반등. 美 8월 비농업고용 16.2만명 서프라이즈에 금리인상 기대 되살아나며 금값 급락, 다음주 최대 변수는 CPI. 비츠로셀·AMD·노머스·Clorox 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Weekend Special</div>
+    <h1>주말 특집 — 코스피 한 주간 롤러코스터 끝에 6,687 마감, 다음주 최대 변수는 美 CPI</h1>
+    <div class="date">2026년 9월 5일 토요일 · 이번 주(9/1~9/4) 결산 및 다음 주 전망</div>
+    <p class="thesis">이번 주 코스피는 6,835(9/1 마감)→6,562(9/2, -3.99%)→6,579(9/3, 장중 롤러코스터)→6,687(9/4, +1.64%)로 극심하게 출렁이다 강세로 마무리했습니다. 초반에는 근원물가 급등에 따른 한은 금리인상 우려로 급락했으나, 후반에는 노무라의 "삼전닉스 저평가" 리포트와 외국인·기관 쌍끌이 매수에 힘입어 반등했습니다. 미국에서는 금요일 발표된 8월 비농업고용이 16.2만명으로 예상을 크게 웃돌며 금리인상 기대가 되살아나 금값이 급락(-0.84%)했지만, 정작 3대 지수는 소폭 조정에 그쳤습니다. 코스피·코스닥은 주말 동안 휴장하며, 다음 주 개장은 9/7(월)입니다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">이번 주 세계 경제 주요 뉴스</div><div class="label-en">Global News · This Week</div></div>
+    <div class="news-item">
+      <strong>美 8월 비농업고용 16.2만명 서프라이즈…금 급락, 국채금리 급등</strong>
+      <p>금요일 발표된 미국 8월 비농업고용지표(NFP)가 시장 예상을 크게 웃도는 16.2만명 증가를 기록하며 노동시장이 여전히 견조하다는 사실을 확인시켰다. 이에 따라 9월 금리인상 기대가 재차 살아나며 국채금리와 2년물 금리가 2025년 1월 이후 최고치로 치솟았고, 금 가격은 초기 지지선인 온스당 $4,400을 뚫고 급락했다(GLD -0.84%). 다만 3대 지수는 "SPY·QQQ Mixed"로 표현될 만큼 조정폭이 크지 않았고, 트럼프 대통령은 강한 고용지표에도 불구하고 Fed에 금리 인하를 촉구하는 이례적 모습을 보였다.</p>
+      <span class="src">Kitco·TipRanks·FXEmpire 2026-09-04</span>
+    </div>
+    <div class="news-item">
+      <strong>코스피, 노무라 "삼전닉스 심각하게 저평가" 리포트에 반도체 투심 회복</strong>
+      <p>이번 주 후반 노무라증권이 삼성전자·SK하이닉스에 대해 "심각하게 저평가"됐다는 평가와 함께 각각 67만원, 470만원 수준의 목표주가를 제시한 것으로 전해지며 국내 반도체 투자심리가 살아났다. 외국인·기관이 동반 순매수(9/4 기준 각각 +4,796억원, +16,694억원)에 나서며 코스피를 6,687.21(+1.64%)까지 끌어올렸다.</p>
+      <span class="src">머니투데이 2026-09-04</span>
+    </div>
+    <div class="news-item">
+      <strong>Nvidia, Hugging Face 129억 달러 인수…AI 반도체株 동반 랠리</strong>
+      <p>Nvidia가 오픈소스 AI 플랫폼 Hugging Face를 약 $12.93B에 인수하기로 합의하며 AI 생태계 확장에 나섰다. 이 소식에 AMD·인텔 등 경쟁 반도체주까지 프리마켓에서 동반 상승했으며, 특히 AMD는 금요일 하루 만에 +4.69% 급등했다. 반면 Cathie Wood의 ARK Invest는 AMD 지분 $73M어치를 매도하고 Nvidia를 매수하는 대조적 행보를 보였다.</p>
+      <span class="src">CNBC·TipRanks·Invezz 2026-09-04</span>
+    </div>
+    <div class="news-item">
+      <strong>국제유가, 美-이란 갈등 지속에 7월 중순 이후 최대 주간 상승폭 기록 전망</strong>
+      <p>이번 주 미국과 이란 간 군사적 충돌이 이어지며 국제유가가 7월 중순 이후 최대 주간 상승폭을 기록할 전망이다. Brent유는 배럴당 $96을 넘어섰고, 헤지펀드 씨타델은 미국 셰일 원유 생산자산 인수를 타진 중인 것으로 전해졌다. 다만 금요일 하루는 기술적 되돌림으로 소폭 하락(USO -0.09%) 마감했다.</p>
+      <span class="src">Reuters 2026-09-04</span>
+    </div>
+    <div class="news-item">
+      <strong>코스피 이번 주 롤러코스터 — 금리 공포 급락 후 반도체 투심 회복 급등</strong>
+      <p>이번 주 코스피는 화요일(9/2) 국고채 금리 상승 우려로 -3.99% 급락했다가, 수요일(9/3)에는 장중 6,439까지 밀렸다 기관 매수로 반등하는 롤러코스터를 연출했고, 목요일(9/4)에는 노무라 리포트와 외국인·기관 쌍끌이 매수로 +1.64% 급등하며 극적으로 마무리됐다. 코스닥도 800선을 이탈했다 4거래일 만에 813선으로 반등하는 등 변동성이 컸던 한 주였다.</p>
+      <span class="src">Jw경제 자체 집계 2026-09-01~04</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 국내는 9/4(금) 마감 기준, 해외도 9/4(금) 마감 기준</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>주간 등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피 (9/4 마감)</td><td>6,687.21</td><td class="chg down">주중 -3.99%→+1.64% 롤러코스터</td><td class="plain">9/1 6,835 → 9/4 6,687</td></tr>
+          <tr><td>코스닥 (9/4 마감)</td><td>813.50</td><td class="chg up">금요일 +2.95%</td><td class="plain">4거래일 만에 반등</td></tr>
+          <tr><td>다우 (9/4)</td><td>53,461</td><td class="chg down">-0.53%(금요일)</td><td class="plain">DIA 환산, 강한 고용지표에 소폭 조정</td></tr>
+          <tr><td>S&amp;P500 (9/4)</td><td>7,719</td><td class="chg down">-0.39%(금요일)</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (9/4)</td><td>26,503</td><td class="chg down">-0.29%(금요일)</td><td class="plain">ONEQ 환산</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내·미국 지수 모두 이번 주 마지막 거래일인 9/4(금) 마감 기준입니다. 미국 지수는 DIA·SPY·ONEQ의 9/4 등락률을 직전 검증된 종가에 곱해 환산했습니다. 코스피·코스닥은 주말 휴장, 다음 개장은 9/7(월)입니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-low">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">14.5</span>
+        <span class="vix-label">저변동</span>
+      </div>
+      <p class="vix-msg">VIX 14.53(전일比 +0.21pt)로 변동성이 매우 낮은 구간입니다. 시장이 과도하게 낙관적일 수 있어 단기 되돌림에 유의하세요.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다. 이번 주 코스피가 하루 만에 -3.99%까지 급락하는 등 국내 변동성은 컸지만, 정작 미국 VIX는 52주 최저권(13.38)에 가까운 수준을 유지하고 있어 국내외 체감 변동성의 괴리가 눈에 띕니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (9/4)</dt><dd>1,349.50원</dd></div>
+      <div class="stat"><dt>원/100엔 (9/4)</dt><dd>863.71원</dd></div>
+      <div class="stat"><dt>국제 금 (9/4, GLD)</dt><dd>$406.77 (-0.84%)</dd></div>
+      <div class="stat"><dt>WTI(USO, 9/4)</dt><dd>$141.96 (-0.09%)</dd></div>
+      <div class="stat"><dt>美 2년물 국채금리</dt><dd>2025.1월 이후 최고</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러는 1,349.50원(-9.00원)으로 이번 주 내내 원화 강세 흐름을 이어갔고, 원/100엔도 863.71원(-6.48원)으로 내렸습니다. 강한 미국 고용지표로 금리인상 기대가 되살아나며 금은 급락했고, 유가는 중동 리스크로 주간 기준 상승했으나 금요일 하루는 기술적 조정을 보였습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증권사 리포트 하이라이트</div><div class="label-en">Research Notes</div></div>
+    <ul class="points" style="display:grid;gap:10px;">
+      <li style="padding-left:0;"><b>신한투자증권 (비츠로셀, 목표주가 37,500원·매수)</b> — "Never Stop Rising". 방산·AI 훈풍 속 실적 성장세가 이어질 것으로 전망하면서도, 최근 배터리 창고 화재 이슈를 반영해 목표주가를 일부 하향 조정했다고 밝혔다. 투자의견은 매수를 유지.</li>
+      <li style="padding-left:0;"><b>신한투자증권 (노머스, "숫자로 증명하는 하반기")</b> — 밴드 '리도어' 단독 콘서트 개최와 중국 시장 진출 등을 근거로 하반기 실적 개선을 전망. 상반기 매출은 347억원을 기록했다.</li>
+    </ul>
+    <p style="font-size:12.5px;color:var(--ink-faint);margin-top:10px;">※ 네이버금융 종목분석 리포트(2026.09.04 게시) 원문 기준</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">이번 주 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">비츠로셀</span><span class="stock-code mono">082920</span></div>
+        <div class="stock-price mono">29,800원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (9/4 장마감, +5.49%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">방산·리튬전지</span></div>
+      <p class="why"><b>선정 이유</b> — 방산·AI 드론용 배터리 테마의 대표주. 최근 배터리 창고 화재라는 악재에도 불구하고 방산 수출 확대 기대감에 이번 주 주가가 오히려 급등하며 시장의 관심이 집중됐다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">영업이익(2026.06)</div><div class="v">188억원(+24.63%OPM)</div></div>
+        <div class="f"><div class="k">PER · PBR</div><div class="v">18.94배 · 3.73배</div></div>
+        <div class="f"><div class="k">ROE · 부채비율</div><div class="v">21.79% · 18.98%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">37,500원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>美 드론 규제 강화로 中 배터리 대체 수요 기대, 열전지 기술로 미국 방산 시장 진출 추진 중(단독 보도 기준)</li>
+        <li>영업이익률 24.63%의 고수익성 유지, ROE 21.79%로 동종업종 대비 견조한 자본 효율성</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>배터리 창고 화재 이슈로 신한투자증권이 목표주가를 일부 하향 조정, 화재 원인·피해 규모에 대한 후속 확인 필요</li>
+        <li>PBR 3.73배로 이미 높은 밸류에이션, 외국인은 최근 2거래일 연속 순매도로 전환</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적이나 단기 변동성 유의.</b> 방산·AI 드론 테마 모멘텀은 유효하나, 화재 이슈 후속 전개와 이미 높아진 밸류에이션은 함께 지켜볼 필요.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">AMD</span><span class="stock-code mono">NASDAQ:AMD</span></div>
+        <div class="stock-price mono">$477.57<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (9/4 종가, +4.69%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">AI 반도체</span></div>
+      <p class="why"><b>선정 이유</b> — Nvidia의 Hugging Face 인수 발표로 AI 반도체株 전반이 동반 랠리한 가운데, 가장 큰 폭으로 상승한 종목. Cathie Wood가 AMD를 매도하고 Nvidia를 사들인 대조적 행보가 화제를 모으며 이번 주 관전 포인트로 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$779.62B(+196.3%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">121.89배 · 43.00배</div></div>
+        <div class="f"><div class="k">순이익(TTM)</div><div class="v">$6.43B(+127.0%)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$613.84(+28.53%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>Nvidia Hugging Face 인수 발표 이후 AI 반도체 섹터 전반 프리마켓 동반 상승, AMD가 하루 만에 +4.69%로 가장 크게 반응</li>
+        <li>IFA 2026 키노트에서 "Agentic AI" 전략 공개, Microsoft·SUSE와 파트너십으로 온디바이스 AI 생태계 확장 중, 54개 증권사 컨센서스 "Strong Buy"</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>Cathie Wood의 ARK Invest가 최근 며칠간 AMD 지분을 지속적으로 매도(9/4 기준 $73M 규모)하며 Nvidia로 자금을 이동, 상대적 매력도 하락 우려</li>
+        <li>PER 121.89배로 밸류에이션 부담이 상당히 높은 수준, Forward PER(43.00배)로도 여전히 고평가 구간</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적이나 밸류에이션 유의.</b> AI 생태계 확장의 간접 수혜는 뚜렷하나, Nvidia 대비 상대적 매력도와 이미 높아진 밸류에이션은 함께 고려할 필요.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">노머스</span><span class="stock-code mono">473980</span></div>
+        <div class="stock-price mono">11,880원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (9/4 장마감, +6.64%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">엔터테크</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체·금리 테마와 무관하게 자체 콘텐츠·공연 모멘텀으로 움직이는 소형 엔터테크주. 이번 주 신한투자증권의 하반기 실적 개선 리포트와 함께 외국인·기관이 동반 순매수하며 눈에 띄는 상승을 보였다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">영업이익(2026.06)</div><div class="v">35억원(-11.27%)</div></div>
+        <div class="f"><div class="k">PER · PBR</div><div class="v">8.31배 · 1.17배</div></div>
+        <div class="f"><div class="k">ROE · 부채비율</div><div class="v">15.33% · 13.82%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v">컨센서스 없음</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>밴드 '리도어' 단독 콘서트 개최, 중국 시장 진출을 근거로 신한투자증권이 하반기 실적 개선 기대감 제시</li>
+        <li>PER 8.31배로 동종업종(방송·엔터테인먼트, 하이브·에스엠 등) 대비 저평가, 이번 주 외국인·기관 동반 순매수 전환</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>2026.06분기 영업이익 전년比 -11.27% 감소, 목표주가 컨센서스가 아직 형성되지 않아 밸류에이션 판단 근거가 제한적</li>
+        <li>시가총액 1,293억원의 소형주로 유동성이 낮은 편(9/4 거래대금 5.9억원), 주가 변동성이 클 수 있음</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립~긍정적.</b> 저평가 매력과 하반기 실적 개선 기대는 유효하나, 소형주 특유의 낮은 유동성과 아직 형성되지 않은 목표주가 컨센서스는 유의할 필요.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Clorox</span><span class="stock-code mono">NYSE:CLX</span></div>
+        <div class="stock-price mono">$93.06<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (9/4 종가, -1.30%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">생활용품</span></div>
+      <p class="why"><b>선정 이유</b> — AI·반도체·금리 테마와 무관하게 실적 부진이라는 자체 이슈로 움직이는 미국 대표 생활용품 업체. 이번 주 옵션시장에서 약세 베팅이 집중되며 방어주로서의 안정성에 물음표가 붙었다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">매출(TTM)</div><div class="v">$6.72B(-5.4%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">19.35배 · 16.03배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">5.37%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$101.65(+9.23%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>배당수익률 5.37%로 국채 대비 매력적인 수준, 분기 배당을 주당 $1.25로 인상하며 주주환원 지속</li>
+        <li>PER 19.35배로 절대 밸류에이션은 부담스럽지 않은 수준, GOJO 통합 등 구조조정 진행 중</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>이번 주 옵션시장에서 풋옵션 거래량이 평소 대비 1.3배로 급증하며 방향성 베어 심리 포착, FY26 매출 -5.4%·순이익 -27.5% 감소</li>
+        <li>Jefferies 등 일부 증권사가 최근 목표가를 하향(Hold로 강등)하며 FY27 인플레이션·소비자 가치소비 심화 우려 제기</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 높은 배당과 낮은 밸류에이션은 매력적이나, 실적 부진과 옵션시장의 약세 베팅이 겹치며 단기 방어주로서의 매력은 제한적.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 주 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">09/07(월)</span><span>코스피·코스닥 개장 — 노무라 리포트·외국인 매수세 지속 여부 확인</span></li>
+      <li><span class="when mono">다음 주</span><span>美 8월 CPI(소비자물가지수) 발표 — 강한 고용지표 이후 재점화된 금리인상 기대의 최대 변수</span></li>
+      <li><span class="when mono">진행 중</span><span>美-이란 교전 지속 여부와 국제유가 추가 변동성, Brent $100 돌파 가능성</span></li>
+      <li><span class="when mono">진행 중</span><span>Nvidia-Hugging Face 인수 후속 절차 및 AI 반도체株 랠리 지속 여부</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-09-05 주말 특집</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
