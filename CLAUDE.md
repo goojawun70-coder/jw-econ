@@ -53,6 +53,11 @@ WebSearch로 "{종목명} 주가"를 검색하면 날짜가 뒤섞인 과거 데
 
 두 페이지 모두 "매매기준율" 열의 최상단 행이 가장 최근 거래일(공휴일·주말 다음날은 그 이전 마지막 거래일) 종가 기준 환율이다. "전일대비" 열도 함께 있어 등락 방향을 바로 확인할 수 있다.
 
+**2026-09-17 확인 — 위 `exchangeDailyQuote.naver` 페이지가 퇴역(서비스 종료)**: 방문 시 "이 페이지는 더 이상 제공되지 않습니다"가 반환되는 것이 확인됐다(네이버금융이 신규 stock.naver.com으로 계속 이전 중인 여파로 보임). 대체로 네이버의 내부 JSON API가 작동하는 것이 확인됐다 — `apify--rag-web-browser`로 아래 URL을 그대로 가져오면 JSON 형태로 최근 거래일들의 매매기준율이 반환된다:
+- 원/달러: `https://api.stock.naver.com/marketindex/exchange/FX_USDKRW/prices`
+- 원/100엔: `https://api.stock.naver.com/marketindex/exchange/FX_JPYKRW/prices`
+응답의 첫(가장 최근) 항목이 최근 거래일 매매기준율이다. 이 API도 언젠가 막힐 수 있으니, 안 되면 신규 stock.naver.com 쪽 환율 페이지(예: `https://stock.naver.com/marketindex/exchange/FX_USDKRW`)를 시도해볼 것.
+
 ## 원자재(금·유가) 가격 소스 — 이것도 WebSearch 금지
 
 금·유가는 종목이 아니라서 위 방법이 안 통하지만, WebSearch는 여기서도 똑같이 신뢰할 수 없다. 특히 금값은 스팟 가격을 보도하는 매체마다 시차·통화선물 계약월이 달라 같은 날인데도 기사마다 수백 달러씩 차이가 난다 (2026-08-20자 초판에서 이 문제로 실제 $4,500대였던 금값을 $4,151.9로 잘못 게재해 정정한 사고가 있었다). 대신 관련 ETF 페이지로 대체 확인한다 — 둘 다 stockanalysis.com에서 서버사이드 렌더링되고, "News" 섹션에 Kitco 등 1차 소스 헤드라인이 날짜와 함께 그대로 노출되어 스팟가·등락 원인을 같이 확인할 수 있다:
