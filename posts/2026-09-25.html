@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-09-25 추석 연휴 특집 Ⅱ</title>
+<meta name="description" content="추석 연휴로 국내 증시 휴장 이틀째(9/28 재개장 예정). 美 10년물 국채금리 5.2%대까지 치솟았다 소폭 진정, 3대 지수는 낙폭 축소. 트럼프-시진핑 정상회담은 '신중한' 결과, 美-이란은 호르무즈 단계적 재개방 협상 중. 신한지주·Wells Fargo·롯데칠성음료·McCormick 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Chuseok Special Ⅱ</div>
+    <h1>추석 연휴 특집 Ⅱ — 美 국채금리 급등세 진정, 트럼프-시진핑 회담은 '신중한' 결과</h1>
+    <div class="date">2026년 9월 25일 금요일 · 국내 증시 추석 연휴 휴장 이틀째(9/28 재개장)</div>
+    <p class="thesis">국내 증시는 어제(9/24)에 이어 오늘도 추석 연휴로 휴장했으며, 다음 개장일은 9월 28일(월)입니다. 어제 특집에서 다룬 美 국채금리 급등세는 오늘 새벽 한 차례 더 치솟았다가 소폭 진정되는 흐름을 보였습니다 — 10년물이 장중 5.223%까지 올라 2007년 6월 이후 최고치를 기록했고 30년물도 5.501%(2004년 6월 이후 최고)까지 올랐으나, 확정 종가 기준으로는 10년물 5.162%로 다소 진정됐습니다. 뉴욕연은 윌리엄스 총재가 런던 연설에서 "연내 추가 인상이 합리적"이라 언급하며 10월 인상 확률은 한때 75%대까지 치솟았다가 71%로 소폭 조정됐습니다. 이 여파로 美 3대 지수는 9/24(목) 낙폭을 크게 줄이며 다우 -0.31%, S&amp;P500 -0.08%, 나스닥 -0.05%로 사실상 보합 마감했습니다. 백악관에서는 트럼프-시진핑 정상회담이 약 3시간 진행됐습니다 — 베센트 재무장관이 "임시 무역휴전 연장 합의"를 밝혔지만, AI·사이버·수출통제 등 핵심 쟁점은 큰 진전이 없어 외신들은 "구체적 성과가 적은 신중한 회담"으로 평가했습니다. 한편 美-이란은 호르무즈 해협의 단계적 재개방을 두고 물밑 협상을 이어가는 중입니다 — 이란 고위 관계자가 로이터에 "호르무즈 항행 허용과 美 해상봉쇄 해제를 맞교환"하는 안이 가장 현실적이라 언급하며 국제유가가 프리마켓에서 하락 전환했습니다. VIX는 15.67로 전일(15.18) 대비 소폭 올랐지만 여전히 안정 구간에 머물러 있습니다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>美 10년물 국채금리 장중 5.223%로 2007년 이후 최고…확정 종가는 5.162%로 소폭 진정</strong>
+      <p>9/24(목) 장중 10년물 국채금리가 10bp 이상 급등해 5.223%까지 치솟았다(2007년 6월 이후 최고). 30년물도 5.501%(2004년 6월 이후 최고), 2년물은 4.941%를 기록했다. 확정 종가 기준으로는 10년물이 5.162%로 다소 진정됐다. 뉴욕연은 존 윌리엄스 총재가 같은 날 런던 연설에서 "연내 추가 인상이 합리적"이라 언급했고, CME 페드워치 기준 10월 추가 인상 확률은 한때 75%대까지 치솟았다가 9/25 이른 아침 71%로 소폭 조정됐다(1주 전 약 49%, 9/23 발행 시점 68%).</p>
+      <span class="src">CNBC 2026-09-24~25</span>
+    </div>
+    <div class="news-item">
+      <strong>트럼프-시진핑 백악관 정상회담 — "매우 좋은 만남"이지만 핵심 쟁점은 진전 적어</strong>
+      <p>시진핑 중국 국가주석이 2015년 이후 첫 워싱턴 방문에 나서 9/24(목) 오후 백악관에서 트럼프 대통령과 약 3시간 회담했다. 트럼프는 "매우 좋은 만남", "상당한 진전"이라 자평했고 베센트 재무장관은 전날(9/23) 저녁 "임시 무역휴전 연장 합의"를 밝혔다. 다만 AI·사이버·수출통제 등 핵심 쟁점은 큰 진전이 없어 CNN·NPR·CNBC 등은 "구체적 결과물이 적은 신중한 정상회담"으로 평가했다.</p>
+      <span class="src">CNN·NPR·CNBC 2026-09-24</span>
+    </div>
+    <div class="news-item">
+      <strong>美-이란, 호르무즈 단계적 재개방 물밑 협상 — "항행 허용 ↔ 해상봉쇄 해제" 맞교환 유력</strong>
+      <p>유엔총회 기간 중재를 통한 美-이란 실무 협상이 이어지는 가운데, 양측이 "호르무즈 해협 단계적 재개방"과 "이란 항구 봉쇄 완화"를 맞교환하는 방안을 모색 중인 것으로 전해졌다. 이란 고위 관계자는 로이터에 "호르무즈 항행 허용과 美 해상봉쇄 해제 맞교환이 가장 현실적인 해법"이라고 언급했다. 다만 이란은 美 군사압박 완화와 항구봉쇄 해제를 계속 요구하고 있어 최종 타결 전 이견이 남아있다.</p>
+      <span class="src">Reuters 2026-09-25</span>
+    </div>
+    <div class="news-item">
+      <strong>글로벌 채권 동반 약세 — 日 JGB 1996년 이후 최고, 英 길트·獨 분트도 수년래 최고</strong>
+      <p>美 국채금리 급등 여파가 전 세계 채권시장으로 번지며, 일본 10년물 국채(JGB) 금리가 1996년 8월 이후 최고치를 기록했다. 영국 길트와 독일 분트 금리도 수년래 최고 수준까지 올랐다. CNBC는 이를 "글로벌 채권 동반 약세(bond rout)"로 표현했다.</p>
+      <span class="src">CNBC 2026-09-24</span>
+    </div>
+    <div class="news-item">
+      <strong>美 8월 신규주택판매 +6.4% 깜짝 증가…디젤 수출금지 검토 놓고 재계 반발</strong>
+      <p>美 8월 신규주택판매가 예상을 웃도는 +6.4% 증가하며 경기 견조함을 시사, Fed의 추가 긴축 명분을 강화했다. 한편 트럼프 행정부가 검토 중인 디젤 수출 금지 방안을 놓고 美상공회의소·석유협회 등 재계가 반대 서한을 보내는 등 논란이 지속되고 있다.</p>
+      <span class="src">CNBC 2026-09-24</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 국내는 추석 연휴 휴장(9/23 마감 유지), 해외는 9/24 장마감 기준</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피 (9/23 마감 유지)</td><td>7,080.92</td><td class="chg up">+0.90%(수요일)</td><td class="plain">추석 연휴 휴장, 9/28(월) 재개장</td></tr>
+          <tr><td>코스닥 (9/23 마감 유지)</td><td>844.48</td><td class="chg up">+1.21%(수요일)</td><td class="plain">추석 연휴 휴장</td></tr>
+          <tr><td>다우 (9/24)</td><td>51,450</td><td class="chg down">-0.31%</td><td class="plain">DIA 환산, 전일 대비 낙폭 축소</td></tr>
+          <tr><td>S&amp;P500 (9/24)</td><td>7,708</td><td class="chg down">-0.08%</td><td class="plain">SPY 환산, 사실상 보합</td></tr>
+          <tr><td>나스닥 (9/24)</td><td>26,945</td><td class="chg down">-0.05%</td><td class="plain">ONEQ 환산, 사실상 보합</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내 지수는 연휴 전 마지막 거래일인 9/23(수) 마감 수치를 그대로 유지합니다. 美 지수는 가장 최근 정규장 마감일(9/24, 목)의 DIA·SPY·ONEQ 등락률을 직전 검증된 종가에 곱해 환산한 값으로, 전날(9/23)의 큰 폭 하락과 달리 낙폭이 크게 줄며 사실상 보합에 가까운 흐름을 보였습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-stable">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">15.7</span>
+        <span class="vix-label">안정</span>
+      </div>
+      <p class="vix-msg">VIX는 9/24(목) 정규장 마감 기준 15.67로 전일(15.18) 대비 +0.49pt 올랐지만 여전히 안정 구간에 머물러 있습니다. 시장 공포 지수가 안정적입니다.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 국채금리 급등세가 다소 진정되고 美 지수 낙폭도 축소되면서, 어제 저변동 구간을 벗어났던 VIX가 안정 구간 안에서 소폭 상승에 그쳤습니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (9/23 마감 유지)</dt><dd>1,354.80원 (-0.70원)</dd></div>
+      <div class="stat"><dt>원/100엔 (9/23 마감 유지)</dt><dd>858.15원 (-2.76원)</dd></div>
+      <div class="stat"><dt>국제 금 (9/24, GLD)</dt><dd>$391.69 (-0.30%)</dd></div>
+      <div class="stat"><dt>WTI(USO, 9/24)</dt><dd>$153.09 (+2.86%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내 외환시장이 연휴로 매매기준율을 갱신하지 않아 9/23(수) 마감치를 그대로 유지합니다. 금(GLD)은 국채금리 상승·달러 강세 지속에 -0.30% 추가로 내렸고("Gold price dips to $4,268/oz as U.S. new home sales rise", Kitco), 국제유가(USO)는 이란-美 호르무즈 협상 기대에도 전날 급등분이 일부 유지되며 +2.86%를 기록했습니다. 다만 9/25 프리마켓에서는 이란의 "항행 허용 ↔ 봉쇄 해제" 맞교환 언급에 유가가 급락 전환하는 모습도 나타났습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 네이버금융 종목분석 리포트 게시판은 여전히 정상 작동하지 않아, FnGuide(comp.wisereport.co.kr) 컨센서스 페이지로 대체합니다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>신한지주</b> — 컨센서스 목표주가 137,556원(18개 기관 평균), 투자의견 매수(4.00/5). 종가(109,300원) 대비 25.9% 상승여력.</li>
+      <li style="padding-left:0;"><b>롯데칠성음료</b> — 컨센서스 목표주가 146,667원(12개 기관 평균), 투자의견 매수 우위(3.92/5). 종가(95,800원) 대비 53.1% 상승여력.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">신한지주</span><span class="stock-code mono">055550</span></div>
+        <div class="stock-price mono">109,300원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (9/23 정규장 마감 유지, -3.44%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">금융지주</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 세계 시장을 뒤흔든 글로벌 국채금리 급등의 대표적 수혜 후보 업종인 금융지주사. 9/28 국내 재개장 시 이 흐름이 어떻게 반영될지 주목되는 종목이다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">10.84배 · 8.78배</div></div>
+        <div class="f"><div class="k">PBR · 추정PBR</div><div class="v">0.90배 · 0.83배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">116,500원 · 68,100원</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">137,556원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>18개 기관 평균 목표주가(137,556원) 대비 25.9%의 견조한 상승여력, 배당수익률도 2.37%(추정 2.79%)로 안정적</li>
+        <li>글로벌 금리 상승 국면에서 은행지주 특유의 순이자마진(NIM) 개선 기대가 부각될 수 있음</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>연휴 전 마지막 거래일(9/23)에 -3.44% 급락하며 변동성이 이미 확대된 상태, ROE·부채비율은 이번에 확보하지 못해 재무건전성 판단에 참고 정보가 제한적</li>
+        <li>9/28 재개장 시 美 국채금리·증시 흐름이 부정적으로 먼저 반영될 가능성도 배제할 수 없음</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적~중립.</b> 금리 상승 국면의 구조적 수혜와 견조한 목표주가 상승여력이 강점이나, 최근 급락에 따른 변동성과 재개장 초기 불확실성은 유의할 필요.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Wells Fargo</span><span class="stock-code mono">NYSE:WFC</span></div>
+        <div class="stock-price mono">$82.18<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (9/24 종가, +0.34%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">은행</span></div>
+      <p class="why"><b>선정 이유</b> — 신한지주와 같은 업종의 美 대표 상업은행. 오늘 국채금리 급등이라는 거시 이벤트의 직접적 수혜 후보로, 신한지주와 나란히 짚어볼 만한 종목이다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$248.51B</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">11.94배 · 11.08배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">2.43%($2.00)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$100.46(+22.24%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>26명 애널리스트 컨센서스가 "Buy", 목표주가($100.46) 대비 +22.24%의 큰 상승여력</li>
+        <li>EPS가 전년比 +18.1% 증가하는 등 실적 모멘텀이 견조, PER 11.94배로 밸류에이션 부담도 크지 않음</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>시가총액이 전년比 -8.9% 감소해 최근 주가 흐름이 실적 개선만큼 따라가지 못하는 모습</li>
+        <li>국채금리 급등이 과도하게 지속되면 대출 수요 위축·신용 비용 상승 등 부정적 효과가 커질 수 있음</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 견조한 실적 모멘텀과 큰 목표주가 상승여력이 강점이나, 금리 급등이 과도해질 경우의 이중적 효과는 계속 유의할 필요.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">롯데칠성음료</span><span class="stock-code mono">005300</span></div>
+        <div class="stock-price mono">95,800원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (9/23 마감 유지, +0.95%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">음료</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 세계 시장을 뒤흔든 국채금리·美中 정상회담 이슈와 무관하게, 탄산음료·소주 등 자체 브랜드 실적으로 움직이는 대표 음료 기업이다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">20.40배 · 9.79배</div></div>
+        <div class="f"><div class="k">PBR · 추정PBR</div><div class="v">0.63배 · 0.60배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">165,200원 · 93,800원</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">146,667원(3.92 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>추정PER이 9.79배로 트레일링(20.40배) 대비 크게 낮아져 실적 개선 기대가 뚜렷, 목표주가(146,667원) 대비 53.1%의 매우 큰 상승여력</li>
+        <li>PBR 0.63배로 자산가치 대비 저평가, 배당수익률도 3.55%로 안정적인 인컴 매력</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>52주 최고가는 소스에 따라 165,200원(네이버)·154,800원(FnGuide)으로 다소 엇갈려 정확한 고점 판단에 유의할 필요</li>
+        <li>필리핀 종속회사(PCPPI) 실적 비중이 있어 신흥국 통화·경기 변수에도 노출돼 있음</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 낮은 밸류에이션과 큰 목표주가 상승여력이 강점이나, 데이터 소스 간 불일치와 해외 자회사 노출은 참고할 필요.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">McCormick</span><span class="stock-code mono">NYSE:MKC</span></div>
+        <div class="stock-price mono">$47.82<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (9/24 종가, -2.59%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">식품(향신료)</span></div>
+      <p class="why"><b>선정 이유</b> — 롯데칠성음료와 정반대로, 거시 이슈와 무관하게 향신료·소스 브랜드 실적으로 움직이는 대표 식품 기업. 최근 유니레버 식품사업부 인수합병설(약 $45~65B 규모)이 부각되며 오늘 -2.59% 하락했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$12.86B</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">7.96배 · 15.37배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">4.02%($1.92)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$60.08(+25.64%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>15명 애널리스트 컨센서스 목표주가($60.08) 대비 +25.64%의 큰 상승여력, 배당수익률도 4.02%로 매력적</li>
+        <li>EPS가 전년比 +109.4% 급증하는 등 실적 자체는 견조한 모습</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>PER(7.96배)이 Forward PER(15.37배)보다 낮아 향후 이익 둔화가 컨센서스에 일부 반영돼 있는 모습</li>
+        <li>대규모 인수합병설이 부각되며 주가 변동성이 커진 상태로, 실제 거래 성사 여부·조건에 따라 주가가 크게 흔들릴 수 있음</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립~긍정적.</b> 큰 목표주가 상승여력과 견조한 실적은 매력적이나, 인수합병설에 따른 단기 변동성은 계속 지켜볼 필요.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">09/28(월)</span><span>국내 증시 추석 연휴 마치고 재개장 — 연휴 중 국채금리·美中 정상회담·이란 협상 흐름 반영 여부 주목</span></li>
+      <li><span class="when mono">진행 중</span><span>美 10년물 국채금리 5% 상회 지속 여부와 Fed 10월 추가 인상 가능성(현재 71%)</span></li>
+      <li><span class="when mono">진행 중</span><span>美-이란 호르무즈 단계적 재개방 협상 진전 여부</span></li>
+      <li><span class="when mono">진행 중</span><span>트럼프-시진핑 정상회담 후속 조치와 무역휴전 연장 세부 내용</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-09-25 추석 연휴 특집 Ⅱ</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
