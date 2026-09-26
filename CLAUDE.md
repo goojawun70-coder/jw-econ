@@ -62,6 +62,8 @@ WebSearch로 "{종목명} 주가"를 검색하면 날짜가 뒤섞인 과거 데
 - 원/100엔: `https://api.stock.naver.com/marketindex/exchange/FX_JPYKRW/prices`
 응답의 첫(가장 최근) 항목이 최근 거래일 매매기준율이다. 이 API도 언젠가 막힐 수 있으니, 안 되면 신규 stock.naver.com 쪽 환율 페이지(예: `https://stock.naver.com/marketindex/exchange/FX_USDKRW`)를 시도해볼 것.
 
+**2026-09-26 확인 — 위 JSON API가 간헐적으로 파싱 실패**: `apify--rag-web-browser`가 이 API를 호출했을 때 HTTP 200은 받았으나 "Couldn't parse the content"로 본문을 못 가져온 사례가 있었다(markdown/html/text 포맷을 바꿔가며 재시도해도 동일). 이 API는 순수 JSON 응답이라 도구의 페이지 렌더링 방식과 간헐적으로 안 맞는 것으로 추정된다. 이런 경우 바로 포기하지 말고 `https://m.stock.naver.com/marketindex/exchange/FX_USDKRW`, `.../FX_JPYKRW` (모바일 렌더링 페이지, 9/24 발행에서 실시간 고시환율 확보에 성공한 전례 있음)를 대체 시도할 것. 그래도 안 되면 "확보 못함"으로 정직하게 표기하고 직전 확정치를 유지.
+
 ## 원자재(금·유가) 가격 소스 — 이것도 WebSearch 금지
 
 금·유가는 종목이 아니라서 위 방법이 안 통하지만, WebSearch는 여기서도 똑같이 신뢰할 수 없다. 특히 금값은 스팟 가격을 보도하는 매체마다 시차·통화선물 계약월이 달라 같은 날인데도 기사마다 수백 달러씩 차이가 난다 (2026-08-20자 초판에서 이 문제로 실제 $4,500대였던 금값을 $4,151.9로 잘못 게재해 정정한 사고가 있었다). 대신 관련 ETF 페이지로 대체 확인한다 — 둘 다 stockanalysis.com에서 서버사이드 렌더링되고, "News" 섹션에 Kitco 등 1차 소스 헤드라인이 날짜와 함께 그대로 노출되어 스팟가·등락 원인을 같이 확인할 수 있다:
