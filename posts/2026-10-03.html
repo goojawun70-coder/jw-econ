@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-10-03 주말 특집</title>
+<meta name="description" content="국내 증시는 개천절·주말 연휴로 휴장(10/6 화요일 재개장). 美 9월 고용쇼크(비농업 +2.9만명)에 '나쁜 지표=금리동결 기대'로 3대 지수 급등, VIX는 -6.59% 급락. 국제유가는 G7의 비상 비축유 방출 합의에 하락 전환. 리노공업·Teradyne·GS리테일·Dollar General 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Weekend Special</div>
+    <h1>주말 특집 — 美 고용쇼크에 증시 급등·VIX 급락, 국제유가는 G7 비축유 방출에 하락 전환</h1>
+    <div class="date">2026년 10월 3일 토요일(개천절) · 국내 증시 휴장(10/6 화요일 재개장)</div>
+    <p class="thesis">국내 증시는 오늘(토, 개천절)부터 주말 내내 휴장이며, 10월 5일(월)도 개천절 대체공휴일로 휴장해 다음 개장일은 10월 6일(화)입니다. 어제(10/2) 발표된 美 9월 고용보고서가 시장의 예상을 크게 벗어나면서 — 비농업고용이 +2.9만명에 그쳐 예상(8.4만~9만명)의 1/3 수준이었던 "고용 쇼크" — 오히려 美 증시는 급등했습니다. "나쁜 고용지표 = Fed 금리동결·완화 기대 강화"라는 전형적인 패턴이 작동하며 다우(+0.49%)·S&amp;P500(+0.74%)·나스닥(+1.14%) 3대 지수 ETF가 모두 상승했고, VIX는 -6.59% 급락해 15.31까지 내려왔습니다. 외환시장에서는 달러가 약세를 보이며 원/달러 환율이 1,349.00원까지 내렸습니다(원화 강세). 국제유가는 두 갈래 뉴스가 엇갈렸습니다 — 오만 인근에서 유조선이 미확인 발사체에 피격당했다는 소식(호르무즈 리스크 지속)이 있었지만, G7이 향후 4개월간 최대 1억 배럴의 원유·디젤 비상 비축분을 방출하기로 합의했다는 소식이 더 크게 작용하며 USO가 -1.77% 하락했습니다. IEA 파티 비롤 사무총장은 "비축유 방출 결정 이후 유가가 하락세로 전환되기 시작했다"고 언급했습니다. 트럼프 대통령은 디젤 수출금지는 하지 않겠다고 선을 그었습니다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>美 고용쇼크(비농업 +2.9만명)에도 증시는 급등…"나쁜 뉴스가 호재"</strong>
+      <p>美 9월 비농업고용이 +2.9만명에 그쳐 시장 예상(8.4만~9만명)의 1/3 수준으로 집계되며 "고용 쇼크"로 받아들여졌다. 그러나 이는 10월 FOMC의 금리동결·완화 기대를 강화시키는 요인으로 해석되며 다우(+0.49%)·S&amp;P500(+0.74%)·나스닥(+1.14%) 3대 지수 ETF가 모두 상승 마감했다. TipRanks는 "SPY, QQQ Powered Higher after Jobs Report Eased Rate Hike Expectations"라는 제목으로 이를 보도했다.</p>
+      <span class="src">TipRanks·stockanalysis.com 2026-10-02</span>
+    </div>
+    <div class="news-item">
+      <strong>VIX -6.59% 급락, 금값도 고용쇼크 여파로 하락</strong>
+      <p>VIX(공포지수)는 고용쇼크 발표 당일 -6.59% 급락해 15.31까지 내려왔다. Kitco는 "Gold prices see solid bid as U.S. economy created 29k jobs in September"라는 제목으로 금 시장의 반응을 보도했으나, 정작 금(GLD)은 달러 약세·금리인하 기대에도 -0.68% 하락했다. IMF는 "채권시장은 질서있다"고 평가하면서도 금의 저항력(resilience)에 대해서는 별도 메시지가 있다고 언급했다.</p>
+      <span class="src">CNBC·Yahoo Finance·Kitco 2026-10-02</span>
+    </div>
+    <div class="news-item">
+      <strong>G7, 원유·디젤 비상 비축분 최대 1억 배럴 방출 합의…유가 하락 전환</strong>
+      <p>로이터·가디언·WSJ에 따르면 G7은 향후 4개월간 최대 1억 배럴의 원유·디젤 비상 비축분을 방출하기로 합의했다. IEA 파티 비롤 사무총장은 이 결정 이후 유가가 하락세로 전환되기 시작했다고 밝혔다. 트럼프 대통령은 디젤 수출금지는 하지 않겠다고 발언했고, 한미 무역합의에는 석유 복구사업용 84억달러가 포함됐다고 언급했다.</p>
+      <span class="src">Reuters·The Guardian·WSJ 2026-10-02</span>
+    </div>
+    <div class="news-item">
+      <strong>오만 인근 유조선 피격…호르무즈 리스크는 여전히 진행형</strong>
+      <p>로이터에 따르면 오만 인근에서 유조선이 미확인 발사체에 피격당했다고 UKMTO(영국 해양무역작전본부)가 확인했다. 다만 이 소식보다 G7의 비축유 방출 합의가 유가에 더 크게 작용하며 국제유가는 결국 하락 마감했다. OPEC+는 이란전쟁으로 인한 증산 계획 차질로 2027년 생산쿼터 검토를 지연하기로 했다.</p>
+      <span class="src">Reuters 2026-10-02</span>
+    </div>
+    <div class="news-item">
+      <strong>다음 국내 개장일은 10/6(화) — 개천절 대체공휴일 겹친 연휴</strong>
+      <p>10월 3일(토)이 개천절이며 토요일과 겹쳐 10월 5일(월)이 대체공휴일로 지정됐다. 이에 따라 10/3(토)~10/5(월) 사흘간 국내 증시가 휴장하며, 다음 개장일은 10월 6일(화)이다.</p>
+      <span class="src">한국 공휴일 캘린더 종합 2026-10-03</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 국내는 연휴 휴장(10/2 마감 유지), 해외는 최근 영업일(10/2) 기준</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피 (10/2 마감 유지)</td><td>7,003.74</td><td class="chg up">+0.46%(금요일)</td><td class="plain">개천절·주말 휴장, 10/6(화) 재개장</td></tr>
+          <tr><td>코스닥 (10/2 마감 유지)</td><td>893.29</td><td class="chg down">-0.11%(금요일)</td><td class="plain">개천절·주말 휴장</td></tr>
+          <tr><td>다우 (10/2)</td><td>51,296</td><td class="chg up">+0.49%</td><td class="plain">DIA 환산, 고용쇼크發 금리동결 기대</td></tr>
+          <tr><td>S&amp;P500 (10/2)</td><td>7,734</td><td class="chg up">+0.74%</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (10/2)</td><td>27,205</td><td class="chg up">+1.14%</td><td class="plain">ONEQ 환산</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내 지수는 연휴 전 마지막 거래일인 10/2(금) 마감 수치를 그대로 유지합니다. 美 지수는 가장 최근 정규장 마감일(10/2, 금)의 DIA·SPY·ONEQ 등락률을 직전 검증된 종가에 곱해 환산한 값으로, 고용쇼크發 금리동결 기대에 3대 지수 모두 상승했습니다. 10/6(화) 국내 재개장 시 이 훈풍이 어떻게 반영될지 주목됩니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-stable">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">15.3</span>
+        <span class="vix-label">안정</span>
+      </div>
+      <p class="vix-msg">VIX는 10/2(금) 정규장 마감 기준 15.31로 전일(16.39) 대비 -1.08pt 내리며 안정 구간에 머물러 있습니다. 시장 공포 지수가 안정적입니다.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 고용쇼크라는 다소 부정적인 소식에도 시장은 이를 Fed 완화 신호로 해석해 오히려 VIX가 -6.59% 급락하며 저변동 구간에 더 가까워졌습니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (10/2 마감 유지)</dt><dd>1,349.00원 (-10.50원)</dd></div>
+      <div class="stat"><dt>원/100엔 (10/2 마감 유지)</dt><dd>854.58원 (-5.56원)</dd></div>
+      <div class="stat"><dt>국제 금 (10/2, GLD)</dt><dd>$380.14 (-0.68%)</dd></div>
+      <div class="stat"><dt>WTI(USO, 10/2)</dt><dd>$147.37 (-1.77%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내 외환시장이 연휴로 매매기준율을 갱신하지 않아 10/2(금) 마감치를 유지합니다. 원/달러는 고용쇼크發 달러 약세로 -10.50원 내렸고, 원/100엔도 함께 내렸습니다. 금(GLD)은 달러 약세에도 -0.68% 하락했고, 국제유가(USO)는 G7의 비축유 방출 합의에 -1.77% 내렸습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 네이버금융 종목분석 리포트 게시판은 여전히 정상 작동하지 않아, FnGuide(comp.wisereport.co.kr) 컨센서스 페이지로 대체합니다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>리노공업</b> — 컨센서스 목표주가 103,500원(4개 기관 평균), 투자의견 매수(4.00/5). 종가(84,300원) 대비 22.8% 상승여력.</li>
+      <li style="padding-left:0;"><b>GS리테일</b> — 컨센서스 목표주가 34,600원(15개 기관 전원 매수), 투자의견 매수(4.00/5). 종가(22,150원) 대비 56.2% 상승여력.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">리노공업</span><span class="stock-code mono">058470</span></div>
+        <div class="stock-price mono">84,300원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/2 정규장 마감 유지, +3.56%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">반도체 테스트소켓</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체 테스트 소켓·핀 분야의 국내 대표 기업으로, 美 반도체 장비株(Teradyne 등)와 함께 반도체 후공정 테스트 업황의 사이클을 보여주는 종목이다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">42.28배 · 33.08배</div></div>
+        <div class="f"><div class="k">PBR · 추정PBR</div><div class="v">8.75배 · 7.40배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">129,000원 · 51,300원</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">103,500원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>추정PER이 33.08배로 트레일링(42.28배) 대비 낮아져 실적 성장 기대가 반영, 목표주가(103,500원) 대비 22.8%의 상승여력</li>
+        <li>배당수익률 0.95%와 함께 반도체 후공정 테스트 수요 확대의 구조적 수혜가 기대되는 위치</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>PBR 8.75배로 밸류에이션 부담이 상당한 수준, 일부 증권사는 최근 목표가를 하향 조정(메리츠 140,000→113,000원, 삼성 150,000→100,000원)</li>
+        <li>ROE·부채비율은 이번에 확보하지 못해 재무건전성 판단 근거가 제한적</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립~긍정적.</b> 반도체 테스트 수요 확대 기대가 강점이나, 높은 밸류에이션과 일부 기관의 목표가 하향 조정은 유의할 필요.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Teradyne</span><span class="stock-code mono">NASDAQ:TER</span></div>
+        <div class="stock-price mono">$449.04<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/2 종가, +8.00%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">반도체 테스트장비</span></div>
+      <p class="why"><b>선정 이유</b> — 리노공업과 같은 반도체 후공정 테스트 밸류체인의 美 대표 기업. 어제(10/2) +8.00% 급등하며 반도체 장비株 랠리를 주도했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$70.20B</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">61.64배 · 46.04배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">0.12%($0.52)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--fall);">$446.47(-0.57%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>EPS가 전년比 +152.5% 급증할 만큼 실적 모멘텀이 매우 강력, 시가총액도 전년比 +220.6% 급증</li>
+        <li>17명 애널리스트 컨센서스 등급이 "Buy"로 우호적</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>목표주가($446.47)가 어제 급등한 현재가보다 오히려 낮아(-0.57%) 애널리스트 목표가가 최근 급등 속도를 따라가지 못하고 있다는 신호</li>
+        <li>PER 61.64배로 밸류에이션이 매우 높은 수준, 하루 만에 +8.00% 급등한 만큼 단기 과열·되돌림 리스크가 상존</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 강력한 실적 모멘텀은 매력적이나, 목표주가-현재가 역전과 매우 높은 밸류에이션은 단기 상승 여력이 제한적일 수 있음을 시사.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">GS리테일</span><span class="stock-code mono">007070</span></div>
+        <div class="stock-price mono">22,150원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/2 정규장 마감 유지, +0.23%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">편의점·유통</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 다룬 반도체·고용지표·국제유가 이슈와 완전히 무관하게, 편의점(GS25)·슈퍼마켓 등 유통 채널로 안정적인 현금흐름을 창출하는 대표 유통 기업이다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">42.64배 · 8.26배</div></div>
+        <div class="f"><div class="k">PBR</div><div class="v">0.56배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">29,950원 · 15,950원</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">34,600원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>추정PER이 8.26배로 트레일링(42.64배, 일시적 저이익 반영) 대비 극적으로 낮아져 실적 정상화 기대가 뚜렷</li>
+        <li>15개 기관 전원이 매수 의견을 제시, 목표주가(34,600원) 대비 56.2%의 매우 큰 상승여력, 배당수익률도 2.71%로 안정적</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>트레일링PER이 42.64배로 매우 높게 나타난 것은 일시적 저이익 때문으로, 실적 정상화가 예상대로 진행되지 않으면 밸류에이션 매력이 사라질 수 있음</li>
+        <li>ROE·부채비율은 이번에 확보하지 못해 재무건전성 판단 근거가 제한적, 편의점 업종 특유의 경쟁 심화·최저임금 부담도 지속</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 실적 정상화 기대와 압도적 매수 컨센서스가 강점이나, 트레일링 밸류에이션의 왜곡 요인과 재무 정보 제한은 유의할 필요.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Dollar General</span><span class="stock-code mono">NYSE:DG</span></div>
+        <div class="stock-price mono">$118.94<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/2 종가, +0.01%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">할인점 유통</span></div>
+      <p class="why"><b>선정 이유</b> — GS리테일과 같은 유통 업종의 美 대표 할인점 기업. Teradyne과 정반대로, 반도체 사이클과 무관하게 저가 생활용품 판매량으로 움직이는 안정적 소비주다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$26.24B</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">15.44배 · 14.89배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">1.98%($2.36)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$140.93(+18.49%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>EPS가 전년比 +42.6% 증가하는 등 실적 모멘텀이 견조, 30명 애널리스트 컨센서스도 "Buy"</li>
+        <li>목표주가($140.93) 대비 +18.49%의 견조한 상승여력, PER 15.44배로 밸류에이션 부담도 크지 않음</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>할인점 업종 특유의 낮은 마진 구조로 인건비·물류비 상승에 수익성이 민감하게 반응할 수 있음</li>
+        <li>경기 둔화 국면에서는 저가 소비 수요가 늘 수도 있지만, 반대로 소비 심리 전반이 위축되면 객단가 하락 압력도 상존</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 견조한 실적 모멘텀과 합리적 밸류에이션이 강점이나, 낮은 마진 구조에 따른 비용 민감도는 계속 지켜볼 필요.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">10/06(화)</span><span>국내 증시 개천절 연휴 마치고 재개장 — 美 고용쇼크發 글로벌 증시 훈풍 반영 여부 주목</span></li>
+      <li><span class="when mono">진행 중</span><span>10월 FOMC 동결·완화 기대 지속 여부, 美 10년물 국채금리 추이</span></li>
+      <li><span class="when mono">진행 중</span><span>G7 비축유 방출 이후 국제유가 추가 하락 여부, 호르무즈 해협 리스크 지속성</span></li>
+      <li><span class="when mono">진행 중</span><span>반도체 테스트 장비株(Teradyne·리노공업) 랠리의 지속성</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-10-03 주말 특집</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
