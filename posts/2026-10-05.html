@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-10-05 개천절 대체공휴일 특집</title>
+<meta name="description" content="국내 증시는 개천절 대체공휴일로 휴장, 10/6(화) 재개장. 美 증시는 정규장 진행 중(10/2 마감치 유지, VIX 15.65 안정). 주말간 예멘 후티의 사우디 아람코 시설 공격으로 유가 들썩, 9월 ISM 서비스업 PMI 54.9(12개월래 최고)에 금값은 $4,141로 숨고르기. 한미반도체·Micron·한국타이어앤테크놀로지·Sysco 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Holiday Special</div>
+    <h1>오일은 후티의 아람코 공격에 들썩, 금은 강한 ISM 서비스업 지표에 숨고르기</h1>
+    <div class="date">2026년 10월 5일 월요일(개천절 대체공휴일) · 국내 증시 휴장(10/6 화요일 재개장)</div>
+    <p class="thesis">국내 증시는 개천절(10/3 토)의 대체공휴일로 오늘(10/5 월)까지 휴장하며, 다음 개장일은 10월 6일(화)입니다. 거래일 기준 지수는 직전 마지막 거래일인 10/2(금) 마감치(코스피 7,003.74·코스닥 893.29·다우 51,296·S&amp;P500 7,734·나스닥 27,205)를 그대로 유지합니다. 美 증시는 현재 정규장이 진행 중이며, VIX는 15.65(전일比 +0.34pt, +2.22%)로 안정 구간 내에서 소폭 상승하고 있습니다. 주말 사이 예멘 후티 반군이 사우디 아람코 시설을 공격하며 호르무즈 해협 리스크가 재부각돼 국제유가가 출렁였고, 아람코 CEO는 "글로벌 원유 재고 복구에 최대 2년이 걸릴 수 있다"고 밝혔습니다. 반면 금값은 9월 ISM 서비스업 PMI가 54.9로 최근 12개월래 최고치를 기록하며 경기 호조 신호가 부각되자 온스당 4,141달러 선으로 밀렸습니다. 원/달러 환율은 1,342.70원으로 전 거래일 대비 하락했습니다. 오늘은 AI 반도체 후공정 장비(한미반도체)와 AI 메모리(Micron), 타이어(한국타이어앤테크놀로지)·식자재유통(Sysco) 4종목을 심층 분석합니다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>예멘 후티, 사우디 아람코 시설 공격…호르무즈 리스크 재부각에 유가 출렁</strong>
+      <p>예멘의 친이란 반군 후티는 주말간 리야드와 쿠라이스 지역의 사우디 아람코 시설에 탄도미사일과 드론으로 공격을 가했다고 밝혔다. 이란-美 전쟁이 이어지는 가운데 호르무즈 해협을 통한 원유 수송 리스크가 다시 부각되며, 일부 선사는 선원들에게 항해 1회당 최대 2만5,000달러의 추가 수당을 제시하고 있는 것으로 전해졌다. 다만 지난주(9/28~10/4) 호르무즈를 통한 중동 원유 수출량은 전쟁 이전 수준을 상회했다.</p>
+      <span class="src">Reuters·WSJ 2026-10-05</span>
+    </div>
+    <div class="news-item">
+      <strong>아람코 CEO "글로벌 원유 재고 복구에 최대 2년"…G7 비축유 방출은 지속</strong>
+      <p>사우디 아람코 아민 나세르 CEO는 美-이란 전쟁에 따른 공급 차질로 전 세계 원유 재고가 약 30억 배럴 줄었으며, 이를 복구하는 데 최대 2년이 걸릴 수 있다고 경고했다. 한편 지난 금요일(10/2) 합의된 G7의 1억 배럴 비상 비축유·디젤 방출 계획은 예정대로 진행 중이며, OPEC+도 11월 생산목표를 현 수준으로 동결하기로 했다.</p>
+      <span class="src">CNBC·Reuters 2026-10-05</span>
+    </div>
+    <div class="news-item">
+      <strong>9월 ISM 서비스업 PMI 54.9…12개월래 최고치, 금값은 숨고르기</strong>
+      <p>美 공급관리협회(ISM)가 발표한 9월 서비스업 PMI는 54.9로 최근 12개월 중 가장 높은 수준을 기록했으며, 12개월 평균(51.8)을 3.1%p 웃돌았다. 부동산·헬스케어·금융보험 등 12개 업종에서 성장세가 확인됐다. 경기 호조 신호에 안전자산 수요가 줄며 금값은 온스당 4,141달러로 밀렸다(Kitco). 중앙은행 인사들은 "국채금리 상승에도 금은 여전히 핵심 준비자산 지위를 유지하고 있다"고 평가했다(Reuters).</p>
+      <span class="src">ISM·Kitco·Reuters 2026-10-05</span>
+    </div>
+    <div class="news-item">
+      <strong>美 정부 셧다운 리스크, 12월 11일까지 해소 지속</strong>
+      <p>트럼프 대통령이 9월 2일 서명한 임시예산안(CR)으로 美 정부 셧다운 우려는 다음 예산 마감일인 12월 11일까지 해소된 상태를 유지하고 있다. 이에 따라 시장은 연말까지 재정 리스크보다 통화정책·실적 변수에 집중할 수 있는 환경이 이어지고 있다.</p>
+      <span class="src">종합 2026-09-02~10-05</span>
+    </div>
+    <div class="news-item">
+      <strong>국내 증시, 개천절 대체공휴일로 금일 휴장…내일 10/6(화) 재개장 확정</strong>
+      <p>10월 3일(토)이 개천절이며 토요일과 겹쳐 10월 5일(월)이 대체공휴일로 지정됐다. 이에 따라 국내 증시는 금일(10/5)까지 휴장하며, 다음 개장일은 10월 6일(화)이다. 재개장 시 주말간 지정학적 리스크(호르무즈)와 美 증시 흐름이 어떻게 반영될지 주목된다.</p>
+      <span class="src">한국 공휴일 캘린더 종합 2026-10-05</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 국내는 대체공휴일 휴장(10/2 마감 유지), 美는 정규장 진행 중(10/2 마감 유지)</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피 (10/2 마감 유지)</td><td>7,003.74</td><td class="chg up">+0.46%(금요일)</td><td class="plain">개천절 대체공휴일 휴장, 10/6(화) 재개장</td></tr>
+          <tr><td>코스닥 (10/2 마감 유지)</td><td>893.29</td><td class="chg down">-0.11%(금요일)</td><td class="plain">개천절 대체공휴일 휴장</td></tr>
+          <tr><td>다우 (10/2 마감 유지)</td><td>51,296</td><td class="chg up">+0.49%</td><td class="plain">DIA 환산, 美 정규장 진행 중(장중 -0.23%)</td></tr>
+          <tr><td>S&amp;P500 (10/2 마감 유지)</td><td>7,734</td><td class="chg up">+0.74%</td><td class="plain">SPY 환산, 장중 +0.38%</td></tr>
+          <tr><td>나스닥 (10/2 마감 유지)</td><td>27,205</td><td class="chg up">+1.14%</td><td class="plain">ONEQ 환산, 장중 +0.72%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내 지수는 개천절 대체공휴일로 연휴 전 마지막 거래일인 10/2(금) 마감 수치를 그대로 유지합니다. 美 증시는 현재(현지시각 오전) 정규장이 진행 중이라 당일 마감치가 아직 확정되지 않아 역시 10/2(금) 마감 수치를 기준으로 표기하며, 참고로 장중 추종 ETF는 다우(DIA) -0.23%, S&amp;P500(SPY) +0.38~0.40%, 나스닥(ONEQ) +0.72%로 혼조세를 보이고 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-stable">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">15.7</span>
+        <span class="vix-label">안정</span>
+      </div>
+      <p class="vix-msg">VIX 15.65(전일比 +0.34pt, +2.22%)로 시장 공포 지수가 안정적입니다.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 위 수치는 현지시각 오전(美 정규장 진행 중) 기준으로, 정규장 마감 전까지 변동될 수 있습니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (실시간)</dt><dd>1,342.70원 (-16.8원)</dd></div>
+      <div class="stat"><dt>원/100엔 (실시간)</dt><dd>849.84원 (-10.3원)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 장중)</dt><dd>$379.90 (-0.06%)</dd></div>
+      <div class="stat"><dt>WTI(USO, 장중)</dt><dd>$146.00 (-0.93%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러·원/100엔은 하나은행 실시간 고시 기준입니다. 금(GLD)·유가(USO)는 美 정규장이 진행 중이라 장중 수치이며, 직전 거래일(10/2, 금) 종가는 각각 GLD $380.14, USO $147.37였습니다. 유가는 후티의 아람코 공격발 상방 압력과 G7 비축유 방출발 하방 압력이 교차하며 장중 약보합을 보이고 있고, 금은 강한 ISM 서비스업 지표에 안전자산 수요가 줄며 Kitco 기준 온스당 4,141달러로 밀렸습니다(위 "세계 경제 주요 뉴스" 참조).</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 네이버금융 종목분석 리포트 게시판은 여전히 정상 작동하지 않아, FnGuide(comp.wisereport.co.kr) 컨센서스 페이지로 대체합니다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>한미반도체</b> — 컨센서스 목표주가 380,000원(1개 기관 상상인, 2026-07-10 기준), 투자의견 매수(4.00/5). 종가(272,000원) 대비 39.7% 상승여력. 다만 추정기관이 1곳뿐이라 컨센서스 대표성에 한계가 있음에 유의.</li>
+      <li style="padding-left:0;"><b>한국타이어앤테크놀로지</b> — 컨센서스 목표주가 89,824원(17개 기관 평균, 최근 BNK투자증권 2026-08-13 기준), 투자의견 매수(4.00/5). 종가(59,900원) 대비 49.9% 상승여력. 폭넓은 커버리지로 신뢰도가 높은 편.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">한미반도체</span><span class="stock-code mono">042700</span></div>
+        <div class="stock-price mono">272,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/2 정규장 마감 유지, +1.30%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">AI 반도체 후공정 장비</span></div>
+      <p class="why"><b>선정 이유</b> — 삼성전자·SK하이닉스 등 국내 메모리 기업에 HBM용 TC본더를 공급하는 AI 반도체 후공정 장비 1위 기업으로, Micron과 함께 AI 메모리 밸류체인 양 끝단(장비·메모리)을 보여준다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">121.81배 · 74.99배</div></div>
+        <div class="f"><div class="k">PBR(trailing·2026E)</div><div class="v">37.37배 · 27.59배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">426,000원 · 101,100원</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">380,000원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>AI 서버·데이터센터 투자 확대에 따른 HBM 수요 증가로 2.5D 패키징 시장에 진출했고, 6-SIDE INSPECTION 장비로 수율 향상도 기대된다(FnGuide)</li>
+        <li>최근 1개월 +27.4%, 최근 1년 +170.4% 상승하며 AI 반도체 장비 테마 랠리를 주도하고 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>2026년 상반기 연결 매출액은 전년동기比 -7.7%, 영업이익은 -11.0%로 오히려 둔화 중 — 주가가 실적보다 테마 기대감에 선행하는 구조</li>
+        <li>PER 121.81배(추정 74.99배)로 밸류에이션 부담이 크고, 컨센서스가 단 1개 기관(상상인)뿐이라 목표주가의 대표성에 한계가 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> AI 반도체 후공정 장비 테마의 대표주로 중장기 방향성은 긍정적이나, 단기 실적 둔화와 높은 밸류에이션, 얇은 컨센서스 커버리지는 신중한 접근이 필요.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Micron Technology</span><span class="stock-code mono">NASDAQ:MU</span></div>
+        <div class="stock-price mono">$1,074.89<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/2 종가, 약 -2% 하락 마감)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">AI 메모리</span></div>
+      <p class="why"><b>선정 이유</b> — 지난주 기록적인 분기 실적을 발표한 AI 메모리 슈퍼사이클의 핵심 기업으로, 한미반도체와 함께 AI 메모리 밸류체인 양 끝단(장비·메모리)을 보여준다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$1.21T(+491.8%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">14.46배 · 6.09배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">0.06%($0.60)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$1,535.57(+43.77%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026 회계연도 매출 $133.19B(+256.3%), 순이익 $84.97B(+895.1%)로 역대급 실적을 냈고, 데이터센터向 매출은 전년比 11배 급증했다</li>
+        <li>49명 애널리스트 컨센서스가 "Strong Buy"로 매우 우호적이며, Rosenblatt는 목표가를 $1,900까지 상향 — 목표주가 대비 +43.77%의 상승여력</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>기록적 실적에도 주가는 발표 이후 2거래일 연속 횡보~하락 — "실적은 예외적이나 투자자들이 예전만큼 보상해주지 않는다"는 평가가 나올 만큼 기대치가 이미 높게 선반영됐다(Investopedia)</li>
+        <li>메모리 반도체 특유의 호황·불황 사이클 역사가 있어, 일부 투자자는 "서두르지 말라"며 밸류에이션 신중론을 제기한다(TipRanks)</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> AI 메모리 수요의 구조적 성장이 실적으로 확인되고 있으나, 이미 급등한 주가와 메모리 특유의 사이클 리스크를 감안하면 단기 변동성 확대 가능성에 유의할 필요.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">한국타이어앤테크놀로지</span><span class="stock-code mono">161390</span></div>
+        <div class="stock-price mono">59,900원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/2 정규장 마감 유지, +1.70%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">타이어·자동차부품</span></div>
+      <p class="why"><b>선정 이유</b> — AI 반도체 테마와 무관하게, 글로벌 Top10 타이어 제조사로서 완성차向·교체용 타이어 수요를 기반으로 하는 자동차 부품 대표 기업이다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">6.81배 · 5.77배</div></div>
+        <div class="f"><div class="k">PBR(trailing·2026E)</div><div class="v">0.60배 · 0.55배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">78,400원 · 38,250원</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">89,824원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출액 +6.4%, 영업이익 +50.5%, 당기순이익 +24.6%로 뚜렷한 실적 개선을 보였고, 친환경차·하이브리드向 열관리 시스템 부문은 북미 수주 확대 중이다</li>
+        <li>17개 증권사가 커버하는 두터운 컨센서스, PBR 0.60배의 저평가 구간, 목표주가(89,824원) 대비 +49.9%의 큰 상승여력</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 1개월 -8.7%, 3개월 -11.0%로 단기 주가 흐름은 부진 — 원가 상승 우려가 선반영된 것으로 해석된다(8월 증권사 리포트 공통 코멘트)</li>
+        <li>타이어 업종은 원자재(고무·화학원료) 가격과 환율 변동에 실적이 민감한 구조</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 실적 개선 대비 저평가된 밸류에이션과 두터운 애널리스트 커버리지가 매력적이나, 단기 조정 흐름은 원가 우려가 해소될 때까지 이어질 수 있음.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Sysco</span><span class="stock-code mono">NYSE:SYY</span></div>
+        <div class="stock-price mono">$77.49<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/2 종가 기준)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">식자재 유통</span></div>
+      <p class="why"><b>선정 이유</b> — 한국타이어앤테크놀로지와 같은 결로, AI 테마와 무관하게 레스토랑·병원·학교 등에 식자재를 공급하는 북미 최대 식자재 유통업체로서 필수소비재 성격의 안정적 매출을 낸다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$37.51B(-5.3%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">21.17배 · 15.28배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">2.89%($2.20)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$90.42(+18.58%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>회계연도 2026 매출 $84.55B(+3.91%)로 꾸준한 성장을 이어갔고, 5억달러 규모의 AI 기반 효율화 프로그램과 Restaurant Depot 인수(3분기 완료 예정)로 중기 성장동력을 확보했다</li>
+        <li>14명 애널리스트 컨센서스 "Buy", 배당수익률 2.89%의 꾸준한 주주환원, 목표주가 대비 +18.58%의 상승여력</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>순이익은 전년比 -3.9% 감소했고, 최근 10억달러 규모 유상증자·캐나다달러 표시 회사채 발행이 겹치며 주당가치 희석 우려가 주가에 부담으로 작용했다(시가총액 -5.3%)</li>
+        <li>JP모건은 최근 목표가를 $100에서 $95로 하향 조정했다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 필수소비재 특유의 안정적 현금흐름과 AI 효율화·M&amp;A를 통한 성장 전략은 긍정적이나, 최근 증자에 따른 희석과 순이익 감소는 주가 모멘텀을 제한하는 요인.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">10/06(화)</span><span>국내 증시 개천절 연휴 마치고 재개장 — 주말~월요일 사이 호르무즈 리스크·유가 변동성과 美 증시 흐름이 어떻게 반영될지 주목</span></li>
+      <li><span class="when mono">진행 중</span><span>예멘 후티의 사우디 아람코 공격 이후 호르무즈 해협 리스크 지속 여부, 유가 추가 변동성</span></li>
+      <li><span class="when mono">진행 중</span><span>금 4,000달러대 지지 공방, 강한 ISM 서비스업 지표발 금리·Fed 전망 변화</span></li>
+      <li><span class="when mono">진행 중</span><span>Micron 등 AI 메모리株의 "실적은 역대급인데 주가는 둔감한" 현상 지속 여부</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-10-05 개천절 대체공휴일 특집</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
