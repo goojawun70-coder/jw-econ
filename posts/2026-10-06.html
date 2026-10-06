@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-10-06 저녁 발행</title>
+<meta name="description" content="국내 증시 재개장 첫날 코스피는 외국인 순매도에 밀려 6,941.39(-0.89%), 코스닥은 외국인·기관 쌍끌이 매수로 919.92(+2.98%) 급등. 美 3대 지수는 10/5(월) 동반 상승(VIX 15.32 안정). 美 정부가 Vistra에 42억달러 대출해 원전 증설 지원 — 두산에너빌리티·Vistra·대한항공·Kroger 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>원전·전력株 들썩 — 美, Vistra에 42억달러 대출 vs 코스피는 외국인 매도에 발목</h1>
+    <div class="date">2026년 10월 6일 화요일 · 국내 증시 개천절 연휴 마치고 재개장</div>
+    <p class="thesis">국내 증시가 개천절 연휴를 마치고 재개장한 오늘, 코스피는 외국인이 1조7,575억원을 순매도하며 6,941.39(-0.89%)로 마감했다. 반면 코스닥은 외국인·기관이 동시에 순매수에 나서며 919.92(+2.98%)로 급등, 두 지수가 극명하게 엇갈렸다. 美 증시는 월요일(10/5) 정규장에서 다우 51,398(+0.20%)·S&amp;P500 7,786(+0.67%)·나스닥 27,517(+1.15%) 3대 지수가 동반 상승했고 화요일 프리마켓에서도 추가 상승 중이다. VIX는 15.32로 안정 구간을 유지했다. 가장 뜨거운 소식은 美 정부가 원자력발전 증설을 위해 Vistra에 42억달러를 대출하기로 한 것 — AI 데이터센터발 전력 수요 테마가 미국을 넘어 국내 전력설비株로도 이어지는지가 오늘 관전 포인트다. 한편 유가는 중동 수출 회복 소식에 하락했으나 셰브런 CEO는 "공급 버퍼가 얇아지고 있다"고 경고했고, 금값은 강한 ISM 서비스업 지표발 금리 상승 압력에 온스당 4,138달러 부근에서 큰 변동 없이 머물렀다. 오늘은 원전·전력(두산에너빌리티·Vistra)과 항공·식료품유통(대한항공·Kroger) 4종목을 심층 분석한다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>美 정부, Vistra에 42억달러 대출해 원자력발전 증설 지원</strong>
+      <p>美 정부는 전력회사 Vistra에 약 42억달러를 대출해 보유 중인 원자력발전소 3곳의 설비 증설을 지원하기로 했다. AI 데이터센터발 전력 수요 급증에 대응해 트럼프 행정부가 원전 확대를 적극 지원하는 행보로, 소식이 알려진 10/3(토) 이후 Vistra 주가는 프리마켓에서 한때 +6%까지 뛰었고 10/5(월) 정규장에서도 +3.48% 급등했다. BMO캐피탈은 목표가를 $231→$210로 하향했음에도 "Outperform" 의견은 유지했다.</p>
+      <span class="src">Reuters·Bloomberg·TheFly 2026-10-03~05</span>
+    </div>
+    <div class="news-item">
+      <strong>코스피·코스닥 재개장 첫날 수급 엇갈려 — 외국인은 코스피 팔고 코스닥 사다</strong>
+      <p>개천절 연휴를 마치고 재개장한 코스피는 외국인이 1조7,575억원 순매도에 나서며 6,941.39(-0.89%)로 마감했다(개인 +7,441억원, 기관 -39억원). 반대로 코스닥은 외국인(+1,073억원)과 기관(+1,047억원)이 동시에 순매수하며 919.92(+2.98%)로 급등했다(개인 -2,111억원 순매도). 연휴 기간 美 증시 AI 랠리·고용쇼크發 금리 완화 기대가 중소형·바이오 중심의 코스닥에 더 크게 반영된 것으로 풀이된다.</p>
+      <span class="src">네이버증권 투자자별 매매동향 2026-10-06</span>
+    </div>
+    <div class="news-item">
+      <strong>美 3대 지수, 10/5(월) 반도체·AI 랠리에 동반 상승…유가는 $100 아래로</strong>
+      <p>美 증시는 월요일 반도체·AI 관련주 랠리와 유가 하락이 겹호재로 작용하며 다우·S&amp;P500·나스닥 3대 지수가 모두 상승 마감했다. S&amp;P500은 +0.67%(SPY 환산 7,786), 나스닥은 +1.15%(ONEQ 환산 27,517)를 기록했다. 화요일 프리마켓에서도 3대 지수 모두 추가 상승세를 이어가고 있다.</p>
+      <span class="src">TipRanks·stockanalysis.com 2026-10-05~06</span>
+    </div>
+    <div class="news-item">
+      <strong>유가, 중동 수출 회복에 하락…셰브런 CEO "공급 버퍼 얇아지고 있다"</strong>
+      <p>9월 중동(이란 제외) 원유 수출이 전쟁 전 수준의 81%까지 회복됐다는 집계가 나오며 유가는 월요일 -2.29%(USO) 하락했다. 그러나 셰브런 CEO 마이크 워스는 "美-이스라엘·이란 전쟁이 8개월째 이어지며 공급 버퍼가 얇아지고 있다"고 경고했고, 예멘 후티의 사우디 공격과 호르무즈 해협 리스크도 여전히 잠재 변수로 남아있다.</p>
+      <span class="src">Reuters·WSJ 2026-10-06</span>
+    </div>
+    <div class="news-item">
+      <strong>금, 강한 ISM 지표에 숨고르기…$4,138 부근 "little changed"</strong>
+      <p>Kitco PM 리포트에 따르면 월요일 금값은 강한 9월 ISM 서비스업 지표가 국채금리를 높게 유지시키는 가운데 온스당 4,138달러 부근에서 큰 변동 없이("little changed") 마감했다. 중앙은행 인사들은 "금은 여전히 핵심 준비자산 지위를 유지하고 있다"는 입장을 재확인했다.</p>
+      <span class="src">Kitco PM Report 2026-10-05</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 국내는 10/6(화) 재개장 마감, 美는 10/5(월) 마감</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>6,941.39</td><td class="chg down">-0.89%</td><td class="plain">외국인 1조7,575억원 순매도</td></tr>
+          <tr><td>코스닥</td><td>919.92</td><td class="chg up">+2.98%</td><td class="plain">외국인·기관 쌍끌이 순매수</td></tr>
+          <tr><td>다우 (10/5 마감)</td><td>51,398</td><td class="chg up">+0.20%</td><td class="plain">DIA 환산, 프리마켓 추가 상승</td></tr>
+          <tr><td>S&amp;P500 (10/5 마감)</td><td>7,786</td><td class="chg up">+0.67%</td><td class="plain">SPY 환산, 프리마켓 +0.42%</td></tr>
+          <tr><td>나스닥 (10/5 마감)</td><td>27,517</td><td class="chg up">+1.15%</td><td class="plain">ONEQ 환산, 프리마켓 +0.15%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내 지수는 금일(10/6) 정규장 마감 수치이며, 美 지수는 가장 최근 완료된 거래일인 10/5(월) 마감 수치를 ETF(DIA·SPY·ONEQ) 등락률로 환산한 값이다(10/6 美 프리마켓에서도 3대 지수 모두 추가 상승 중).</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-stable">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">15.3</span>
+        <span class="vix-label">안정</span>
+      </div>
+      <p class="vix-msg">VIX 15.32(전일比 -0.20pt, -1.29%)로 시장 공포 지수가 안정적입니다.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 위 수치는 10/6 美 프리마켓(현지시각 오전) 기준입니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (확보 못함)</dt><dd>1,342.70원 (직전 확정치 유지)</dd></div>
+      <div class="stat"><dt>원/100엔 (확보 못함)</dt><dd>849.84원 (직전 확정치 유지)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 10/5 마감)</dt><dd>$379.55 (-0.16%)</dd></div>
+      <div class="stat"><dt>WTI(USO, 10/5 마감)</dt><dd>$143.99 (-2.29%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러·원/100엔은 금일 네이버 환율 페이지 스크래핑이 되지 않아 10/5(월) 확정치를 그대로 유지합니다. 금(GLD)·유가(USO)는 10/5(월) 정규장 마감 기준입니다. 금은 강한 ISM 지표발 금리 상승에 숨고르기, 유가는 중동 수출 회복 소식에 하락했으나 셰브런 CEO의 "공급 버퍼 약화" 경고는 유의할 변수입니다(위 "세계 경제 주요 뉴스" 참조).</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 네이버금융 종목분석 리포트 게시판은 여전히 정상 작동하지 않아, FnGuide(comp.wisereport.co.kr) 컨센서스 페이지로 대체합니다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>두산에너빌리티</b> — 컨센서스 목표주가 130,333원(15개 기관 평균, 최근 삼성증권 2026-10-01 기준), 투자의견 매수(4.00/5). 현재가(81,600원) 대비 59.7% 상승여력. 두터운 커버리지로 신뢰도가 높은 편.</li>
+      <li style="padding-left:0;"><b>대한항공</b> — 컨센서스 목표주가 38,500원(11개 기관 평균, 최근 신한투자증권·LS증권 2026-10-02 기준), 투자의견 매수(3.90/5). 현재가(31,250원) 대비 23.2% 상승여력.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">두산에너빌리티</span><span class="stock-code mono">034020</span></div>
+        <div class="stock-price mono">81,600원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (NXT 포함가, 전일比 +0.62%; 정규장 범위 80,700~82,400원)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">원전·전력설비</span></div>
+      <p class="why"><b>선정 이유</b> — 대형 가스터빈·원전 기자재를 공급하는 국내 발전설비 대표 기업으로, Vistra와 함께 AI 데이터센터발 전력 수요 확대 테마의 양대 축(미국 전력 운영·한국 발전설비 제작)을 보여준다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">612.89배 · 153.21배</div></div>
+        <div class="f"><div class="k">PBR(trailing·2026E)</div><div class="v">6.67배 · 6.25배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">139,200원 · 57,000원</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">130,333원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출액 +8.0%, 영업이익 +32.4%, 당기순이익 +155.2%로 뚜렷한 실적 개선 — 대형 가스터빈 수주와 체코 신규원전 기자재 공급 계약이 견인했다</li>
+        <li>15개 증권사가 커버하는 두터운 컨센서스, 목표주가(130,333원) 대비 +59.7%의 큰 상승여력, AI發 데이터센터 전력수요 확대로 가스복합·원자력발전 수요가 지속 확대될 전망(FnGuide)</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>PER 612.89배(추정 153.21배)로 밸류에이션이 극단적으로 높은 수준 — 실적보다 원전·전력 테마 기대감에 주가가 선행하는 구조</li>
+        <li>최근 1개월 +5.9%지만 3개월 -5.7%, 6개월 -13.4%로 중기 흐름은 부진했다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> AI 데이터센터발 전력 수요 확대의 핵심 수혜주로 실적 개선이 뚜렷하나, 매우 높은 밸류에이션은 유의해야.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Vistra</span><span class="stock-code mono">NYSE:VST</span></div>
+        <div class="stock-price mono">$144.89<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/5 종가, +3.48%; 프리마켓 $149.59)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">원전·전력 유틸리티</span></div>
+      <p class="why"><b>선정 이유</b> — 美 정부로부터 42억달러를 대출받아 원전 3곳을 증설하는 전력 유틸리티로, 두산에너빌리티와 함께 AI 데이터센터발 전력 수요 테마의 양대 축을 보여준다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$48.63B(-28.8%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">24.70배 · 14.17배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">0.64%($0.92)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$212.79(+46.86%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>美 정부의 42억달러 대출로 원전 3곳 증설이 가시화됐고, 20명 애널리스트 컨센서스가 "Strong Buy" — 목표주가 대비 +46.86%의 상승여력</li>
+        <li>Siebert Williams는 하이퍼스케일러 전력 계약을 근거로 Buy($202 목표가)로 커버리지를 개시했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>시가총액이 전년比 -28.8% 감소했고, 2025년 순이익은 -69.5% 급감 — 최근 주가 반등에도 중장기 실적 변동성이 크다</li>
+        <li>BMO캐피탈은 목표가를 $231→$210로 하향했고, 최근 대규모 유상증자·주니어 서브채 발행이 이어지며 주당가치 희석 우려도 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 정부 대출을 등에 업은 원전 증설 모멘텀과 AI 전력수요 수혜가 뚜렷하나, 급등한 주가와 희석 우려는 단기 변동성 요인.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">대한항공</span><span class="stock-code mono">003490</span></div>
+        <div class="stock-price mono">31,250원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (NXT 포함가, 전일比 +2.12%; 정규장 범위 31,000~31,600원)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">항공</span></div>
+      <p class="why"><b>선정 이유</b> — 원전·전력 테마와 무관하게, 오히려 오늘 유가 뉴스의 반대편에 서 있는 국내 대표 항공사다. 고유가가 실적에 직접 부담을 주는 업종 특성을 보여준다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">14.50배 · 30.30배</div></div>
+        <div class="f"><div class="k">PBR(trailing·2026E)</div><div class="v">1.03배 · 1.07배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">32,500원 · 21,000원</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">38,500원(3.90 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출액 +9.3% — 고수요 노선 공급 확대와 K-컬처 연계 수요 흡수로 고유가 환경에도 매출은 늘었다</li>
+        <li>11개 증권사가 커버하는 컨센서스, 목표주가(38,500원) 대비 +23.2%의 상승여력, 항공우주사업본부는 AH-64 헬기 구조물 제작 수주로 사업 영역을 확장 중</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>美-이란 전쟁發 유가 급등으로 연료비 부담이 커지며 2026년 상반기 영업이익은 -61.3% 급감, 당기순이익은 적자전환했다 — 오늘 분석한 Vistra·두산에너빌리티의 수혜 테마(전력 수요)와 정반대로 고유가 피해 업종의 전형</li>
+        <li>추정PER이 30.30배로 2025년(14.50배) 대비 급등 — 단기 실적 둔화가 밸류에이션에 그대로 반영됐다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 매출 성장과 두터운 애널리스트 커버리지는 긍정적이나, 고유가發 수익성 악화가 이어지는 한 추가 상승은 제한적일 수 있다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Kroger</span><span class="stock-code mono">NYSE:KR</span></div>
+        <div class="stock-price mono">$58.78<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/5 종가, -0.42%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">식료품 유통</span></div>
+      <p class="why"><b>선정 이유</b> — 대한항공과 같은 결로, 원전·AI 테마와 무관하게 필수소비재 성격의 안정적 매출을 내는 美 대표 식료품·의약품 유통업체다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$34.71B(-21.2%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">34.16배 · 10.99배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">2.65%($1.56)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$68.14(+15.92%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>Melius Research는 실적 성장 가속을 근거로 Kroger를 Hold에서 Buy로 상향(목표가 $80), 24명 애널리스트 컨센서스는 "Buy"</li>
+        <li>Forward PER 10.99배로 trailing PER(34.16배) 대비 크게 낮아 향후 실적 회복 기대가 반영돼 있고, 배당수익률도 2.65%로 안정적</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 분기 순이익이 전년比 -60.2% 급감했고, 매출성장 둔화로 올해 가이던스를 하향 조정 — Guggenheim·Telsey·Evercore 등 다수 증권사가 목표가를 하향했다</li>
+        <li>시가총액이 전년比 -21.2% 감소한 만큼 최근 수년간 주가 약세가 지속되고 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 낮아진 Forward PER과 최근 애널리스트 상향은 긍정적이나, 순이익 급감과 가이던스 하향은 신중한 접근을 시사.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">10/09(금)</span><span>한글날 휴장(대체공휴일 없음) — 10/8(목)까지 거래 후 주말 포함 3일 연휴</span></li>
+      <li><span class="when mono">진행 중</span><span>Vistra·두산에너빌리티 등 원전·전력설비株 모멘텀이 다른 종목으로 확산될지 여부</span></li>
+      <li><span class="when mono">진행 중</span><span>코스피(외국인 순매도)·코스닥(외국인 순매수) 수급 엇갈림 지속 여부</span></li>
+      <li><span class="when mono">진행 중</span><span>중동 원유 수출 회복 vs 호르무즈·후티 리스크 공방, 유가 방향과 항공주 연료비 부담</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-10-06 저녁 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
