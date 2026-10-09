@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-10-09 저녁 발행</title>
+<meta name="description" content="국내 증시는 한글날 휴장(전 거래일 10/8 코스피 6,625.93·코스닥 892.27 종가 유지). 美 증시는 OpenAI 매출 공개에 AI 버블 경계감이 확산되며 Oracle -5.48% 급락, 나스닥도 -1.22% 하락. 유가는 美-이란 전쟁 우려에 급등했다가 트럼프의 '이란 공격 않겠다' 발언에 진정. SK하이닉스·Oracle·팬오션·General Mills 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>AI 버블 경계감에 Oracle 5.5% 급락 — 유가는 트럼프의 이란 발언에 진정, 국내는 한글날 휴장</h1>
+    <div class="date">2026년 10월 9일 금요일 · 한글날 휴장(국내 증시는 전 거래일 10/8 종가 유지)</div>
+    <p class="thesis">국내 증시는 한글날(대체공휴일 없음)로 휴장해 코스피 6,625.93(-2.62%)·코스닥 892.27(-0.69%)가 전 거래일(10/8) 종가로 유지된다. 美 증시에서는 OpenAI가 연환산 매출이 약 500억달러 수준이라고 공개하자 "AI 버블" 경계감이 확산되며 10/8(목) Nvidia·Oracle·CoreWeave 등 AI 관련주가 동반 급락했다 — Oracle은 -5.48%로 가장 크게 밀렸고 나스닥종합도 ONEQ 환산 -1.22% 하락했다(다우는 +0.12%로 선방). 여기에 Broadcom·Oracle·SpaceX가 AI 반도체 구입 자금을 마련하기 위해 수백억달러 규모의 부채 조달을 추진 중이라는 WSJ 보도도 투자자 불안을 키웠다. 한편 유가는 美의 이란 군사작전 검토설에 10/8 급등해 Brent가 $105를 넘어서며 증시·채권시장을 함께 흔들었으나, 10/9 트럼프 대통령이 "중간선거 전까지는 이란을 공격하지 않겠다"고 밝히며 긴장이 완화돼 WTI 추종 ETF(USO)가 프리마켓에서 -0.60% 되돌림을 보였다. 금값은 강한 30년물 국채 입찰에 금리 상승 압력이 누그러지며 반등했고, VIX는 15.23으로 여전히 안정 구간이다. 오늘은 AI 버블 경계감의 직접 당사자인 반도체·클라우드株(SK하이닉스·Oracle)와, 이 테마와 무관하게 자체 펀더멘털로 움직이는 해운·식품株(팬오션·General Mills) 4종목을 심층 분석한다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>OpenAI 매출 공개에 AI 버블 경계감 확산 — Oracle -5.48%, Nvidia·CoreWeave도 동반 급락</strong>
+      <p>CNBC에 따르면 OpenAI가 투자자들에게 연환산 매출이 약 500억달러 수준이라고 공개하자, 이 수치가 기대에 못 미친다는 해석이 나오며 Nvidia·Oracle·CoreWeave 등 AI 관련주가 10/8(목) 동반 급락했다. Oracle은 -5.48%로 가장 크게 하락했다. Microsoft·Oracle은 OpenAI 매출 관련 FT 보도 이후에도 추가로 밀렸다.</p>
+      <span class="src">CNBC·TipRanks 2026-10-08</span>
+    </div>
+    <div class="news-item">
+      <strong>Broadcom·Oracle·SpaceX, AI 칩 자금 마련 위해 수백억달러 부채 조달 추진 — "AI가 시장을 잠식하나" 우려 확산</strong>
+      <p>WSJ는 Broadcom과 Oracle이 AI 반도체 구입 자금을 마련하기 위해 각각 수백억달러 규모의 민간 부채 조달을 추진 중이며, SpaceX의 400억달러 자금 조달과 함께 "AI 부채 러시"의 일환이라고 보도했다. Apollo·Blackstone·Goldman 등이 대출 협상에 참여하고 있다.</p>
+      <span class="src">WSJ·Yahoo Finance 2026-10-08</span>
+    </div>
+    <div class="news-item">
+      <strong>유가, 美의 이란 군사작전 검토설에 10/8 급등 후 트럼프의 "공격 않겠다" 발언에 10/9 진정</strong>
+      <p>10/8 블룸버그는 트럼프 행정부가 중간선거 전 이란 공격 옵션을 검토 중이라고 보도하며 Brent유가 $105를 넘어섰고, 가디언은 이를 "증시·채권시장을 흔든 유가 급등"이라고 전했다. 그러나 10/9 로이터는 트럼프 대통령이 "중간선거 전까지는 이란을 공격하지 않을 것이며 협상이 진전되고 있다"고 밝히면서 유가가 진정됐다고 보도했다.</p>
+      <span class="src">Bloomberg·The Guardian·Reuters 2026-10-08~09</span>
+    </div>
+    <div class="news-item">
+      <strong>美 3대 지수 10/8(목) 혼조 — 다우는 선방, 나스닥은 AI株 급락에 -1.22%</strong>
+      <p>美 증시는 유가 급등과 AI 버블 경계감이 겹치며 혼조 마감했다. 다우존스는 DIA 환산 +0.12%로 선방했으나, 나스닥종합은 ONEQ 환산 -1.22%로 AI 관련주 급락의 직격탄을 맞았다. S&amp;P500은 SPY 환산 -0.42%를 기록했다.</p>
+      <span class="src">stockanalysis.com 2026-10-08</span>
+    </div>
+    <div class="news-item">
+      <strong>금, 강한 30년물 국채 입찰에 금리 진정되며 반등 — 中 수요 기대도 지지</strong>
+      <p>Kitco PM 리포트에 따르면 강한 30년물 국채 입찰이 그날 아침 치솟았던 금리를 끌어내리며 금값이 반등했다. WSJ는 중국 인민은행의 금 매입 지속 기대가 추가 지지 요인이라고 전했다. 다만 오일 서지가 인플레이션 우려를 재부각시켜 상승폭을 일부 제한했다.</p>
+      <span class="src">Kitco PM Report·WSJ 2026-10-08</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 국내는 한글날 휴장(10/8 종가 유지), 美는 10/8(목) 마감</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>6,625.93</td><td class="chg down">-2.62%</td><td class="plain">한글날 휴장, 10/8 종가 유지</td></tr>
+          <tr><td>코스닥</td><td>892.27</td><td class="chg down">-0.69%</td><td class="plain">한글날 휴장, 10/8 종가 유지</td></tr>
+          <tr><td>다우 (10/8 마감)</td><td>51,351</td><td class="chg up">+0.12%</td><td class="plain">DIA 환산</td></tr>
+          <tr><td>S&amp;P500 (10/8 마감)</td><td>7,777</td><td class="chg down">-0.42%</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (10/8 마감)</td><td>27,210</td><td class="chg down">-1.22%</td><td class="plain">ONEQ 환산, AI株 급락 직격</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내 지수는 한글날(대체공휴일 없음) 휴장으로 전 거래일인 10/8(목) 마감 수치를 그대로 유지한다. 美 지수는 가장 최근 완료된 거래일인 10/8(목) 마감 수치를 직전 검증된 기준(10/2 마감)에 ETF(DIA·SPY·ONEQ) 누적 등락률을 적용해 환산한 값이다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-stable">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">15.2</span>
+        <span class="vix-label">안정</span>
+      </div>
+      <p class="vix-msg">VIX 15.23(전일比 -0.18pt, -1.17%)로 시장 공포 지수가 안정적입니다.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 위 수치는 10/9 美 프리마켓(현지시각 오전) 기준입니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (10/9 실시간)</dt><dd>1,342.00원 (+0.07%)</dd></div>
+      <div class="stat"><dt>원/100엔 (10/9 실시간)</dt><dd>847.99원 (-0.08%)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 10/8 마감)</dt><dd>$378.62 (+0.73%)</dd></div>
+      <div class="stat"><dt>WTI(USO, 10/8 마감)</dt><dd>$147.58 (+2.55%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러·원/100엔은 한글날 휴장에도 네이버 모바일 환율 페이지에서 10/9 19:1x 기준 실시간 고시환율을 확보했다. 금(GLD)·유가(USO)는 10/8(목) 정규장 마감 기준이며, 10/9 美 프리마켓에서는 금이 +1.30%로 추가 상승 중인 반면 유가는 트럼프의 이란 발언에 -0.60%로 되돌림 중이다(위 "세계 경제 주요 뉴스" 참조).</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 네이버금융 종목분석 리포트 게시판은 여전히 정상 작동하지 않아, FnGuide(comp.wisereport.co.kr) 컨센서스 페이지로 대체합니다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>SK하이닉스</b> — 컨센서스 목표주가 3,253,182원(22개 기관 평균, 최근 유진투자증권 2026-10-08 기준 STRONG BUY), 투자의견 매수(4.00/5). 현재가(1,681,000원) 대비 93.5% 상승여력 — 다만 증권사별 목표가 편차가 148만원~400만원으로 매우 크다.</li>
+      <li style="padding-left:0;"><b>팬오션</b> — 컨센서스 목표주가 7,985원(13개 기관 평균, 최근 유안타증권 2026-10-08 기준), 투자의견 매수(3.92/5). 현재가(6,030원) 대비 32.4% 상승여력.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">SK하이닉스</span><span class="stock-code mono">000660</span></div>
+        <div class="stock-price mono">1,681,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/8 종가, -2.44%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">반도체·AI</span></div>
+      <p class="why"><b>선정 이유</b> — OpenAI 매출 공개發 AI 버블 경계감이 미국을 넘어 국내 메모리株로 전이됐는지를 보여주는 종목. Oracle과 함께 오늘의 AI 테마 명암을 대표한다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">28.51배 · 4.74배</div></div>
+        <div class="f"><div class="k">PBR(trailing·2026E)</div><div class="v">9.79배 · 3.17배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">3,002,000원 · 400,000원</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">3,253,182원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출액 +230.8%, 영업이익 +489.4%, 당기순이익 +788.2% — AI 인프라 투자 확대發 DRAM·NAND 가격 상승으로 역대 최대 영업이익률을 경신했다(FnGuide)</li>
+        <li>22개 기관 컨센서스 목표주가(3,253,182원) 대비 +93.5%의 큰 상승여력, 어제(10/8) 유진투자증권은 목표가 370만원(STRONG BUY)을 제시했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>OpenAI發 AI 버블 경계감이 확산되며 10/8 -2.44% 하락 — 메모리 슈퍼사이클이 AI 투자 지속에 크게 의존하는 구조적 리스크를 보여준다</li>
+        <li>최근 1개월 -6.25%, 3개월 -19.03%로 단기 조정이 이어지고 있고, 증권사별 목표가가 148만원(BNK)~400만원(IBK)으로 편차가 매우 크다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> AI發 메모리 수요 확대 수혜가 실적으로 뚜렷하게 확인되나, OpenAI 매출 논란이 보여주듯 AI 투자 사이클 자체에 대한 불확실성은 주가 변동성으로 이어질 수 있다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Oracle</span><span class="stock-code mono">NYSE:ORCL</span></div>
+        <div class="stock-price mono">$135.69<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/8 종가, -5.48%; 프리마켓 $137.47)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">클라우드·AI 인프라</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 AI 버블 경계감 확산의 진원지. OpenAI와의 대규모 클라우드 계약에 사업 운명이 깊게 연동된 대표 종목이다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$411.34B(-49.1%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">21.27배 · 15.93배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">1.47%($2.00)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$237.97(+75.38%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>매출(ttm) +21.6%, 순이익 +52.1%, EPS +47.7% — Tencent와 7억달러 규모 AI 칩 리스 계약을 포함해 클라우드 인프라 수요가 실적에 뚜렷이 반영되고 있다</li>
+        <li>43명 애널리스트 컨센서스는 "Buy", 목표주가(237.97달러) 대비 +75.38%의 매우 큰 상승여력 — 어제 급락 이후 프리마켓은 +1.31% 반등 중이다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>OpenAI 매출 공개 하나로 하루 만에 -5.48% 급락할 만큼 OpenAI 의존도에 대한 시장의 민감도가 매우 높다 — "Good news for OpenAI is great news for Oracle"이라는 평가의 반대 방향 리스크다</li>
+        <li>AI 데이터센터 확장을 위해 Broadcom·SpaceX와 함께 수백억달러 규모 부채 조달을 추진 중 — 공격적 차입에 따른 재무 레버리지 확대 우려도 상존한다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 클라우드·AI 인프라 수요 성장은 구조적이나, OpenAI 단일 고객 의존도와 공격적 차입 확대는 주가 변동성을 키우는 요인이다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">팬오션</span><span class="stock-code mono">028670</span></div>
+        <div class="stock-price mono">6,030원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/8 종가, -2.90%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">해운(벌크선)</span></div>
+      <p class="why"><b>선정 이유</b> — AI 버블 논란과 무관하게 자체 펀더멘털(벌크선 운임)로 움직이는 대표적인 "비인기" 업종. 오늘 테마와 탈동조화된 종목의 예시다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">10.69배 · 6.71배</div></div>
+        <div class="f"><div class="k">PBR(trailing·2026E)</div><div class="v">0.56배 · 0.51배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">6,600원 · 3,485원</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">7,985원(3.92 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출액 +27.4%, 영업이익 +41.6% — 남미 곡물 시즌 본격화, 수에즈 운하 통항 제한 지속, 호주·브라질 철광석 물동량 증가로 벌크선 전 선형 운임이 상승했다(FnGuide)</li>
+        <li>13개 기관 컨센서스 목표주가(7,985원) 대비 +32.4% 상승여력, 어제(10/8) 유안타증권은 목표가를 8,000원→8,500원으로 상향했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>PBR 0.56배로 밸류에이션은 낮지만 벌크선 운임은 변동성이 큰 업종 특성상 글로벌 교역 둔화 시 실적이 빠르게 악화될 수 있다</li>
+        <li>최근 1개월 수익률 -0.82%로 최근 상승세가 주춤한 모습이다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 벌크선 운임 상승 사이클의 수혜가 뚜렷하고 밸류에이션도 낮은 수준이나, 교역 환경 변화에 따른 업종 변동성은 유의해야 한다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">General Mills</span><span class="stock-code mono">NYSE:GIS</span></div>
+        <div class="stock-price mono">$32.59<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/8 종가, +2.58%; 프리마켓 $32.35)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">포장식품</span></div>
+      <p class="why"><b>선정 이유</b> — 팬오션과 같은 결로, AI 테마와 무관한 美 대표 포장식품 기업. 신임 CEO 교체와 고배당이 맞물린 전통적 가치주 사례다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$17.43B(-34.9%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">N/A · 10.50배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">7.49%($2.44)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$37.00(+13.53%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>Forward PE 10.50배의 낮은 밸류에이션에 배당수익률이 7.49%에 달하는 고배당주 — 1분기 실적은 시장 예상 매출을 상회했고 반려동물·시리얼 부문 수요도 견조하다</li>
+        <li>지난달(9/30) COO였던 Dana McNabb이 신임 CEO로 선임되며 경영 승계가 안정적으로 마무리됐다 — Forbes "2026 세계 최고 고용주"에도 선정됐다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 분기 순이익이 전년比 큰 폭 감소(3.97억달러→낮은 수준)했고, ttm 기준 순손실(-8.95억달러)을 기록 중 — 매각·구조조정 등 일회성 비용이 반영된 결과이나 추세 확인이 필요하다</li>
+        <li>20명 애널리스트 컨센서스는 "Hold"에 그치고, 매출(ttm)도 전년比 -4.5%로 감소세다 — 인플레이션과 소비 둔화가 지속적인 부담이다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 7%대 고배당과 안정적 경영 승계는 매력적이나, 순손실·매출 감소가 이어지는 한 valuation 재평가는 시간이 필요해 보인다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">10/10(토)~11(일)</span><span>주말 — 국내 증시는 10/12(월)에 재개장(한글날·주말 포함 3거래일 연휴)</span></li>
+      <li><span class="when mono">진행 중</span><span>OpenAI發 AI 버블 경계감이 추가 확산될지, Oracle·Nvidia 등 AI株 반등 여부</span></li>
+      <li><span class="when mono">진행 중</span><span>트럼프의 이란 공격 자제 발언이 유가 안정으로 이어질지, 호르무즈 리스크 재부각 가능성</span></li>
+      <li><span class="when mono">진행 중</span><span>Broadcom·Oracle·SpaceX의 AI 칩 부채 조달 추진이 AI 인프라 투자 지속성에 대한 신뢰로 이어질지</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-10-09 저녁 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
