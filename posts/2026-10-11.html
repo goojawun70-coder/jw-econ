@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-10-11 저녁 발행</title>
+<meta name="description" content="국내·美 증시 모두 주말 휴장(코스피 6,625.93·코스닥 892.27은 10/8, 다우·S&P500·나스닥은 10/9 종가 유지). 이번 주(10/13~15) Citigroup·Goldman Sachs·JPMorgan·BofA·Morgan Stanley 등 美 대형은행 Q3 실적 시즌이 개막하고 9월 CPI·PPI도 발표된다. 호르무즈 탱커 공격·러시아 디젤 공급 변수는 주말에도 지속. KB금융·Goldman Sachs·유한양행·Colgate-Palmolive 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>이번 주 美 대형은행 Q3 실적 시즌 개막 — Goldman Sachs 화요일 발표 앞두고 호르무즈·러시아 디젤 변수 지속</h1>
+    <div class="date">2026년 10월 11일 일요일 · 주말판(국내·美 증시 모두 휴장)</div>
+    <p class="thesis">국내·美 증시 모두 주말로 휴장해 코스피 6,625.93(-2.62%)·코스닥 892.27(-0.69%)는 10/8(목) 종가, 다우·S&amp;P500·나스닥은 10/9(금) 종가를 그대로 유지한다. 국내 증시는 한글날·주말이 겹친 연휴를 마치고 10/12(월)에 재개장하며, 美 증시는 같은 날 컬럼버스데이로 채권시장만 휴장하고 주식시장은 정상 개장한다. 이번 주 하이라이트는 10/13(화) Citigroup·Goldman Sachs(JPMorgan도 같은 날로 알려짐)로 개막하는 美 대형은행 3분기 실적 시즌이다 — 10/14(수) Bank of America·Morgan Stanish와 9월 CPI, 10/15(목) Charles Schwab과 9월 PPI까지 한 주 내내 금융주·물가지표가 증시 방향을 좌우할 전망이다. 한편 주말에도 호르무즈 해협 탱커 공격과 러시아 디젤 공급 협상이라는 두 가지 중동·에너지 변수는 그대로 이어지고 있다. 오늘은 이번 주 실적 시즌의 당사자인 KB금융·Goldman Sachs와, 이 흐름과 무관하게 자체 펀더멘털로 움직이는 유한양행·Colgate-Palmolive 4종목을 심층 분석한다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>이번 주 美 대형은행 3분기 실적 시즌 개막 — 신용 건전성은 양호하나 금리·경기 둔화 우려 남아</strong>
+      <p>Bloomberg는 주요 은행들이 양호한 신용 건전성을 유지한 채 3분기 실적 시즌에 진입하지만, 금리 경로와 경기 영향에 대한 질문은 여전히 남아있다고 보도했다. Citigroup·Goldman Sachs(JPMorgan도 같은 날로 알려짐)가 10/13(화), Bank of America·Morgan Stanley가 10/14(수) 실적을 발표할 예정이다.</p>
+      <span class="src">Bloomberg Markets and Finance 2026-10-09</span>
+    </div>
+    <div class="news-item">
+      <strong>10/12(월) 컬럼버스데이 — 美 채권시장 휴장, 주식시장은 정상 개장 / 국내는 재개장</strong>
+      <p>美 채권시장은 컬럼버스데이 공휴일로 10/12(월) 휴장하지만 주식시장은 정상 거래된다. 국내 증시는 한글날·주말이 겹친 연휴를 마치고 같은 날 재개장한다. 이번 주는 10/14(수) 9월 CPI, 10/15(목) 9월 PPI 발표도 예정돼 있어 물가지표와 은행株 실적이 동시에 증시를 움직일 한 주다.</p>
+      <span class="src">주요 경제 캘린더 종합 2026-10-09 기준</span>
+    </div>
+    <div class="news-item">
+      <strong>러시아 디젤 최대 480만톤 공급 합의 — 美 재무부, 임시 일반 라이선스 발급</strong>
+      <p>트럼프 대통령이 밝힌 러시아산 디젤 공급 합의의 구체적 규모가 드러났다: 즉시 30만톤, 11월 추가 50만톤, 이후 100만톤, 추가로 최대 300만톤(러시아 정유시설 상태에 따라)까지 총 480만톤 규모다. 美 재무부 해외자산통제실(OFAC)은 러시아산 디젤이 국제시장에 유입될 수 있도록 임시 일반 라이선스를 발급했다. 다만 이 중 미국向 물량과 운송 방식은 아직 불명확하다.</p>
+      <span class="src">Reuters·tovima.com 2026-10-09~10</span>
+    </div>
+    <div class="news-item">
+      <strong>호르무즈 해협 탱커 공격 지속, 운임 기록적 고점 — 디젤 시장 긴장 계속</strong>
+      <p>oilprice.com·intellinews 등에 따르면 호르무즈 해협을 통과하는 선박 운항이 긴장 고조로 급감했고, 페르시아만 일대 탱커 운임은 기록적 고점까지 치솟았다. 우크라이나의 러시아 정유시설 드론 공격이 러시아의 정제 능력을 훼손해 디젤 시장 긴장을 더 키우고 있다는 분석도 나온다.</p>
+      <span class="src">oilprice.com·IntelliNews 2026-10-09 전후</span>
+    </div>
+    <div class="news-item">
+      <strong>Goldman Sachs 경영진 5억달러 특별 보너스 논란 — CEO 승계설(Waldron)과 겹쳐 지배구조 이슈 부각</strong>
+      <p>Bloomberg·Reuters·New York Post는 Goldman Sachs CEO David Solomon과 사장 John Waldron 등 최고경영진이 5억달러 이상의 특별 주식 보상을 받을 예정이라고 보도했다. 최근 5년간 동종업계 대비 우수한 실적을 반영한 결정이라는 설명이지만, 동시에 Waldron이 Solomon의 후임 CEO로 유력하다는 승계설이 맞물리며 지배구조 관련 관심이 커지고 있다.</p>
+      <span class="src">Bloomberg·Reuters·New York Post 2026-10-08~09</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 국내·美 모두 주말 휴장</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>6,625.93</td><td class="chg down">-2.62%</td><td class="plain">주말 휴장, 10/8 종가 유지</td></tr>
+          <tr><td>코스닥</td><td>892.27</td><td class="chg down">-0.69%</td><td class="plain">주말 휴장, 10/8 종가 유지</td></tr>
+          <tr><td>다우</td><td>51,799</td><td class="chg up">+0.87%</td><td class="plain">주말 휴장, 10/9 마감(DIA 환산) 유지</td></tr>
+          <tr><td>S&amp;P500</td><td>7,824</td><td class="chg up">+0.60%</td><td class="plain">주말 휴장, 10/9 마감(SPY 환산) 유지</td></tr>
+          <tr><td>나스닥</td><td>27,383</td><td class="chg up">+0.63%</td><td class="plain">주말 휴장, 10/9 마감(ONEQ 환산) 유지</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내·美 증시 모두 주말로 거래가 없어 새로 갱신된 수치는 없다. 국내는 10/12(월) 재개장, 美는 같은 날 컬럼버스데이(채권시장만 휴장)로 정상 개장한다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-low">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">14.8</span>
+        <span class="vix-label">저변동</span>
+      </div>
+      <p class="vix-msg">VIX 14.84(10/9 마감 기준, 주말 갱신 없음)로 변동성이 매우 낮은 구간입니다. 시장이 과도하게 낙관적일 수 있어 단기 되돌림에 유의하세요.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 주말에는 옵션시장이 거래되지 않아 10/9(금) 마감 수치를 그대로 유지합니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러</dt><dd>1,343.80원 (+0.21%)</dd></div>
+      <div class="stat"><dt>원/100엔</dt><dd>848.71원 (+0.01%)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 10/9 마감)</dt><dd>$384.58 (+1.57%)</dd></div>
+      <div class="stat"><dt>WTI(USO, 10/9 마감)</dt><dd>$148.20 (+0.42%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">외환시장도 주말(토요일 아침~월요일 아침, 서울시간 기준)에는 거래가 중단되어 10/10 마지막 고시환율을 그대로 유지한다(새 고시 없음). 금(GLD)·유가(USO)도 가장 최근 완료된 거래일인 10/9(금) 정규장 마감 기준을 유지한다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 네이버금융 종목분석 리포트 게시판은 여전히 정상 작동하지 않아, FnGuide(comp.wisereport.co.kr)·stockanalysis.com 컨센서스 페이지로 대체합니다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>KB금융</b> — 컨센서스 목표주가 221,421원(19개 기관 평균), 투자의견 매수(4.00/5). 현재가(162,800원) 대비 36.0% 상승여력.</li>
+      <li style="padding-left:0;"><b>유한양행</b> — 컨센서스 목표주가 121,562원(16개 기관 평균), 투자의견 매수(4.00/5). 현재가(73,100원) 대비 66.3% 상승여력 — 다만 최근 다수 기관이 목표가를 하향(DB -20.00%, 상상인 -18.75% 등)했다.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">KB금융</span><span class="stock-code mono">105560</span></div>
+        <div class="stock-price mono">162,800원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/8 종가, -3.38%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">금융지주</span></div>
+      <p class="why"><b>선정 이유</b> — 이번 주 화요일부터 본격화하는 美 대형은행 실적 시즌에 발맞춘 국내 대표 금융지주. Goldman Sachs와 짝지어 한·미 은행업 테마를 비교한다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">10.77배 · 8.85배</div></div>
+        <div class="f"><div class="k">PBR(trailing·2026E)</div><div class="v">0.99배 · 0.91배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">194,500원 · 109,200원</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">221,421원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출 +42.3%, 영업이익 +22.9%, 순이익 +13.1% — 1·2분기 모두 영업이익·순이익 서프라이즈(+9.55%·+3.76%, +5.79%·+4.08%)를 기록하며 은행·증권·보험 전 부문이 고르게 개선됐다(FnGuide)</li>
+        <li>19개 기관 컨센서스 목표주가(221,421원) 대비 +36.0% 상승여력, 키움증권은 9/8 목표가를 23만원→24만원으로 상향했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 1개월 -6.28%, 3개월 -4.80%로 단기 조정이 이어지는 가운데, 이번 주 美 대형은행들의 실적 결과에 따라 국내 금융주 전반의 변동성이 확대될 수 있다</li>
+        <li>부채비율(1,211.73%)은 은행업 특성상 불가피하나, 금리 경로에 대한 불확실성이 남아있는 한 순이자마진(NIM) 전망의 민감도가 높다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 2개 분기 연속 어닝서프라이즈로 실적 모멘텀이 뚜렷하게 확인되고 컨센서스 상승여력도 크지만, 이번 주 美 은행 실적 결과가 국내 금융주 투자심리에도 영향을 줄 수 있다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Goldman Sachs</span><span class="stock-code mono">NYSE:GS</span></div>
+        <div class="stock-price mono">$895.32<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/9 종가, +1.44%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">투자은행</span></div>
+      <p class="why"><b>선정 이유</b> — 10/13(화) 실적 발표를 앞둔 이번 주 美 대형은행 실적 시즌의 중심 종목. KB금융과 짝지어 한·미 은행업 테마를 비교한다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$271.07B(+15.3%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">13.85배 · 13.90배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">2.23%($20.00)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$1,069.10(+19.41%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>매출(ttm) +23.3%, 순이익 +34.8%, EPS +42.6% — 2025년 연간 매출($59.40B)도 전년比 +13.86%, 순이익 +20.54%로 호조가 이어지고 있다</li>
+        <li>목표주가($1,069.10) 대비 +19.41% 상승여력, TD Cowen은 Buy·목표가 $1,050을 유지하며 "불균등했던 전략적 여정에서 훨씬 강해진 회사로 거듭났다"고 평가했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>26명 애널리스트 컨센서스는 "Hold"에 그치고, BofA·UBS·BMO는 최근 목표가를 각각 하향($1,300→$1,050, $1,150→$1,010, $972→$970)했다 — WSJ도 "은행주, 2023년의 유령에 시달린다"며 금리 상승기 재현 우려를 짚었다</li>
+        <li>경영진 5억달러 특별 보너스 지급과 CEO 승계설(Waldron)이 겹치며 지배구조 불확실성이 부각되는 가운데 10/13 실적 발표를 앞두고 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 실적 성장세는 뚜렷하지만 컨센서스가 "Hold"에 머물고 최근 목표가 하향이 잇따르는 만큼, 화요일 실적 발표 전까지는 방향성 확인이 필요하다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">유한양행</span><span class="stock-code mono">000100</span></div>
+        <div class="stock-price mono">73,100원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/8 종가, -2.53%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">제약바이오</span></div>
+      <p class="why"><b>선정 이유</b> — 이번 주 은행 실적 시즌과 무관하게 자체 신약 파이프라인(렉라자)으로 움직이는 대표적인 "비인기" 업종. Colgate-Palmolive와 짝지어 비교한다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">30.60배 · 35.00배</div></div>
+        <div class="f"><div class="k">PBR(trailing·2026E)</div><div class="v">2.37배 · 2.25배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">129,200원 · 65,000원</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">121,562원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출 +8.9%, 영업이익 +34.5%, 순이익 +79.1% — 비소세포폐암 치료제 렉라자의 글로벌·국내 매출 성장과 로수바미브 등 개량신약 라인업이 수익성 중심 성장을 견인했다(FnGuide)</li>
+        <li>16개 기관 컨센서스 목표주가(121,562원) 대비 +66.3% 상승여력, 다올투자증권은 10/8 목표가 12만원(BUY)을 유지했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 1년 수익률 -39.03%로 장기 조정이 깊게 진행 중이며, 최근 1개월도 -7.59% — 다수 증권사가 최근 목표가를 하향했다(DB -20.00%, 상상인 -18.75%, 신영 -14.29% 등)</li>
+        <li>렉라자 단일 품목 의존도가 높아 후속 신약(제2·3의 렉라자) 파이프라인 가시화 여부에 따라 주가 변동성이 커질 수 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 렉라자發 실적 성장과 큰 컨센서스 상승여력은 긍정적이나, 장기 하락세와 단일 품목 의존 리스크가 완전히 해소되지는 않았다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Colgate-Palmolive</span><span class="stock-code mono">NYSE:CL</span></div>
+        <div class="stock-price mono">$88.27<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/9 종가, +0.19%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">생활용품</span></div>
+      <p class="why"><b>선정 이유</b> — 유한양행과 같은 결로, 이번 주 은행 실적 시즌과 무관하게 자체 포트폴리오 재편으로 움직이는 美 대표 생활용품 기업.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$70.37B(+11.6%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">34.83배 · 22.52배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">2.40%($2.12)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$98.25(+11.31%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>매출(ttm) +5.2%로 꾸준한 성장을 이어가는 가운데, 21명 애널리스트 컨센서스는 "Buy" — 목표주가($98.25) 대비 +11.31% 상승여력</li>
+        <li>Softsoap·Irish Spring·Speed Stick 등 저마진 매스마켓 브랜드 매각을 검토 중(Reuters) — 포트폴리오 고급화를 통한 수익성 개선이 기대된다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>순이익(ttm) -29.9%, EPS -28.8%로 매출 성장과 반대로 수익성은 뚜렷하게 악화됐다 — 2분기 실적에서도 북미 수요 부진이 계속 거론됐다</li>
+        <li>Forward PER 22.52배로 밸류에이션 부담이 완전히 해소되지 않았고, 브랜드 매각이 실제 수익성 개선으로 이어지기까지는 시간이 필요하다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 포트폴리오 고급화 전략과 꾸준한 배당은 매력적이나, 순이익 악화가 이어지는 한 밸류에이션 재평가는 시간이 필요해 보인다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">이번 주 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">10/12(월)</span><span>국내 증시 재개장(한글날·주말 연휴 종료). 美는 컬럼버스데이로 채권시장만 휴장, 주식시장은 정상 개장</span></li>
+      <li><span class="when mono">10/13(화)</span><span>Citigroup·Goldman Sachs 실적 발표(JPMorgan도 같은 날로 알려짐) — 美 대형은행 3분기 실적 시즌 개막</span></li>
+      <li><span class="when mono">10/14(수)</span><span>Bank of America·Morgan Stanley 실적 발표, 美 9월 CPI 발표</span></li>
+      <li><span class="when mono">10/15(목)</span><span>Charles Schwab 등 실적 발표(일부 일정 미확정), 美 9월 PPI 발표</span></li>
+      <li><span class="when mono">진행 중</span><span>호르무즈 해협 탱커 공격·러시아 디젤 공급(최대 480만톤) 변수가 유가에 계속 영향을 미칠지</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-10-11 저녁 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
