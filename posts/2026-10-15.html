@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-10-15 저녁 발행</title>
+<meta name="description" content="'검은 목요일' — 코스피 -7.57%(5,554.22)·코스닥 -7.65%(760.82) 동반 폭락, 양 시장 서킷브레이커 발동. 美 9월 CPI가 3.7%로 예상을 상회하며 Fed 추가 긴축 우려가 되살아났고, AI 반도체주는 수요 우려를 넘어 자금조달 우려로 국면이 전환. 10거래일간 코스피 시총 1,200조원 증발. 이수페타시스·AMD·KT·NextEra Energy 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>'검은 목요일' — 코스피·코스닥 7%대 동반 폭락, 양 시장 서킷브레이커 발동</h1>
+    <div class="date">2026년 10월 15일 목요일 · 10거래일 급락의 정점</div>
+    <p class="thesis">코스피가 454.59포인트(-7.57%) 폭락한 5,554.22, 코스닥은 63.06포인트(-7.65%) 급락한 760.82로 마감했다. 양 시장 모두 장중 서킷브레이커가 발동됐고, 국내 언론은 이날을 "검은 목요일"로 명명했다. 코스피는 10/6 이후 10거래일 만에 20% 넘게 급락해 시가총액 약 1,200조원이 증발했다 — 금융당국은 "시장이 과민 반응하고 있다"는 입장을 냈다. 직접적 도화선은 전날(10/14) 美 9월 CPI가 3.7%로 시장 예상을 상회하며 Fed의 추가 긴축 가능성을 되살린 것 — 나스닥은 ONEQ 환산 -1.83%로 급락했고, AI 반도체주는 "수요 둔화 우려"에서 "누가 AI 인프라 자금을 계속 조달할 수 있는가"라는 더 근본적인 질문으로 국면이 전환됐다(Invezz). 삼성전자·SK하이닉스는 이날 각각 9% 넘게 떨어졌고, 일본 니케이도 -4.90% 급락하며 아시아 전역이 흔들렸다. 금값도 고금리 전망에 $4,100선이 붕괴됐다. 오늘은 AI 서버 기판業에서 가장 극단적인 하락을 보인 이수페타시스와 AI 반도체 2위 AMD, 그리고 이 흐름과 무관한 KT·NextEra Energy 4종목을 심층 분석한다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>美 9월 CPI 3.7% 깜짝 상회 — Fed 추가 긴축 우려 되살아나며 나스닥 급락</strong>
+      <p>美 9월 소비자물가지수(CPI)가 3.7%로 시장 예상을 상회하며 국채금리가 뛰고 Fed의 추가 금리 인상 가능성이 다시 부각됐다. 나스닥은 ONEQ 환산 -1.83%로 급락했고, 금값은 $4,100선이 무너지며 은(실버)은 6% 폭락했다(Kitco). Reuters는 Korea의 Kospi가 역내 최대 낙폭(-7.6%)을 기록하며 삼성전자·SK하이닉스가 모두 9% 넘게 하락했다고 전했다.</p>
+      <span class="src">Kitco·Reuters 2026-10-14~15</span>
+    </div>
+    <div class="news-item">
+      <strong>AI 반도체주, "수요 우려"에서 "자금조달 우려"로 국면 전환 — Nvidia·AMD·Micron 프리마켓 급락</strong>
+      <p>Invezz는 Wall Street의 AI 매도세가 수요에 대한 의문에서 "누가 계속 AI 인프라 자금을 조달할 수 있는가"라는 더 근본적 질문으로 옮겨가고 있다고 전했다. CoreWeave의 채권 매도가 AI 지출에 대한 우려를 재점화시켰고, AMD는 전일(10/14) -5.73% 급락해 8/5 이후 최대 일일 낙폭을 기록했다(Dow Jones 데이터 기준, TipRanks).</p>
+      <span class="src">Invezz·Barron's·TipRanks 2026-10-14~15</span>
+    </div>
+    <div class="news-item">
+      <strong>코스피 10거래일간 20% 급락, 시총 1,200조원 증발 — 금융당국 "시장 과민반응"</strong>
+      <p>디지털데일리 등에 따르면 코스피는 10/6 이후 10거래일 동안 20% 넘게 급락했고, 이 기간 증발한 시가총액이 약 1,200조원에 달한다는 집계가 나왔다. 코스피·코스닥 양 시장 모두 이날 서킷브레이커가 발동됐다. 금융당국은 시장이 과민 반응하고 있다는 입장을 밝혔다.</p>
+      <span class="src">디지털데일리·비즈니스코리아·아주경제 2026-10-15</span>
+    </div>
+    <div class="news-item">
+      <strong>호르무즈 해협 싱가포르 선박 침몰, 이란 "美 군함 타격 준비" — 지정학 리스크 지속에도 유가는 하락</strong>
+      <p>CNBC는 호르무즈 해협에서 싱가포르 선적 선박이 침몰했고 이란이 美 군함을 타격할 준비를 하고 있다고 발언했다고 전했다. 그럼에도 유가는 하락했다 — 美 정부가 기록적 운임을 낮추기 위해 "셔도우 플릿" 탱커 제재를 완화하는 방안을 검토 중이라는 보도(New York Post)와 걸프 지역 공급 회복세가 맞물린 영향이다.</p>
+      <span class="src">CNBC·New York Post·Reuters 2026-10-15</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 국내는 10/15 마감, 美는 10/14(수) 마감</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>5,554.22</td><td class="chg down">-7.57%</td><td class="plain">서킷브레이커 발동, 외국인 3.79조원 순매도</td></tr>
+          <tr><td>코스닥</td><td>760.82</td><td class="chg down">-7.65%</td><td class="plain">서킷브레이커 발동</td></tr>
+          <tr><td>다우 (10/14 마감)</td><td>51,751</td><td class="chg down">-0.11%</td><td class="plain">DIA 환산</td></tr>
+          <tr><td>S&amp;P500 (10/14 마감)</td><td>7,734</td><td class="chg down">-1.08%</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (10/14 마감)</td><td>26,730</td><td class="chg down">-1.83%</td><td class="plain">ONEQ 환산, 핫CPI·AI株 급락 반영</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내 지수는 10/15(목) 정규장 마감 기준이다. 美 지수는 목요일 저녁(KST) 발행 시점 기준 가장 최근 완료된 거래일인 10/14(수) 마감 수치를 직전 검증된 기준에 ETF(DIA·SPY·ONEQ) 누적 등락률을 적용해 환산했다 — 10/15(목) 美 정규장은 이 발행 시점에 아직 마감되지 않았다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-stable">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">16.9</span>
+        <span class="vix-label">안정</span>
+      </div>
+      <p class="vix-msg">VIX 16.87(10/14 마감 기준, 전일比 +1.60pt)로 시장 공포 지수가 안정적입니다.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표입니다. 10/9(14.84)→10/13(15.27)→10/14(16.87)로 꾸준히 오르며 아직 "안정" 구간(15~20) 안에 있지만 상승 추세가 뚜렷하고, 10/15 프리마켓에서는 한때 17.57까지 오르기도 했다(10/14 마감 대비, 정규장 마감 확정치는 확보 못함) — 코스피·코스닥의 7%대 폭락을 美 증시가 아직 완전히 따라가지 못하고 있을 가능성에 유의해야 한다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (10/15 19:08 실시간)</dt><dd>1,344.70원 (+0.13%)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 10/14 마감)</dt><dd>$375.99 (-1.49%)</dd></div>
+      <div class="stat"><dt>WTI(USO, 10/14 마감)</dt><dd>$153.56 (+0.31%)</dd></div>
+      <div class="stat"><dt>코스피 10거래일 누적</dt><dd>-20%대, 시총 -1,200조원</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러는 코스피·코스닥의 7%대 폭락에도 완만한 약세에 그쳤다. 금(GLD)은 핫CPI發 금리 상승 전망에 10/14 마감 기준 $4,100선이 붕괴됐다. 유가(USO)는 호르무즈 리스크와 美 셔도우플릿 제재 완화 검토가 엇갈리며 소폭 상승 마감했다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 네이버금융 종목분석 리포트 게시판은 여전히 정상 작동하지 않아, FnGuide(comp.wisereport.co.kr)·stockanalysis.com 컨센서스 페이지로 대체합니다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>KT</b> — 컨센서스 목표주가 74,611원(18개 기관 평균), 투자의견 매수(4.00/5). 현재가(49,900원) 대비 큰 상승여력.</li>
+      <li style="padding-left:0;"><b>AMD</b> — 컨센서스 목표주가 $636.21(55명 애널리스트 평균), 투자의견 Strong Buy. 현재가 대비 +11.46% 상승여력.</li>
+      <li style="padding-left:0;"><b>이수페타시스</b> — 최근 3개월 리포트는 다수 확인되나(키움 10/12, 유안타 10/8, 신한투자 9/22 등 모두 긍정적 톤) 이번 발행에서 FnGuide 컨센서스 수치 자체는 확보하지 못했다 — 다음 발행 시 재확인 필요.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">이수페타시스</span><span class="stock-code mono">007660</span></div>
+        <div class="stock-price mono">111,200원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/14 종가; 10/15 NXT 애프터마켓 기준 추가로 -15.2%, 정규장 범위 93,000~107,100원)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">AI 서버 기판(PCB)</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 폭락장에서 가장 극단적인 하락을 보인 종목 중 하나. AI 서버용 고다층 PCB 기판업체로, AI 인프라 자금조달 우려가 공급망 밸류체인 끝단까지 번지고 있음을 보여준다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">165,000원 · 57,700원</div></div>
+        <div class="f"><div class="k">시가총액(10/15 NXT기준)</div><div class="v">약 6조 9,224억원</div></div>
+        <div class="f"><div class="k">외국인소진율</div><div class="v">17.58%</div></div>
+        <div class="f"><div class="k">컨센서스</div><div class="v">확보 못함</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>키움증권은 10/12 "3Q는 무난, 4Q부터 폭발 — 멀리 보면 더 매력적인 기업"이라는 제목의 리포트를 냈고, 유안타증권(10/8)·신한투자증권(9/22)도 캐파 확대와 판가 인상 사이클을 긍정적으로 평가했다</li>
+        <li>최근 리포트들이 공통적으로 4분기 이후의 실적 개선을 전망하고 있어, 오늘의 급락이 펀더멘털 변화보다는 업종 전반의 투매 심리에서 기인했을 가능성이 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>10/14 종가(111,200원) 대비 10/15 NXT 애프터마켓에서만 -15.2% — 52주 최고(165,000원) 대비로는 이미 -43% 수준까지 밀린 상태로, AI 인프라 자금조달 우려에 가장 민감하게 반응하는 종목 중 하나임이 확인됐다</li>
+        <li>PER·PBR·컨센서스 목표주가를 이번 발행에서 확보하지 못해 밸류에이션 판단에 제약이 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 증권가의 펀더멘털 전망은 여전히 긍정적이나, 단기 낙폭이 매우 크고 AI 밸류체인 전반의 투매 심리가 진정되기 전까지는 변동성이 불가피하다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">AMD</span><span class="stock-code mono">NASDAQ:AMD</span></div>
+        <div class="stock-price mono">$570.82<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/14 종가, -5.73%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">AI 반도체</span></div>
+      <p class="why"><b>선정 이유</b> — "AI 수요 우려 → 자금조달 우려"로 국면이 전환된 오늘의 상징적 종목. CoreWeave 채권 매도가 촉발한 AI 지출 우려의 직격탄을 맞았다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$931.85B(+167.2%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">145.70배 · 51.32배</div></div>
+        <div class="f"><div class="k">배당</div><div class="v">없음</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$636.21(+11.46%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>매출(ttm) +39.5%, 순이익 +127.0%, EPS +124.8% — AI 가속기·GPU 수요 확대가 실적에 강하게 반영되고 있다</li>
+        <li>55명 애널리스트 컨센서스 "Strong Buy", 최근 Fermi와 신용지원계약을 체결하며 AI 인프라 생태계 내 입지를 넓히고 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>10/14 -5.73%는 8/5 이후 최대 일일 낙폭(Dow Jones 데이터) — 밸류에이션 부담(PER 145.70배)이 큰 상태에서 中 경쟁 심화와 자금조달 우려가 겹쳤다</li>
+        <li>CoreWeave 등 AI 인프라 고객사의 채권시장 반응이 악화될 경우, AMD의 데이터센터向 매출 전망에도 2차 충격이 전이될 수 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> AI 가속기 수요·실적 성장은 구조적이나, 극단적으로 높은 밸류에이션 상태에서 업종 전반의 자금조달 우려에 가장 먼저 노출되는 종목이다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">KT</span><span class="stock-code mono">030200</span></div>
+        <div class="stock-price mono">49,900원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/14 종가, +0.30%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">통신</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 7%대 폭락장에서도 전날 기준 소폭 상승했던 종목. 반도체·AI 투매와 무관하게 통신 인프라·배당 매력으로 움직이는 대표적인 "비인기" 업종이다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER · 추정PER</div><div class="v">7.26배 · 8.75배</div></div>
+        <div class="f"><div class="k">PBR(trailing·2026E)</div><div class="v">0.68배 · 0.63배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">69,400원 · 48,100원</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">74,611원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>클라우드·AI데이터센터 등 신성장 AX 포트폴리오 확장을 추진 중이며, 가산 데이터센터 오픈 등 AI 인프라 수요에 선제 대응하고 있다(FnGuide)</li>
+        <li>18개 기관 컨센서스 목표주가(74,611원) 대비 현재가 기준 큰 상승여력, 현금배당수익률 4.81%로 고배당 매력도 유지</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>2026년 상반기 매출 -5.7%, 영업이익 -33.6%, 순이익 -35.5% — 유선전화·초고속인터넷·이동통신의 성숙기 진입과 국내 경기 침체에 따른 ICT 수요 감소가 지속되고 있다</li>
+        <li>최근 1개월 -6.20%로 통신주 역시 완전히 안전지대는 아니다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 오늘 같은 급락장에서 상대적 방어력을 보였고 배당·밸류에이션 매력도 있으나, 본업 실적 둔화는 지속 확인이 필요하다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">NextEra Energy</span><span class="stock-code mono">NYSE:NEE</span></div>
+        <div class="stock-price mono">$78.37<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/14 종가, +0.19%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">유틸리티(전력)</span></div>
+      <p class="why"><b>선정 이유</b> — KT와 같은 결로, AI 반도체 투매와 무관하게 자체 흐름으로 움직인 美 대표 유틸리티. 핫CPI로 금리가 뛴 날에도 상승 마감해 방어력을 보여줬다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$163.48B(-5.8%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">17.61배 · 19.13배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">3.18%($2.49)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$97.00(+23.77%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>매출(ttm) +10.8%, 순이익 +57.1%, EPS +55.0% — AI 데이터센터向 전력 수요 확대 수혜(20GW 이상의 연방 허브·데이터센터 프로젝트 확보)가 실적에 반영되고 있다</li>
+        <li>22명 애널리스트 컨센서스 "Buy", 목표주가 대비 +23.77% 상승여력 — 핫CPI로 금리가 뛴 10/14에도 소폭 상승 마감하며 방어력을 보였다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>Morgan Stanley는 최근 목표가를 $111→$110으로 하향 — 금리 상승은 통상 유틸리티 업종의 밸류에이션에 부담 요인으로 작용한다</li>
+        <li>Dominion Energy와의 670억달러 규모 합병이 진행 중이며, 규제 승인·주별 혜택 패키지 협상 등 통합 리스크가 남아있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> AI 데이터센터發 전력 수요 확대라는 구조적 성장 동력과 오늘 같은 급락장에서의 방어력이 함께 확인됐다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">진행 중</span><span>코스피·코스닥 7%대 폭락 이후 저가 매수세 유입 여부 — 10거래일 -20% 급락 이후 반등 또는 추가 하락 분기점</span></li>
+      <li><span class="when mono">진행 중</span><span>美 10/15(목) 정규장 마감 결과 — AI 반도체주 투매가 4일째로 이어질지, CPI 충격이 추가로 반영될지</span></li>
+      <li><span class="when mono">진행 중</span><span>Fed의 10월 금리 결정 전망 — 핫CPI가 실제 추가 긴축으로 이어질지 여부</span></li>
+      <li><span class="when mono">진행 중</span><span>호르무즈 해협 리스크(싱가포르 선박 침몰, 이란의 美 군함 위협 발언)와 美 셔도우플릿 제재 완화 검토가 유가에 미칠 영향</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-10-15 저녁 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
