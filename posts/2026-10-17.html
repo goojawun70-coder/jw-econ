@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-10-17 주말 특집</title>
+<meta name="description" content="주말 특집 — 코스피 한 주간 -14.5% 롤러코스터(6,626→5,554→5,668) 끝에 금요일 반등, 그러나 美 증시는 금요일 VIX 급등(19.99, 장중 22대)·CoreWeave AI 부채위기·유가 Brent $110 터치로 재차 흔들림. 호르무즈·사우디 공격, 우크라이나-러시아 '에너지 휴전' 붕괴. S-Oil·CoreWeave·SK텔레콤·Coca-Cola 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Weekend Special</div>
+    <h1>주말 특집 — 코스피 한 주간 -14.5% 롤러코스터 끝에 금요일 반등, 美는 VIX 급등·유가 $100대로 재차 흔들려</h1>
+    <div class="date">2026년 10월 17일 토요일 · 이번 주(10/12~10/16) 결산 및 다음 주 전망</div>
+    <p class="thesis">이번 주 코스피는 6,625.93(10/9 마감)→6,384.24(10/12,-3.65%)→6,035.35(10/13,-5.47%)→6,008.81(10/14,-0.44%)→5,554.22(10/15, "검은 목요일" -7.57%)→5,668.05(10/16,+2.05%)로 극심하게 출렁이며 주간 기준 -14.5% 급락했다. 금요일 코스피·코스닥은 외국인·기관 순매수 전환에 반등했지만, 같은 날(10/16) 美 증시는 정반대로 흔들렸다 — CoreWeave를 둘러싼 AI 부채조달 우려가 심화되며 나스닥(ONEQ 환산)이 -2.12%(6/5 이후 최악의 하루) 급락했고, VIX는 장중 22.31까지 치솟아 4개월來 최고치를 기록한 뒤 19.99(+21.45%)로 마감했다. 동시에 이란이 호르무즈 해협 공격을 격화하고(일요일 이후 최소 9척 선박 피격) 후티 반군이 사우디를 겨냥한 가운데, 트럼프가 중재한 우크라이나-러시아 "에너지 휴전"도 빠르게 붕괴되며 Brent유가 5월 이후 처음 $110을 터치했다(종가 $109.86, +3.7%). 이 와중에도 자금은 AI·반도체주를 떠나 코카콜라·비자·마스터카드 같은 방어주로 로테이션하며 이들 종목은 금요일 신고가를 경신했다. 다음 주 최대 변수는 테슬라·스페이스X·메타의 실적 발표다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">이번 주 세계 경제 주요 뉴스</div><div class="label-en">Global News · This Week</div></div>
+    <div class="news-item">
+      <strong>VIX 장중 22대 돌파, 4개월來 최고 — CoreWeave AI 부채위기 심화에 나스닥 -2.12%</strong>
+      <p>CNBC에 따르면 CoreWeave를 중심으로 한 AI주 매도세가 VIX를 4개월 만에 처음으로 22 위로 밀어 올렸다. CoreWeave는 금요일 하루 -11.91% 추가 급락(주간 기준 -25%)했고, Nasdaq은 -2.12%로 6/5 이후 최악의 하루를 보냈다. SpotGamma의 Brent Kochuba는 "11월물 VIX 콜옵션에 대형 매수가 집중되고 있다"며 트레이더들이 변동성이 더 커질 것에 베팅하고 있다고 전했다 — VIX는 결국 19.99(+21.45%)로 마감했다.</p>
+      <span class="src">CNBC·TipRanks·Reuters 2026-10-16</span>
+    </div>
+    <div class="news-item">
+      <strong>Brent $110 터치(5월 이후 최초) — 이란 호르무즈 공격 격화, 우크라이나-러시아 "에너지 휴전" 붕괴</strong>
+      <p>CNBC는 이란이 호르무즈 해협 공격을 격화하고(일요일 이후 최소 9척 선박 피격, 수요일엔 컨테이너선 GFS Pride 침몰) 후티 반군이 사우디 야날 수출터미널을 겨냥한 미사일을 발사했다고 전했다. 트럼프가 중재한 우크라이나-러시아 "에너지 휴전"도 빠르게 깨지며 젤렌스키가 러시아 정유시설 타격 재개를 선언했다. Brent유는 장중 $110까지 치솟아 종가 $109.86(+3.7%), WTI는 $101.41(+3.5%)로 마감 — 주간 기준 WTI +10%, Brent +5% 급등했다.</p>
+      <span class="src">CNBC·Reuters 2026-10-16</span>
+    </div>
+    <div class="news-item">
+      <strong>코스피 한 주간 -14.5% 롤러코스터 — "검은 목요일" 후 금요일 외국인·기관 순매수 전환 반등</strong>
+      <p>코스피는 이번 주 10/12(월) Broadcom CEO發 투매로 -3.65% 급락한 뒤 화·수요일에도 하락세를 이어가다, 목요일(10/15) 美 9월 CPI 서프라이즈發 "검은 목요일"로 -7.57% 폭락하며 서킷브레이커까지 발동됐다. 금요일(10/16)에는 Fed 의장 케빈 워시의 IMF 방콕 발언에 외국인이 3,590억원 순매수로 전환하며 +2.05% 반등, 코스닥도 기관 순매수(+1,695억원)에 +4.46% 올랐다.</p>
+      <span class="src">Jw경제 자체 집계 2026-10-12~16</span>
+    </div>
+    <div class="news-item">
+      <strong>AI주 이탈 자금, 코카콜라·비자·마스터카드로 로테이션 — 금요일 신고가 경신</strong>
+      <p>Barron's는 투자자들이 AI 트레이드를 벗어나 코카콜라·비자·마스터카드 등으로 눈을 돌리며 이들 종목이 금요일 신고가를 기록했다고 전했다. 코카콜라는 이날 KFC와의 신규 음료 공급 계약(펩시 대체) 소식까지 겹치며 +2.07% 상승해 52주 최고치(94.10) 근처에서 마감했다.</p>
+      <span class="src">Barron's·CNBC 2026-10-16</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 국내는 10/16(금) 마감 기준, 美도 10/16(금) 마감 기준</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>주간 등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피 (10/16 마감)</td><td>5,668.05</td><td class="chg down">주간 -14.5%</td><td class="plain">10/9 6,626 → 10/16 5,668</td></tr>
+          <tr><td>코스닥 (10/16 마감)</td><td>794.78</td><td class="chg down">주간 -10.9%</td><td class="plain">10/9 892 → 10/16 795</td></tr>
+          <tr><td>다우 (10/16)</td><td>52,111</td><td class="chg down">-0.38%(금요일)</td><td class="plain">DIA 환산</td></tr>
+          <tr><td>S&amp;P500 (10/16)</td><td>7,670</td><td class="chg down">-1.11%(금요일)</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (10/16)</td><td>26,163</td><td class="chg down">-2.12%(금요일)</td><td class="plain">ONEQ 환산, 6/5 이후 최악의 하루</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내·미국 지수 모두 이번 주 마지막 거래일인 10/16(금) 마감 기준입니다. 미국 지수는 DIA·SPY·ONEQ의 10/16 등락률을 직전 검증된 종가에 곱해 환산했습니다. 코스피·코스닥은 주말 휴장, 다음 개장은 10/19(월)입니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-stable">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">20.0</span>
+        <span class="vix-label">안정</span>
+      </div>
+      <p class="vix-msg">VIX 19.99(10/16 마감 기준, 전일比 +3.53pt·+21.45%)로 아직 "안정" 구간이지만 "경계" 임계치(20)에 바로 붙어 있습니다.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표입니다. 금요일 장중에는 22.31까지 치솟아 4개월 만에 처음으로 22를 넘었고, SpotGamma의 Brent Kochuba는 "11월물 VIX 콜옵션에 대형 매수가 집중되고 있다"며 트레이더들이 변동성 추가 확대에 베팅하고 있다고 전했습니다. 종가(19.99)는 아직 20 미만으로 "안정" 등급을 유지하지만, 하루 만에 +21.45% 급등하며 임계치 바로 아래까지 올라온 만큼 다음 거래일(10/19) "경계" 구간 진입 여부를 주시해야 합니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (10/16 19:11 기준)</dt><dd>1,329.70원 (주말 휴장, 변동 없음)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 10/16 마감)</dt><dd>$382.01 (-0.18%)</dd></div>
+      <div class="stat"><dt>WTI(USO, 10/16 마감)</dt><dd>$161.76 (+2.83%)</dd></div>
+      <div class="stat"><dt>Brent유 (10/16 마감)</dt><dd>$109.86 (+3.7%, 5월來 최고)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러는 주말 휴장으로 금요일 저녁 실시간 환율(1,329.70원)이 그대로 유지됩니다. 유가(USO·Brent)는 호르무즈·사우디 공격과 우크라이나-러시아 에너지 휴전 붕괴가 겹치며 주간 기준 WTI +10%, Brent +5% 급등했습니다. 금(GLD)은 금리 하락 기대와 유가 상승이 서로 상쇄되며 금요일은 거의 변동이 없었습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증권사 리포트 하이라이트</div><div class="label-en">Research Notes</div></div>
+    <ul class="points" style="display:grid;gap:10px;">
+      <li style="padding-left:0;"><b>IBK투자증권 (S-Oil, 목표주가 150,000→210,000원·매수)</b> — 10/15 리포트에서 목표가를 40% 상향 조정했다. 호르무즈 봉쇄에 따른 중동·아시아 정유사 가동률 하락과 中 수출 제한으로 경질유 마진이 크게 확대됐다고 평가했다.</li>
+      <li style="padding-left:0;"><b>삼성증권 (SK텔레콤, 목표주가 115,000원·매수)</b> — 10/16 리포트에서 목표가를 유지하며 5G 가입자 기반의 안정적 매출과 AI 데이터센터 등 신규 영역 성장 기회를 긍정적으로 평가했다.</li>
+    </ul>
+    <p style="font-size:12.5px;color:var(--ink-faint);margin-top:10px;">※ FnGuide(comp.wisereport.co.kr) 컨센서스 페이지 원문 기준</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">이번 주 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">S-Oil</span><span class="stock-code mono">010950</span></div>
+        <div class="stock-price mono">153,700원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/16 종가, -3.58%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">정유(유가 급등 수혜)</span></div>
+      <p class="why"><b>선정 이유</b> — 이번 주 가장 뜨거운 테마인 유가 급등($100대 복귀)의 직접 수혜주. 금요일 하루는 차익실현에 하락했지만, 호르무즈 봉쇄發 정제마진 확대로 주간·연간 수익률은 압도적이다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">177,100원 · 65,000원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">5.66배 · 2.01배</div></div>
+        <div class="f"><div class="k">1년 수익률</div><div class="v">+125.04%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">193,231원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 매출 +19.1%, 영업이익·순이익 모두 흑자전환 — 호르무즈 봉쇄로 중동·아시아 정유사 가동률이 떨어지고 中 수출 제한이 겹치며 경질유 마진이 크게 확대됐다</li>
+        <li>13개 기관 컨센서스 목표주가(193,231원) 대비 상승여력, IBK투자증권은 10/15 목표가를 150,000→210,000원(+40%)으로 상향했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>1년 수익률 +125%로 이미 급등한 상태 — 금요일 -3.58%는 유가 급등에도 차익실현 매물이 나올 수 있음을 보여준다</li>
+        <li>정제마진 확대가 지정학 리스크(호르무즈·사우디 공격)에 기인한 만큼, 분쟁이 완화되면 마진도 빠르게 되돌릴 수 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적이나 단기 차익실현 유의.</b> 정제마진 확대 사이클은 구조적이지만, 지정학 리스크에 기반한 만큼 변동성이 크다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">CoreWeave</span><span class="stock-code mono">NASDAQ:CRWV</span></div>
+        <div class="stock-price mono">$61.39<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/16 종가, -11.91%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">AI 인프라(네오클라우드)</span></div>
+      <p class="why"><b>선정 이유</b> — 이번 주 VIX 급등을 촉발한 상징적 종목. AI 인프라 부채조달 우려의 진원지로, 주간 -25% 급락하며 "AI 트레이드"의 리스크를 가장 극적으로 보여줬다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$33.86B(-51.3%)</div></div>
+        <div class="f"><div class="k">매출(ttm)</div><div class="v">$7.59B(+115.3%)</div></div>
+        <div class="f"><div class="k">순이익</div><div class="v">-$1.93B(적자)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$140.58(+129.0%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>41명 애널리스트 컨센서스 "Buy", 목표주가 대비 +129% 상승여력 — JPMorgan은 "20% 하락은 과도한 우려"라고 평가했고, Nvidia CEO 젠슨 황도 CoreWeave에 대한 신뢰를 표명했다</li>
+        <li>매출(ttm) +115.3%로 AI 인프라 수요 자체는 여전히 견조 — Cantor Fitzgerald는 2027년 용량이 거의 모두 선판매됐다고 평가했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>부채 수익률이 15%까지 치솟았을 정도로 AI 인프라 확장에 필요한 자금조달 비용 우려가 핵심 — 순이익은 여전히 적자(-$1.93B)이며 PER 산출이 불가능할 만큼 밸류에이션 불확실성이 크다</li>
+        <li>52주 최고($150.40) 대비 이미 -59%까지 밀린 상태로, 네오클라우드 업종 전반의 신뢰 회복 전까지 변동성이 극심할 전망</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> AI 인프라 수요 자체는 구조적이나, 부채조달 우려가 해소되기 전까지 "AI 트레이드"의 가장 민감한 바로미터로 남을 것이다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">SK텔레콤</span><span class="stock-code mono">017670</span></div>
+        <div class="stock-price mono">78,400원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/16 종가, -0.51%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">통신</span></div>
+      <p class="why"><b>선정 이유</b> — 이번 주 코스피 롤러코스터·美 AI 부채위기와 무관하게 자체 펀더멘털로 움직인 통신 대표주. 최근 1개월 -11.01%로 소외됐지만 증권사들의 매수 의견은 흔들림이 없다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">12.50배 · 1.20배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">139,500원 · 51,400원</div></div>
+        <div class="f"><div class="k">현금배당수익률</div><div class="v">2.12%(2026E 4.25%)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">123,211원(3.89 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 영업이익 +21.9%, 순이익 +74.6% — 5G 가입자 기반의 안정적 매출과 네트워크 투자 효율화로 수익성이 개선됐다</li>
+        <li>19개 기관 컨센서스 목표주가(123,211원) 대비 큰 상승여력, 삼성증권(10/16)·신한투자(10/15) 등 최근 리포트가 모두 매수 의견을 유지했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 1개월 -11.01%, 3개월 -12.60%로 단기 흐름이 부진 — 52주 최고(139,500원) 대비 이미 -43.8%까지 밀린 상태</li>
+        <li>매출(상반기) -0.5%로 이동통신 시장 자체는 성숙기 정체가 지속되고 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 단기 소외는 뚜렷하나 밸류에이션·배당 매력과 증권가의 일관된 매수 의견이 뒷받침된다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Coca-Cola</span><span class="stock-code mono">NYSE:KO</span></div>
+        <div class="stock-price mono">$93.90<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/16 종가, +2.07%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">음료(필수소비재)</span></div>
+      <p class="why"><b>선정 이유</b> — AI주 이탈 자금이 몰린 로테이션의 최대 수혜주. 금요일 비자·마스터카드와 함께 신고가를 경신했고, KFC의 펩시→코카콜라 음료 공급사 전환이라는 자체 호재도 겹쳤다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$404.01B(+39.1%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">28.22배 · 27.63배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">2.26%($2.12)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$94.74(+0.89%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>매출(ttm) +6.5%, 순이익 +17.5%, EPS +18.0% — KFC가 40년 만에 펩시에서 코카콜라로 음료 공급사를 전환하며 추가 성장 모멘텀 확보</li>
+        <li>24명 애널리스트 컨센서스 "Buy", Barclays(10/16, $93→$98)·Citi(10/16, $100→$102) 등 최근 목표가 상향이 이어지고 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>목표주가($94.74) 대비 상승여력이 +0.89%에 불과 — 이미 52주 최고치(94.10) 근처에서 거래되며 추가 상승 여지가 제한적이다</li>
+        <li>PER 28.22배로 필수소비재 업종 내에서 저평가 매력은 크지 않으며, 코스타 커피 매각 추진 등 사업구조 조정 이슈가 진행 중이다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적 긍정.</b> AI주 리스크 회피 자금의 수혜와 KFC 공급계약이라는 호재는 뚜렷하나, 밸류에이션 자체의 추가 상승 여지는 제한적이다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 주 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">10/19(월)</span><span>코스피·코스닥 개장 — 금요일 VIX 급등·유가 급등 이후 월요일 반응 확인</span></li>
+      <li><span class="when mono">다음 주</span><span>테슬라·스페이스X·메타 실적 발표 — AI 밸류에이션 재평가의 핵심 변수</span></li>
+      <li><span class="when mono">진행 중</span><span>호르무즈 해협·사우디 공격 등 중동 지정학 리스크, Brent $110 추가 돌파 여부</span></li>
+      <li><span class="when mono">진행 중</span><span>CoreWeave 등 네오클라우드 업체의 AI 부채조달 리스크 지속 여부, VIX의 "경계" 구간 진입 여부</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-10-17 주말 특집</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
