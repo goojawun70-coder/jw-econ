@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-10-18 주말 특집 Ⅱ</title>
+<meta name="description" content="주말 특집 Ⅱ — AI 반도체 장비株 극명한 디커플링: 국내 피에스케이홀딩스는 금요일 +7.45% 급등(목표가 잇단 상향)한 반면, 美 Applied Materials 등은 CoreWeave AI 부채위기發 '역사적 급락세'로 -4.82%. 코스피·코스닥·美 증시 모두 주말 휴장으로 10/16(금) 종가 유지. 피에스케이홀딩스·Applied Materials·삼성화재·Johnson & Johnson 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Weekend Special Ⅱ</div>
+    <h1>주말 특집 Ⅱ — AI 반도체 장비株 극명한 디커플링, 피에스케이홀딩스 +7.45% vs Applied Materials -4.82%</h1>
+    <div class="date">2026년 10월 18일 일요일 · 국내외 증시 휴장, 주말 발생 이슈 결산</div>
+    <p class="thesis">코스피·코스닥과 미국 증시 모두 주말 휴장으로 10/16(금) 종가가 그대로 유지되는 가운데, 금요일 하루 동안 AI 반도체 장비주 사이에서 극명한 디커플링이 나타났다는 점이 눈에 띈다. 국내 반도체 후공정(패키징) 장비주 피에스케이홀딩스는 HBM·첨단패키징 수요 확대에 힘입어 +7.45% 급등하며 현대차(10/16)·신한투자(10/12) 등의 목표가 상향이 뒤따랐다. 반대로 美 Applied Materials·KLA·Lam Research 등 반도체 장비株는 CoreWeave를 둘러싼 AI 인프라 부채조달 우려가 장비 투자(WFE) 전망까지 흔들며 "역사적 급락세"(Barron's)를 보였다 — AMAT는 -4.82%. 한편 지난주(10/13) 실적을 발표한 Johnson & Johnson은 중동 분쟁이 의료기기 매출에 타격을 줬다고 밝히며, 지정학 리스크가 반도체·오일을 넘어 전혀 무관한 섹터까지 전이되고 있음을 보여줬다. VIX는 금요일 장중 22대까지 치솟은 뒤 19.99로 마감한 수준이 그대로 유지되며, 다음 거래는 코스피·코스닥·미국 증시 모두 10/19(월)부터 재개된다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">주말 세계 경제 주요 뉴스</div><div class="label-en">Global News · Weekend</div></div>
+    <div class="news-item">
+      <strong>美 반도체 장비株, CoreWeave AI 부채위기發 "역사적 급락세" — AMAT·KLAC·LRCX 동반 하락</strong>
+      <p>Barron's는 금요일 반도체 장비업체들의 주가가 AI 지출 속도에 대한 우려로 "역사적 급락세"를 보였다고 전했다. Applied Materials(-4.82%)를 비롯해 KLA·Lam Research·Micron 등이 동반 하락했으며, CoreWeave를 둘러싼 부채조달 우려가 반도체 장비 투자(WFE) 전망 자체에 대한 의구심으로 확산된 결과로 풀이된다. 다만 Barron's는 "하락은 맞지만 끝난 것은 아니다"라며 장기 AI 수요 자체는 유효하다고 평가했다.</p>
+      <span class="src">Barron's·MarketWatch 2026-10-16</span>
+    </div>
+    <div class="news-item">
+      <strong>반면 국내 반도체 후공정 장비주는 강세 — 피에스케이홀딩스 금요일 +7.45%, 목표가 잇단 상향</strong>
+      <p>美 장비株 급락과 대조적으로, HBM·첨단패키징용 Descum·Reflow 장비를 공급하는 피에스케이홀딩스는 금요일 +7.45% 급등했다. 현대차증권은 10/16 목표가를 210,000→270,000원(+28.57%)으로, 신한투자증권은 10/12 190,000→260,000원(+36.84%)으로 상향했다 — AI 서버向 HBM 수요와 첨단패키징 투자 확대가 근거로 제시됐다.</p>
+      <span class="src">FnGuide 컨센서스·네이버금융 리서치 2026-10-12~16</span>
+    </div>
+    <div class="news-item">
+      <strong>Brent $110 터치 배경 재점검 — 호르무즈 9척 피격·사우디 공격·우크라이나 에너지휴전 붕괴</strong>
+      <p>금요일 Brent유가 5월 이후 처음 $110을 터치한 배경에는 복합적 요인이 있다. CNBC에 따르면 일요일 이후 호르무즈 해협에서 최소 9척의 선박이 피격됐고(수요일엔 컨테이너선 GFS Pride 침몰), 후티 반군은 사우디 야날 수출터미널을 겨냥한 미사일을 발사했다. 동시에 트럼프가 중재한 우크라이나-러시아 "에너지 휴전"도 깨지며 디젤 가격이 갈론당 $6.33(전년比 +70%)까지 치솟았다.</p>
+      <span class="src">CNBC 2026-10-16</span>
+    </div>
+    <div class="news-item">
+      <strong>Johnson &amp; Johnson, 지난주 실적서 중동 분쟁發 의료기기 매출 타격 공개 — 거시 리스크의 예상밖 전이 경로</strong>
+      <p>지난주 화요일(10/13) 실적을 발표한 Johnson &amp; Johnson은 영업실적 전반은 예상을 상회했으나 CNBC는 "중동 분쟁을 포함한 지정학적 이슈가 의료기기 매출에 부담을 줬다"고 전했다. 발표 직후 주가가 거의 6% 급락했다가(Fox Business) 금요일 종가 기준 $255.56까지 회복했으며, Wells Fargo는 목표가를 $275→$287로 상향했다.</p>
+      <span class="src">CNBC·Fox Business 2026-10-13~16</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 국내외 모두 주말 휴장, 10/16(금) 종가 유지</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피 (10/16 마감 유지)</td><td>5,668.05</td><td class="chg up">+2.05%(금요일)</td><td class="plain">주말 휴장, 변동 없음</td></tr>
+          <tr><td>코스닥 (10/16 마감 유지)</td><td>794.78</td><td class="chg up">+4.46%(금요일)</td><td class="plain">주말 휴장, 변동 없음</td></tr>
+          <tr><td>다우 (10/16 마감 유지)</td><td>52,111</td><td class="chg down">-0.38%(금요일)</td><td class="plain">美 증시도 주말 휴장</td></tr>
+          <tr><td>S&amp;P500 (10/16 마감 유지)</td><td>7,670</td><td class="chg down">-1.11%(금요일)</td><td class="plain">&nbsp;</td></tr>
+          <tr><td>나스닥 (10/16 마감 유지)</td><td>26,163</td><td class="chg down">-2.12%(금요일)</td><td class="plain">6/5 이후 최악의 하루</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내·미국 증시 모두 주말 휴장으로 지수 변동이 없습니다. 표의 종가·등락률은 가장 최근 실제 거래일인 10/16(금) 마감 기준이며, 다음 거래는 코스피·코스닥·미국 증시 모두 10/19(월)부터 재개됩니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-stable">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">20.0</span>
+        <span class="vix-label">안정</span>
+      </div>
+      <p class="vix-msg">VIX 19.99(10/16 마감 유지, 전일比 +3.53pt·+21.45%)로 아직 "안정" 구간이지만 "경계" 임계치(20)에 바로 붙어 있습니다.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 옵션시장이 열리지 않는 주말에는 새로운 값이 산출되지 않아 가장 최근 실제 거래일(10/16, 금)의 값을 그대로 유지했습니다. 금요일 장중에는 22.31까지 치솟아 4개월 만에 처음으로 22를 넘었던 만큼, 월요일 개장 시 "경계" 구간 진입 여부를 주시해야 합니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 역발상 매수 신호로도 해석되는 반면, 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (10/16 19:11 유지)</dt><dd>1,329.70원</dd></div>
+      <div class="stat"><dt>국제 금 (10/16, GLD)</dt><dd>$382.01 (-0.18%)</dd></div>
+      <div class="stat"><dt>WTI(USO, 10/16)</dt><dd>$161.76 (+2.83%)</dd></div>
+      <div class="stat"><dt>Brent유 (10/16)</dt><dd>$109.86 (+3.7%, 5월來 최고)</dd></div>
+      <div class="stat"><dt>디젤가(美, 10/16)</dt><dd>$6.33/갈론(전년比 +70%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내 외환시장도 주말 휴장으로 원/달러는 10/16(금) 저녁 실시간 환율을 그대로 유지했습니다. 금·유가 역시 미국 상품시장 휴장으로 10/16 종가가 그대로 이어집니다. 호르무즈·사우디 공격, 우크라이나-러시아 에너지휴전 붕괴는 월요일 장 재개 시에도 유가 변동성 요인으로 남아있을 전망입니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">참고 — 최근 발행 리포트 하이라이트</div><div class="label-en">Research Notes</div></div>
+    <ul class="points" style="display:grid;gap:10px;">
+      <li style="padding-left:0;"><b>피에스케이홀딩스(031980)</b> — 반도체 패키징 장비(Descum·Reflow) 전문기업. 현대차증권(10/16)·신한투자증권(10/12)이 잇달아 목표가를 큰 폭으로 상향했으며, 최근 1년 수익률이 +270.58%에 달한다.</li>
+      <li style="padding-left:0;"><b>삼성화재(000810)</b> — 국내 최대 손해보험사. 최근 1개월 -11.35%로 소외됐지만 KB증권(10/15)은 목표가를 760,000→810,000원으로 오히려 상향했다.</li>
+    </ul>
+    <p style="font-size:12.5px;color:var(--ink-faint);margin-top:10px;">※ 국내 리서치 게시판은 주말 휴장으로 신규 리포트가 없어, FnGuide(comp.wisereport.co.kr)의 최근 영업일(10/16) 기준 데이터를 참고했습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">주말 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">피에스케이홀딩스</span><span class="stock-code mono">031980</span></div>
+        <div class="stock-price mono">199,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/16 종가, +7.45%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">반도체 후공정 장비(HBM·패키징)</span></div>
+      <p class="why"><b>선정 이유</b> — 美 반도체 장비株가 CoreWeave AI 부채위기로 동반 급락한 금요일, 정반대로 +7.45% 급등한 종목. HBM·첨단패키징 수요라는 AI 밸류체인의 또 다른 축이 여전히 견조함을 보여준다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">219,000원 · 40,500원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">29.82배 · 8.47배</div></div>
+        <div class="f"><div class="k">1년 수익률</div><div class="v">+270.58%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">244,000원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 매출 +14.4%, 영업이익 +27.7%, 순이익 +34.6% — AI 산업 성장에 따른 HBM 수요 증가와 첨단패키징 투자 확대가 실적에 그대로 반영되고 있다</li>
+        <li>현대차증권은 10/16 목표가를 210,000→270,000원(+28.57%)으로, 신한투자증권은 10/12 190,000→260,000원(+36.84%)으로 큰 폭 상향했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>PBR 8.47배·PER(2026E) 29.82배로 밸류에이션이 이미 높은 수준 — 1년 수익률 +270.58%에 달해 단기 과열 우려도 상존한다</li>
+        <li>美 반도체 장비株의 "역사적 급락세"가 보여주듯 AI 인프라 자금조달 우려가 장비 투자 전반으로 확산될 경우 국내 장비주도 자유롭지 않을 수 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적이나 단기 과열 유의.</b> HBM·패키징 수요 모멘텀은 구조적이나, 美 장비주 급락이 보여준 AI 자금조달 리스크가 전이될 가능성은 지켜봐야 한다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Applied Materials</span><span class="stock-code mono">NASDAQ:AMAT</span></div>
+        <div class="stock-price mono">$409.29<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/16 종가, -4.82%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">반도체 장비(WFE)</span></div>
+      <p class="why"><b>선정 이유</b> — CoreWeave AI 부채위기가 반도체 장비 투자(WFE) 전망까지 흔든 금요일의 상징적 종목. 피에스케이홀딩스의 국내 강세와 정반대로 움직인 디커플링을 보여준다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$324.81B(+79.2%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">35.30배 · 23.24배</div></div>
+        <div class="f"><div class="k">배당</div><div class="v">$2.12(0.52%)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$627.83(+53.4%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>매출(ttm) +7.8%, 순이익 +35.6% — CEO 게리 디커슨은 향후 수년간 매출이 두 배로 늘 것이라 전망, $5B 규모 EPIC 연구센터를 통해 AI 시대 반도체 혁신을 가속화하고 있다</li>
+        <li>40명 애널리스트 컨센서스 "Strong Buy", 목표주가 대비 +53.4% 상승여력 — Cantor Fitzgerald는 "약세장에서 매수하라"고 권고했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>금요일 하루 -4.82%로 반도체 장비株 "역사적 급락세"의 한 축 — CoreWeave發 AI 인프라 자금조달 우려가 WFE(웨이퍼 팹 장비) 지출 전망 자체에 대한 의구심으로 번졌다</li>
+        <li>Evercore ISI는 최근 목표가를 $700→$590으로, Morgan Stanley도 $642→$563으로 하향했다 — 52주 최고($739.67) 대비 이미 -44.7%까지 밀린 상태</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> AI發 장기 반도체 투자 사이클 자체는 구조적이나, 단기적으로는 CoreWeave 리스크의 전염 경로에 가장 먼저 노출되는 종목이다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">삼성화재</span><span class="stock-code mono">000810</span></div>
+        <div class="stock-price mono">586,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/16 종가, +1.03%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">손해보험</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체·AI 부채위기·유가 급등 등 이번 주 모든 변동성 테마와 무관하게 자체 실적으로 움직인 국내 최대 손해보험사. 꾸준한 목표가 상향이 뒷받침된다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">11.42배 · 0.68배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">757,000원 · 419,000원</div></div>
+        <div class="f"><div class="k">현금배당수익률</div><div class="v">3.33%(2026E 4.18%)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">776,375원(3.88 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 매출 +1.3%, 영업이익 +8.9%, 순이익 +10.2% — 장기보험 부문 수익 증가와 해외 일반보험 성장, 유가증권 수익률 상승에 따른 안정적 투자영업이익이 실적을 뒷받침했다</li>
+        <li>16개 기관 컨센서스 목표주가(776,375원) 대비 큰 상승여력 — KB증권(10/15)은 760,000→810,000원으로, 한국투자증권(9/30)은 670,000→757,000원(+12.99%)으로 상향했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 1개월 -11.35%, 3개월 -16.41%로 단기 흐름이 부진 — 52주 최고(757,000원) 대비 이미 -22.6%까지 밀린 상태</li>
+        <li>NH투자증권은 10/13 목표가를 910,000→830,000원(-8.79%)으로, 신한투자증권도 10/15 850,000→800,000원(-5.88%)으로 하향하며 일부 기관은 신중론으로 돌아섰다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 안정적 실적 성장과 배당 매력이 뒷받침되나, 최근 일부 기관의 목표가 하향은 지속 확인이 필요하다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Johnson &amp; Johnson</span><span class="stock-code mono">NYSE:JNJ</span></div>
+        <div class="stock-price mono">$255.56<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/16 종가, +0.90%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">제약·헬스케어</span></div>
+      <p class="why"><b>선정 이유</b> — 지정학 리스크가 반도체·오일을 넘어 전혀 무관한 섹터까지 전이되는 경로를 보여준 종목. 지난주 실적에서 중동 분쟁이 의료기기 매출에 타격을 줬다고 밝혔음에도, 전체 가이던스는 오히려 상향했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$615.87B(+33.8%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">38.81배 · 22.41배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">2.10%($5.36)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$279.41(+9.33%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>Q3 매출(operational) +6% $25.4B, 종양학 +17%·면역학 견조 — 실적 발표 후 FY2026 매출·EPS 가이던스를 오히려 상향하며 "2030년까지 두 자릿수 성장" 자신감을 재확인했다</li>
+        <li>Wells Fargo(10/17, $275→$287)·Bernstein($261→$270) 등 최근 목표가 상향이 이어지며, 발표 직후 급락(-6%)분을 상당 부분 회복했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>중동 분쟁 등 지정학 이슈가 MedTech 부문 매출에 부담을 줬다고 밝혔고, 中 가격 압박·유럽 예산 삭감도 겹치며 MedTech는 컨센서스를 하회했다 — RBC(10/14, $290→$280)·BofA($282→$275) 등은 목표가를 하향했다</li>
+        <li>순이익이 전년比 -35.9%(일회성 요인 추정) 급감해 PER(38.81배)가 왜곡돼 있어, Forward PER(22.41배)로 밸류에이션을 봐야 한다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적 긍정.</b> 혁신신약 부문의 구조적 성장은 뚜렷하나, 지정학 리스크發 MedTech 부진은 지속 점검이 필요하다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 주 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">10/19(월)</span><span>코스피·코스닥·美 증시 모두 개장 — 금요일 VIX 급등·AI 반도체 장비株 디커플링이 이어질지 확인</span></li>
+      <li><span class="when mono">다음 주</span><span>테슬라·스페이스X·메타 실적 발표 — AI 밸류에이션 재평가의 핵심 변수</span></li>
+      <li><span class="when mono">진행 중</span><span>호르무즈 해협·사우디 공격 등 중동 지정학 리스크, Brent $110 추가 돌파 여부</span></li>
+      <li><span class="when mono">진행 중</span><span>CoreWeave 등 네오클라우드發 AI 부채조달 우려가 반도체 장비 투자(WFE) 전망에 미칠 추가 영향</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-10-18 주말 특집 Ⅱ</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
