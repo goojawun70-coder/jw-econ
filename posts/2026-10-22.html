@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-10-22 저녁 발행</title>
+<meta name="description" content="코스피 -3.52%(5,533.77)·코스닥 -3.62%(764.10) 급락 — 3거래일째 3%대 등락을 반복하는 롤러코스터 장세. 이번엔 외국인이 아닌 기관이 4,600억원 넘게 순매도를 주도, 삼성전자(-4.03%)·SK하이닉스(-5.49%) 등 시총 상위 10개 종목이 모두 하락했다. 원/달러 환율은 1,324.20원으로 연저점을 5거래일 연속 경신. 美 지수(10/21 마감)는 다우+0.64%·S&P500+0.53%·나스닥+1.05%로 상승했으나, 밤사이 테슬라가 실적 서프라이즈에도 캐펙스 가이던스 하향에 프리마켓 -4.48%로 급락하며 VIX가 전일比 +10% 급등. 유가는 사우디 공격에 美가 외교관 철수를 명령하며 브렌트 $112 돌파. 한미반도체·Tesla·신한지주·UnitedHealth 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>코스피·코스닥 3거래일째 롤러코스터 — 이번엔 기관 매도 주도, 코스피 -3.52%</h1>
+    <div class="date">2026년 10월 22일 목요일 · 10/20 급락 → 10/21 반등 → 10/22 재급락</div>
+    <p class="thesis">코스피가 201.89포인트(-3.52%) 내린 5,533.77, 코스닥은 28.66포인트(-3.62%) 내린 764.10으로 마감했다. KBS에 따르면 코스피는 그제(10/20) 3.73% 급락, 어제(10/21) 3.29% 반등한 데 이어 오늘 다시 3%대 급락하며 3거래일째 3%대 등락을 반복했다. 이날 장 초반 5,700선을 넘기며 상승 출발했으나 오후 낙폭을 키워 장중 한때 5,500선마저 무너졌다. 특이하게도 이번엔 외국인이 아니라 기관이 매도를 주도했다 — 개인(+3,800억원)과 외국인(+600억원)은 순매수했지만 기관이 4,600억원 넘게 순매도하며 반등을 저지했다. 시가총액 상위 10개 종목이 모두 하락했고, 삼성전자(-4.03%)·SK하이닉스(-5.49%)도 동반 약세를 보였다. 달러·원 환율은 1,324.20원으로 연저점을 5거래일 연속 경신했다. 美 지수(10/21 마감)는 다우 +0.64%·S&P500 +0.53%·나스닥 +1.05%로 상승 마감했으나, 장 마감 후 테슬라가 3분기 실적 서프라이즈(조정EPS·매출 모두 예상 상회)에도 연간 Capex 가이던스를 $25B에서 $20B로 낮추며 오늘 프리마켓에서 -4.48% 급락했다. WSJ는 "AI Stocks Slide After Earnings Disappoint"를 전하며 VIX가 오늘 프리마켓에서 전일比 +10% 넘게 급등했다고 보도했다. 유가는 사우디아라비아 공격이 격화되며 美 정부가 일부 외교관 철수를 명령, 브렌트가 $112를 돌파했다. 오늘은 반도체 쏠림 장세의 당사자인 한미반도체와 美 Tesla, 그리고 이 흐름과 무관한 신한지주·UnitedHealth 4종목을 심층 분석한다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>코스피·코스닥 3거래일째 3%대 등락 반복 — 이번엔 기관이 매도 주도</strong>
+      <p>KBS는 코스피가 오늘(22일) 전 거래일보다 201.89포인트(3.52%) 내린 5,533.77에 장을 마쳤다고 전했다. 그제 3.7% 급락, 어제 3.3% 반등에 이어 오늘 다시 3%대 급락하며 3거래일째 요동치는 모습이다. 개인(+3,800억원)·외국인(+600억원)은 순매수했지만 기관이 4,600억원 넘게 순매도했다. 시총 상위 10개 종목이 모두 하락했고 삼성전자(-4.03%, 214,500원)·SK하이닉스(-5.49%, 1,223,000원)도 약세를 보였다. 코스닥도 3.62% 내린 764.10으로 마감했다.</p>
+      <span class="src">KBS 2026-10-22</span>
+    </div>
+    <div class="news-item">
+      <strong>테슬라, 3분기 실적 서프라이즈에도 Capex 가이던스 하향에 프리마켓 급락 — AI주 재차 흔들려</strong>
+      <p>TipRanks에 따르면 테슬라는 3분기 조정EPS $0.48(예상 $0.43 상회)·매출 모두 예상을 웃돌았고 깜짝 현금흐름 흑자(+$15억, 예상은 약 -$40억 적자)를 기록했지만, 연간 Capex 가이던스를 $25B에서 $20B로 낮추고 머스크가 SpaceX 합병에 구체적 진전을 내놓지 못하자 오늘 프리마켓에서 5% 넘게 하락했다. WSJ는 "AI Stocks Slide After Earnings Disappoint; French Bonds Tumble and Oil Tops $112"를 전하며 AI주 전반이 재차 흔들리고 있다고 보도했다.</p>
+      <span class="src">TipRanks·WSJ 2026-10-22</span>
+    </div>
+    <div class="news-item">
+      <strong>사우디아라비아 공격 격화 — 美, 일부 외교관 철수 명령·브렌트유 $112 돌파</strong>
+      <p>Bloomberg는 후티 반군의 공격이 격화되며 美 정부가 사우디아라비아 주재 일부 외교관과 가족의 철수를 명령했다고 전했다. 아람코 유전과 사우디 공항에서 별도 공격으로 3명이 사망했다. Reuters도 "Oil rises as US orders diplomats to leave Saudi Arabia amid escalating tensions"를 전하며 유가가 상승했다고 보도했다.</p>
+      <span class="src">Bloomberg·Reuters 2026-10-22</span>
+    </div>
+    <div class="news-item">
+      <strong>달러·원 환율, 연저점 5거래일 연속 경신</strong>
+      <p>KBS는 오늘 달러 대비 원화 환율이 오후 3시 30분 기준 어제보다 1원 내린 1,324원 20전으로 집계돼 연저점을 5거래일 연속 경신했다고 전했다. 원화 강세가 지속되고 있다.</p>
+      <span class="src">KBS 2026-10-22</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 국내는 10/22 마감, 美는 10/21(수) 마감</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>5,533.77</td><td class="chg down">-3.52%</td><td class="plain">기관 순매도 주도, 3거래일째 3%대 등락</td></tr>
+          <tr><td>코스닥</td><td>764.10</td><td class="chg down">-3.62%</td><td class="plain">기관·외국인 순매도</td></tr>
+          <tr><td>다우 (10/21 마감)</td><td>52,974</td><td class="chg up">+0.64%</td><td class="plain">DIA 환산</td></tr>
+          <tr><td>S&amp;P500 (10/21 마감)</td><td>7,769</td><td class="chg up">+0.53%</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (10/21 마감)</td><td>26,727</td><td class="chg up">+1.05%</td><td class="plain">ONEQ 환산, 오늘 美 프리마켓은 테슬라發 약세</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내 지수는 10/22(목) 정규장 마감 기준이다. 美 지수는 가장 최근 완료된 거래일인 10/21(수) 마감 수치를 직전 검증된 기준(10/20 마감)에 ETF(DIA·SPY·ONEQ) 누적 등락률을 적용해 환산했다 — 10/22(목) 美 정규장은 이 발행 시점(KST 저녁)에 아직 개장하지 않았으나, 테슬라 실적 발표 후 프리마켓은 이미 약세로 전환했다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-stable">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">16.7</span>
+        <span class="vix-label">안정</span>
+      </div>
+      <p class="vix-msg">VIX 16.68(10/21 마감)로 "안정" 구간을 유지했으나, 오늘 프리마켓에서는 테슬라 실적 실망과 AI주 재조정 우려로 18.39(전일比 +1.71pt·+10.25%)까지 급등했습니다.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표입니다. 10/16(금) 19.99까지 올랐던 VIX가 이번 주 들어 16대까지 꾸준히 낮아졌다가, 오늘 프리마켓에서 테슬라 Capex 가이던스 하향과 AI주 재조정 우려로 재차 큰 폭으로 뛰었습니다. 아직 "안정" 구간(15~20) 안에 있지만, 전일 대비 10% 넘는 급등은 시장이 다시 긴장하고 있다는 신호로 볼 수 있습니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻입니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (10/22 19:13 실시간)</dt><dd>1,322.50원 (-0.38%)</dd></div>
+      <div class="stat"><dt>WTI (USO, 10/21 마감)</dt><dd>$159.80 (-0.50%)</dd></div>
+      <div class="stat"><dt>브렌트유</dt><dd>$112선 돌파(WSJ)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 10/21 마감)</dt><dd>$378.95 (+0.34%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">달러·원 환율은 오후 3시 30분 기준 1,324.20원으로 연저점을 5거래일 연속 경신한 뒤(KBS), 저녁 실시간 기준으로는 1,322.50원까지 추가로 낮아지며 원화 강세가 이어지고 있다. 유가(WTI·브렌트)는 사우디아라비아 공격 격화와 美 외교관 철수 명령으로 재상승, 브렌트는 $112선을 넘어섰다. 금(GLD)은 유가·지정학 리스크 속 안전자산 수요로 소폭 상승했으나, 오늘 프리마켓에서는 되돌림(-1.15%)을 보이고 있다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 네이버금융 종목분석 리포트 게시판은 여전히 정상 작동하지 않아, FnGuide(comp.wisereport.co.kr)·stockanalysis.com 컨센서스 페이지로 대체합니다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>한미반도체</b> — 최근 3개월 이내 제시된 애널리스트 의견이 없어 컨센서스 목표주가를 확보하지 못했다(FnGuide).</li>
+      <li style="padding-left:0;"><b>Tesla</b> — 컨센서스 목표주가 $397.83(44명 애널리스트 평균), 투자의견 Buy. CLSA는 오늘 목표가를 $310→$400으로 상향하며 Hold로 올렸다.</li>
+      <li style="padding-left:0;"><b>신한지주</b> — 컨센서스 목표주가 138,250원(20개 기관 평균), 투자의견 매수(4.00/5). IBK투자는 10/21 목표가를 140,000원으로 제시했다.</li>
+      <li style="padding-left:0;"><b>UnitedHealth</b> — 컨센서스 목표주가 $477.04(26명 애널리스트 평균), 투자의견 Buy. JPMorgan은 목표가를 $524로 상향했다.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">한미반도체</span><span class="stock-code mono">042700</span></div>
+        <div class="stock-price mono">오늘 정규장 190,000~204,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (전일 203,000원; NXT 애프터마켓 190,700원 -6.06%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">반도체 장비(HBM 본더)</span></div>
+      <p class="why"><b>선정 이유</b> — HBM 본딩 장비 대표주로, 반도체 쏠림 장세 3거래일째의 변동성을 가장 직접적으로 보여주는 종목. 오늘도 NXT 애프터마켓에서 -6%대 급락을 보이며 장세를 그대로 반영했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">426,000원 · 113,400원</div></div>
+        <div class="f"><div class="k">PER(2025A) · PBR</div><div class="v">90.91배 · 27.89배</div></div>
+        <div class="f"><div class="k">1년 수익률</div><div class="v">+35.70%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v">확보 못함(최근 3개월 無)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>AI 서버·데이터센터 투자 확대로 HBM 수요가 증가하고 있으며, 2.5D 패키징 시장 진출과 6-SIDE INSPECTION 장비로 수율 향상이 기대된다</li>
+        <li>TC 본딩 공정의 중요성이 부각되며 본더 개발 지연 이슈가 해소될 경우 수주 모멘텀 회복이 가능하다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>2026년 상반기 매출 -7.7%, 영업이익 -11.0% — 반도체 장비 산업 특유의 설비투자 조정으로 실적이 둔화됐다</li>
+        <li>최근 3개월간 신규로 제시된 애널리스트 의견이 없어 컨센서스 목표가를 확인할 수 없고, 최근 1개월 -14.16%로 변동성이 극심하다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> HBM 장비 수요 확대라는 구조적 스토리는 유효하나, 최근 실적 둔화와 애널리스트 커버리지 공백이 겹치며 단기적으로는 장세 변동성에 그대로 노출돼 있다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Tesla</span><span class="stock-code mono">NASDAQ:TSLA</span></div>
+        <div class="stock-price mono">$386.47<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/21 종가, +3.41%; 오늘 프리마켓 $369.17 -4.48%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">전기차·로보틱스</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 美 프리마켓 AI/기술주 약세 전환과 VIX 급등을 촉발한 바로 그 종목. 실적은 예상을 상회했지만 시장이 다르게 반응한 전형적 사례로 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$1.53T(+5.9%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">424.59배 · 184.43배</div></div>
+        <div class="f"><div class="k">현금흐름(3Q)</div><div class="v">+$15억(서프라이즈)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$397.83(+2.94%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>3분기 조정EPS $0.48(예상 $0.43 상회), 매출도 예상 상회 — 특히 자유현금흐름이 시장 예상(-$40억 적자)과 반대로 +$15억 흑자를 기록했다</li>
+        <li>CLSA는 SpaceX 합병 가능성을 반영해 목표가를 $310→$400으로 상향하며 등급을 Hold로 올렸다 — 연말 Cybercab 출시 계획도 유지 중이다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>GAAP 순이익이 전년比 -36.7% 급감했고, 연간 Capex 가이던스를 $25B→$20B로 낮춰 투자 둔화 우려를 키웠다</li>
+        <li>머스크가 SpaceX 합병에 대해 "상당한 의미가 있다"고만 언급하고 구체적 진전을 내놓지 않아 투자자들의 기대에 못 미쳤다 — 오늘 프리마켓 -4.48%</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 실적 자체는 서프라이즈였지만 Capex 축소가 성장 둔화 신호로 해석되며 단기 변동성이 커졌다. SpaceX 합병 구체화 여부가 다음 변곡점이다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">신한지주</span><span class="stock-code mono">055550</span></div>
+        <div class="stock-price mono">오늘 정규장 89,800~91,900원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (전일 91,700원; NXT 애프터마켓 89,800원 -2.07%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">금융지주</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체 쏠림 롤러코스터와 무관하게 자체 실적으로 움직이는 국내 대표 금융지주. 10/27 3분기 실적 발표를 앞두고 있어 관전 포인트가 뚜렷하다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">7.33배 · 0.69배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">116,500원 · 72,200원</div></div>
+        <div class="f"><div class="k">현금배당수익률(2026E)</div><div class="v">3.33%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">138,250원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 매출 +17.5%, 영업이익 +17.0%, 순이익 +13.3% — 2분기 그룹 순이익은 비이자 중심 성장으로 전분기比 +12.2%인 1조 8,201억원을 기록했다</li>
+        <li>CET1비율 13.43% 기반 2분기 주당 740원 배당과 7천억원 자사주 취득을 결의, 20개 기관 컨센서스 목표주가 대비 상승여력도 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>하나증권은 증권계열사 부진 등으로 3분기 실적이 전분기 대비 감익할 것으로 예상했다 — 10/27 발표(D-5)로 단기 변동성이 커질 수 있다</li>
+        <li>최근 롯데손해보험 인수 추진에 대해 한화투자·SK·iM증권 등이 "기대와 우려가 동반된다"는 평가를 내놓았다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 안정적 이자·비이자 수익 성장과 주주환원 정책이 뒷받침되며, 반도체 쏠림 장세에서 포트폴리오 분산 역할을 한다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">UnitedHealth</span><span class="stock-code mono">NYSE:UNH</span></div>
+        <div class="stock-price mono">$417.00<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/21 종가, -0.54%; 오늘 프리마켓 $418.48 +0.35%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">헬스케어·보험</span></div>
+      <p class="why"><b>선정 이유</b> — AI 반도체 쏠림·테슬라發 변동성과 완전히 무관한 방어적 헬스케어주. 10/13 3분기 실적 서프라이즈 이후 기술주 조정 국면에서 투자자 로테이션 수혜를 받고 있다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$374.30B(+13.4%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">23.83배 · 18.39배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">2.23%($9.28)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$477.04(+14.40%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>10/13 3분기 조정EPS $4.69로 예상을 크게 상회하며 연간 가이던스를 상향, 이후 RBC($498)·JPMorgan($524)·Piper Sandler($504) 등이 목표가를 잇달아 올렸다</li>
+        <li>Mizuho는 UNH를 "Top Pick"으로 선정했고, 의료비 관리 개선(의료비율 88.4%)이 실적 턴어라운드를 뒷받침하고 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>Baird($453→$427)·Barclays($441→$440)는 실적 서프라이즈에도 비용 부담을 이유로 목표가를 하향했다 — 의료비율 자체는 여전히 높은 수준이다</li>
+        <li>TD Cowen은 실적 호조에도 신중한 입장(Cautious)을 유지하고 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 실적 턴어라운드와 다수 상향이 뒷받침되며, 기술주 조정 국면에서 안정적 대안으로 부각되고 있다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">진행 중</span><span>美 10/22(목) 정규장 — 테슬라發 AI주 약세와 VIX 급등이 정규장까지 이어질지 확인</span></li>
+      <li><span class="when mono">10/27</span><span>신한지주 2026년 3분기 경영실적 발표</span></li>
+      <li><span class="when mono">10/28</span><span>삼성전기·SK하이닉스 2026년 3분기 경영실적 발표</span></li>
+      <li><span class="when mono">진행 중</span><span>사우디아라비아·호르무즈 지정학 리스크 격화에 따른 유가 변동성, 코스피 3거래일째 등락의 바닥 확인 여부</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-10-22 저녁 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
