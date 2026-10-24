@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-10-24 저녁 발행</title>
+<meta name="description" content="주말 특집 — 코스피·코스닥·美 증시 모두 휴장, 금요일(10/23) 마감 기준 결산. 다우가 -1.24%(약 700pt) 급락을 주도하고 나스닥은 -0.24%로 Meta 충격 하루 뒤 진정. 국제유가는 호르무즈 위기 격화로 브렌트 $116.26까지 치솟아 5개월 최고치(주간 +10%대) 재경신, 美 SPR 40만 배럴 비상방출. 반면 금은 $4,000 지지선을 뚫고 내려가 주간 급락. 대한해운·ExxonMobil·KT·Newmont 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Weekend Special</div>
+    <h1>주말 특집 — 국제유가 5개월 최고치 재경신, 금은 $4,000 지지선 붕괴</h1>
+    <div class="date">2026년 10월 24일 토요일 · 국내외 증시 휴장, 금요일(10/23) 마감 기준 결산</div>
+    <p class="thesis">코스피·코스닥·美 증시 모두 주말 휴장으로 지수 변동이 없다. 가장 최근 거래일인 금요일(10/23) 기준, 코스피는 기관 순매수(+8,682억원)에 힘입어 +0.30%(5,550.30) 반등했고, 코스닥은 개인만 순매수한 채 외국인·기관 모두 매도 우위를 보이며 -1.62%(751.69) 하락했다 — 대형주 중심 지수와 중소형주 지수의 디커플링이 이틀째 이어졌다. 美 증시는 다우가 -1.24%(약 700포인트) 급락을 주도했고 S&amp;P500 -0.52%, 나스닥은 -0.24%로 목요일 Meta발 급락 이후 상대적으로 진정되는 모습을 보였다. 유가는 호르무즈 해협을 둘러싼 긴장이 계속 격화되며 브렌트가 $116.26까지 치솟아 5개월 최고치를 재경신했다 — 주간 기준 10% 넘는 급등이다. 美 정부는 전략비축유(SPR) 40만 배럴 비상 방출을 승인했고, 트럼프 대통령은 이란이 유가를 조작하려 한다고 비난했다. 반면 금은 정반대로 움직이며 주요 지지선인 $4,000을 뚫고 내려가 주간 기준 급락세를 보였다 — Kitco는 "Wall Street doubts gold's near-term strength"라고 평가했다. VIX는 19.45(전일比 +2.21%)로 "안정" 구간을 유지했으나 장중 한때 20.66까지 치솟았다. 다음 주 최대 변수는 10/28(수) FOMC 금리결정과 10/30(금) ExxonMobil 실적 발표, 그리고 11월 초 미국 중간선거를 앞둔 이란 관련 군사적 긴장의 추가 격화 여부다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>국제유가, 호르무즈 위기 격화에 브렌트 $116 돌파 — 美 SPR 비상방출</strong>
+      <p>Houthi(후티) 반군이 사우디 홍해 항구 얀부를 겨냥한 공격을 이어가고 유전·공항에 대한 추가 공격까지 발생하며, 브렌트유가 금요일 $116.26(+2.7%)까지 치솟아 5월 이후 최고치를 기록했다. 주간 기준으로는 10% 넘게 올랐다. Reuters는 美 에너지부가 공급 차질에 대응해 전략비축유(SPR)에서 최대 40만 배럴의 비상 교환을 승인했다고 전했다. CNBC는 트럼프 대통령이 목요일 이란이 유가를 조작하려 한다고 비난했다고 보도했다.</p>
+      <span class="src">Reuters·CNBC·New York Post 2026-10-23</span>
+    </div>
+    <div class="news-item">
+      <strong>금, $4,000 지지선 붕괴 — 유가발 인플레 우려에 안전자산 수요 압도당해</strong>
+      <p>Kitco는 금요일 늦은 美 거래에서 금·은 가격이 호르무즈 긴장이 유가를 끌어올리며 주간 기준 큰 폭의 하락을 이어갔다고 전했다("Gold, silver extend weekly losses as Hormuz tensions push crude above $116"). 금 스팟가격은 주요 지지선인 $4,000 밑으로 내려갔고, Kitco는 별도 기사에서 "Wall Street doubts gold's near-term strength"라며 유가 상승·인플레이션 우려·추가 Fed 긴축 기대가 안전자산 수요를 압도했다고 분석했다.</p>
+      <span class="src">Kitco 2026-10-23</span>
+    </div>
+    <div class="news-item">
+      <strong>다우 700포인트 급락 주도, 나스닥은 진정 국면 — Meta 충격 하루 지나 안정</strong>
+      <p>New York Post는 "Oil prices hit five-month high and Dow falls 700 points over fears of Iran strikes, AI spending"을 전하며 다우가 이란 공습 우려와 AI 투자 부담 우려가 겹치며 급락했다고 보도했다. WSJ 라이브커버리지는 "다우 선물은 하락하는 반면 나스닥100 선물은 전날(목요일) Meta발 폭락 이후 비교적 안정적"이라고 전하며, 사흘 연속 롤러코스터를 보인 테크주가 일단 숨을 고르는 모습을 짚었다.</p>
+      <span class="src">New York Post·WSJ 2026-10-23</span>
+    </div>
+    <div class="news-item">
+      <strong>코스피 기관 매수 반등 vs 코스닥 홀로 하락 — 대형주·중소형주 디커플링 이틀째</strong>
+      <p>금요일(10/23) 코스피는 16.53포인트(+0.30%) 오른 5,550.30으로 마감했다 — 외국인이 9,811억원을 순매도했음에도 기관이 8,682억원을 순매수하며 지수를 떠받쳤다(개인 +422억원). 반면 코스닥은 12.41포인트(-1.62%) 내린 751.69로 마감 — 개인(+659억원)만 순매수했을 뿐 외국인(-401억원)·기관(-292억원) 모두 매도 우위를 보였다.</p>
+      <span class="src">네이버금융 2026-10-23</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 국내외 모두 주말 휴장, 10/23(금) 마감 유지</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피 (10/23 마감 유지)</td><td>5,550.30</td><td class="chg up">+0.30%</td><td class="plain">주말 휴장, 변동 없음</td></tr>
+          <tr><td>코스닥 (10/23 마감 유지)</td><td>751.69</td><td class="chg down">-1.62%</td><td class="plain">주말 휴장, 변동 없음</td></tr>
+          <tr><td>다우 (10/23 마감 유지)</td><td>52,338</td><td class="chg down">-1.24%</td><td class="plain">DIA 환산, 美 증시도 주말 휴장</td></tr>
+          <tr><td>S&amp;P500 (10/23 마감 유지)</td><td>7,637</td><td class="chg down">-0.52%</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (10/23 마감 유지)</td><td>25,975</td><td class="chg down">-0.24%</td><td class="plain">ONEQ 환산, Meta 충격 하루 뒤 진정</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내·미국 증시 모두 주말 휴장으로 지수 변동이 없습니다. 표의 종가·등락률은 가장 최근 실제 거래일인 10/23(금) 마감 기준이며, 다음 거래는 코스피·코스닥·美 증시 모두 10/26(월)부터 재개됩니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-stable">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">19.5</span>
+        <span class="vix-label">안정</span>
+      </div>
+      <p class="vix-msg">VIX 19.45(10/23 마감, 전일比 +0.42pt·+2.21%)로 "안정" 구간을 유지했으나, 장중 한때 20.66까지 치솟으며 "경계" 구간에 근접했습니다.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다. 이번 주 Meta발 급락과 오일 쇼크가 겹쳤음에도 VIX가 여전히 "안정" 구간에 머물러 있다는 점은, 시장이 아직 극단적 공포로 번지지는 않았다는 신호로 해석된다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (10/24 12:01 주말 고시)</dt><dd>1,326.90원 (+0.03%)</dd></div>
+      <div class="stat"><dt>WTI (USO, 10/23 마감)</dt><dd>$169.53 (+4.32%, 52주 신고가)</dd></div>
+      <div class="stat"><dt>브렌트유</dt><dd>$116.26, 5개월 최고치</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 10/23 마감)</dt><dd>$366.61 (-0.65%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내 외환시장은 주말에도 하나은행이 참고용 실시간 고시환율을 제공하며, 1,326.90원(전일比 +0.4원·+0.03%)으로 거의 변동이 없다. 유가(WTI·브렌트)는 호르무즈 위기 격화로 5개월 최고치를 재경신했다 — WTI 추종 ETF(USO)는 $169.53(+4.32%)로 52주 신고가를 새로 썼다. 금(GLD)은 스팟 금값이 $4,000 지지선을 뚫고 내려간 여파로 약세를 이어갔다. 월요일(10/26) 정규장이 재개되면 이 흐름이 그대로 이어질지가 핵심 관전 포인트다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 네이버금융 종목분석 리포트 게시판은 여전히 정상 작동하지 않아, FnGuide(comp.wisereport.co.kr)·stockanalysis.com 컨센서스 페이지로 대체합니다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>대한해운</b> — 컨센서스 목표주가 2,725원(4개 기관 평균), 투자의견 매수(4.00/5). 한국투자증권은 10/19 목표가 3,000원을 유지했다.</li>
+      <li style="padding-left:0;"><b>ExxonMobil</b> — 컨센서스 목표주가 $175.41(25명 애널리스트 평균), 투자의견 Buy. Barclays는 10/19 목표가를 $177→$200으로 상향했다.</li>
+      <li style="padding-left:0;"><b>KT</b> — 컨센서스 목표주가 74,111원(18개 기관 평균), 투자의견 매수(4.00/5). KB증권은 10/15 목표가 80,000원을 제시했다(최고치).</li>
+      <li style="padding-left:0;"><b>Newmont</b> — 컨센서스 목표주가 $137.00(23명 애널리스트 평균), 투자의견 Buy. Citi는 10/21 목표가를 $125→$140으로 상향했다.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">대한해운</span><span class="stock-code mono">005880</span></div>
+        <div class="stock-price mono">금요일 정규장 1,880~1,925원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (전일 1,905원; NXT 애프터마켓 1,892원 -2.12%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">해운(벌크·LNG·탱커)</span></div>
+      <p class="why"><b>선정 이유</b> — 호르무즈 해협 위기로 유조선 운임이 급등하는 "2차 에너지 스퀴즈"(MarketWatch 표현) 국면의 직접 수혜가 기대되는 벌크·탱커 선사로 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">3,385원 · 1,650원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">3.24배 · 0.26배</div></div>
+        <div class="f"><div class="k">1년 수익률</div><div class="v">+6.72%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">2,725원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>벌크선은 호주 철광석 선적 정상화와 남미 곡물시즌 도래로 운임이 상승, 상반기 영업이익이 전년比 +41.7% 개선됐다</li>
+        <li>한국투자증권은 10/19 목표가 3,000원을 유지했고, LNG선은 우량 화주와의 장기운송계약으로 안정적 수익을 확보하고 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>상반기 매출은 오히려 전년比 -10.9% 감소했다 — 운임 상승 효과가 매출 수치에 본격 반영되기까지 시차가 있다</li>
+        <li>최근 1개월 -4.08%로 단기 약세를 보이고 있고, 외국인지분율도 12.69%로 낮아 수급 기반이 상대적으로 얇다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 운임 상승 수혜 구조는 유효하나, 지정학 리스크 장기화 여부와 운임 반영 시차를 함께 지켜볼 필요가 있다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">ExxonMobil</span><span class="stock-code mono">NYSE:XOM</span></div>
+        <div class="stock-price mono">$183.21<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/23 종가, +2.79%, 52주 신고가; 애프터마켓 $183.28 +0.04%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">정유·에너지 메이저</span></div>
+      <p class="why"><b>선정 이유</b> — 유가 급등의 직접적 수혜주이자 10/30 3분기 실적 발표를 앞둔 글로벌 정유 메이저로 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$753.34B(+56.8%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">23.62배 · 12.52배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">2.25%($4.12)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--fall);">$175.41(-4.26%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>정제마진 급등으로 3분기 실적에 약 $45억이 추가로 기여할 것이라고 사전 공시했으며, 주가는 금요일 52주 신고가를 새로 썼다</li>
+        <li>JPMorgan($166→$186)·Barclays($177→$200)·Morgan Stanley($177→$185) 등이 최근 잇따라 목표가를 상향했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>평균 목표주가($175.41)가 오히려 현재가보다 낮아, 컨센서스 상으로는 이미 단기 밸류에이션이 과열됐다는 신호로도 읽힌다</li>
+        <li>업스트림(탐사·생산) 부문은 유가 변동 여파로 3분기 실적이 자체 공시(10/16) 기준 $13억 낮아질 전망이다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 정제마진 수혜는 뚜렷하지만 주가가 이미 컨센서스 목표가를 앞서가고 있어, 10/30 실적이 다음 방향을 가를 분기점이다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">KT</span><span class="stock-code mono">030200</span></div>
+        <div class="stock-price mono">금요일 정규장 46,600~47,650원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (전일 46,800원; NXT 애프터마켓 46,700원 -1.79%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">통신서비스</span></div>
+      <p class="why"><b>선정 이유</b> — 유가·금 드라마와 무관하게 자체 펀더멘털로 움직이는 비인기 업종 통신주로, 최근 증권사 리포트가 유독 몰려 있어 관전 포인트가 있다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">8.29배 · 0.59배</div></div>
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">69,400원 · 46,600원</div></div>
+        <div class="f"><div class="k">현금배당수익률(2026E)</div><div class="v">5.17%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">74,111원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>KB증권(10/15, 8만원)·NH투자(10/12, 8만원) 등 18개 기관이 매수 의견을 유지하고 있고, 유안타증권(10/14)은 "바닥 통과, 성장 엔진 점화"를 제목으로 내걸었다</li>
+        <li>클라우드·AI데이터센터 등 신성장 AX 포트폴리오 확장을 추진 중이며, 현금배당수익률이 5%대로 방어적 매력이 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>상반기 매출 -5.7%, 영업이익 -33.6% 감소 — 유무선 통신 성숙기 진입과 ICT 수요 둔화가 원인이다</li>
+        <li>최근 1개월·3개월 수익률이 모두 -11.20%로 단기 약세가 뚜렷하다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 밸류에이션(PBR 0.59배)과 배당은 매력적이나, 턴어라운드 가시성은 아직 증권사 전망에 의존하는 단계다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Newmont</span><span class="stock-code mono">NYSE:NEM</span></div>
+        <div class="stock-price mono">$108.87<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/23 종가, -4.59%; 애프터마켓 $109.30 +0.40%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">금광업</span></div>
+      <p class="why"><b>선정 이유</b> — 세계 최대 금광업체로서, 어제(10/22) 실적 서프라이즈를 내고도 오늘 금값 자체의 폭락으로 주가가 밀린 "업종 바깥 악재" 피해 사례로 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$113.43B(+19.6%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">12.67배 · 11.60배</div></div>
+        <div class="f"><div class="k">3Q 조정EPS</div><div class="v">$2.20(컨센서스 $1.94)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$137.00(+25.84%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>3분기 조정순이익 $24.8억(전년 $18.3억), 조정EPS $2.20으로 컨센서스($1.94)를 크게 상회했고, 2026년 530만 온스 생산 가이던스를 유지했다</li>
+        <li>Citi는 10/21 목표가를 $125→$140으로 상향했으며, 23명 애널리스트 평균 의견은 Buy다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>실적 호조에도 금 스팟가격이 $4,000 지지선을 뚫고 내려가며 오늘 -4.59%(-$5.24) 급락했다 — 개별 실적보다 업종 전체의 금값 약세가 주가를 눌렀다</li>
+        <li>Barclays($124→$123)·Bernstein($147→$144) 등은 최근 목표가를 소폭 하향했다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 개별 실적은 견조하지만 주가가 금값 자체의 변동성에 좌우되는 구조 — 섹터 전반의 금 약세가 바닥을 다질 때까지 변동성이 이어질 전망이다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">10/26(월)</span><span>코스피·코스닥·美 증시 모두 재개장 — 유가 급등·금 급락 흐름이 월요일 정규장까지 이어질지 확인</span></li>
+      <li><span class="when mono">10/28(수)</span><span>美 FOMC 금리결정 — 금 $4,000 지지 여부를 가를 핵심 변수</span></li>
+      <li><span class="when mono">10/30(금)</span><span>ExxonMobil 2026년 3분기 실적 발표</span></li>
+      <li><span class="when mono">진행 중</span><span>호르무즈 해협·이란 관련 군사적 긴장, 11월 초 美 중간선거를 앞둔 추가 격화 여부</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-10-24 저녁 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
