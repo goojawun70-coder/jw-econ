@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-10-28 저녁 발행</title>
+<meta name="description" content="코스피 +6.63%(6,012.44)·코스닥 +3.69%(771.28) 폭등 — SK하이닉스가 오늘 사상 최대 3분기 실적과 함께 '2029년까지 D램·HBM 완판'을 선언해 AI 반도체 고점론을 정면 반박했고, 어제 Anthropic의 나스닥 상장신고서(매출 1,300%+ 증가, 컴퓨팅 약정 5,400억 달러)가 쏘아올린 메모리 수요 폭발 기대와 겹쳐 삼성전자 등 반도체 대형주가 급등했다. 오늘 밤 FOMC 금리결정과 Microsoft·Alphabet·FedEx 실적이 겹치는 '메가 위크' 결전의 날. 삼성전자·NVIDIA·하나금융지주·Barrick Mining 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Briefing</div>
+    <h1>코스피 +6.63%·코스닥 +3.69% 폭등 — SK하이닉스 "3년치 D램·HBM 완판"에 AI 고점론 불식</h1>
+    <div class="date">2026년 10월 28일 수요일 · 오늘 밤 美 FOMC 금리결정 + Microsoft·Alphabet·FedEx 실적 겹치는 "메가 위크" 결전의 날</div>
+    <p class="thesis">코스피가 374.10포인트(+6.63%) 오른 6,012.44로, 코스닥은 27.45포인트(+3.69%) 오른 771.28로 마감했다 — 코스피는 외국인(+7,795억원)·기관(+9,332억원)이 동시에 순매수하며 개인의 1만 7,349억원 순매도를 압도한 압도적 쌍끌이 장세였다. 오늘 사상 최대 3분기 실적을 발표한 SK하이닉스가 "2029년까지(향후 3년) D램·고대역폭메모리(HBM) 물량이 사실상 모두 팔렸다"고 선언하며 시장에 퍼져있던 "AI 반도체 고점론"을 정면으로 반박했고, 어제(10/27) Anthropic이 나스닥 상장신고서에서 공개한 1,300%대 매출 성장과 최소 5,400억 달러(약 700조원) 규모의 컴퓨팅 약정액이 불러온 메모리 수요 폭발 기대와 맞물려 삼성전자·SK하이닉스 등 반도체 대형주가 급등세를 이끌었다. 美 지수(10/27 마감)는 다우 +0.06%·S&amp;P500 +0.56%·나스닥 +1.16%로 상승했고, VIX는 17.52까지 더 내려가며 "메가 위크" 결전의 날을 앞두고도 안정세를 유지했다. 원/달러 환율은 1,339.70원(+0.88%)으로 달러 강세가 이어졌고, 유가는 사우디 라스타누라 공격 소식에 반등했지만 금은 $4,000 지지선 위에서 오늘 밤 FOMC 결과를 기다리며 숨을 고르고 있다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>SK하이닉스 "3년치 D램·HBM 완판" 선언 — AI 반도체 고점론 정면 반박</strong>
+      <p>YTN에 따르면 사상 최대 실적을 경신한 SK하이닉스가 오늘 2029년까지 향후 3년간 D램과 HBM 물량이 사실상 모두 팔렸다고 밝혔다. 박준덕 D램 마케팅 담당 부사장은 "현재 확보한 물량은 27·28년 전체 캐파의 50% 이상"이라고 설명했고, 김우현 CFO는 "현재 주가는 창출하고 있는 이익과 현금흐름을 충분히 반영하지 못해 저평가돼 있다"고 말했다. 경영진은 AI 인프라 투자가 빅테크를 넘어 일반 기업·국가 단위로 확대되고 있어 공급 부족이 2030년까지 이어질 것으로 전망했다.</p>
+      <span class="src">YTN 2026-10-28</span>
+    </div>
+    <div class="news-item">
+      <strong>코스피·코스닥 쌍끌이 폭등 — 어제 Anthropic IPO 호재가 반도체주 급등으로 이어져</strong>
+      <p>YTN은 전날(10/27) "앤트로픽이 나스닥 상장신고서를 제출하며 상반기 매출이 1년 전보다 1,300% 넘게 늘었다고 공개했고, 컴퓨팅에 쓰기로 약정한 금액이 최소 5,400억 달러(약 700조원)에 달하는 것으로 알려지며 메모리 반도체 수요가 폭발적으로 늘 것이란 기대감이 커졌다"고 전했다. 이 호재가 오늘 SK하이닉스의 호실적 발표와 겹치며 코스피·코스닥 반도체주 전반의 급등을 이끌었다.</p>
+      <span class="src">YTN 2026-10-27~28</span>
+    </div>
+    <div class="news-item">
+      <strong>유가, 사우디 라스타누라 공격 소식에 반등 — 외교 기대와 공급 리스크 엇갈려</strong>
+      <p>FXEmpire는 "Houthi Strike on Ras Tanura Lifts Oil"을 전하며 사우디 주요 석유 시설에 대한 후티 반군 공격 소식에 유가가 반등했다고 보도했다. WSJ도 "Oil Rises as Traders Focus on Potential Supply Risks"를 전하며, 전날 사우디·튀르키예·파키스탄·이란 간 외교 협상 기대가 있었지만 실질적인 매도 압력으로는 이어지지 못했고 시장이 다시 공급 리스크에 주목하고 있다고 분석했다.</p>
+      <span class="src">FXEmpire·WSJ 2026-10-28</span>
+    </div>
+    <div class="news-item">
+      <strong>금, $4,000 지지선 위에서 Fed 결정 대기 — "오일 인플레이션 우려"에 소폭 하락</strong>
+      <p>Reuters는 "Gold slips on oil-fuelled inflation fears ahead of Fed meeting"을 전하며, 전날 약 1% 상승 이후 오늘은 유가 상승이 인플레이션 우려를 자극해 금이 소폭 하락했다고 보도했다. WSJ도 "Gold Clings to Gains Above $4,000 as Markets Await Fed"를 전하며 금이 $4,000 선 위에서 Fed 결정을 기다리고 있다고 전했다.</p>
+      <span class="src">Reuters·WSJ 2026-10-28</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets · 국내는 10/28 마감, 美는 10/27(화) 마감</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>6,012.44</td><td class="chg up">+6.63%</td><td class="plain">외국인·기관 동시 순매수</td></tr>
+          <tr><td>코스닥</td><td>771.28</td><td class="chg up">+3.69%</td><td class="plain">기관 순매수 주도</td></tr>
+          <tr><td>다우 (10/27 마감)</td><td>52,532</td><td class="chg up">+0.06%</td><td class="plain">DIA 환산</td></tr>
+          <tr><td>S&amp;P500 (10/27 마감)</td><td>7,734</td><td class="chg up">+0.56%</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (10/27 마감)</td><td>26,506</td><td class="chg up">+1.16%</td><td class="plain">ONEQ 환산</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">국내 지수는 10/28(수) 정규장 마감 기준이다. 美 지수는 가장 최근 완료된 거래일인 10/27(화) 마감 수치를 직전 검증된 기준에 ETF(DIA·SPY·ONEQ) 누적 등락률을 적용해 환산했다 — 10/28(수) 美 정규장은 이 발행 시점(KST 저녁)에 아직 개장 전이며, 오늘 밤 FOMC 결정과 Microsoft·Alphabet·FedEx 실적 발표를 앞두고 있다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-stable">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">17.6</span>
+        <span class="vix-label">안정</span>
+      </div>
+      <p class="vix-msg">VIX 17.55(오늘 프리마켓, 10/27 마감 17.52 대비 +0.17%)로 "안정" 구간을 유지하고 있습니다.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다. 오늘 밤 FOMC·빅테크 실적이 겹치는 "메가 위크" 결전의 날에도 VIX가 18 아래 안정권에 머물러 있다는 점은 시장이 아직 낙관적 베팅을 유지하고 있다는 신호로 해석된다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (10/28 19:12 실시간)</dt><dd>1,339.70원 (+0.88%)</dd></div>
+      <div class="stat"><dt>WTI (USO, 10/27 마감)</dt><dd>$163.88 (오늘 프리마켓 +1.53%)</dd></div>
+      <div class="stat"><dt>브렌트유</dt><dd>사우디 라스타누라 공격에 반등</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 10/27 마감)</dt><dd>$372.28 (오늘 프리마켓 -0.28%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러 환율은 저녁 실시간 기준 1,339.70원으로 전일比 11.7원(0.88%) 상승했다(하나은행 고시 616회차) — 달러 강세와 FOMC 경계감이 겹친 것으로 보인다. 유가는 전날 외교 협상 기대로 하락했으나, 오늘은 사우디 라스타누라 석유시설에 대한 후티 반군 공격 소식에 프리마켓에서 +1.53% 반등했다. 금(GLD)은 유가 상승이 자극한 인플레이션 우려로 소폭 하락(-0.28%)했지만 여전히 $4,000 지지선 위에서 오늘 밤 FOMC 결정을 기다리고 있다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 네이버금융 종목분석 리포트 게시판은 여전히 정상 작동하지 않아, FnGuide(comp.wisereport.co.kr)·stockanalysis.com 컨센서스 페이지로 대체합니다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>삼성전자</b> — 컨센서스 목표주가 492,500원(22개 기관 평균), 투자의견 매수(4.00/5). 대신증권은 10/26 목표가를 560,000원→500,000원으로 -10.71% 하향했다.</li>
+      <li style="padding-left:0;"><b>NVIDIA</b> — 컨센서스 목표주가 $328.95(62명 애널리스트 평균), 투자의견 Strong Buy.</li>
+      <li style="padding-left:0;"><b>하나금융지주</b> — 컨센서스 목표주가 167,000원(19개 기관 평균), 투자의견 매수(4.00/5). 유안타증권은 10/28(오늘) "실적 안정과 주주환원을 겸비" 리포트를 냈다.</li>
+      <li style="padding-left:0;"><b>Barrick Mining</b> — 컨센서스 목표주가 $50.11(24명 애널리스트 평균), 투자의견 Buy. JPMorgan은 목표가를 $52→$55로 상향했으나 Freedom Broker는 Hold로 하향했다.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">삼성전자</span><span class="stock-code mono">005930</span></div>
+        <div class="stock-price mono">오늘 정규장 225,000~247,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (전일 222,000원; NXT 애프터마켓 244,000원 +9.91%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">반도체·AI메모리(DRAM/HBM)</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 SK하이닉스發 "메모리 완판" 선언과 어제 Anthropic IPO 호재가 함께 쏘아올린 반도체 수퍼사이클 기대의 최대 수혜주이자, 내일(10/29) 3분기 실적 발표를 하루 앞두고 있다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">1,426조 4,919억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR(2026E)</div><div class="v">4.88배 · 2.04배</div></div>
+        <div class="f"><div class="k">상반기 영업이익</div><div class="v" style="color:var(--rise);">+1,191.4%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">492,500원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>상반기 매출 +98.7%, 영업이익 +1,191.4%(약 12배), 순이익 +813.2% — DRAM·NAND 역대 최대 Bit 판매량과 HBM4 공급 확대, HBM4E 샘플 출하로 기술 경쟁력을 강화했다</li>
+        <li>오늘 SK하이닉스의 "3년치 D램·HBM 완판" 선언이 삼성전자에도 그대로 적용되는 호재로 해석되며 NXT 애프터마켓에서 +9.91% 급등했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>대신증권(10/26)은 최근 급등에도 오히려 목표가를 560,000원→500,000원으로 -10.71% 하향하며 밸류에이션 경계감을 표출했다</li>
+        <li>내일(10/29) 3분기 실적 발표 결과가 메모리 수퍼사이클 기대에 부합할지가 직접적인 시험대가 될 전망이다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> AI·HBM 수요 폭발과 메모리 완판 선언이 구조적 성장 스토리를 뒷받침하나, 단기 급등에 따른 변동성과 내일 실적 발표 결과를 주시할 필요가 있다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">NVIDIA</span><span class="stock-code mono">NASDAQ:NVDA</span></div>
+        <div class="stock-price mono">$217.94<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/27 종가, +0.90%; 오늘 프리마켓 $219.59 +0.76%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">AI반도체·GPU</span></div>
+      <p class="why"><b>선정 이유</b> — SK하이닉스發 메모리 수퍼사이클 기대와 어제 Anthropic IPO 서류가 보여준 AI 컴퓨팅 수요 폭증이 직접 연결되는 AI반도체 대표주로, 오늘 밤 FOMC 결정과 뒤이은 Microsoft·Alphabet 실적 흐름 속에서도 주목받고 있다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$5.26T(+16.3%)</div></div>
+        <div class="f"><div class="k">PE · Forward PE</div><div class="v">27.56배 · 18.02배</div></div>
+        <div class="f"><div class="k">애널리스트 의견</div><div class="v">Strong Buy(62명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$328.95(+50.94%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>어제 Meta의 $25B 지분공모에 $3B를 투자하며 AI 파트너십을 확대했고, Oracle과는 NVIDIA Vera Rubin을 멀티 기가와트급으로 확장하기로 발표했다</li>
+        <li>62명 애널리스트 평균 의견은 Strong Buy — 목표주가는 현재가 대비 51% 높은 $328.95다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>Business Insider는 Anthropic의 IPO 서류가 멀티칩 전략을 강조하고 있어 Nvidia의 가격결정력을 약화시킬 수 있다고 분석했다("Nvidia's worst nightmare")</li>
+        <li>OpenAI가 Nvidia 의존도를 낮추기 위해 Google의 AI 칩 구매를 추진 중이라는 보도가 나오며 고객 다변화 리스크가 부각됐다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 메모리·AI 컴퓨팅 수요 폭발의 최대 수혜주라는 구조는 유효하나, 경쟁·가격결정력 관련 뉴스플로우를 계속 주시할 필요가 있다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">하나금융지주</span><span class="stock-code mono">086790</span></div>
+        <div class="stock-price mono">오늘 정규장 113,300~117,300원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (전일 113,300원; NXT 애프터마켓 115,000원 +1.5%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">은행·금융지주</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체 랠리와는 무관한 비인기 업종 금융주로, 오늘 밤 FOMC 결정의 영향을 직접 받는 은행주의 대표 선정이다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">52주 최고/최저</div><div class="v">142,500원 · 84,500원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR(2026E)</div><div class="v">7.09배 · 0.64배</div></div>
+        <div class="f"><div class="k">현금배당수익률(2026E)</div><div class="v">4.13%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">167,000원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>상반기 매출 +37.6%, 영업이익 +8.9%, 순이익 +4.4% — 은행부문 기업대출 성장과 NIM 개선, 증권부문 브로커리지·트레이딩 호조가 겹쳤다</li>
+        <li>유안타증권(10/28, 오늘) "실적 안정과 주주환원을 겸비", 한화투자(10/26) "CET1비율 +18bp QoQ, 환원여력은 유효" — 자본비율 개선에 따른 주주환원 확대 기대가 이어지고 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>하나증권(10/26) 자체 리포트는 "무난하지만 조금씩 아쉬움들이 있었던 실적"이라 평가했고, 최근 1개월 수익률은 -14.88%로 부진했다</li>
+        <li>오늘 밤 FOMC 결정이 향후 NIM(순이자마진) 경로에 직접 영향을 주는 변수다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 낮은 밸류에이션(PBR 0.64배)과 주주환원 확대 기대는 긍정적이나, FOMC 결과에 따른 금리 경로 변화를 지켜볼 필요가 있다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Barrick Mining</span><span class="stock-code mono">NYSE:B</span></div>
+        <div class="stock-price mono">$39.26<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (10/27 종가, +2.67%; 오늘 프리마켓 $39.10 -0.41%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">금광업</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체 랠리와 무관하게, 오늘 밤 FOMC 결정 앞두고 금 가격 변동성에 직접 연동되는 비인기 업종(귀금속광업) 미국 종목으로 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$64.56B(+16.5%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">10.02배 · 10.47배</div></div>
+        <div class="f"><div class="k">배당수익률</div><div class="v">2.41%($0.95)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$50.11(+27.64%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>JPMorgan은 목표가를 $52→$55로 상향하며 Overweight를 유지했고, Barclays도 C$58→C$59로 소폭 상향했다</li>
+        <li>24명 애널리스트 평균 의견은 Buy — 2025년 매출 +31.22%, 순이익 +132.88%로 금값 강세의 실적 수혜가 이어지고 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>CIBC는 목표가를 $57→$49로 하향하며 Neutral로 등급을 낮췄고, Freedom Broker도 Hold로 하향(목표가 $46)하며 밸류에이션 부담을 지적했다</li>
+        <li>MarketBeat는 금값이 올해 1월 사상 최고치 이후 22% 하락했다고 짚었다 — 오늘 밤 FOMC 결과가 금값과 금광주 모두의 다음 방향을 가를 변수다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립.</b> 낮은 밸류에이션(PER 10배)과 실적 개선은 긍정적이나, 금값이 $4,000 지지선에서 오늘 밤 FOMC 결과를 기다리고 있어 단기 방향성은 불확실하다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">10/28(수) 밤</span><span>美 FOMC 금리결정 + Microsoft·Alphabet·FedEx 실적 발표 — "메가 위크" 결전의 날</span></li>
+      <li><span class="when mono">10/29(목)</span><span>삼성전자 2026년 3분기 경영실적 발표</span></li>
+      <li><span class="when mono">11/9(월)</span><span>Barrick Mining 2026년 3분기 실적 발표</span></li>
+      <li><span class="when mono">진행 중</span><span>SK하이닉스發 "메모리 완판" 선언이 반도체 랠리를 추가로 밀어올릴지, FOMC 결과가 이를 꺾을지 확인</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-10-28 저녁 발행</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
