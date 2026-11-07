@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-11-07 주말 특집</title>
+<meta name="description" content="국내 증시가 휴장하는 토요일, 금요일(11/6) 美 증시 마감을 정리한다. 다우 -0.40%·S&P500 +0.31%·나스닥(ONEQ) +1.09%로 사흘간의 극심한 변동성이 진정되는 기미를 보였다 — 美 10월 비농업고용이 +165,000명으로 예상을 3배 웃돈 서프라이즈를 기록하며 반도체주가 반등했다. VIX는 전일 28.18에서 25.64(-9.01%)로 추가 하락해 CNBC는 "매수 신호일 수도 있다"고 짚었다. 다만 유가는 이란戰 재확전 리스크에 반등해 브렌트가 $100을 재돌파했고, 금은 강한 고용지표에 따른 Fed 긴축 기대로 하락했다. 한솔케미칼·Applied Materials·유한양행·Johnson&Johnson 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Weekend Special</div>
+    <h1>국내 증시 휴장, 美 증시는 깜짝 고용지표에 안정 — 반도체주 반등, VIX 추가 하락</h1>
+    <div class="date">2026년 11월 7일 토요일 · 코스피·코스닥 휴장일, 금요일(11/6) 美 증시 마감 결과를 정리하는 주말 특집</div>
+    <p class="thesis">오늘은 토요일로 국내 증시가 휴장한다. 이번 주 내내 이어진 "블루웨이브 안도 랠리→AI 트레이드 붕괴"의 극심한 변동성이 금요일(11/6) 하루 진정되는 기미를 보였다 — 다우존스(DIA 환산)는 -0.40%로 소폭 추가 하락했지만, S&amp;P500(SPY 환산)은 +0.31%, 나스닥종합(ONEQ 환산)은 +1.09%로 반등했다. 美 10월 비농업고용이 +165,000명으로 시장 예상(약 5만~6만명 수준)을 3배 가까이 웃도는 서프라이즈를 기록했고 실업률은 4.1%로 안정세를 유지하면서, 전날까지 투매를 주도했던 반도체·칩장비주가 금요일 일제히 반등했다. VIX(공포지수)는 목요일 종가 28.18에서 금요일 25.64(-9.01%)로 추가 하락했고, CNBC는 "Wall Street's fear gauge may be flashing a buy sign"이라는 제목으로 이 흐름을 짚었다. 다만 유가는 이란戰 재확전 리스크가 재부각되며 반등해 브렌트유가 배럴당 $100을 다시 넘어섰고, 금은 강한 고용지표에 따른 Fed 12월 추가 긴축 기대가 커지며 하락했다 — 이번 주의 변동성 핵심이었던 반도체·AI 섹터와 금리·안전자산 간의 되돌림이 동시에 나타난 하루였다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>美 10월 비농업고용 +165,000명 — 예상치 3배 웃돈 서프라이즈, 실업률 4.1% 유지</strong>
+      <p>美 노동부는 10월 비농업고용이 165,000명 증가했다고 발표했다 — 시장 예상(약 5만~6만명 수준)을 크게 웃돈 수치다. 실업률은 4.1%로 전월과 큰 변화가 없었다. 블룸버그는 "US Adds 165,000 Jobs, Topping All Forecasts in Broad Advance"라는 제목으로 이를 전했다. 이 서프라이즈는 그 자체로는 Fed의 12월 추가 긴축 가능성을 높이는 요인이지만, 동시에 美 경제가 이번 주 초의 극심한 증시 변동성과 무관하게 견고하다는 신호로 해석되며 증시 전반에 안도감을 줬다.</p>
+      <span class="src">Bloomberg, ANI News 2026-11-06</span>
+    </div>
+    <div class="news-item">
+      <strong>美 증시, 사흘 만에 안정 — 나스닥·S&amp;P500 반등, 반도체·칩장비주가 반등 주도</strong>
+      <p>금요일(11/6) 다우존스는 -0.40%로 소폭 하락했지만 S&amp;P500은 +0.31%, 나스닥종합은 +1.09%로 반등했다. FXEmpire는 "Nasdaq 100 Forecast: Chip Stocks Rebound After US Midterm Sell-Off"라는 제목으로, 전날까지 투매를 주도했던 반도체주가 반등하기 시작했다고 전했다 — 다만 "AI 지출·고금리·美中 무역 긴장"에 대한 우려가 추가 상승을 제한할 수 있다고 덧붙였다. Applied Materials(+4.22%)를 비롯한 반도체 장비주들도 반등했다.</p>
+      <span class="src">FXEmpire 2026-11-06</span>
+    </div>
+    <div class="news-item">
+      <strong>VIX, 목요일 28.18에서 금요일 25.64로 추가 하락 — "매수 신호일 수도"(CNBC)</strong>
+      <p>CBOE 변동성지수(VIX)는 전일(28.18) 대비 -9.01% 추가 하락한 25.64로 마감했다. CNBC는 "Wall Street's fear gauge may be flashing a buy sign"라는 제목의 기사로 이 흐름을 분석했다 — 목요일의 급등이 과도한 패닉에 따른 일시적 현상이었을 가능성을 시장이 점차 반영하고 있다는 해석이다.</p>
+      <span class="src">CNBC 2026-11-06</span>
+    </div>
+    <div class="news-item">
+      <strong>유가 반등·금 하락 — 이란戰 재확전 리스크 재부각, 강한 고용지표에 Fed 긴축 기대 ↑</strong>
+      <p>CNBC는 "Oil prices rise as investors weigh renewed U.S.-Iran conflict risks after midterm elections"라는 제목으로 유가 반등을 전했고, 라피단에너지의 Bob McNally는 美-이란 간 군사적 충돌 재개 가능성을 80%로 제시하며 브렌트유가 추가 상승할 수 있다고 내다봤다 — 브렌트유는 이날 다시 배럴당 $100을 넘어섰다. 반면 금은 강한 고용지표가 Fed의 12월 추가 긴축 가능성을 높이면서 하락했다 — Kitco는 "Gold falls as U.S. payrolls surge by 165,000, strengthening December Fed hike case"라고 전했고, 골드만삭스는 지금은 금을 매수하기엔 아직 이르다는 새 목표가 분석을 내놨다(MarketWatch).</p>
+      <span class="src">CNBC, Kitco, MarketWatch 2026-11-06</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>5,059.69</td><td class="chg down">-6.02%</td><td class="plain">11/6(금) 마감 — 오늘(11/7 토) 국내 증시 휴장</td></tr>
+          <tr><td>코스닥</td><td>644.27</td><td class="chg down">-5.03%</td><td class="plain">11/6(금) 마감 — 오늘(11/7 토) 국내 증시 휴장</td></tr>
+          <tr><td>다우 (11/6 마감)</td><td>51,458</td><td class="chg down">-0.40%</td><td class="plain">DIA 환산</td></tr>
+          <tr><td>S&amp;P500 (11/6 마감)</td><td>7,392</td><td class="chg up">+0.31%</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (11/6 마감)</td><td>24,613</td><td class="chg up">+1.09%</td><td class="plain">ONEQ 환산</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">코스피·코스닥은 토요일인 오늘 휴장해 전 거래일(11/6 금)의 확정 마감 수치를 그대로 유지했다. 美 증시는 금요일(11/6) 정규장 마감 수치로 갱신했다 — 11/6 마감은 전일(11/5) 확정 수치(다우 51,665·S&amp;P500 7,369·나스닥 24,348)에 당일 ETF 등락률을 반영해 환산했다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-caution">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">25.6</span>
+        <span class="vix-label">경계</span>
+      </div>
+      <p class="vix-msg">VIX 25.64(전일종가 28.18 대비 -9.01%)로 변동성이 확대되고 있습니다. 시장 불확실성에 유의하세요.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다. VIX는 목요일 28.18(3월 30일 이후 최고치)까지 폭등했다가 금요일 25.64로 추가 하락하며 이틀째 완화되는 흐름이다 — CNBC는 이를 "매수 신호일 수도 있다"고 짚었다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (하나은행, 토요일 06:19 KST 참고 고시)</dt><dd>1,364.00원 (+0.52%)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 11/6 마감)</dt><dd>$372.52 (-0.79%)</dd></div>
+      <div class="stat"><dt>WTI (USO, 11/6 마감)</dt><dd>$148.41 (+0.13%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러는 국내 외환시장이 휴장하는 주말이라 토요일 새벽 시각(06:19 KST) 고시된 참고용 수치이며, 실제 거래량이 적어 월요일 개장 시 재조정될 수 있다. 금은 강한 고용지표에 따른 Fed 긴축 기대로 하락했고, 유가는 이란戰 재확전 리스크 재부각에 반등해 브렌트유가 $100을 다시 넘어섰다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 국내 종목은 FnGuide(comp.wisereport.co.kr) 컨센서스 페이지, 美 종목은 stockanalysis.com 애널리스트 컨센서스를 사용했다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>한솔케미칼</b> — 컨센서스 목표주가 330,000원(7개 기관 평균), 투자의견 4.00(매수).</li>
+      <li style="padding-left:0;"><b>Applied Materials</b> — 컨센서스 목표주가 $626.86(41명 애널리스트 평균, +88.41% 상승여력), 투자의견 Strong Buy.</li>
+      <li style="padding-left:0;"><b>유한양행</b> — 컨센서스 목표주가 117,500원(14개 기관 평균), 투자의견 4.00(매수).</li>
+      <li style="padding-left:0;"><b>Johnson &amp; Johnson</b> — 컨센서스 목표주가 $279.41(23명 애널리스트 평균, +1.16% 상승여력), 투자의견 Buy.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">한솔케미칼</span><span class="stock-code mono">014680</span></div>
+        <div class="stock-price mono">171,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/6 금 종가, -12.04%; NXT 173,500원)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">반도체 소재(Precursor·과산화수소)</span></div>
+      <p class="why"><b>선정 이유</b> — AI 서버·데이터센터용 반도체 증착 공정 소재를 공급하는 업체로, 이번 주 반도체 투매의 충격을 가장 직접적으로 받은 국내 소재주라 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액(11/6 기준)</div><div class="v">1조8,458억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">11.28배 · 1.54배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">41.92%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">330,000원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 매출 +11.1%, 영업이익 +4.0%, 순이익 +8.4% — AI 서비스 확대와 데이터센터 투자 증가로 전자·이차전지소재 부문이 견조한 실적을 유지했다(FnGuide)</li>
+        <li>반도체 미세화·3D 구조 확대로 증착 공정의 중요성이 높아지며, 다양한 Precursor 소재와 차세대 디스플레이 소재 개발을 지속하고 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 1개월 수익률이 -38.38%로 이번 주 반도체 투매의 충격을 가장 크게 받았다 — 52주 최고가(346,500원)에서 절반 수준까지 밀린 상태다</li>
+        <li>증권사들이 최근 목표가를 잇달아 하향 조정(한국투자 -29.35%, 현대차 -20.73%)했다 — 반도체 업황 고점 논란이 소재주에도 번지고 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적이나 단기 변동성 극심.</b> AI 데이터센터向 소재 수요라는 펀더멘털은 유효하나, 반도체 섹터 전반의 투매 여진이 당분간 주가를 짓누를 수 있다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Applied Materials</span><span class="stock-code mono">NASDAQ:AMAT</span></div>
+        <div class="stock-price mono">$332.72<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/6 종가, +4.22%; 애프터아워 $334.01 +0.39%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">반도체 장비(WFE)</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체 투매 속에서도 금요일 반등을 주도한 반도체 장비株로, "AI 캐펙스 지속 vs 규제 우려"라는 이번 주 핵심 대립을 보여주는 종목이라 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$264.04B(+44.0%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">28.70배 · 18.87배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Strong Buy(41명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$626.86(+88.41%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>FY2025 매출 $28.37B(+4.39%) — CEO 게리 디커슨은 AI 수요에 힘입어 향후 몇 년간 매출이 두 배로 늘 것이라 전망했고, $5B 규모 EPIC 연구센터 투자와 BE Semiconductor 지분 20% 확대를 발표했다</li>
+        <li>금요일 +4.22% 반등하며 이번 주 내내 눌렸던 반도체 장비주(Lam Research·KLA 등)의 반등을 주도했다 — 11/12 분기 실적 발표가 다음 주 예정돼 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>Barron's는 "The Trouble for Chip-Equipment Stocks Could Be Just Getting Started"라며, Citi가 Lam·KLA·AMAT에 추가 하락 여지가 있다고 본다고 전했다 — AI 지출 속도 조절 우려가 장비주에도 번질 수 있다</li>
+        <li>모건스탠리(목표가 $538)·에버코어(목표가 $590) 등 일부 증권사는 최근 목표가를 하향 조정했다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> AI發 웨이퍼 팹 장비(WFE) 수요 확대라는 장기 성장 스토리는 유효하며, 금요일의 반등이 반도체 투매 진정의 신호일 가능성에 주목할 만하다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">유한양행</span><span class="stock-code mono">000100</span></div>
+        <div class="stock-price mono">80,400원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/6 금 종가, -2.66%; NXT 80,100원)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">제약바이오</span></div>
+      <p class="why"><b>선정 이유</b> — 이번 주 반도체·AI주 투매와 무관한 제약 방어주로, 렉라자 글로벌 매출 성장이라는 독자적인 성장 스토리를 보여주기 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액(11/6 기준)</div><div class="v">5조9,187억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">40.34배 · 2.46배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">22.13%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">117,500원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 매출 +8.9%, 영업이익 +34.5%, 순이익 +79.1% — 비소세포폐암 치료제 렉라자의 글로벌·국내 매출 성장이 수익성 중심 성장을 견인했다(FnGuide)</li>
+        <li>최근 1개월 +5.37%, 3개월 +3.34%로, 이번 주 반도체주 급락장과 대비되는 안정적 흐름을 보였다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>PER 40.34배(2026E)로 밸류에이션이 높은 수준이며, 렉라자 후속 파이프라인(제2·3의 렉라자)의 가시화 속도에 따라 재평가가 갈릴 수 있다</li>
+        <li>목표주가 기준 상승여력이 46%대로 양호하나, 최근 일부 증권사(IBK투자 -31.25%, 미래에셋 -10.34%)가 목표가를 하향했다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 반도체 섹터와 상관관계가 낮은 독자적 성장 스토리를 보유한 방어적 바이오주로, 이번 주 같은 변동성 장세에서 재조명받을 만하다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Johnson &amp; Johnson</span><span class="stock-code mono">NYSE:JNJ</span></div>
+        <div class="stock-price mono">$276.22<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/6 종가, +1.43%; 애프터아워 $275.32 -0.33%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">헬스케어(제약·메드테크)</span></div>
+      <p class="why"><b>선정 이유</b> — MarketWatch가 "The big winners of the tech wreck are biopharma stocks"라고 짚은 대로, 이번 주 AI·반도체 투매의 반사이익을 받은 대표 헬스케어주라 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$664.95B(+47.7%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">41.95배 · 24.83배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Buy(23명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$279.41(+1.16%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2025년 매출 $94.19B(+6.05%), 순이익 $26.80B(+90.56%) — FDA가 두경부암 치료제 Rybrevant Faspro에 가속승인을 내리는 등 파이프라인 모멘텀이 이어지고 있다</li>
+        <li>MarketWatch는 J&amp;J·Quest Diagnostics·UnitedHealth 등 "지루한" 헬스케어주가 2026년 가장 뜨거운 섹터가 됐다고 평가했다 — AI 트레이드 붕괴 속 자금 로테이션의 수혜주다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>목표주가($279.41) 기준 상승여력이 +1.16%에 불과해, 이미 방어주로서의 밸류에이션 프리미엄이 상당 부분 반영된 상태다</li>
+        <li>WSJ는 목요일 투매 여진이 유럽·아시아로 번지며 헬스케어株 전반도 일시적으로 흔들렸다고 전했다 — 로테이션 수혜가 계속될지는 지켜봐야 한다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> AI 트레이드發 자금 로테이션의 수혜를 입고 있으나, 밸류에이션 여유가 크지 않아 추가 상승은 제한적일 수 있다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">11/9(월)</span><span>국내 증시 재개장 — 금요일 美 증시 안정세가 월요일 코스피·코스닥 반등으로 이어질지 관찰</span></li>
+      <li><span class="when mono">11월 12일</span><span>Applied Materials 2026년 4분기(FY2026) 실적 발표</span></li>
+      <li><span class="when mono">11월 17일</span><span>NVIDIA 분기 실적 발표 — AI 데이터센터 투자 지속 여부를 가늠할 핵심 변수</span></li>
+      <li><span class="when mono">진행 중</span><span>이란戰 재확전 리스크와 유가 흐름, Fed 12월 FOMC를 둘러싼 금리 경로 전망</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-11-07 주말 특집</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
