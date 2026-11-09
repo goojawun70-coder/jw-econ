@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-11-09</title>
+<meta name="description" content="국내 증시가 월요일 재개장했으나 코스피·코스닥 모두 하락 마감했다. 주말 사이 호르무즈해협에서 유조선 2~3척이 기뢰·공격으로 화재를 일으켰다는 보도가 이어졌지만, 동시에 트럼프 대통령이 '대화가 진전되는 한 추가 공격은 불필요'라고 밝혀 국제유가와 VIX는 오히려 하락했다. 美 증시는 한국시간 저녁 기준 아직 개장 전이라 다우·S&amp;P500·나스닥·VIX 종가·금·WTI는 금요일(11/6) 수치를 3거래일째 유지한다. S-Oil·Frontline·농심·Kroger 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Brief</div>
+    <h1>호르무즈 탱커 화재 속 코스피·코스닥 동반 하락 — 트럼프 "추가공격 불필요" 발언에 유가·VIX는 오히려 진정</h1>
+    <div class="date">2026년 11월 9일 월요일 · 국내 증시 재개장, 중동 현지 리스크와 美 외교 신호가 엇갈린 하루</div>
+    <p class="thesis">국내 증시가 주말을 보내고 월요일 재개장했으나 코스피·코스닥 모두 하락 마감했다(코스피 5,018.85, -0.81%; 코스닥 638.97, -0.82%). 주말 사이 호르무즈해협에서는 유조선 2~3척이 기뢰·공격으로 화재를 일으켰다는 보도가 이어졌고, 이란軍은 "위반 유조선"이 자국 기뢰에 피격됐다고 주장했다. 그런데도 국제유가는 오히려 하락했다 — 로이터에 따르면 트럼프 대통령이 "대화가 진전되는 한 추가 이란 공격은 가능성이 매우 낮다"고 밝히면서 월요일 개장 유가가 떨어졌고, VIX도 프리마켓 기준 23.88로 전일 종가(25.64) 대비 6.86% 급락했다. 즉 중동 현지의 군사적 리스크는 여전히 해소되지 않았지만, 美 외교 신호는 긴장 완화 쪽을 가리키는 엇갈린 하루였다. 다만 美 증시는 한국시간 저녁(19시) 기준 아직 개장 전이라, 다우·S&amp;P500·나스닥과 VIX 정규장 종가·국제 금(GLD)·WTI(USO)는 금요일(11/6) 마감 수치를 3거래일째 그대로 유지한다 — 이 수치들은 토요일·일요일 발행본에서 이미 두 차례 보도된 값으로 오늘 새로 확인된 정보는 아니다. 원/달러 환율은 장중 1,348.20원(-1.12%)으로 원화가 강세를 보여, 지정학 리스크 완화 신호와 궤를 같이했다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>호르무즈해협서 유조선 잇따라 화재 — 이란軍 "위반 유조선, 기뢰에 피격" 주장</strong>
+      <p>Marine Insight·Maritime Executive·Arab News 등에 따르면 11월 8일 새벽 호르무즈해협에서 유조선 2척이 해상 기뢰로 추정되는 물체에 부딫혀 화재가 발생했고, 이란 매체는 "위반 항로를 운항한" 유조선 3척이 화재를 일으켰다고 주장했다. 11월 9일에도 이란 육군 해군이 "위반" 유조선이 호르무즈해협 동쪽에서 기뢰에 피격돼 화재가 났다고 추가로 발표했다(AP7AM, Morung Express). 美 중앙사령부는 토요일 밤부터 이어진 유조선 나포·무력화 조치를 계속하고 있다.</p>
+      <span class="src">Marine Insight, Maritime Executive, Arab News, AP7AM 2026-11-08~09</span>
+    </div>
+    <div class="news-item">
+      <strong>트럼프 "대화 진전되는 한 추가 이란 공격 가능성 낮다" — 월요일 개장 유가 하락</strong>
+      <p>로이터에 따르면 트럼프 대통령은 이란과의 종전 협상이 진전되는 한 자신이 추가 공격을 명령할 가능성은 매우 낮다고 밝혔다. 이 발언에 월요일 개장 국제유가는 하락했고, WSJ도 "Hormuz Diplomacy Gains Ground as Trump Plays Down New Iran Strikes"라며 美-이란 외교 노력이 진전되고 있다고 전했다. 다만 호르무즈해협 현지의 기뢰·화재 사고는 계속 보고되고 있어, 외교적 신호와 현장 리스크가 서로 엇갈리는 모습이다.</p>
+      <span class="src">Reuters, WSJ 2026-11-08~09</span>
+    </div>
+    <div class="news-item">
+      <strong>코스피 5,018.85(-0.81%)·코스닥 638.97(-0.82%) 동반 하락 — 개인·외국인 순매도, 기관 순매수</strong>
+      <p>네이버페이증권에 따르면 코스피는 이날 5,018.85로 마감해 전일(11/6, 5,059.69) 대비 40.84포인트(-0.81%) 하락했다. 투자자별로는 개인이 5,988억원, 외국인이 5,982억원을 순매도했고 기관이 7,344억원을 순매수했다. 코스닥도 638.97로 마감해 5.30포인트(-0.82%) 내렸으며, 개인 560억원·외국인 615억원 순매도, 기관 1,105억원 순매수로 코스피와 비슷한 수급 구도를 보였다. 美 증시의 VIX·유가가 진정되는 신호를 보인 것과 달리, 국내 증시는 주말 사이 격화된 중동 리스크에 더 민감하게 반응한 것으로 풀이된다.</p>
+      <span class="src">네이버페이증권(m.stock.naver.com) 2026-11-09</span>
+    </div>
+    <div class="news-item">
+      <strong>VIX 23.88(프리마켓, -6.86%)로 급락 — "공포 완화" 신호지만 국내 증시는 반대로 하락</strong>
+      <p>CNBC에 따르면 VIX는 美 동부시간 오전 5시13분 기준 23.88로 전일 종가 25.64 대비 1.76포인트(-6.86%) 하락했다. 이는 아직 美 정규장 개장 전(프리마켓) 수치로, 정규장 종가가 아니다. VIX 하락과 트럼프의 긴장완화 발언은 같은 방향을 가리키지만, 같은 날 국내 증시는 하락해 美·韓 시장이 서로 다른 신호에 반응하는 하루였다.</p>
+      <span class="src">CNBC(.VIX 실시간 quote), Yahoo Finance 2026-11-09</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>5,018.85</td><td class="chg down">-0.81%</td><td class="plain">11/9(월) 장마감, 개인·외국인 순매도·기관 순매수</td></tr>
+          <tr><td>코스닥</td><td>638.97</td><td class="chg down">-0.82%</td><td class="plain">11/9(월) 장마감</td></tr>
+          <tr><td>다우 (11/6 마감)</td><td>51,458</td><td class="chg down">-0.40%</td><td class="plain">DIA 환산 — 美 증시 개장 전, 3거래일째 동일</td></tr>
+          <tr><td>S&amp;P500 (11/6 마감)</td><td>7,392</td><td class="chg up">+0.31%</td><td class="plain">SPY 환산 — 프리마켓 +0.44%</td></tr>
+          <tr><td>나스닥 (11/6 마감)</td><td>24,613</td><td class="chg up">+1.09%</td><td class="plain">ONEQ 환산 — 프리마켓 -0.08%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">코스피·코스닥은 오늘(월) 실제 재개장해 하락 마감한 새 수치다. 반면 美 3대 지수는 한국시간 19시 발행 기준 아직 정규장이 열리지 않아, 금요일(11/6) 마감치를 토·일 발행본에 이어 3거래일째 그대로 인용한다 — 프리마켓(장전) 등락은 방향성 참고용일 뿐 확정 수치가 아니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-caution">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">23.9</span>
+        <span class="vix-label">경계</span>
+      </div>
+      <p class="vix-msg">VIX 23.88(프리마켓, 전일 종가 25.64 대비 -6.86%)로 변동성이 확대되고 있습니다. 시장 불확실성에 유의하세요.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다. 오늘 수치는 美 동부시간 오전 5시13분 기준 프리마켓(장전) 실시간 값으로, 정규장 종가가 확정되면 달라질 수 있다 — 트럼프 대통령의 긴장완화 발언이 이 하락에 영향을 준 것으로 보인다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (하나은행, 11/9 19:11 KST 실시간)</dt><dd>1,348.20원 (-1.12%)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 11/6 마감)</dt><dd>$372.52 (-0.79%)</dd></div>
+      <div class="stat"><dt>WTI (USO, 11/6 마감)</dt><dd>$148.41 (+0.13%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러는 오늘 장중 15.3원(-1.12%) 하락한 1,348.20원으로, 트럼프 대통령의 긴장완화 발언과 VIX 하락에 맞물려 원화 강세가 나타났다. 반면 GLD·USO는 美 증시 개장 전이라 금요일(11/6) 마감치를 그대로 유지한다 — 다만 프리마켓에서는 GLD $375.62(+0.83%), USO $148.10(-0.21%)로 각각 소폭 다른 방향을 보이고 있어, 정규장이 열리면 금은 안전자산 수요로 오르고 WTI는 긴장완화로 내릴 가능성을 시사한다. 참고로 금요일 정규장 기준 브렌트유는 배럴당 $97대, WTI 현물은 $90대였다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 국내 종목은 FnGuide(comp.wisereport.co.kr) 컨센서스 페이지, 美 종목은 stockanalysis.com 애널리스트 컨센서스를 사용했다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>S-Oil</b> — 컨센서스 목표주가 189,000원(12개 기관 평균), 투자의견 4.00(매수).</li>
+      <li style="padding-left:0;"><b>Frontline plc</b> — 컨센서스 목표주가 $57.25(4명 애널리스트 평균, +26.05% 상승여력), 투자의견 Buy.</li>
+      <li style="padding-left:0;"><b>농심</b> — 컨센서스 목표주가 567,273원(12개 기관 평균), 투자의견 3.92. LS증권(11/4)은 570,000원을 유지했다.</li>
+      <li style="padding-left:0;"><b>Kroger</b> — 컨센서스 목표주가 $69.00(24명 애널리스트 평균, +1.92% 상승여력), 투자의견 Buy.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">S-Oil</span><span class="stock-code mono">010950</span></div>
+        <div class="stock-price mono">105,700원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/9 NXT, 기준가 대비 -0.47%; 정규장 거래범위 103,000~110,400원)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">정유(에너지)</span></div>
+      <p class="why"><b>선정 이유</b> — 호르무즈해협 봉쇄 리스크로 정제마진이 급등한 국내 대표 정유사로, 중동 긴장이 실제 기업 실적에 어떻게 반영되는지 보여주는 종목이라 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">11조9,000억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">3.48배 · 1.01배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">80.60%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">189,000원(4.00 매수)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출 +19.1%, 영업이익·순이익 모두 흑자전환 — 美-이란戰으로 호르무즈해협이 봉쇄되며 중동·아시아 정유사 가동률이 하락하고 중국의 수출 제한으로 제품 공급이 부족해져 정유부문 경질유 마진이 크게 확대됐다(FnGuide)</li>
+        <li>윤활부문도 중동산 Group III 기유 공급 차질로 강세가 지속되며 실적이 대폭 개선됐다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 1개월 수익률 -35.75%로 단기 급락폭이 매우 크다 — 52주 최고 179,700원에서 현재 10만원대로 크게 밀렸다</li>
+        <li>오늘 트럼프 대통령의 긴장완화 발언으로 유가가 하락하는 등 호르무즈 리스크가 완화될 경우, 정제마진 확대라는 핵심 투자 논리 자체가 약화될 수 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적이나 리스크 완화 시 역풍 가능.</b> 중동 공급차질이 실적을 크게 개선시켰으나, 같은 이유로 외교적 진전이 모멘텀을 꺾을 수 있는 양날의 검이다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Frontline plc</span><span class="stock-code mono">NYSE:FRO</span></div>
+        <div class="stock-price mono">$45.42<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/6 종가, +1.61%; 프리마켓 $47.23 +3.99%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">해운(원유 탱커)</span></div>
+      <p class="why"><b>선정 이유</b> — VLCC·수에즈막스 등 80척의 탱커 선단을 운용하는 美 대표 유조선 해운주로, 호르무즈해협 탱커 피격·기뢰 사고가 탱커 운임(TCE)에 미치는 영향을 보여주기 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$10.11B(+94.7%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">6.80배 · 7.39배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Buy(4명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$57.25(+26.05%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>호르무즈해협 혼란으로 글로벌 탱커 선단 공급이 타이트해지며 운임(TCE)이 급등, 2분기 실적에서 레코드 수준 수익·현금흐름을 기록했다(실적 발표 자료)</li>
+        <li>BTIG가 목표가를 $70→$53 범위로, Evercore ISI도 $41→$53으로 잇따라 상향했다(최근 2개월)</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>TheFly에 따르면 최근 옵션시장에서 풋옵션 거래가 평소의 1.4배로 몰리며 베어리시한 포지셔닝이 포착됐다</li>
+        <li>오늘 트럼프 대통령의 긴장완화 발언처럼 외교적 진전이 이뤄지면 호르무즈 통항이 정상화되며 탱커 운임 급등이라는 핵심 투자 논리가 약화될 수 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적이나 지정학 리스크 의존적.</b> 중동 혼란이 지속되는 한 수혜가 크지만, S-Oil과 마찬가지로 평화 진전 시 역풍을 맞는 구조다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">농심</span><span class="stock-code mono">004370</span></div>
+        <div class="stock-price mono">401,500원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/9 NXT, 기준가 대비 -1.47%; 정규장 거래범위 394,500~411,500원)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">식품(라면·필수소비재)</span></div>
+      <p class="why"><b>선정 이유</b> — 중동 지정학 리스크·반도체 투매와 무관하게 안정적인 국내 대표 식품 디펜시브株로, 오늘 시황과 상관관계가 낮은 종목을 균형 있게 다루기 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">2조4,421억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">12.01배 · 0.79배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">24.00%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">567,273원(3.92)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출 +7.3%, 영업이익 +31.7%, 순이익 +30.2% — 신라면 40주년 신제품 출시와 배홍동막국수로 하절기 비빔면 시장 경쟁력을 강화했다(FnGuide)</li>
+        <li>美 법인은 辛브랜드 중심 판매 기반을 유지하고 유럽·러시아에 신규 판매법인(NONGSHIM RUS LLC)을 설립해 글로벌 매출 확대를 추진 중이다. LS증권(11/4)은 목표가 570,000원을 유지했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 1년 수익률 -4.90%로 장기 모멘텀은 다소 약화됐다 — 한국투자증권(11/2)은 "중립" 의견을 유지했다</li>
+        <li>국제 밀·팜유 등 원재료 가격 변동이 수익성에 영향을 줄 수 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적~긍정적.</b> 지정학 리스크와 무관한 안정적 캐시플로우가 강점이나, 장기 수익률은 다소 정체돼 있다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Kroger</span><span class="stock-code mono">NYSE:KR</span></div>
+        <div class="stock-price mono">$67.70<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/6 종가, -2.49%; 프리마켓 $68.36 +0.97%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">식료품 유통(필수소비재)</span></div>
+      <p class="why"><b>선정 이유</b> — 지정학 리스크·AI 투매와 무관한 美 대표 식료품 유통업체로, 신임 CEO 주도 턴어라운드 전략이 진행 중인 디펜시브株라 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$39.98B(-4.5%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">39.35배 · 12.63배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Buy(24명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$69.00(+1.92%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>신임 CEO Greg Foran이 주도하는 3개년 성장계획("America's Favorite Grocer") — 가격 인하와 AI 활용으로 110개 신규 매장을 통해 $7B 추가 매출을 목표하며, FY26 조정EPS $5.10~5.30 가이던스를 유지했다(Reuters, TheFly)</li>
+        <li>Deutsche Bank가 목표가를 $68→$70으로, Guggenheim도 $66→$68로 최근 상향했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>순이익이 -60.2% 급감했고, 최근 1년여간 50개 이상 매장을 폐쇄했다(Fast Company) — Albertsons와는 $25B 규모 합병 실패를 둘러싼 $9B 소송이 진행 중이다</li>
+        <li>목표주가 기준 상승여력이 +1.92%에 불과해 추가 상승 폭이 제한적이다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> 턴어라운드 전략과 디펜시브 성격은 매력적이나, 밸류에이션 대비 상승여력이 크지 않다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">11/10(화)</span><span>美 10월 CPI(소비자물가지수) 발표 — 금리·VIX 방향성에 영향</span></li>
+      <li><span class="when mono">11월 12일</span><span>Applied Materials 2026년 4분기(FY2026) 실적 발표</span></li>
+      <li><span class="when mono">11월 17일</span><span>NVIDIA 분기 실적 발표</span></li>
+      <li><span class="when mono">진행 중</span><span>호르무즈해협 탱커 피격·기뢰 사고 추가 여부, 美-이란 외교 협상 진전 여부, 美 증시 개장 후 주말 리스크 반영 정도</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-11-09</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
