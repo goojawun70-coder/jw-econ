@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-11-13</title>
+<meta name="description" content="코스피가 외국인 순매도에 0.98% 내린 반면 코스닥은 기관 순매수에 0.45% 오르며 지수 간 로테이션이 나타났다. 美 3대지수는 소폭 하락(다우 -0.38%, S&P500 -0.35%, 나스닥 -0.40%)했고, 트럼프 대통령의 '이란 봉쇄 지속' 발언에 유가가 3.25% 급등했다. 금값은 Fed 12월 긴축 공포에 2.82% 더 하락, IEA는 석유 공급과잉 전환을 전망했다. VIX는 18.70으로 여전히 안정권. 두산에너빌리티·Constellation Energy·KT·Verizon 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Brief</div>
+    <h1>코스피 외국인 매물에 하락, 코스닥은 홀로 강세 — 트럼프 "이란 봉쇄 지속" 발언에 유가 급등, 금값은 Fed 긴축 공포에 더 밀려</h1>
+    <div class="date">2026년 11월 13일 금요일 · 국내 지수 로테이션, 유가·금값은 반대로 움직여</div>
+    <p class="thesis">코스피가 전일 대비 0.98% 내린 5,290.53으로 마감한 반면 코스닥은 0.45% 오른 699.66을 기록하며 지수 간 로테이션이 나타났다 — 코스피는 외국인이 5,402억원을 순매도하며 하락을 주도했고, 코스닥은 기관이 1,260억원을 순매수하며 지수를 밀어올렸다. 美 3대지수는 목요일(11/12) 소폭 하락했다(다우 -0.38%, S&amp;P500 -0.35%, 나스닥 -0.40%) — 장마감 후 Applied Materials가 기록적인 4분기 매출($10.41B, +53% YoY)을 발표했음에도, 트럼프 대통령이 "이란과의 거래는 필요 없다, 우리가 그들의 해협을 잡고 있다"고 말해 이란 봉쇄를 지속하겠다는 뜻을 시사하며 유가(USO)가 +3.25% 급등했다 — "이란戰이 효과적으로 끝났다"던 지난 화요일 발언에서 한발 후퇴한 것이다. 반면 금값(GLD)은 Fed 12월 추가 긴축 우려와 채권수익률 급등에 -2.82% 더 떨어졌다. 오늘(11/13) IEA는 걸프 지역 수출 회복으로 "이란戰 발발 이후 처음으로 세계 석유시장이 공급과잉으로 전환될 것"이라고 전망해 트럼프의 강경 발언과 상충되는 신호를 냈다. VIX는 18.70으로 전일(17.49)보다 올랐지만 여전히 '안정' 구간이다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>코스피 외국인 매물에 0.98% 하락, 코스닥은 기관 매수에 0.45% 상승 — 지수 엇갈림</strong>
+      <p>네이버페이증권 집계로 코스피는 전일(5,342.73) 대비 52.20포인트(-0.98%) 내린 5,290.53, 코스닥은 696.53에서 699.66으로 3.13포인트(+0.45%) 올랐다. 투자자별로 코스피에서는 외국인이 5,402억원 순매도를 주도했고(개인 +157억원, 기관 -58억원), 코스닥에서는 반대로 기관이 1,260억원 순매수하며 지수를 밀어올렸다(외국인 -802억원, 개인 -518억원). 대형주(코스피) 약세·중소형주(코스닥) 강세의 로테이션 장세로 풀이된다.</p>
+      <span class="src">네이버페이증권 2026-11-13</span>
+    </div>
+    <div class="news-item">
+      <strong>美 3대지수 목요일 소폭 하락 — AMAT 기록적 매출에도 트럼프 "이란 봉쇄 지속" 발언에 유가 급등</strong>
+      <p>Applied Materials는 목요일(11/12) 장마감 후 2026 회계연도 4분기 실적에서 매출 $10.41B(기록, 전년대비 +53%)로 컨센서스(약 $10.30B)를 상회했다고 발표했다(AMAT IR). 그러나 CNBC에 따르면 트럼프 대통령이 같은 날 "이란과의 거래는 필요 없다. 우리가 그들의 해협을 잡고 있다"고 발언, 이란 봉쇄를 지속하겠다는 뜻을 시사하며 유가(USO)가 하루 +3.25% 급등했다 — "이란戰이 효과적으로 끝났다"던 지난 화요일(11/10) 발언에서 한발 후퇴한 셈이다. 다우존스(DIA 환산) -0.38%, S&amp;P500(SPY 환산) -0.35%, 나스닥종합(ONEQ 환산) -0.40%로 3대지수는 소폭 하락했다.</p>
+      <span class="src">Applied Materials IR, CNBC, stockanalysis.com 2026-11-12</span>
+    </div>
+    <div class="news-item">
+      <strong>금값 Fed 긴축 공포에 추가 급락 — IEA "이란戰 이후 처음 석유 공급과잉 전환" 전망, 유가 신호는 엇갈려</strong>
+      <p>Kitco에 따르면 목요일 금·은 가격이 美 채권수익률 급등과 Fed 추가 긴축 우려 심화로 급락했다(금(GLD) -2.82%). 한편 오늘(11/13) Reuters·WSJ는 IEA가 "4분기 중 걸프 지역 수출 회복으로 세계 석유시장이 이란戰 발발 이후 처음으로 공급과잉으로 전환될 것"이라고 전망했다고 보도했다 — 트럼프의 강경 발언(봉쇄 지속)과 공급과잉 전망이 서로 엇갈리는 신호로, Reuters는 유가가 2주 연속 주간 하락을 향하고 있다고 전했다.</p>
+      <span class="src">Kitco, Reuters, WSJ, IEA 2026-11-12~13</span>
+    </div>
+    <div class="news-item">
+      <strong>VIX 18.70으로 소폭 올랐지만 여전히 '안정' 구간</strong>
+      <p>CNBC·Yahoo Finance에 따르면 VIX는 목요일(11/12) 18.70으로 마감해 전일(17.49) 대비 1.21포인트 올랐으나, 여전히 '안정' 구간(15~20) 안에 머물렀다. 금요일(11/13) 프리마켓 기준으로는 18.37(-1.76%)로 다시 소폭 낮아지는 추세다.</p>
+      <span class="src">CNBC, Yahoo Finance 2026-11-12~13</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>5,290.53</td><td class="chg down">-0.98%</td><td class="plain">11/13(금) 장마감, 외국인 순매도 주도</td></tr>
+          <tr><td>코스닥</td><td>699.66</td><td class="chg up">+0.45%</td><td class="plain">11/13(금) 장마감, 기관 순매수</td></tr>
+          <tr><td>다우 (11/12 마감)</td><td>52,485</td><td class="chg down">-0.38%</td><td class="plain">DIA 환산</td></tr>
+          <tr><td>S&amp;P500 (11/12 마감)</td><td>7,612</td><td class="chg down">-0.35%</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (11/12 마감)</td><td>25,410</td><td class="chg down">-0.40%</td><td class="plain">ONEQ 환산</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">코스피·코스닥이 서로 다른 방향으로 움직이며 로테이션 장세를 보였다. 美 3대지수는 소폭 하락 마감했다 — 한국시간 19시 발행 기준 여전히 가장 최근 완결된 美 세션(11/12)의 수치다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-stable">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">18.7</span>
+        <span class="vix-label">안정</span>
+      </div>
+      <p class="vix-msg">VIX 18.70(11/12 마감, 전일比 +1.21pt)로 시장 공포 지수가 안정적입니다.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다. 금요일(11/13) 프리마켓 기준으로는 18.37(-1.76%)로 다시 소폭 낮아지는 추세다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (하나은행, 11/13 19:27 KST 실시간)</dt><dd>1,336.60원 (+0.01%)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 11/12 마감)</dt><dd>$354.89 (-2.82%)</dd></div>
+      <div class="stat"><dt>WTI (USO, 11/12 마감)</dt><dd>$146.07 (+3.25%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러는 거의 변동 없이 1,336.60원을 기록했다. 금(GLD)은 Fed 12월 추가 긴축 우려와 채권수익률 급등에 하루 더 -2.82% 급락했다. WTI(USO)는 트럼프 대통령의 이란 봉쇄 지속 발언에 하루 +3.25% 급등했으나, Reuters에 따르면 오늘은 IEA의 공급과잉 전망이 겹치며 2주 연속 주간 하락을 향하고 있는 것으로 전해졌다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 국내 종목은 FnGuide(comp.wisereport.co.kr) 컨센서스 페이지, 美 종목은 stockanalysis.com 애널리스트 컨센서스를 사용했다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>두산에너빌리티</b> — 컨센서스 목표주가 101,615원(13개 기관 평균), 투자의견 4.00(매수).</li>
+      <li style="padding-left:0;"><b>Constellation Energy</b> — 컨센서스 목표주가 $338.25(25명 애널리스트 평균, +19.78% 상승여력), 투자의견 Buy.</li>
+      <li style="padding-left:0;"><b>KT</b> — 컨센서스 목표주가 74,211원(19개 기관 평균), 투자의견 4.00(매수).</li>
+      <li style="padding-left:0;"><b>Verizon Communications</b> — 컨센서스 목표주가 $50.65(24명 애널리스트 평균, +8.81% 상승여력), 투자의견 Buy.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">두산에너빌리티</span><span class="stock-code mono">034020</span></div>
+        <div class="stock-price mono">47,100원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/13 NXT, 기준가 대비 -0.21%; 정규장 거래범위 46,300~48,850원)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">발전설비(원전·가스터빈)</span></div>
+      <p class="why"><b>선정 이유</b> — AI 데이터센터발 전력수요 급증과 SMR(소형모듈원자로)·대형 가스터빈 수주 기대가 맞물린 국내 대표 발전설비 기업이라 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">30조2,345억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">109.08배 · 3.68배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">22.29%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">101,615원(4.00)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출 +8.0%, 영업이익 +32.4%, 순이익 +155.2% — 두산밥캣 소형건설기계 수요 유지, 대형 가스터빈 수주와 체코 신규원전 기자재 공급계약으로 실적이 개선됐다(FnGuide)</li>
+        <li>AI 확산에 따른 데이터센터 전력수요 증가로 가스복합발전·원자력 수요가 지속 확대될 전망이다(FnGuide 기업실적코멘트)</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>PER 109.08배(2026E)로 밸류에이션 부담이 매우 크고, 최근 1개월 -33.99%·3개월 -41.22%·6개월 -62.42%로 급락세다 — 미래에셋(120,000→85,000원) 등 다수 증권사가 10월 말 목표가를 20~30%대 큰 폭 하향했다</li>
+        <li>주가 변동성이 극심해 단기 트레이딩 리스크가 크다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> AI 전력수요·원전 테마의 구조적 수혜는 분명하나, 이미 밸류에이션에 상당 부분 반영돼 있어 단기 변동성에 유의해야 한다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Constellation Energy</span><span class="stock-code mono">NASDAQ:CEG</span></div>
+        <div class="stock-price mono">$282.40<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/12 종가, +2.79%; 프리마켓 $280.12 -0.81%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">원자력(독립발전사업자)</span></div>
+      <p class="why"><b>선정 이유</b> — 미국 최대 원자력 발전사업자로, AI 데이터센터발 전력수요 테마를 대표하는 종목이라 선정했다 — 두산에너빌리티와 짝을 이루는 국내·미국 원전/전력 테마 비교로도 의미가 있다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$99.29B(-9.6%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">22.32배 · 23.40배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Buy(25명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$338.25(+19.78%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>3분기 조정EPS $5.06로 컨센서스($3.89)를 큰 폭 상회, 매출 $9.55B(컨센서스 $9.35B)도 상회했다 — FY26 조정EPS 가이던스를 $12.50~12.80으로 상향했다(실적 발표, 11/9)</li>
+        <li>美 에너지부(DOE)로부터 원전 업레이트 자금 지원을 위한 최대 $50억 조건부 대출 약정을 확보했으며, AI 데이터센터向 장기 전력공급 계약을 계속 체결 중이다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>美 중간선거 이후 일부 州지사의 데이터센터 개발 중단 공약이 부각되며 에너지株 전반이 압박받고 있다(Barron's)</li>
+        <li>Invezz(11/9)는 "실적 발표 후 급등은 매도 기회"라는 시각도 제기했다 — Forward PER 23.4배로 밸류에이션이 이미 높은 수준이다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 어닝 서프라이즈와 DOE 대출 확보로 펀더멘털은 견고하나, 데이터센터 모라토리엄 우려 등 정책 리스크가 잔존한다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">KT</span><span class="stock-code mono">030200</span></div>
+        <div class="stock-price mono">50,900원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/13 NXT, 기준가 대비 -0.78%; 정규장 거래범위 50,700~51,700원)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">통신</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체·전력 테마 열기와 무관한 국내 대표 통신사로, '비인기 업종' 균형을 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">12조9,287억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">9.26배 · 0.65배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">48.79%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">74,211원(4.00)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>클라우드/AI데이터센터 등 신성장 AX 포트폴리오를 확장 중이며, 가산 데이터센터 오픈 등 AI 인프라 수요에 선제 대응하고 있다(FnGuide 기업실적코멘트)</li>
+        <li>현금배당수익률 4.68%(2025A)로 안정적 배당 매력이 있으며, 19개 기관이 모두 매수 의견(평균 목표주가 74,211원)을 유지 중이다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>2026년 상반기 연결 매출 -5.7%, 영업이익 -33.6%, 순이익 -35.5% — 유선전화 가입자 감소, 초고속인터넷·IPTV·이동통신의 성숙기 진입, 국내 경기 침체에 따른 ICT 수요 감소가 본업을 끌어내렸다(FnGuide)</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> 안정적 배당과 AI 인프라 확장 스토리는 긍정적이나 본업(통신) 둔화가 아직 이어지고 있다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Verizon Communications</span><span class="stock-code mono">NYSE:VZ</span></div>
+        <div class="stock-price mono">$46.55<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/12 종가, -0.11%; 프리마켓 $46.72 +0.37%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">통신</span></div>
+      <p class="why"><b>선정 이유</b> — KT와 마찬가지로 美 대표 통신사이자 고배당 디펜시브 종목이라 '비인기 업종' 균형을 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$192.93B(+14.8%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">11.89배 · 8.97배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Buy(24명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$50.65(+8.81%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>Q3 2026에서 기록적 고객 증가와 낮아진 가입자 유치비용, 높아진 조정 수익성을 동시에 달성했고 FY26 EPS·FCF 가이던스를 상향했다(실적 발표)</li>
+        <li>배당수익률 6.08%로 고배당 매력이 크며, Ericsson과 AI-네이티브 자율망(Autonomous Network) 제휴 등 AI 인프라 투자도 병행 중이다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>SpaceX가 Qualcomm과 손잡고 지상 통신장비를 구매, Starlink Mobile을 통한 직접 이동통신 진출을 추진 중이라는 보도(Barron's)가 장기적 경쟁 우려로 부각되고 있다</li>
+        <li>최근 Citi($55→$53)·TD Cowen($56→$55)·Morgan Stanley($52→$50)·Barclays($46→$44) 등 다수 증권사가 목표가를 소폭 하향했다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 고배당과 상향된 가이던스가 매력적이나, SpaceX 등 신규 경쟁 변수를 지켜봐야 한다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">11/16(월)</span><span>Constellation Energy 배당제외일; 코스피·코스닥 다음 거래일</span></li>
+      <li><span class="when mono">11월 17일</span><span>NVIDIA 분기 실적 발표</span></li>
+      <li><span class="when mono">진행 중</span><span>IEA 석유 공급과잉 전망 vs 트럼프의 이란 봉쇄 지속 발언(유가 신호 엇갈림), 美-러-우크라이나 평화협상 후속 전개, 12월 FOMC 금리 결정 전망</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-11-13</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
