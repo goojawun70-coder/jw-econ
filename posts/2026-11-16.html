@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-11-16</title>
+<meta name="description" content="코스피 3.59%·코스닥 4.86% 급락. 엔비디아 젠슨 황 CEO 사임 후폭풍이 이어지는 가운데, 삼성전자·SK하이닉스·마이크론을 상대로 한 D램 가격담합 소송이 기각 신청 각하로 계속되면서 반도체株에 매물이 쏟아졌다. 외국인·기관 동반 순매도, VIX는 20.06으로 '경계' 구간에 첫 진입. 삼성전자·Micron Technology·KT&amp;G·Philip Morris International 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Brief</div>
+    <h1>코스피 3.59%·코스닥 4.86% 급락 — AI 버블 우려·D램 담합소송 겹쳐 반도체株 매도 폭탄, VIX 20선 '경계' 진입</h1>
+    <div class="date">2026년 11월 16일 월요일 · 코스피·코스닥 동반 급락, 외국인·기관 동반 순매도</div>
+    <p class="thesis">코스피가 전 거래일 대비 3.59% 급락해 5,100.50으로 마감했고, 코스닥은 4.86% 떨어진 665.65로 밀렸다 — 외국인이 코스피에서 약 1조3,535억원, 기관이 4,584억원을 순매도했다(일부 매체는 외국인 순매도를 1.4조~1.7조원대로 집계, 파이낸셜뉴스·산경투데이). 11/12 엔비디아 젠슨 황 CEO의 돌연 사임 이후 AI 산업의 향방을 둘러싼 불확실성이 이어지는 가운데, 삼성전자·SK하이닉스·마이크론을 상대로 한 D램 가격담합 집단소송에서 美 캘리포니아北부 연방법원 판사가 11/14 세 회사의 기각 신청을 각하해 소송이 계속되게 됐다 — 투자심리가 다시 위축되며 반도체 대형주에 매물이 집중됐다(SK하이닉스 -7.89%). 美 10년물 국채금리가 5.15%까지 오르며 AI 기업들의 자금조달 부담이 커진 점도 외국인 매도를 자극했다는 분석이다. VIX는 20.06(전일比 +0.76pt)으로 올라 처음으로 '경계' 구간에 진입했다. 美 3대지수는 금요일(11/13) 마감 수치가 사흘째 최신치로 유지되는 가운데, 마이크론 등 반도체주 프리마켓이 추가로 5%대 급락하며 오늘 밤 美 증시도 약세로 출발할 가능성이 커졌다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>코스피 3.59%·코스닥 4.86% 급락 — 외국인·기관 동반 매도, SK하이닉스 -7.89%</strong>
+      <p>코스피는 190.03포인트(-3.59%) 내린 5,100.50으로, 코스닥은 34.01포인트(-4.86%) 내린 665.65로 각각 마감했다. 코스피에서 외국인이 1조3,535억원, 기관이 4,584억원을 순매도했고(개인은 1조3,166억원 순매수), 코스닥에서도 외국인 2,084억원·기관 1,538억원이 빠져나갔다(개인 3,751억원 순매수). 삼성전자·SK하이닉스 등 반도체 대형주가 동반 하락을 주도했으며 SK하이닉스는 7.89% 급락했다(매일일보).</p>
+      <span class="src">파이낸셜뉴스, 매일일보, 산경투데이, 네이버페이증권 2026-11-16</span>
+    </div>
+    <div class="news-item">
+      <strong>엔비디아 젠슨 황 CEO 사임 후폭풍 지속 — "AI 트레이드, 황 없이 재평가"</strong>
+      <p>11/12 엔비디아 이사회는 젠슨 황의 사장·CEO·이사직 사임을 발표했다 — 중국 스파이 혐의를 받는 여성과의 불륜 스캔들이 배경으로 지목됐으며, 황은 11/8 직원들에게 불륜 사실을 인정하는 메시지를 보낸 바 있다. CFO 콜레트 크레스가 CFO를 겸임하며 임시 CEO를 맡았고, 발표 직후 엔비디아 주가는 장중 14% 급락해 시가총액 약 5,460억달러가 증발했다. MarketWatch는 "AMD 등 칩 관련주가 황 없는 AI 트레이드를 재평가하며 동반 하락했다"고 전했다 — 엔비디아의 리더십 공백이 반도체 섹터 전반의 불확실성으로 번지고 있다.</p>
+      <span class="src">NPR, CNBC, Al Jazeera, CBS News, MarketWatch 2026-11-12~14</span>
+    </div>
+    <div class="news-item">
+      <strong>D램 가격담합 소송, 삼성전자·SK하이닉스·마이크론 기각 신청 각하 — 소송 계속</strong>
+      <p>美 캘리포니아北부 연방법원 노엘 와이즈 판사는 11/14 삼성전자·SK하이닉스·마이크론을 상대로 한 D램 가격담합 집단소송의 기각 신청을 각하했다. 2026년 6월 제기된 이 소송은 세 회사가 DDR3/DDR4에서 HBM으로 생산을 의도적으로 전환해 재래식 메모리 공급을 조여 가격을 끌어올렸다고 주장한다(세 회사 합산 글로벌 D램 매출 점유율 91% 이상). 판사는 삼성전자가 경쟁사보다 약 4.5개월 늦게 생산을 줄인 점이 병행행위 주장을 무력화하지 못한다고 판단했다. 세 회사는 12/7까지 답변해야 한다 — 1998~2002년 D램 카르텔 사건(삼성·하이닉스 벌금 각각 3억달러·1.85억달러)과 연관지어 투자자 불안이 재점화됐다.</p>
+      <span class="src">Hardware Busters, Sammy Fans, pasqualepillitteri.it 2026-11-14~15</span>
+    </div>
+    <div class="news-item">
+      <strong>VIX 20.06으로 올라 '경계' 구간 첫 진입 — 美 10년물 금리는 5.15%까지 상승</strong>
+      <p>CNBC·Yahoo Finance에 따르면 VIX는 20.06(전일比 +0.76pt, +3.94%)으로 올라 20선 위 '경계' 구간에 처음 진입했다(전일종가 19.30). 美 10년물 국채금리(^TNX)는 5.15%(+1.00%)까지 올랐는데, 매일일보는 이 금리 상승이 AI 기업들의 자금조달 부담을 키워 외국인 매도를 자극했다고 분석했다. 美 3대지수는 금요일(11/13) 마감 수치가 사흘째 그대로이지만, 마이크론 프리마켓이 -5.24%, SPY 프리마켓도 -0.40%로 약세를 보여 오늘 밤 美 증시 역시 하락 출발할 가능성이 크다.</p>
+      <span class="src">CNBC, Yahoo Finance, stockanalysis.com, 매일일보 2026-11-16</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>5,100.50</td><td class="chg down">-3.59%</td><td class="plain">외국인 -1조3,535억원·기관 -4,584억원</td></tr>
+          <tr><td>코스닥</td><td>665.65</td><td class="chg down">-4.86%</td><td class="plain">외국인 -2,084억원·기관 -1,538억원</td></tr>
+          <tr><td>다우 (11/13 마감)</td><td>52,553</td><td class="chg up">+0.13%</td><td class="plain">DIA 환산 — 美 증시 사흘째 동일 수치, 프리마켓 약세</td></tr>
+          <tr><td>S&amp;P500 (11/13 마감)</td><td>7,585</td><td class="chg down">-0.36%</td><td class="plain">SPY 환산 — 프리마켓 -0.40%</td></tr>
+          <tr><td>나스닥 (11/13 마감)</td><td>25,181</td><td class="chg down">-0.90%</td><td class="plain">ONEQ 환산 — 프리마켓 변동없음</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">코스피·코스닥은 오늘(월) 거래 재개 첫날 반도체株 매도 폭탄으로 급락했다. 美 3대지수는 아직 금요일(11/13) 마감 수치가 최신치이나, 마이크론(-5.24%)·SPY(-0.40%) 프리마켓이 약세를 보여 오늘 밤 美 증시 개장 시 추가 하락이 우려된다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-caution">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">20.1</span>
+        <span class="vix-label">경계</span>
+      </div>
+      <p class="vix-msg">VIX 20.06(전일比 +0.76pt, +3.94%)로 변동성이 확대되고 있습니다. 시장 불확실성에 유의하세요.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다. 11/13 19.30이었던 VIX가 오늘 20선을 넘어 최근 나흘 연속 상승세를 이어가고 있다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (하나은행, 11/16 19:15 KST 실시간)</dt><dd>1,335.40원 (-0.19%)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 11/13 마감)</dt><dd>$355.45 (+0.16%)</dd></div>
+      <div class="stat"><dt>WTI (USO, 11/13 마감)</dt><dd>$145.58 (-0.34%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러는 오늘(월) 하나은행 실시간 고시 기준 1,335.40원으로 전일 대비 2.6원 소폭 하락했다. 금(GLD)·유가(USO)는 美 증시 마감 전이라 금요일(11/13) 수치가 아직 최신치다 — 유가는 호르무즈 해협 선적이 전쟁 전 수준에 근접 회복됐다는 보도(Reuters)와 중동 전역의 새로운 공격 소식(WSJ)이 엇갈리며 오늘 장중 혼조 등락을 보이고 있다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 국내 종목은 FnGuide(comp.wisereport.co.kr) 컨센서스 페이지, 美 종목은 stockanalysis.com 애널리스트 컨센서스를 사용했다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>삼성전자</b> — 컨센서스 목표주가 468,571원(21개 기관 평균), 투자의견 4.00(Buy).</li>
+      <li style="padding-left:0;"><b>Micron Technology</b> — 컨센서스 목표주가 $1,561.91(49명 애널리스트 평균, +100.68% 상승여력), 투자의견 Strong Buy.</li>
+      <li style="padding-left:0;"><b>KT&amp;G</b> — 컨센서스 목표주가 248,143원(14개 기관 평균), 투자의견 4.00(Buy).</li>
+      <li style="padding-left:0;"><b>Philip Morris International</b> — 컨센서스 목표주가 $212.44(17명 애널리스트 평균, +6.78% 상승여력), 투자의견 Buy.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">삼성전자</span><span class="stock-code mono">005930</span></div>
+        <div class="stock-price mono">195,600원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (오늘 거래범위 195,000~208,000원; 장마감 후 NXT 195,600원 -5.05%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">반도체</span></div>
+      <p class="why"><b>선정 이유</b> — D램 가격담합 소송과 AI 버블 우려의 직접 당사자이자 오늘 코스피 급락을 주도한 반도체 대표주로, 오늘의 핵심 이슈를 가장 직접적으로 보여주기 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">1,204조3,334억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">4.51배 · 1.90배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">46.06%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">468,571원(4.00)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출 +98.7%, 영업이익 +1,191.4%, 순이익 +813.2% — AI 확산에 따른 DRAM·NAND 최대 Bit 판매량 달성과 HBM4 공급 확대가 견인했다(FnGuide)</li>
+        <li>2026E PER 4.51배로 역사적 저평가 구간 — 21개 기관 전원이 Buy 의견을 유지하고 있으며 목표주가 상승여력도 크다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>美 캘리포니아北부 연방법원이 D램 가격담합 소송 기각 신청을 각하해(11/14) 소송이 계속된다 — 12/7까지 답변해야 하며, 1998~2002년 카르텔 사건 전례를 볼 때 장기적 평판·비용 리스크가 있다</li>
+        <li>엔비디아 CEO 사임 이후 AI 산업 불확실성이 반도체 섹터 전반의 밸류에이션 재평가로 이어지며, 최근 1개월 수익률 -11.21%로 단기 약세가 뚜렷하다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> AI發 실적 개선은 구조적이고 밸류에이션도 역사적 저점이나, D램 소송과 AI 섹터 전반의 재평가 국면이 단기 변동성을 키우고 있다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Micron Technology</span><span class="stock-code mono">NASDAQ:MU</span></div>
+        <div class="stock-price mono">$778.31<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/13 종가, -2.52%; 오늘 프리마켓 $737.49 -5.24%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">반도체</span></div>
+      <p class="why"><b>선정 이유</b> — 삼성전자와 함께 D램 가격담합 소송의 공동 피고이자, 메모리 반도체 업황과 AI 버블 우려를 동시에 보여주는 美 대표 메모리 기업으로 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$880.60B(+220.3%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">10.47배 · 4.41배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Strong Buy(49명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$1,561.91(+100.68%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026회계연도 매출 $133.19B(+256.3%), 순이익 $84.97B(+895.1%) — AI向 HBM 수요가 실적을 견인했다</li>
+        <li>49명 애널리스트 평균 의견이 Strong Buy이며, 목표주가 $1,561.91은 현재가 대비 100% 이상의 상승여력을 시사한다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>D램 가격담합 소송(삼성전자·SK하이닉스와 공동 피고)이 11/14 기각 신청 각하로 계속되며, 12/7까지 답변해야 한다</li>
+        <li>MarketWatch(11/14)는 "엔비디아 없는 AI 트레이드"를 재평가하는 분위기 속에 AMD 등 칩주가 동반 하락했다고 전했다 — 오늘 프리마켓도 -5.24%로 약세가 이어지고 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> HBM 수요발 실적 성장과 낮은 밸류에이션은 매력적이나, D램 소송과 AI 섹터 재평가 국면의 단기 변동성이 매우 크다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">KT&amp;G</span><span class="stock-code mono">033780</span></div>
+        <div class="stock-price mono">181,800원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (오늘 거래범위 172,300~182,400원; 장마감 후 NXT 181,800원 +3.30%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">담배·필수소비재</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체주 매도 폭탄 속에서도 오늘 +3.30% 상승한 국내 대표 방어주로, 'AI 버블 우려 → 방어주 회피수요'라는 오늘의 로테이션을 보여주기 위해 '비인기 업종' 균형으로 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">18조8,727억원</div></div>
+        <div class="f"><div class="k">PER · PBR</div><div class="v">19.61배 · 1.97배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">50.17%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">248,143원(4.00)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출 +12.0%, 영업이익 +22.6%, 순이익 +86.7% — 냄새저감·초슬림 제품 성장과 차세대 담배(HNB) 디바이스 신규 출시가 실적을 견인했다(FnGuide)</li>
+        <li>현금배당수익률 3.41%(2026E 4.49%)로 반도체주 변동성이 커질 때 상대적으로 부각되는 저변동·고배당 방어주다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 1개월 수익률 -2.98%로 담배 수요 둔화 우려가 완전히 해소되지 않았다</li>
+        <li>해외 수출 비중 확대가 지속 과제이며, 중동·CIS 등 지정학적 리스크가 있는 지역 매출 비중이 상존한다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 오늘과 같은 반도체주 매도 국면에서 상대적 강세를 보이는 전형적 방어주로, 실적·배당 모두 견고하다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Philip Morris International</span><span class="stock-code mono">NYSE:PM</span></div>
+        <div class="stock-price mono">$198.96<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/13 종가, +1.17%; 오늘 프리마켓 $200.60 +0.82%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">담배·필수소비재</span></div>
+      <p class="why"><b>선정 이유</b> — KT&amp;G와 짝을 이루는 美 대표 담배·필수소비재 기업으로, AI 섹터 매도 국면의 방어주 로테이션 테마를 美 시장에서도 함께 보여주기 위해 선정했다. 오늘 프리마켓도 +0.82%로 반도체주와 반대 방향을 보이고 있다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$310.11B(+28.1%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">29.04배 · 22.83배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Buy(17명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$212.44(+6.78%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>3분기 유기적 매출 +7.1%, 조정영업이익 +10.5%, 조정EPS $2.36(사상 최고) — ZYN 니코틴 파우치 등 스모크프리 제품 모멘텀이 견고하다(Reuters, 10/21)</li>
+        <li>분기배당을 8.8% 올려 연 $6.40로 확정했고(배당수익률 3.22%), Stifel(11/4)·Argus는 Q3 실적 발표 후 목표가를 $232·$220으로 각각 상향했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>Barron's(10/21)는 "지정학적 전쟁들이 사업과 실적 전망을 흐리고 있다"고 회사 측 경고를 전했다 — 해외 분쟁에 따른 비용 부담이 실적에 영향을 줄 수 있다</li>
+        <li>PER 29.04배로 KT&amp;G(19.61배) 대비 밸류에이션 부담이 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 스모크프리 제품 성장과 배당 확대가 뚜렷한 모멘텀이며, 반도체주 약세 국면에서 상대적으로 주목받는 방어주 성격도 유효하다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">11/17(화)</span><span>NVIDIA 분기 실적 발표(콜레트 크레스 임시 CEO 체제 첫 실적)</span></li>
+      <li><span class="when mono">11/19(목)</span><span>트럼프·푸틴·시진핑 첫 3자 정상회담(中 선전, APEC 계기) — 이란戰·핵군축 의제</span></li>
+      <li><span class="when mono">12/7</span><span>삼성전자·SK하이닉스·마이크론, D램 가격담합 소송 답변 기한</span></li>
+      <li><span class="when mono">진행 중</span><span>엔비디아 CEO 교체 후 AI 섹터 재평가 지속 여부, Fed 12월 FOMC 금리 결정 전망, 호르무즈 해협 선적 정상화 여부</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-11-16</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
