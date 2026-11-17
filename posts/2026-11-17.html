@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-11-17</title>
+<meta name="description" content="코스피가 9개월 만에 5,000선 아래로 추락(-2.59%, 4,968.48), 코스닥도 2.34% 추가 하락. 오늘 밤 美 장마감 후 엔비디아가 콜레트 크레스 임시 CEO 체제의 첫 실적을 발표한다 — 컨센서스 매출 $109.1B(+91%). VIX는 23.68로 '경계' 구간 지속, 금은 1년래 최저·유가는 3.81% 추가 급락. 이수페타시스·AMD·한국가스공사·NextEra Energy 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Brief</div>
+    <h1>코스피 9개월 만에 5,000선 붕괴 — 오늘 밤 엔비디아, 황 없는 첫 실적 발표에 전세계 증시 운명 걸려</h1>
+    <div class="date">2026년 11월 17일 화요일 · 코스피·코스닥 2일 연속 급락, 엔비디아 실적 D-day</div>
+    <p class="thesis">코스피가 2.59% 추가 하락해 4,968.48로 마감하며 9개월 만에 종가 기준 5,000선 아래로 내려왔다 — 외국인이 또 1조4,235억원을 순매도했다(기관은 5,129억원 순매수로 전환). 코스닥도 2.34% 내린 650.06에 마감했다. CNN은 "AI 붐을 둘러싼 수개월간의 불안이 이번 주 전 세계적 증시 동요로 폭발했다"고 진단했고, 인도네시아 증시는 약 30년來 최대 일일 폭락을 기록했다. 오늘 밤(美 동부시간 화요일 장마감 후) 엔비디아가 11/12 젠슨 황 CEO 사임 이후 콜레트 크레스 임시 CEO 체제에서 첫 실적을 발표한다 — 컨센서스는 매출 $109.1B(+91%)·EPS $2.47이며, 크레스는 매출 $108B·매출총이익률 74% 가이던스를 제시했었다. 이 실적이 'AI 버블' 논란의 다음 분수령이 될 전망이다. 美 3대지수는 월요일(11/16) 각각 다우 -1.43%, S&amp;P500 -1.91%, 나스닥 -2.48% 하락했고, VIX는 23.68(전일比 +0.77pt)로 '경계' 구간을 유지하고 있다. 금(GLD)은 1년來 최저치로 밀려 2015년來 최악의 연간 성과가 우려되고(Reuters), 유가(USO)는 중동 공급 회복 기대에 3.81% 추가 급락했다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>코스피 9개월 만에 5,000선 붕괴(4,968.48, -2.59%) — 외국인 1조4,235억원 순매도</strong>
+      <p>코스피는 132.02포인트(-2.59%) 추가 하락한 4,968.48로 마감해, 9개월 만에 종가 기준 5,000선 아래로 내려왔다(전일 5,100.50). 외국인이 1조4,235억원을 순매도했으나(일부 매체는 1조4,460억~1조5,000억원대로 집계), 기관은 5,129억원 순매수로 돌아섰다(개인 4,361억원 순매수). 코스닥도 15.59포인트(-2.34%) 내린 650.06에 마감했다 — 외국인 889억원·기관 265억원 순매도, 개인 1,090억원 순매수였다.</p>
+      <span class="src">파이낸셜뉴스, 아주경제, 위키트리, 네이버페이증권 2026-11-17</span>
+    </div>
+    <div class="news-item">
+      <strong>오늘 밤 엔비디아, 황 없는 첫 실적 발표 — 컨센서스 매출 $109.1B(+91%)</strong>
+      <p>엔비디아는 美 동부시간 화요일(11/17) 장마감 후 3분기 실적을 발표한다 — 11/12 젠슨 황 CEO 사임 이후 콜레트 크레스 임시 CEO 체제에서 처음 내는 실적이다. LSEG 집계 컨센서스는 매출 $109.1B(전년比 +91%)·EPS $2.47이며, 회사 측은 매출 $108B·매출총이익률 74%(Vera Rubin 칩이 데이터센터 매출의 약 20%)를 가이던스로 제시했다. 투자자들은 중국向 칩 판매 리스크, 네오클라우드와의 거래 구조, 2028 회계연도 성장 계획, 영구 CEO 선임 여부를 주시하고 있다.</p>
+      <span class="src">CNBC, Yahoo Finance, Invezz, TechTimes 2026-11-16~17</span>
+    </div>
+    <div class="news-item">
+      <strong>"AI 버블 불안이 전세계 증시 동요로 폭발" — 인도네시아 30년來 최대 폭락</strong>
+      <p>CNN은 "월스트리트의 AI 붐을 둘러싼 수개월간의 불안이 이번 주 전 세계적 증시 동요로 폭발했다"고 전했다. 인도네시아 증시는 약 30년來 최대 일일 폭락을 기록했다(Gulf Times). 美 10년물 국채금리와 강달러가 지속되는 가운데, 美 10월 생산자물가(PPI)는 전월比 0.3% 올라 연율 6.5%를 기록했고, 美 디젤 선물은 2022년 4월來 최초로 갤런당 $5를 넘어섰다 — 중동 분쟁에 따른 연료 공급 차질이 배경이다. IMF는 AI가 세계 경제에 막대한 리스크와 기회를 동시에 안긴다고 경고했다.</p>
+      <span class="src">CNN, Gulf Times, CNBC, IMF 2026-11-16~17</span>
+    </div>
+    <div class="news-item">
+      <strong>VIX 23.68 '경계' 지속 — 금 1년來 최저, 유가 3.81% 추가 급락</strong>
+      <p>CNBC에 따르면 VIX는 23.68(전일比 +0.77pt, +3.36%)로 전일(22.91) 대비 올라 '경계' 구간을 이어가고 있다. 금(GLD)은 월요일 $352.93(-0.71%)으로 1년來 최저치를 기록했다 — Reuters는 고금리·강달러가 겹쳐 2015년來 최악의 연간 성과가 우려된다고 전했다. 유가(USO)는 중동 수출 회복과 공급과잉 전망이 호르무즈 지정학적 리스크를 압도하며 3.81% 추가 급락했다(WTI 약 $87/배럴, CNBC).</p>
+      <span class="src">CNBC, Reuters, stockanalysis.com 2026-11-16~17</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>4,968.48</td><td class="chg down">-2.59%</td><td class="plain">9개월來 5,000선 붕괴, 외국인 -1조4,235억원</td></tr>
+          <tr><td>코스닥</td><td>650.06</td><td class="chg down">-2.34%</td><td class="plain">외국인 -889억원·기관 -265억원</td></tr>
+          <tr><td>다우 (11/16 마감)</td><td>51,801</td><td class="chg down">-1.43%</td><td class="plain">DIA 환산</td></tr>
+          <tr><td>S&amp;P500 (11/16 마감)</td><td>7,440</td><td class="chg down">-1.91%</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (11/16 마감)</td><td>24,557</td><td class="chg down">-2.48%</td><td class="plain">ONEQ 환산</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">코스피·코스닥 모두 2거래일 연속 급락했다 — 코스피는 9개월 만에 5,000선을 내줬다. 美 3대지수는 월요일(11/16) 마감 기준이며, 오늘 밤 엔비디아 실적 발표를 앞두고 반도체주 프리마켓이 추가로 약세다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-caution">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">23.7</span>
+        <span class="vix-label">경계</span>
+      </div>
+      <p class="vix-msg">VIX 23.68(전일比 +0.77pt, +3.36%)로 변동성이 확대되고 있습니다. 시장 불확실성에 유의하세요.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다. 전일(22.91)보다 올라 '경계' 구간에서 더 깊어지고 있다 — 오늘 밤 엔비디아 실적이 다음 분수령이다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (하나은행, 11/17 19:12 KST 실시간)</dt><dd>1,336.80원 (+0.02%)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 11/16 마감) — 1년來 최저</dt><dd>$352.93 (-0.71%)</dd></div>
+      <div class="stat"><dt>WTI (USO, 11/16 마감)</dt><dd>$140.03 (-3.81%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러는 오늘 거의 변동없이 유지됐다. 금은 고금리·강달러가 겹치며 1년來 최저치로 밀려 2015년來 최악의 연간 성과를 향하고 있고(Reuters), 유가는 중동 수출 회복에 따른 공급과잉 전망이 지정학적 리스크를 압도하며 3.81% 급락했다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 국내 종목은 FnGuide(comp.wisereport.co.kr) 컨센서스 페이지, 美 종목은 stockanalysis.com 애널리스트 컨센서스를 사용했다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>이수페타시스</b> — 컨센서스 목표주가 175,000원(9개 기관 평균), 투자의견 4.00(Buy).</li>
+      <li style="padding-left:0;"><b>AMD</b> — 컨센서스 목표주가 $657.74(54명 애널리스트 평균, +30.43% 상승여력), 투자의견 Strong Buy.</li>
+      <li style="padding-left:0;"><b>한국가스공사</b> — 컨센서스 목표주가 49,900원(10개 기관 평균), 투자의견 4.00(Buy).</li>
+      <li style="padding-left:0;"><b>NextEra Energy</b> — 컨센서스 목표주가 $94.11(22명 애널리스트 평균, +10.28% 상승여력), 투자의견 Buy.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">이수페타시스</span><span class="stock-code mono">007660</span></div>
+        <div class="stock-price mono">84,100원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (오늘 거래범위 77,000~88,000원; 장마감 후 NXT 84,100원 +3.19%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">AI 서버용 PCB</span></div>
+      <p class="why"><b>선정 이유</b> — AI 가속기·서버·스위치용 고다층 PCB를 공급하는 국내 대표 AI 인프라 수혜주로, 전반적 반도체株 약세 속에서도 오늘 NXT가 +3.19% 오르며 반등하는 모습을 보여 선정했다. 오늘(11/17) 3분기 실적을 발표한다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">5조9,829억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">21.79배 · 5.89배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">15.51%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">175,000원(4.00)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출 +45.8%, 영업이익 +60.8%, 순이익 +58.1% — AI 인프라 확산에 따른 고다층 PCB 수요 증가와 4공장 양산 가동이 견인했다(FnGuide)</li>
+        <li>하나증권(11/17)은 "다시 좀 올라갈 때가 됐다"며, SK증권도 "판가 인상 싸이클에 증설 경쟁 본격화"라는 긍정적 리포트를 오늘 냈다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 1개월 수익률 -18.01%로 AI 섹터 전반의 밸류에이션 재평가 국면에서 단기 변동성이 매우 크다</li>
+        <li>오늘 밤 엔비디아 실적 결과에 따라 AI 데이터센터 투자 지속 여부에 대한 재평가가 이어질 수 있어, 전방산업(서버·가속기) 수요에 영향을 줄 수 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> AI 데이터센터 투자 확대에 따른 고다층 PCB 수요는 구조적이며, 오늘 증권사 리포트들도 반등 시점이 가까워졌다고 진단하고 있다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">AMD</span><span class="stock-code mono">NASDAQ:AMD</span></div>
+        <div class="stock-price mono">$504.28<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/16 종가, -5.58%; 오늘 프리마켓 $502.90 -0.27%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">반도체·AI</span></div>
+      <p class="why"><b>선정 이유</b> — 이수페타시스와 짝을 이루는 美 AI 반도체 대표주로, 엔비디아 리더십 공백 이후 "AI 트레이드 재분배" 수혜주로 꼽혔다가 최근 다시 매물이 쏟아진 종목이라 오늘의 변동성 테마를 가장 극적으로 보여주기 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$827.06B(+96.2%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">109.30배 · 33.50배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Strong Buy(54명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$657.74(+30.43%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>11/16 월드랩스(World Labs) 인수를 완료하고 페이페이 리(Fei-Fei Li)를 수석과학자 겸 EVP로 영입했다 — AI 연구역량과 인프라 경쟁력을 동시에 강화하는 행보다(GlobeNewsWire)</li>
+        <li>TensorWave가 OpenAI와 6년간 450MW 이상의 AMD 기반 AI 인프라 공급 계약을 체결했다고 발표했다(11/16) — 빅테크向 공급 확대가 이어지고 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>MarketWatch(11/16)는 "엔비디아 실적과 AI 생태계 자금조달 축소 우려에 투자자들이 신경과민 상태"라며 마이크론·AMD 등 칩 섹터 매도가 심화됐다고 전했다 — 오늘 밤 엔비디아 실적이 AMD 주가에도 직접 영향을 줄 전망이다</li>
+        <li>PER 109.30배로 밸류에이션 부담이 크며, 11/13 금요일 한 차례 -9% 급락한 전례가 있어 단기 변동성이 매우 크다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> World Labs 인수·OpenAI 공급계약 등 구조적 성장 모멘텀은 뚜렷하나, 오늘 밤 엔비디아 실적이라는 거대한 변동성 이벤트를 앞두고 있다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">한국가스공사</span><span class="stock-code mono">036460</span></div>
+        <div class="stock-price mono">38,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (오늘 거래범위 37,750~38,400원; 장마감 후 NXT 38,000원 -0.39%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">유틸리티</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체주 변동성이 큰 오늘, 국내 유일 천연가스 도매사업자로서 실적이 견고하고 저평가된 유틸리티주를 '비인기 업종' 균형으로 선정했다. 11/25 3분기 실적 발표를 앞두고 있다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">3조5,078억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">2.55배 · 0.27배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">14.03%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">49,900원(4.00)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 영업이익 +28.0%, 순이익 +96.0% — 해외 자원개발 포트폴리오 재편과 LNG 벙커링 사업 확대가 수익성을 끌어올렸다(FnGuide)</li>
+        <li>하나증권(11/13)은 "JKM 강세로 실적과 미수금 동반 증가"를 보도했고, 유진투자증권은 "캐나다 LNG가 하드캐리"라며 해외사업 호조를 짚었다 — PBR 0.27배로 극단적 저평가 구간이다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>신한투자증권(11/13)은 "해외사업 호조와 미수금 부담의 공존"을 지적했다 — 가스요금 미수금이 장기 재무 부담으로 남아있다</li>
+        <li>정부 지분 46.63%의 공기업 특성상 가스요금 정책 변화에 실적이 민감하게 반응할 수 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 해외사업 호조에 극단적 저평가가 겹쳐 10개 기관 모두 Buy 의견이며, 반도체주 변동성 국면에서 상대적으로 안정적인 대안이다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">NextEra Energy</span><span class="stock-code mono">NYSE:NEE</span></div>
+        <div class="stock-price mono">$85.34<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/16 종가, +0.26%; 오늘 프리마켓 $85.02 -0.37%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">유틸리티</span></div>
+      <p class="why"><b>선정 이유</b> — 한국가스공사와 짝을 이루는 美 최대 전력·에너지 인프라 기업으로, AI 데이터센터발 전력수요 급증 수혜와 유틸리티 방어주 테마를 함께 보여주기 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$178.98B(+0.1%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">15.37배 · 20.66배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Buy(22명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$94.11(+10.28%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>美 에너지정보청(EIA)은 AI 데이터센터와 전력화 확산으로 2026·2027년 美 전력수요가 사상 최고치를 경신할 것이라고 전망했다(Reuters, 11/10) — NextEra는 재생에너지·원자력 등 발전 포트폴리오로 직접 수혜가 기대된다</li>
+        <li>3분기 조정EPS $1.24로 컨센서스($1.19) 상회, 연간 조정EPS 가이던스 $3.92~$4.02(연 8%+ 성장)를 재확인했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>NYTimes(11/9)는 버지니아 주 전기요금 인상 우려로 Dominion Energy와의 대형 인수합병이 무산될 수 있다고 보도했다 — 규제 승인이 여전한 변수다</li>
+        <li>Barclays·BMO·Morgan Stanley 등 다수 증권사가 최근 한 달간 목표가를 하향 조정했다(각각 $79, $88, $110) — 금리 환경과 밸류에이션 부담이 반영된 결과다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> AI發 전력수요 급증이라는 구조적 호재와 안정적 배당(2.92%)이 매력적이나, Dominion 인수 리스크는 지속 관찰이 필요하다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">11/17(화) 美장마감 후</span><span>엔비디아 3분기 실적 발표(콜레트 크레스 임시 CEO 체제 첫 실적)</span></li>
+      <li><span class="when mono">11/19(목)</span><span>트럼프·푸틴·시진핑 첫 3자 정상회담(中 선전, APEC 계기) — 이란戰·핵군축 의제</span></li>
+      <li><span class="when mono">11/25</span><span>한국가스공사 3분기 실적 발표</span></li>
+      <li><span class="when mono">진행 중</span><span>엔비디아 실적 발표 이후 AI 섹터 재평가 방향, Anthropic 기업공개(IPO) 임박, Fed 12월 FOMC 금리 결정 전망</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-11-17</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
