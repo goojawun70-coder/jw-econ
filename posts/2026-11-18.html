@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-11-18</title>
+<meta name="description" content="코스피가 엔비디아 3분기 어닝서프라이즈(매출 $115.8B, 컨센서스 $109.1B 상회)에 힘입어 1.99% 반등해 5,067.44로 5,000선을 재탈환했다. 다만 이사회는 젠슨 황의 복귀를 공식 거부했고, 中은 美 반도체 수출규제에 보복을 예고해 불확실성이 남아있다. VIX는 23.69로 급락했으나 여전히 '경계' 구간. 리노공업·NVIDIA·삼성화재·Progressive 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Brief</div>
+    <h1>코스피, 엔비디아 어닝서프라이즈에 5,000선 재탈환 — 이사회는 "황 복귀 없다" 못박아 승계 불확실성은 지속</h1>
+    <div class="date">2026년 11월 18일 수요일 · 코스피·코스닥 반등, 엔비디아 3분기 호실적</div>
+    <p class="thesis">코스피는 전일 대비 1.99% 오른 5,067.44로 마감해 하루 만에 5,000선을 재탈환했다 — 장중 한때 4,943까지 밀렸다가 기관 매수(+4,939억원)에 힘입어 반등했다(외국인은 3,402억원 순매도로 전환). 코스닥도 1.96% 오른 662.81로 마감했다. 전날 美 장마감 후 발표된 엔비디아 3분기 실적이 매출 $115.8B(전년比 +103%, 컨센서스 $109.1B 상회)·비GAAP EPS $2.68(컨센서스 $2.47~2.48 상회)로 어닝서프라이즈를 기록했고, 2028 회계연도 매출 성장 전망도 기존 +70%에서 +75%로 상향했다(CNBC) — 삼성전자(+2.31%)·SK하이닉스(+4.19%)가 동반 상승하며 지수를 견인했다. 다만 엔비디아 이사회는 젠슨 황의 CEO 복귀를 공식적으로 거부했고(Reuters "board slams door on Huang"), 황은 美 상원 은행위원회 증언에 동의했다(Politico). 中 상무부는 목요일 발효되는 美 AI칩 수출규제에 "반드시 대응조치를 취하겠다"고 경고해(Stock Analysis) 장중 상승폭을 제한했다. VIX는 23.69로 전일(25.46) 대비 6.95% 급락했으나 여전히 '경계' 구간이다. 금(GLD)은 14개월來 최저, 유가(USO)는 거의 보합이었다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>엔비디아 3분기 어닝서프라이즈 — 매출 $115.8B(+103%), 2028년 성장 전망도 상향</strong>
+      <p>엔비디아는 11/17(화) 美 장마감 후 3분기(10월 25일 마감) 실적을 발표했다 — 매출 $115.84B(전년比 +103%, 컨센서스 $109.1B 상회), 데이터센터 매출 $107.6B, GAAP EPS $2.70·비GAAP EPS $2.68(컨센서스 $2.47~2.48 상회), 비GAAP 매출총이익률 74.9%를 기록했다. 콜레트 크레스 임시 CEO는 2028 회계연도 매출 성장 전망을 기존 +70%에서 +75%로 상향했고, 이사회는 $150B 규모의 신규 자사주 매입을 승인했다(잔여 승인액 약 $227.3B). 4분기 매출 가이던스는 약 $130B 안팎으로 제시됐다. 주가는 애프터마켓에서 4%대 급등했고, 오늘 프리마켓에서도 3%대 추가 상승 중이다.</p>
+      <span class="src">CNBC, Reuters, WSJ, SEC 8-K 2026-11-17~18</span>
+    </div>
+    <div class="news-item">
+      <strong>엔비디아 이사회 "젠슨 황 복귀 없다" 공식화 — 황은 상원 증언 동의</strong>
+      <p>Reuters는 "엔비디아 이사회가 젠슨 황의 복귀 가능성에 문을 닫았다"고 보도했다 — 크레스 임시 CEO 체제가 "비즈니스 애즈 유주얼"임을 입증했다는 평가다. CoreWeave CEO 마이클 인트레이터는 황의 부재에도 두 회사의 파트너십이 지속될 것이라고 밝혔다. 한편 TipRanks에 따르면 젠슨 황 전 CEO는 11/17 美 상원 은행위원회 증언에 동의했다 — 의회의 리더십 교체 관련 조사가 이어지고 있음을 시사한다. 영구 CEO 후보로 거론되는 이안 벅은 실적발표 콘퍼런스콜에 참여했으나 발언하지 않았다(Business Insider).</p>
+      <span class="src">Reuters, Business Insider, TipRanks, CNBC 2026-11-17~18</span>
+    </div>
+    <div class="news-item">
+      <strong>中 상무부, 목요일 발효 美 AI칩 수출규제에 "반드시 대응조치" 경고</strong>
+      <p>美 상무부가 데이터센터向 반도체 원격접속 루프홀을 차단하는 새 규제를 목요일(11/19)부터 시행하는 가운데(싱가포르·말레이시아 등 5개국向 첨단칩에도 라이선스 요구), 中 상무부는 이 규제가 시행되면 반드시 대응조치를 취하겠다고 경고했다(Stock Analysis). 이는 엔비디아의 中 매출 리스크를 다시 부각시키는 요인으로, 오늘 코스피·코스닥의 상승폭을 장중 제한한 배경으로 지목된다.</p>
+      <span class="src">Stock Analysis, Reuters 2026-11-18</span>
+    </div>
+    <div class="news-item">
+      <strong>VIX 23.69로 급락(-6.95%)했으나 '경계' 구간 유지 — "이번엔 AI만의 문제가 아니다"</strong>
+      <p>CNBC에 따르면 VIX는 23.69(전일比 -1.77pt, -6.95%)로 급락했다 — 전일(화요일) 종가 25.46에서 크게 완화된 수치다. 다만 CNBC는 "월스트리트의 공포지수가 다시 치솟고 있으며, 이번엔 AI 문제만이 아니다"라는 기사를 14시간 전 게재해, 금리·달러·지정학 등 복합적 불안 요인이 여전함을 시사했다. 금(GLD)은 11/17 $352.48(-0.13%)로 14개월來 최저치를 기록했고, 유가(USO)는 $140.24(+0.15%)로 거의 보합이었다.</p>
+      <span class="src">CNBC, FXEmpire, stockanalysis.com 2026-11-17~18</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>5,067.44</td><td class="chg up">+1.99%</td><td class="plain">5,000선 재탈환, 기관 +4,939억원</td></tr>
+          <tr><td>코스닥</td><td>662.81</td><td class="chg up">+1.96%</td><td class="plain">기관 +1,795억원</td></tr>
+          <tr><td>다우 (11/17 마감)</td><td>50,962</td><td class="chg down">-1.62%</td><td class="plain">DIA 환산 — 엔비디아 실적 발표 "전" 수치</td></tr>
+          <tr><td>S&amp;P500 (11/17 마감)</td><td>7,365</td><td class="chg down">-1.01%</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (11/17 마감)</td><td>24,375</td><td class="chg down">-0.74%</td><td class="plain">ONEQ 환산</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">코스피·코스닥은 엔비디아 실적 발표 효과로 강하게 반등했다. 美 3대지수는 화요일(11/17) 마감 수치가 아직 최신치이나(엔비디아 실적 발표 전 수준), 오늘 프리마켓은 다우 +0.19%·S&amp;P500 +0.52%·나스닥 +1.46%로 강세다 — 오늘 밤 美 증시도 반등 출발이 예상된다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-caution">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">23.7</span>
+        <span class="vix-label">경계</span>
+      </div>
+      <p class="vix-msg">VIX 23.69(전일比 -1.77pt, -6.95%)로 변동성이 확대되고 있습니다. 시장 불확실성에 유의하세요.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다. 엔비디아 실적 호재로 전일(25.46) 대비 급락했으나, CNBC는 "AI만의 문제가 아닌" 복합적 불안이 여전하다고 진단했다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (하나은행, 11/18 19:13 KST 실시간)</dt><dd>1,332.00원 (-0.26%)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 11/17 마감) — 14개월來 최저</dt><dd>$352.48 (-0.13%)</dd></div>
+      <div class="stat"><dt>WTI (USO, 11/17 마감)</dt><dd>$140.24 (+0.15%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러는 오늘 소폭 하락했다. 금은 Fed 추가 긴축 베팅과 강달러가 겹치며 14개월來 최저치를 다시 썼고, 유가는 美 원유재고 증가와 호르무즈 선적 리스크가 상충하며 거의 보합권에 머물렀다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 국내 종목은 FnGuide(comp.wisereport.co.kr) 컨센서스 페이지, 美 종목은 stockanalysis.com 애널리스트 컨센서스를 사용했다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>리노공업</b> — 컨센서스 목표주가 94,167원(6개 기관 평균), 투자의견 4.00(Buy).</li>
+      <li style="padding-left:0;"><b>NVIDIA</b> — 컨센서스 목표주가 $259.02(63명 애널리스트 평균, +66.62% 상승여력), 투자의견 Buy.</li>
+      <li style="padding-left:0;"><b>삼성화재</b> — 컨센서스 목표주가 763,467원(15개 기관 평균), 투자의견 3.93(Buy).</li>
+      <li style="padding-left:0;"><b>Progressive</b> — 컨센서스 목표주가 $233.57(25명 애널리스트 평균, -0.47% 하락여력), 투자의견 Hold.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">리노공업</span><span class="stock-code mono">058470</span></div>
+        <div class="stock-price mono">48,850원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (오늘 거래범위 46,150~50,100원; 장마감 후 NXT 48,850원 +2.52%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">반도체 검사장비</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체 검사용 프로브·소켓을 국내 최초 자체 브랜드로 개발한 기업으로, AI 반도체 테스트 공정 난이도 상승의 직접 수혜주다. 엔비디아 어닝서프라이즈 효과로 오늘 반도체 밸류체인 전반이 강세를 보이는 가운데 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">3조6,315억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">20.03배 · 4.23배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">26.27%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">94,167원(4.00)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 별도 매출 +27.2%, 영업이익 +36.7%, 순이익 +50.9% — AI·데이터센터·5G·자율주행 확장으로 반도체 시장이 성장 가속화되며 IC TEST SOCKET 수요가 증가했다(FnGuide)</li>
+        <li>iM증권(10/12)은 "AI 확산으로 테스트 소켓 수요 확대 가속화"라는 리포트를 냈다 — 반도체 디바이스 다변화·고도화로 테스트 공정 난이도가 계속 상승하는 구조적 수혜가 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>LS(11/17)·삼성(11/16)이 목표가를 각각 -27%·-30% 큰 폭 하향했다(80,000원·70,000원) — 최근 반도체 섹터 전반의 밸류에이션 재평가가 반영됐다</li>
+        <li>최근 1개월 수익률 -32.70%로 단기 변동성이 매우 크며, 52주 최고가(133,100원) 대비 현재가는 63% 이상 하락한 상태다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> AI發 반도체 테스트 수요 확대는 구조적 호재이나, 최근 목표가 하향 랠리가 보여주듯 단기 밸류에이션 재평가 압력이 상존한다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">NVIDIA</span><span class="stock-code mono">NASDAQ:NVDA</span></div>
+        <div class="stock-price mono">$155.46<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/17 종가, -0.44%; 오늘 프리마켓 $161.34 +3.78%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">반도체·AI</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 전세계 증시 반등을 이끈 핵심 종목으로, 콜레트 크레스 임시 CEO 체제 첫 실적이 어닝서프라이즈를 기록하며 'AI 버블' 논쟁에 대한 시장의 답을 보여줬다는 점에서 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$3.75T(-18.8%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">16.70배 · 11.01배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Buy(63명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$259.02(+66.62%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>3분기 매출 $115.84B(+103%, 컨센서스 $109.1B 상회), 데이터센터 매출 $107.6B — 콜레트 크레스 임시 CEO는 "고객들이 여전히 엔비디아와 함께하고 있다"고 CNBC에 밝혔다</li>
+        <li>2028 회계연도 매출 성장 전망을 +70%→+75%로 상향했고, $150B 신규 자사주 매입을 승인했다(잔여 승인액 $227.3B) — CoreWeave·Nebius 등 네오클라우드 주가도 동반 급등했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>Jefferies는 "beat and raise" 실적에도 목표가를 $300→$250으로 하향했다 — 리더십 승계 불확실성이 밸류에이션에 계속 영향을 줄 것이라는 우려다. JPMorgan도 "단기 변동성이 더 있을 것"이라고 진단했다(MarketWatch)</li>
+        <li>中 상무부가 목요일 발효되는 美 AI칩 수출규제에 보복을 예고했다 — 中 매출 비중이 큰 엔비디아에 직접적 리스크다. Kaplan Fox 등 로펌이 리더십 교체 관련 집단소송 참여를 독려하고 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 어닝서프라이즈와 가이던스 상향이 AI 수요의 구조적 견고함을 입증했으나, CEO 승계와 中 리스크라는 두 가지 불확실성이 여전히 남아있다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">삼성화재</span><span class="stock-code mono">000810</span></div>
+        <div class="stock-price mono">540,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (오늘 거래범위 523,000~550,000원; 장마감 후 NXT 540,000원 +2.47%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">손해보험</span></div>
+      <p class="why"><b>선정 이유</b> — 반도체주 변동성이 큰 오늘, 국내 최대 손해보험사로서 안정적 실적과 해외 M&amp;A를 통한 성장을 동시에 보여주는 종목이라 '비인기 업종' 균형으로 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">23조5,292억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">10.29배 · 0.67배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">56.87%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">763,467원(3.93)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 영업이익 +8.9%, 순이익 +10.2% — 장기보험 부문 수익 증가와 해외 부문 성장이 실적을 견인했다(FnGuide)</li>
+        <li>한화투자증권(11/11)은 "캐노피우스 지분 취득이 ROE 개선에 기여할 것"이라고 평가했다 — 해외 재보험사 투자를 통한 글로벌 성장 다각화가 진행 중이다. 15개 기관 중 다수가 목표가 70만원대 이상을 유지하고 있다(NH투자 83만원, 신한투자 80만원)</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>다올투자증권(11/17)은 목표가를 85만원→77만원(-9.41%)으로 하향했다 — 최근 1개월 수익률 -10.07%로 단기 약세가 이어지고 있다</li>
+        <li>PBR 0.67배(2026E)로 저평가 구간이지만, 자동차보험 손해율과 투자손익이 금리·시장 환경에 민감하게 반응하는 업종 특성이 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 안정적 실적과 해외 M&amp;A를 통한 ROE 개선 기대가 뚜렷하며, PBR 0.67배의 저평가 매력도 유효하다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Progressive</span><span class="stock-code mono">NYSE:PGR</span></div>
+        <div class="stock-price mono">$234.67<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/17 종가, -1.12%; 오늘 프리마켓 $240.69 +2.56%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">자동차보험</span></div>
+      <p class="why"><b>선정 이유</b> — 삼성화재와 짝을 이루는 美 최대 자동차보험사로, 반도체주 중심의 오늘 장세와 대비되는 전통 보험업 테마를 보여주기 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$135.96B(+3.0%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">11.82배 · 14.63배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Hold(25명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--fall);">$233.57(-0.47%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>3분기 보험료 수입 +4% $22.3B, 보유계약 약 4,050만건 — 견고한 언더라이팅 마진을 유지하고 있다(실적발표 11/3)</li>
+        <li>Keefe Bruyette(11/17)는 "내일 발표될 자동차보험 가입 증가 보고서 전 매수를 추천한다"며, 10월 직접 보험료 증가율이 가속화될 것으로 전망했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>Wells Fargo·BofA 등 일부 증권사는 경쟁 심화와 마진 정상화 우려로 목표가를 하향했다 — 25명 애널리스트 평균 의견이 "Hold"에 그친다</li>
+        <li>목표주가($233.57)가 현재가와 거의 같아 추가 상승여력이 제한적이라는 평가다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> 견고한 보험영업 실적은 긍정적이나, 컨센서스 목표가가 현재가에 근접해 밸류에이션 매력은 제한적이다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">11/19(목)</span><span>美 AI칩 수출규제(원격접속 루프홀 차단) 발효; 트럼프·푸틴·시진핑 첫 3자 정상회담(中 선전, APEC 계기)</span></li>
+      <li><span class="when mono">진행 중</span><span>엔비디아 영구 CEO 선임 절차, 젠슨 황 美 상원 은행위원회 증언 일정, Anthropic 기업공개(IPO) 임박</span></li>
+      <li><span class="when mono">12/23</span><span>엔비디아 분기배당($0.25) 지급일</span></li>
+      <li><span class="when mono">진행 중</span><span>Fed 12월 FOMC 금리 결정 전망, 中 반도체 수출규제 대응조치 발표 여부</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-11-18</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
