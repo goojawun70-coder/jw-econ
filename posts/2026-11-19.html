@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-11-19</title>
+<meta name="description" content="코스피가 1.39% 오른 5,137.89, 코스닥은 3.32% 오른 684.81로 마감하며 2거래일째 AI 반도체 랠리가 이어졌다. SK하이닉스가 4%대 급등을 이끌었고 VIX는 22.19로 전일 대비 9.65% 급락했다. 같은 날 선전에서는 트럼프·시진핑·푸틴 3자 정상회담이 열려 핵무기 통제·우크라이나전·이란전·북한 문제가 논의됐다. SK하이닉스·Broadcom·한국전력·Duke Energy 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Brief</div>
+    <h1>코스피 5,137 · 코스닥 3.32%↑ — SK하이닉스 랠리 2일째, VIX 9.65% 급락 '경계' 완화... 美·中·러 3자 정상회담은 선전에서</h1>
+    <div class="date">2026년 11월 19일 목요일 · 코스피·코스닥 동반 강세, 반도체 랠리 지속</div>
+    <p class="thesis">코스피는 전일 대비 1.39%(70.45p) 오른 5,137.89, 코스닥은 3.32%(22.00p) 오른 684.81로 마감했다 — 엔비디아 어닝서프라이즈 효과가 이틀째 이어지며 SK하이닉스가 4.19% 급등(장중 NXT 기준 +3.85%)해 지수를 견인했다. 코스피는 외국인이 4,086억원 순매도했지만 기관이 198억원 순매수로 받쳤고, 코스닥은 기관이 2,232억원 순매수하며 랠리를 주도했다. VIX는 22.19로 전일(24.56) 대비 9.65% 급락해 공포심리가 빠르게 완화되는 모습이다. 다만 美 월가는 아직 완전히 안심하지 못했다 — 11/18(수) 다우(-1.10%)·S&amp;P500(-0.31%)는 하락했고 나스닥(+0.41%)만 소폭 올랐는데, 금(-3.20%)·유가(-2.94%)가 동반 급락한 배경에는 Fed가 추가 금리인상에 나설 것이라는 매파적 FOMC 의사록(11/18 공개)이 있었다. 한편 이날 中 선전에서는 트럼프·시진핑·푸틴 3자 정상회담이 열려 핵무기 통제·우크라이나전·이란전·북한 문제가 논의됐고, 美의 새 AI칩 수출규제(中 기업의 해외 데이터센터 원격접속 차단 등)도 이날부로 발효됐다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>트럼프·시진핑·푸틴, 선전서 美·中·러 역사적 3자 정상회담</strong>
+      <p>APEC 정상회의를 계기로 트럼프 美 대통령과 시진핑 中 국가주석, 푸틴 러시아 대통령이 선전에서 3자 정상회담을 가졌다. 트럼프 대통령은 시 주석과 양자회담·점심 회동을 먼저 가진 뒤 3자 회담을 진행했으며, 中 외교부·크렘린·백악관 모두 회담을 확인했다. 핵무기 통제가 주요 의제로 다뤄졌고 러시아·우크라이나전, 이란전, 북한 문제도 거론됐다. 크렘린 측은 공동성명이 협의 중이나 합의에 이르지 못하면 각 정상이 개별적으로 회담 평가를 발표할 것이라고 밝혔다.</p>
+      <span class="src">Newsquawk, MTN, 연합뉴스 2026-11-19</span>
+    </div>
+    <div class="news-item">
+      <strong>美 신규 AI칩 수출규제 목요일 발효 — 中 반도체 원격접속 차단, 동남아 5개국向 라이선스 요구</strong>
+      <p>中 기업이 해외 데이터센터를 통해 엔비디아 칩에 원격 접속하는 것을 차단하는 새 美 수출규제가 이날 발효됐다. 싱가포르·말레이시아·태국·인도네시아·브라질로 향하는 첨단칩 출하에도 라이선스가 요구되며, 美 본사 기업向 출하는 보고 의무를 충족하면 예외가 적용된다. 中 외교부는 "자국의 권익을 보호하기 위해 필요한 조치를 취하겠다"고 밝혔고, 대변인 궈자쿤은 美의 "불링(bullying, 힘에 의한 압박)"을 비판했다. 中 상무부는 회담 직전 대화를 촉구하기도 했다.</p>
+      <span class="src">Reuters, thenextweb.com 2026-11-19</span>
+    </div>
+    <div class="news-item">
+      <strong>Fed 매파적 11월 FOMC 의사록에 금·유가 동반 급락</strong>
+      <p>11/18(수) 공개된 Fed의 11월 FOMC 의사록이 추가 금리인상 가능성을 강하게 시사하면서, 강달러와 함께 금·유가가 동반 급락했다. 금(GLD)은 -3.20%로 14개월來 최저치를 다시 썼고(Kitco PM 리포트 "Gold plunges below $3,750"), 골드만삭스는 "2028년 Fed가 금리 인하를 시작하면 금이 온스당 $5,600을 회복할 것"이라는 장기 전망을 유지했다. 유가(USO)도 -2.94% 급락했는데, 美 원유재고가 2주 연속 증가(3.4백만 배럴)한 공급과잉 우려가 호르무즈 해협 긴장(IEA "신뢰할 수 있는 경로 복원 불가능")을 압도했다.</p>
+      <span class="src">Kitco, FXEmpire, WSJ, Reuters 2026-11-18~19</span>
+    </div>
+    <div class="news-item">
+      <strong>VIX 22.19로 9.65% 급락 — 반도체株 중심 risk-on 분위기 지속</strong>
+      <p>CNBC에 따르면 VIX는 22.19(전일比 -2.37pt, -9.65%)로 급락했다. 전일(24.56) 급등 이후 하루 만에 상당 부분 되돌림이 나타난 것으로, 엔비디아 실적 호재가 시장 전반의 risk-on 심리를 계속 뒷받침하고 있음을 보여준다. 다만 52주 최고치(35.30)와 아직 거리가 있고, Fed 매파 기조가 여전해 "경계" 구간을 완전히 벗어나지는 못했다.</p>
+      <span class="src">CNBC 2026-11-19</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>5,137.89</td><td class="chg up">+1.39%</td><td class="plain">외국인 -4,086억원, 기관 +198억원</td></tr>
+          <tr><td>코스닥</td><td>684.81</td><td class="chg up">+3.32%</td><td class="plain">기관 +2,232억원</td></tr>
+          <tr><td>다우 (11/18 마감)</td><td>50,401</td><td class="chg down">-1.10%</td><td class="plain">DIA 환산</td></tr>
+          <tr><td>S&amp;P500 (11/18 마감)</td><td>7,342</td><td class="chg down">-0.31%</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (11/18 마감)</td><td>24,475</td><td class="chg up">+0.41%</td><td class="plain">ONEQ 환산</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">코스피·코스닥은 SK하이닉스 등 반도체주 중심으로 2거래일째 강세를 이어갔다. 美 3대지수는 어제(11/18) 다우·S&amp;P500이 매파적 FOMC 의사록 영향으로 하락했으나, 나스닥은 엔비디아發 반도체 강세에 소폭 상승했다. 오늘 프리마켓은 다우 +0.57%·S&amp;P500 +1.10%·나스닥 +1.14%로 재차 강세다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-caution">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">22.2</span>
+        <span class="vix-label">경계</span>
+      </div>
+      <p class="vix-msg">VIX 22.19(전일比 -2.37pt, -9.65%)로 변동성이 확대되고 있습니다. 시장 불확실성에 유의하세요.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다. 전일 급등(24.56)분이 하루 만에 상당 부분 되돌림되며 반도체주 중심의 risk-on 분위기가 이어지고 있다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (하나은행, 11/19 19:11 KST 실시간)</dt><dd>1,329.80원 (-0.31%)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 11/18 마감) — 14개월來 최저 재갱신</dt><dd>$341.19 (-3.20%)</dd></div>
+      <div class="stat"><dt>WTI (USO, 11/18 마감)</dt><dd>$136.11 (-2.94%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러는 소폭 하락했다. 금·유가는 매파적 Fed 의사록과 강달러 영향으로 하루 사이 3%대 동반 급락했는데, 금은 당일 프리마켓에서 +0.13%로 되돌림을 보이고 있고 유가도 +1.23% 반등 중이다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 국내 종목은 FnGuide(comp.wisereport.co.kr) 컨센서스 페이지, 美 종목은 stockanalysis.com 애널리스트 컨센서스를 사용했다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>SK하이닉스</b> — 컨센서스 목표주가 3,001,905원(21개 기관 평균), 투자의견 4.00(Buy).</li>
+      <li style="padding-left:0;"><b>Broadcom</b> — 컨센서스 목표주가 $526.47(51명 애널리스트 평균, +48.70% 상승여력), 투자의견 Strong Buy.</li>
+      <li style="padding-left:0;"><b>한국전력</b> — 컨센서스 목표주가 39,765원(18개 기관 평균), 투자의견 3.83(Buy 수준).</li>
+      <li style="padding-left:0;"><b>Duke Energy</b> — 컨센서스 목표주가 $133.39(23명 애널리스트 평균, +2.57% 상승여력), 투자의견 Buy.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">SK하이닉스</span><span class="stock-code mono">000660</span></div>
+        <div class="stock-price mono">1,188,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (오늘 거래범위 1,114,000~1,188,000원; 장마감 후 NXT 1,188,000원 +3.85%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">HBM·메모리 반도체</span></div>
+      <p class="why"><b>선정 이유</b> — 엔비디아 어닝서프라이즈 효과가 가장 직접적으로 반영된 국내 종목으로, 오늘 정규장에서 +4.19% 급등하며 코스피 상승을 견인했다. AI 인프라 투자 확대의 최대 수혜주라는 점에서 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">839조 6,773억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">3.21배 · 2.07배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">49.41%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">3,001,905원(4.00)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 전년동기 대비 연결 매출액 +230.8%, 영업이익 +489.4%, 순이익 +788.2% — AI 인프라 투자 확대에 따른 수요 강세와 제한된 공급 환경으로 DRAM·NAND 모두 큰 폭의 가격 상승을 기록했다(FnGuide)</li>
+        <li>한국투자(11/18)는 목표가 320만원(매수)을 유지했고, 유안타·유진투자(11/11)도 370만원(Buy/STRONG BUY)을 유지하는 등 대다수 기관이 매수 의견을 고수하고 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 1개월 수익률 -10.06%로 단기 변동성이 크며, 하나(-22.22%)·iM(-34.29%)·IBK투자(-20.00%) 등 일부 기관은 목표가를 큰 폭 하향했다</li>
+        <li>52주 최고가(3,002,000원) 대비 현재가는 여전히 60% 이상 하락한 상태로, AI 밸류에이션 재평가 리스크가 완전히 해소되지 않았다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> AI發 메모리 수요 확대라는 구조적 성장 스토리는 유효하며, 엔비디아 실적 호재가 랠리를 뒷받침하고 있다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Broadcom</span><span class="stock-code mono">NASDAQ:AVGO</span></div>
+        <div class="stock-price mono">$354.05<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/18 종가, +3.64%; 오늘 프리마켓 $364.36 +2.91%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">AI 커스텀 반도체</span></div>
+      <p class="why"><b>선정 이유</b> — 젠슨 황 사임 이후 "엔비디아 대체 수혜주"로 꼽히는 커스텀 AI 칩 선두업체로, SK하이닉스와 짝을 이루는 미국 인기테마 종목으로 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$1.69T(+4.5%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">45.19배 · 20.34배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Strong Buy(51명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$526.47(+48.70%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>매출(ttm) $89.10B(+48.7%), 순이익 $38.27B(+102.1%) — AI 커스텀 실리콘·네트워킹 사업 고성장이 지속되고 있다</li>
+        <li>TipRanks·Invezz 등은 황 사임 이후 "AMD·Broadcom·Google이 엔비디아의 시장점유율을 흡수할 자연스러운 승자"로 지목했고, 실제로 지난 1주일 AMD·Broadcom이 각각 30%·24% 상승하며 엔비디아(-11%) 대비 아웃퍼폼했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>골드만삭스(11시간 전)는 3분기 실적 발표를 앞두고 목표가를 $540→$460으로, TD Cowen도 $475→$425로 하향했다(두 곳 모두 매수 의견은 유지)</li>
+        <li>Rothschild & Co Redburn은 AI 파이낸싱 리스크 노출 확대를 이유로 등급을 하향해 주가가 6% 급락한 전례가 있다 — AI 밸류체인 전반의 밸류에이션 재평가 리스크를 공유한다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 엔비디아 리더십 불확실성의 반사수혜와 자체 AI 커스텀칩 성장세가 겹치며 강세를 이어가고 있다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">한국전력</span><span class="stock-code mono">015760</span></div>
+        <div class="stock-price mono">25,350원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (오늘 거래범위 24,800~25,600원; 장마감 후 NXT 25,350원 +1.00%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">전력 유틸리티</span></div>
+      <p class="why"><b>선정 이유</b> — AI 데이터센터발 전력수요 급증이라는, 반도체 랠리와는 또 다른 층위의 AI 수혜 테마를 보여주는 국내 유일 전력공급 공기업으로 선정했다(비인기 업종).</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">16조 1,133억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">5.58배 · 0.32배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">19.74%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">39,765원(3.83)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>유진투자증권(11/16)은 "AI투자를 위한 요금 인상과 시장 개방 명분"이라는 리포트를 내며, AI 데이터센터 전력수요 증가가 전기요금 인상 명분으로 이어질 가능성을 제시했다</li>
+        <li>UAE 원전 성공을 바탕으로 체코 신규원전 수주, UAE HVDC 해저 송전망, 사우디 가스복합 발전 등 해외사업을 확대하며 수익 다각화를 모색 중이다(FnGuide 기업개요)</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>2026년 상반기 연결 영업이익 -16.6%, 순이익 -20.3% — 전력판매량 감소와 화력발전부문 영업적자 전환이 실적에 부담을 줬다(FnGuide)</li>
+        <li>유진투자(-37.50%)·IBK투자(-49.35%)·NH투자(-20.00%) 등 다수 기관이 최근 목표가를 큰 폭 하향했고, 한국투자는 투자의견을 "중립"으로 제시했다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> AI發 전력수요 확대라는 장기 테마는 유효하나, 화력발전 부문 적자와 목표가 하향 랠리가 보여주듯 단기 실적 모멘텀은 약하다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Duke Energy</span><span class="stock-code mono">NYSE:DUK</span></div>
+        <div class="stock-price mono">$130.05<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/18 종가, +0.16%; 오늘 프리마켓 $129.26 -0.61%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">전력 유틸리티</span></div>
+      <p class="why"><b>선정 이유</b> — 한국전력과 짝을 이루는 美 대표 전력 유틸리티로, AI 데이터센터발 전력수요 증가 테마를 美 시장에서 보여주기 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$101.40B(+4.2%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">19.01배 · 18.68배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Buy(23명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$133.39(+2.57%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>Reuters(8일 전)는 "美 전력 수요가 AI 데이터센터와 전기화 확산으로 2026~2027년 사상 최고치를 기록할 것"이라고 전망했고, TipRanks는 Duke Energy·Southern·AEP를 AI 전력수요 수혜주로 지목했다</li>
+        <li>3분기 조정 EPS $1.99(컨센서스 $1.86 상회), 매출 $9.1B(컨센서스 $8.97B 상회) — FY26 가이던스를 $6.70~$6.80로 상향 좁혔다. 노스캐롤라이나 규제당국은 천연가스·태양광·배터리·원전을 아우르는 "올오브더어보브" 성장 계획을 승인했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>Mizuho($136→$140)·BTIG($135→$139)가 목표가를 상향했지만, HSBC는 Hold(목표가 $123)로 신규 커버리지를 개시해 추가 상승여력에 신중한 시각도 있다</li>
+        <li>목표주가($133.39)가 현재가에 근접해 있어, 방어적 유틸리티 특성상 반도체주 대비 단기 상승 모멘텀은 제한적이다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> AI 전력수요 확대 테마와 안정적인 실적 성장(5~7% 장기 EPS 성장 가이던스)이 뒷받침되는 방어적 종목이다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">진행 중</span><span>트럼프·시진핑·푸틴 3자 정상회담 결과 발표(공동성명 또는 개별 평가), 中의 AI칩 수출규제 대응조치 발표 여부</span></li>
+      <li><span class="when mono">진행 중</span><span>엔비디아 영구 CEO 선임 절차, 젠슨 황 美 상원 은행위원회 증언 일정</span></li>
+      <li><span class="when mono">11/23</span><span>Duke Energy 임시배당($4.34 연율) 관련 Ex-Dividend 이후 지급 일정 확인 필요</span></li>
+      <li><span class="when mono">진행 중</span><span>Fed 12월 FOMC 추가 금리인상 가능성, 금·유가 추가 하락 여부</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-11-19</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
