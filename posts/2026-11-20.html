@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-11-20</title>
+<meta name="description" content="코스피가 5.21% 급락한 4,869.96, 코스닥은 5.71% 급락한 645.68로 마감했다. 美 AI 버블 공포가 재점화되며 Anthropic 기업공개(IPO)도 셀오프를 막지 못했고, TSMC·삼성전자는 신규 수출규제 영향으로 中 고객向 일부 칩 출하를 중단했다. VIX는 29.51로 30 턱밑까지 급등했다. 개인은 대규모 순매수로 저가매수에 나섰다. 한미반도체·TSMC·농심·Coca-Cola 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Brief</div>
+    <h1>코스피 5.21%·코스닥 5.71% 급락 — AI 버블 공포 재점화, Anthropic IPO도 못 막은 글로벌 셀오프... TSMC·삼성 中 칩 출하 중단</h1>
+    <div class="date">2026년 11월 20일 금요일 · 코스피·코스닥 동반 급락, 개인은 저가매수</div>
+    <p class="thesis">코스피는 전일 대비 5.21%(267.93p) 급락한 4,869.96, 코스닥은 5.71%(39.13p) 급락한 645.68로 마감했다. 전일(11/19) 美 3대지수가 다우(-2.18%)·S&amp;P500(-1.96%)·나스닥(-2.23%) 모두 2%대 하락하며 AI 버블 공포가 재점화된 영향이다 — Anthropic의 기업공개(IPO)가 AI 섹터에 대한 신뢰를 되살릴 것으로 기대됐으나 셀오프를 막지 못했고(가디언 "Global stock markets slump as Anthropic IPO fails to stem AI sell-off"), 亞 증시는 2020년 이후 최악의 한 주를 향하고 있다. 여기에 목요일 발효된 美 신규 AI칩 수출규제 영향으로 TSMC·삼성전자가 中 고객向 일부 반도체 출하를 중단(美 수출 라이선스 신청 중)한 사실이 알려지며 반도체 공급망 불안까지 겹쳤다. VIX는 29.51(전일比 +1.07pt, +3.76%)로 '공포' 경계선인 30 턱밑까지 치솟았다. 다만 코스피에서 개인은 1조5,647억원 순매수하며 대규모 저가매수에 나섰고, 외국인(-1조1,154억원)·기관(-9,378억원)은 동반 순매도했다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>Anthropic IPO도 못 막은 AI 버블 공포 — 亞 증시 2020년來 최악의 한 주</strong>
+      <p>가디언에 따르면 Anthropic의 기업공개(IPO)가 기록적인 규모로 진행됐음에도 AI 섹터에 대한 투자자 신뢰 회복에 실패하며 글로벌 증시가 동반 급락했다. 亞 증시는 2020년 이후 최악의 한 주를 향하고 있으며, 유럽·美 증시도 동반 약세다. TSMC는 보유 지분을 통해 Anthropic IPO에 약 $5억 투자(전체 지분의 0.03%, 600만주 이상)했다고 밝혔고, 아마존·알파벳·엔비디아·AMD·Broadcom·마이크로소프트·Micron 등도 Anthropic 투자자 명단에 이름을 올렸다(총 $260억 규모).</p>
+      <span class="src">The Guardian, The Times of India, Motley Fool 2026-11-19~20</span>
+    </div>
+    <div class="news-item">
+      <strong>TSMC·삼성전자, 신규 美 수출규제發로 中 고객向 일부 칩 출하 중단</strong>
+      <p>목요일(11/19) 발효된 美 신규 수출규제(中 기업의 해외 데이터센터 원격접속 차단 등)의 영향으로, TSMC와 삼성전자가 中 고객向 일부 반도체 출하를 중단하고 美 수출 라이선스를 신청 중인 것으로 확인됐다. 이 규제는 中 반도체 설계기업들이 활용해온 우회 경로를 차단하는 조치다. 이에 앞서 월요일 대만 TAIEX가 6% 폭락한 데 이어 화요일에도 1.7% 추가 하락해 40,335로 마감하는 등, 반도체 비중이 높은 대만·한국 증시가 연쇄적으로 타격을 받고 있다.</p>
+      <span class="src">Stock Analysis, International Business Times 2026-11-19~20</span>
+    </div>
+    <div class="news-item">
+      <strong>트럼프·시진핑·푸틴 선전 3자 정상회담, 구체적 성과 없이 종료</strong>
+      <p>목요일 中 선전에서 열린 트럼프·시진핑·푸틴 3자 정상회담은 뚜렷한 합의나 공동성명 없이 마무리된 것으로 보인다. 정상회담에 앞서 "세력권 재편" 우려가 제기됐었고, 회담 후 트럼프 대통령은 시진핑·푸틴을 치켜세우면서도 푸틴에게 "더 강하게 행동할 수도 있다"는 취지의 발언을 했다고 CNBC인도네시아가 전했다 — 구체적 외교적 성과보다는 우호적 제스처에 그친 모습이다. 전날 트럼프·푸틴은 2025년 알래스카 정상회담 이후 처음으로 선전에서 악수했다.</p>
+      <span class="src">CNBC Indonesia, Arab News 2026-11-19</span>
+    </div>
+    <div class="news-item">
+      <strong>VIX 29.51로 '공포' 경계선 30 턱밑까지 급등</strong>
+      <p>CNBC에 따르면 VIX는 29.51(전일比 +1.07pt, +3.76%)로 급등했다 — 52주 최고치(35.30, 2026/3/9) 대비는 아직 거리가 있으나, '공포' 등급 경계선인 30에 바짝 다가선 수준이다. AI 버블 재우려와 반도체 공급망 불안이 겹치며 투자자들의 불안 심리가 빠르게 확대되고 있다.</p>
+      <span class="src">CNBC 2026-11-20</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>4,869.96</td><td class="chg down">-5.21%</td><td class="plain">개인 +1조5,647억원, 외국인 -1조1,154억원</td></tr>
+          <tr><td>코스닥</td><td>645.68</td><td class="chg down">-5.71%</td><td class="plain">개인 +2,870억원, 외국인 -1,660억원</td></tr>
+          <tr><td>다우 (11/19 마감)</td><td>49,302</td><td class="chg down">-2.18%</td><td class="plain">DIA 환산</td></tr>
+          <tr><td>S&amp;P500 (11/19 마감)</td><td>7,198</td><td class="chg down">-1.96%</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (11/19 마감)</td><td>23,929</td><td class="chg down">-2.23%</td><td class="plain">ONEQ 환산</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">코스피·코스닥은 美 3대지수의 2%대 동반 하락에 더해 반도체 공급망 불안까지 겹치며 5%대 급락했다 — 지수 하락폭이 美 증시보다 2배 이상 크게 나타난 것은 국내 증시의 반도체 비중이 높은 구조적 특성 때문이다. 상승 종목은 코스피 88개, 코스닥 194개에 그쳤다(하락 각 808개, 1,509개).</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-caution">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">29.5</span>
+        <span class="vix-label">경계</span>
+      </div>
+      <p class="vix-msg">VIX 29.51(전일比 +1.07pt, +3.76%)로 변동성이 확대되고 있습니다. 시장 불확실성에 유의하세요.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다. 오늘 29.51은 '공포'(30 초과) 등급 바로 아래 수준으로, AI 버블 재우려와 반도체 공급망 불안이 겹치며 빠르게 치솟았다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (하나은행, 11/20 19:12 KST 실시간)</dt><dd>1,338.00원 (+0.19%)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 11/18 마감 기준)</dt><dd>$341.19 (14개월來 최저권 지속)</dd></div>
+      <div class="stat"><dt>WTI (USO, 11/18 마감 기준)</dt><dd>$136.11 (공급과잉 우려 지속)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러는 증시 급락에도 소폭 상승(원화 약세)에 그쳤다. 금·유가는 전일 수치를 유지했다(오늘 새로 확보하지 못함 — 증시 급락 이슈에 리서치 우선순위를 두었음을 밝힌다).</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 국내 종목은 FnGuide(comp.wisereport.co.kr) 컨센서스 페이지, 美 종목은 stockanalysis.com 애널리스트 컨센서스를 사용했다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>한미반도체</b> — 컨센서스 목표주가 250,000원(1개 기관), 투자의견 4.00(Buy) — 추정기관수가 적어 참고치로만 활용할 것.</li>
+      <li style="padding-left:0;"><b>TSMC</b> — 컨센서스 목표주가 $586.69(21명 애널리스트 평균, +66.63% 상승여력), 투자의견 Strong Buy.</li>
+      <li style="padding-left:0;"><b>농심</b> — 컨센서스 목표주가 549,000원(11개 기관 평균), 투자의견 3.91(Buy).</li>
+      <li style="padding-left:0;"><b>Coca-Cola</b> — 컨센서스 목표주가 $99.64(26명 애널리스트 평균, +3.69% 상승여력), 투자의견 Buy.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">한미반도체</span><span class="stock-code mono">042700</span></div>
+        <div class="stock-price mono">151,600원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (오늘 거래범위 151,200~165,300원; 장마감 후 NXT 151,600원 -12.06%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">반도체 후공정 장비</span></div>
+      <p class="why"><b>선정 이유</b> — HBM(고대역폭메모리) 본더 장비 분야 국내 최선두 업체로, 오늘 AI 반도체 셀오프의 충격을 가장 직접적으로 보여주는 종목이라 선정했다(정규장 중 두 자릿수대 급락).</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">14조 4,493억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">54.77배 · 17.40배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">7.78%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">250,000원(4.00)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>AI 서버·데이터센터 투자 확대에 따른 HBM 수요 증가로 2.5D 패키징 시장 진출 및 6-SIDE INSPECTION 장비로 수율 향상이 기대된다(FnGuide 기업실적코멘트)</li>
+        <li>글로벌 주요 AI 반도체 기업에 수직통합제조(주물·설계·제작·조립·검사·테스트) 시스템으로 장비를 공급하는 독보적 위치를 갖고 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>2026년 상반기 연결 매출액 -7.7%, 영업이익 -11.0% — 본더 개발 지연으로 TC 본딩 공정 중요성이 부각됐으나 설비투자 조정으로 실적이 둔화됐다(FnGuide)</li>
+        <li>PER 54.77배(2026E)로 밸류에이션이 높은 데다, 최근 1개월 수익률 -18.68%로 AI 섹터 전반의 재평가 압력을 고스란히 받고 있다. 목표주가 컨센서스도 추정기관 1곳에 불과해 신뢰도가 낮다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> HBM 수요 확대라는 구조적 성장 스토리는 유효하나, 오늘과 같은 AI 밸류에이션 재평가 국면에서는 고(高) PER 종목일수록 변동성이 크게 나타난다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">TSMC</span><span class="stock-code mono">NYSE:TSM</span></div>
+        <div class="stock-price mono">$352.09<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/19 종가, -2.90%; 오늘 프리마켓 $338.06 -3.98%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">반도체 파운드리</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 美 수출규제發로 中 고객向 칩 출하를 중단한 당사자이자 세계 최대 파운드리로, 오늘 공급망 뉴스의 중심에 있는 종목이라 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$1.65T(+41.0%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">23.82배 · 16.90배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Strong Buy(21명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$586.69(+66.63%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>매출(ttm) $155.16B(+36.2%), 순이익 $79.31B(+60.8%) — AI 반도체 수요 확대로 고성장을 지속하고 있으며, GlobalFoundries와 $20억 규모 패키징 계약을 체결해 CoWoS 생산능력을 확대 중이다</li>
+        <li>Anthropic IPO에 약 $5억을 전략적으로 투자(지분 0.03%)했다 — AI 밸류체인 전반에 대한 선제적 포지셔닝으로 해석된다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>美 신규 수출규제로 中 고객向 일부 칩 출하를 중단하고 수출 라이선스를 신청 중이다 — 中 매출 비중에 단기 타격이 불가피하다</li>
+        <li>Taiwan TAIEX가 월요일 6% 폭락에 이어 화요일에도 1.7% 추가 하락(40,335)하는 등, 반도체 비중이 높은 대만 증시 전반이 TSMC 셀오프에 연동돼 흔들리고 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> AI 반도체 구조적 수요는 여전히 견고하지만, 中 수출규제라는 단기 리스크가 주가에 반영되는 과정이다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">농심</span><span class="stock-code mono">004370</span></div>
+        <div class="stock-price mono">341,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (오늘 거래범위 338,000~347,500원; 장마감 후 NXT 341,000원 -0.29%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">식품(라면)</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 같은 급락장에서 반도체주와 대비되는 방어적 성격을 보여주는 국내 대표 식품기업으로, 등락률이 -0.29%에 그쳐 저변동성을 입증했다는 점에서 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">2조 741억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">11.36배 · 0.66배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">24.06%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">549,000원(3.91)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출액 +7.3%, 영업이익 +31.7%, 순이익 +30.2% — 신라면 40주년 기념 신제품과 배홍동막국수가 하절기 비빔면 시장 경쟁력을 강화했다(FnGuide)</li>
+        <li>美 법인은 辛브랜드 중심 판매 기반을 유지하고, 유럽·러시아에 판매법인을 신설해 현지화 전략을 가속화하고 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>한화투자(11/16)는 "3Q26 Re: 시장 기대 하회", 하나증권은 "예상보다 깊어진 비용 부담"이라는 리포트를 내며 최근 실적 우려를 제기했다 — 다올투자(-12.73%)·LS(-7.02%)·NH투자(-5.36%) 등 목표가 하향이 이어지고 있다</li>
+        <li>최근 1개월 수익률 -16.89%로 음식료 업종 전반의 약세를 함께 겪고 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> 오늘 같은 급락장에서의 방어적 성격은 뚜렷하나, 최근 실적 기대 하회와 목표가 하향 랠리는 주의가 필요하다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Coca-Cola</span><span class="stock-code mono">NYSE:KO</span></div>
+        <div class="stock-price mono">$96.09<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/19 종가, -2.04%; 오늘 프리마켓 $97.39 +1.35%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">음료(필수소비재)</span></div>
+      <p class="why"><b>선정 이유</b> — 농심과 짝을 이루는 美 대표 필수소비재 기업으로, "시장이 급락할 때 방어적 종목으로 투자자들이 옮겨간다"는 점을 보여주는 사례로 선정했다 — 13일 전 시장이 급락하는 가운데 오히려 사상 최고가를 기록한 전례가 있다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$413.37B(+36.0%)</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">28.35배 · 27.65배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Buy(26명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$99.64(+3.69%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>3분기 판매량 +5%, 유기적 매출 +7%, 22개 연속 분기 시장점유율 확대 — FY26 비교가능 EPS 성장 가이던스를 11% 이상으로 3분기 연속 상향했다</li>
+        <li>TD Cowen(1일 전)은 목표가를 $104→$112(업계 최고 수준)로 올리고 "2027년 베스트 아이디어"로 선정했다. Wolfe Research도 Outperform으로 신규 커버리지를 시작했다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>Barron's는 "밸류에이션이 25년來 최고 수준"이라며 투자자들이 건강 지향적 소비 트렌드 속 코카콜라의 과제를 간과하고 있다고 경고했다</li>
+        <li>PER 28.35배로 방어주 치고는 높은 밸류에이션이며, 오늘도 -2.04% 하락해 급락장에서 완전히 자유롭지는 못했다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> 견고한 실적 성장과 방어적 성격은 매력적이나, 25년來 최고 밸류에이션 수준은 추가 상승여력을 제한할 수 있다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">진행 중</span><span>AI 섹터 밸류에이션 재평가 지속 여부, TSMC·삼성전자의 中 수출 라이선스 신청 결과</span></li>
+      <li><span class="when mono">진행 중</span><span>트럼프·시진핑·푸틴 선전 3자 정상회담 후속 조치, 中의 선전 회담 평가 발표 여부</span></li>
+      <li><span class="when mono">진행 중</span><span>엔비디아 영구 CEO 선임 절차, 젠슨 황 美 상원 은행위원회 증언 일정</span></li>
+      <li><span class="when mono">주말</span><span>월요일(11/23) 개장 전 亞 증시 추가 셀오프 여부 — 코스피 4,900선·코스닥 650선 지지력 주목</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-11-20</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
