@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-11-24</title>
+<meta name="description" content="엔비디아 이사회가 황젠쉰(젠슨 황) 창업자를 CEO로 전격 복귀시키며 주가가 하루 만에 31% 폭등했고, 이 소식에 다우(+3.06%)·S&P500(+4.71%)·나스닥(+6.18%)이 이번 AI 버블 사이클 최대 반등을 기록했다. 코스피는 6.32% 뛴 5,006.03으로 5,000선을 회복했고 코스닥도 4.79% 올랐다. VIX는 26.62로 급락했으나 오늘 아침 소폭 반등. 삼성전자·AMD·한국가스공사·Procter &amp; Gamble 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Brief</div>
+    <h1>엔비디아 황젠쉰 CEO 전격 복귀에 글로벌 증시 폭등 — 코스피 6.32%·나스닥 6.18%, 이번 사이클 최대 반등</h1>
+    <div class="date">2026년 11월 24일 화요일 · 엔비디아 이사회 만장일치로 CEO 복귀 결정, 주가 하루 만에 31% 폭등</div>
+    <p class="thesis">엔비디아 이사회가 지난 11월 12일 사의를 표명했던 창업자 황젠쉰(젠슨 황)을 만장일치로 President·CEO·이사로 전격 복귀시켰다고 발표했다(CNBC, Nvidia 공식 발표). 이 소식에 엔비디아 주가는 하루 만에 약 31% 폭등했고, 美 3대지수도 지난 금요일 폭락 이후 이번 AI 버블 공포 사이클 최대 반등을 기록했다 — 다우 +3.06%(49,860), S&amp;P500 +4.71%(7,263), 나스닥 +6.18%(24,153, 모두 ETF 환산 11/23 마감). AMD(+6.85%) 등 반도체주가 랠리를 주도했다. 국내 증시도 화요일 개장과 함께 동반 폭등해 코스피는 6.32%(297.49p) 뛴 5,006.03으로 5,000선을 가뿐히 회복했고, 코스닥도 4.79%(30.43p) 오른 665.88을 기록했다. VIX는 월요일 실제 종가 26.62로 금요일 공포 피크(35.89) 대비 급락했으나, 백악관의 이사회 개입 논란과 의회의 비판 여론은 남아있다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>엔비디아 이사회, 황젠쉰 CEO 전격 복귀 — 주가 31% 폭등</strong>
+      <p>엔비디아 이사회가 11월 23일(월) 창업자 황젠쉰을 President·CEO·이사로 만장일치 복귀시켰다고 발표했다. 하비 존스 이사회 의장은 "황젠쉰의 솔직함과 리더십 역량에 이사회가 만족했다"고 밝혔다(Nvidia 공식 발표). 황젠쉰은 지난 11월 12일 사의를 표명했고, 당시 CFO 콜레트 크레스가 임시 CEO를 맡았으며 존스 의장은 11월 17일 "복귀 계획이 없다"고 밝혔던 바 있다 — 불과 6일 만의 급반전이다. 이사회는 美 정부 고위층의 의견을 반영했다고 밝혔고, 트럼프 대통령도 황젠쉰의 복귀를 공개 지지했다. 이 소식에 엔비디아 주가는 하루 만에 약 31% 폭등했다(CNBC). 다만 외국 정보기관의 황젠쉰 관련 공작 의혹을 조사하는 이사회 독립위원회의 조사는 계속되며, 일부 의원들은 이사회의 번복 결정 자체에 의문을 제기하고 있다.</p>
+      <span class="src">CNBC, Nvidia 공식 발표/SEC 8-K, Axios, PBS NewsHour 2026-11-23</span>
+    </div>
+    <div class="news-item">
+      <strong>美 3대지수, 이번 사이클 최대 반등 — 반도체주가 랠리 주도</strong>
+      <p>엔비디아 CEO 복귀 소식에 美 증시가 11/23(월) 일제히 폭등했다 — 다우존스(DIA 환산) +3.06%, S&amp;P500(SPY 환산) +4.71%, 나스닥종합(ONEQ 환산) +6.18%(stockanalysis.com). 반도체주가 랠리를 주도해 AMD가 +6.85% 급등했고, TipRanks는 "Nvidia·Intel·AMD 등 AI 칩주가 저가매수세에 프리마켓부터 급등했다"고 전했다. 다만 AMD는 최근 3.37억주(지분 약 20.5%) 규모의 신규 지분 매각 등록 공시로 "오버행" 우려가 함께 제기되고 있다(Invezz).</p>
+      <span class="src">stockanalysis.com, TipRanks, Invezz 2026-11-23</span>
+    </div>
+    <div class="news-item">
+      <strong>VIX, 월요일 실제 종가 26.62로 급락 — 금요일 공포 피크서 크게 완화</strong>
+      <p>CNBC에 따르면 VIX는 11/23(월) 정규장에서 실제로 26.62에 마감해, 금요일 기록한 공포 피크(마감 35.89, 장중 신고가 40.03) 대비 25.8% 급락했다. 다만 오늘(11/24) 이른 아침(美 동부시간 새벽) 기준 현재가는 27.59(전일 실제 종가 대비 +3.64%)로 소폭 반등해 '경계' 등급 하단에 머물고 있다. Kitco는 "저가매수와 숏커버링, Fed 추가 긴축 베팅 완화가 금·주식시장 동반 반등을 이끌었다"고 분석했다.</p>
+      <span class="src">CNBC, Kitco 2026-11-23/24</span>
+    </div>
+    <div class="news-item">
+      <strong>코스피 6.32% 폭등 5,000선 회복 — 외국인·기관 동반 매수</strong>
+      <p>코스피는 전일 대비 6.32%(297.49p) 폭등한 5,006.03으로 5,000선을 가뿐히 회복했고, 코스닥도 4.79%(30.43p) 오른 665.88을 기록했다. 코스피에서 개인은 2조 1,205억원 순매도했지만 외국인(+7,999억원)과 기관(+8,716억원)이 동반 매수하며 지수를 밀어올렸다. 코스닥에서도 외국인(+1,261억원)·기관(+2,206억원)이 개인(-3,310억원) 매물을 받아냈다 — 엔비디아 CEO 복귀 소식이 아시아 반도체 밸류체인 전반의 투자심리를 급격히 되살렸다.</p>
+      <span class="src">Naver Finance 2026-11-24</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>5,006.03</td><td class="chg up">+6.32%</td><td class="plain">개인 -21,205억원, 외국인 +7,999억원, 기관 +8,716억원</td></tr>
+          <tr><td>코스닥</td><td>665.88</td><td class="chg up">+4.79%</td><td class="plain">개인 -3,310억원, 외국인 +1,261억원, 기관 +2,206억원</td></tr>
+          <tr><td>다우 (11/23 마감)</td><td>49,860</td><td class="chg up">+3.06%</td><td class="plain">DIA 환산 — 엔비디아 CEO 복귀 랠리</td></tr>
+          <tr><td>S&amp;P500 (11/23 마감)</td><td>7,263</td><td class="chg up">+4.71%</td><td class="plain">SPY 환산</td></tr>
+          <tr><td>나스닥 (11/23 마감)</td><td>24,153</td><td class="chg up">+6.18%</td><td class="plain">ONEQ 환산 — 반도체주 랠리 주도</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">엔비디아 CEO 복귀 발표를 계기로 美 3대지수가 11/23(월) 일제히 3~6%대 폭등하며 이번 AI 버블 공포 사이클 들어 최대 반등을 기록했고, 그 여진이 화요일 국내 증시로 그대로 이어져 코스피·코스닥 모두 동반 급등했다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-caution">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">27.6</span>
+        <span class="vix-label">경계</span>
+      </div>
+      <p class="vix-msg">VIX 27.59(전일 실제 종가 26.62 대비 +3.64%)로 변동성이 확대되고 있습니다. 시장 불확실성에 유의하세요.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다. 월요일 실제 종가(26.62)는 금요일 공포 피크(마감 35.89, 장중 40.03) 대비 25.8% 급락한 수준이며, 오늘 아침 현재가(27.59)는 그보다 소폭 반등해 '경계' 등급 하단에 머물고 있다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (하나은행, 11/24 19:13 KST 실시간)</dt><dd>1,343.20원 (+0.05%)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 11/23 마감)</dt><dd>$333.02 (+3.14%); 프리마켓 $331.96(-0.32%)</dd></div>
+      <div class="stat"><dt>WTI (USO, 11/23 마감)</dt><dd>$133.36 (-4.49%); 프리마켓 $132.99(-0.28%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러는 거의 보합이었다. 금은 저가매수·숏커버링과 Fed 추가 긴축 베팅 완화에 힘입어 3%대 강세를 보였고, 유가는 위험선호 회복에도 글로벌 공급과잉 우려(Reuters: "3개월來 최저치 근접")가 더 크게 작용하며 하락했다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 국내 종목은 FnGuide(comp.wisereport.co.kr) 컨센서스 페이지, 美 종목은 stockanalysis.com 애널리스트 컨센서스를 사용했다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>삼성전자</b> — 컨센서스 목표주가 465,714원(21개 기관 평균), 투자의견 4.00(Buy).</li>
+      <li style="padding-left:0;"><b>AMD</b> — 컨센서스 목표주가 $656.21(54명 애널리스트 평균, +44.71% 상승여력), 투자의견 Strong Buy.</li>
+      <li style="padding-left:0;"><b>한국가스공사</b> — 컨센서스 목표주가 49,900원(10개 기관 평균), 투자의견 4.00(Buy).</li>
+      <li style="padding-left:0;"><b>Procter &amp; Gamble</b> — 컨센서스 목표주가 $176.35(25명 애널리스트 평균, +3.98% 상승여력), 투자의견 Buy.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">삼성전자</span><span class="stock-code mono">005930</span></div>
+        <div class="stock-price mono">184,400원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (오늘 거래범위 183,400~196,100원; 장마감 후 NXT 184,400원 +3.89%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">AI·반도체</span></div>
+      <p class="why"><b>선정 이유</b> — 엔비디아 CEO 복귀 소식에 따른 글로벌 반도체 밸류체인 안도 랠리의 최대 수혜주 중 하나로 선정했다(오늘 3%대 급등).</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">1,078조 537억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">3.90배 · 1.64배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">45.85%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">465,714원(4.00)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출액 +98.7%, 영업이익 +1,191.4%, 순이익 +813.2% — HBM4 공급 확대와 HBM4E 샘플 출하로 AI 메모리 수요를 흡수하고 있다(FnGuide)</li>
+        <li>엔비디아의 경영 불확실성 해소로 HBM 핵심 고객사와의 공급 관계에 대한 투자심리가 급격히 개선됐다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 1개월 수익률 -17.63%, 3개월 -36.95% — 11월 AI 버블 공포 재점화 국면에서 큰 폭 하락한 뒤 오늘 반등한 것이다</li>
+        <li>52주 최고(380,000원) 대비 현재가는 여전히 절반 수준 — 밸류에이션 정상화 과정이 진행 중</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> 엔비디아 경영 불확실성 해소가 AI 반도체 밸류체인 전반의 투자심리를 급격히 되살렸고, 삼성전자는 그 최대 수혜주 중 하나다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">AMD</span><span class="stock-code mono">NASDAQ:AMD</span></div>
+        <div class="stock-price mono">$453.46<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/23 종가, +6.85%; 오늘 프리마켓 $437.00 -3.63%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">AI 반도체(GPU)</span></div>
+      <p class="why"><b>선정 이유</b> — 엔비디아 CEO 복귀 랠리에서 삼성전자와 짝을 이루는 美 대표 반도체 수혜주로 선정했다(전일 +6.85% 급등).</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$750.51B</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">98.29배 · 30.12배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Strong Buy(54명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$656.21(+44.71%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>엔비디아 CEO 복귀 발표 직후 반도체 전반에 안도 랠리가 확산되며 AMD도 전일 +6.85% 급등했다(Invezz)</li>
+        <li>3분기 매출 $13.4B(+45% YoY)의 "블록버스터" 실적을 기록했으나 최근 섹터 전반의 급락 속에 실적 모멘텀이 가려졌었다(TipRanks)</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>OpenAI·Meta와의 AI 파트너십 관련 3.37억주(지분 약 20.5%) 신규 매각 등록 공시로 "오버행" 우려가 부각됐다(Invezz, TipRanks)</li>
+        <li>오늘 프리마켓은 -3.63%로 전일 급등분의 일부를 되돌리는 모습 — "소문에 사고 뉴스에 판다" 패턴 우려</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적이나 단기 되돌림 주의.</b> 엔비디아 리스크 해소의 최대 수혜주 중 하나이나, 지분 오버행 우려와 프리마켓 되돌림을 함께 살펴야 한다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">한국가스공사</span><span class="stock-code mono">036460</span></div>
+        <div class="stock-price mono">35,550원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (오늘 거래범위 34,650~36,050원; 장마감 후 NXT 35,550원 +0.85%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">유틸리티(가스)</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 같은 반도체 중심 폭등장에서 전형적으로 소외되는 국내 대표 유틸리티 공기업으로, 그 괴리를 보여주기 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">3조 2,817억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">2.31배 · 0.25배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">14.11%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">49,900원(4.00)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>해외 자원개발·LNG 트레이딩 호조로 2026년 상반기 연결 영업이익 +28.0%, 순이익 +96.0% — 캐나다 LNG 등 해외사업이 실적을 견인했다(FnGuide)</li>
+        <li>하나증권 등은 "JKM 강세로 실적과 미수금 동반 증가"라며 목표가를 유지·상향했다(11/13)</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>전일(11/23) 시장 전체가 폭등하는 가운데서도 -6.00% 하락해 '비인기' 유틸리티 업종의 소외를 단적으로 보여줬다 — 오늘도 +0.85%에 그치며 코스피(+6.32%)와 괴리가 크다</li>
+        <li>국민 가스요금 관련 미수금(회수 지연분) 부담이 여전히 밸류에이션에 부담 요인이다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> 해외사업 호조는 긍정적이나, 전형적 '비인기' 유틸리티 업종 특성상 반도체 랠리 국면에서 소외되는 모습이 뚜렷하다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Procter &amp; Gamble</span><span class="stock-code mono">NYSE:PG</span></div>
+        <div class="stock-price mono">$169.60<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/23 종가, +0.14%; 오늘 프리마켓 $170.79 +0.70%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">생활용품(필수소비재)</span></div>
+      <p class="why"><b>선정 이유</b> — 한국가스공사와 짝을 이루는 美 대표 필수소비재 기업으로, 반도체 랠리 국면에서의 자금 이동을 보여주기 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$393.10B</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">25.56배 · 23.94배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Buy(25명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$176.35(+3.98%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>BofA·Morgan Stanley·Citi 등 다수 기관이 투자자의 날(11/19) 이후 목표가를 일제히 상향했다(BofA $190, Morgan Stanley $192, Citi $190)</li>
+        <li>2030년까지 최대 $100억 규모 생산성 절감 목표를 제시하며 AI 기반 운영 전환으로 수익성 개선을 추진하고 있다(Reuters)</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>오늘 같은 반도체 랠리 국면에서 필수소비재는 자금이 빠져나가는 '소외주' — 전일 변동률 +0.14%에 그쳐 나스닥(+6.18%)과 극명히 대비됐다</li>
+        <li>2030년까지 생산·물류 인력 20~30% 감축 계획을 발표해 구조조정 비용 및 노동 리스크가 존재한다(WSJ)</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> 펀더멘털과 애널리스트 목표가 상향은 긍정적이나, 위험선호가 급증한 오늘 같은 장에서는 상대적으로 소외되는 방어주 성격이 뚜렷하다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">오늘 밤</span><span>美 증시 개장 — 엔비디아 CEO 복귀 랠리의 추가 지속 여부, AMD 등 프리마켓 되돌림이 실제 장에서도 이어질지 주목</span></li>
+      <li><span class="when mono">진행 중</span><span>엔비디아 이사회의 황젠쉰 복귀 결정을 둘러싼 정치권·투자자 비판 및 독립위원회 조사 추이</span></li>
+      <li><span class="when mono">진행 중</span><span>VIX의 '안정' 등급(20 미만) 복귀 여부 — 현재 27.59</span></li>
+      <li><span class="when mono">11/25(수)</span><span>美 PCE 인플레이션 지표 발표 — Fed 12월 금리 결정에 핵심 변수</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-11-24</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
