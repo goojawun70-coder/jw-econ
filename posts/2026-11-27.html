@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jw경제 · 2026-11-27</title>
+<meta name="description" content="글로벌 위험자산 랠리가 재점화됐다 — 코스피가 4.34% 폭등한 4,915.68, 코스닥은 8.13% 폭등한 708.99를 기록했다. 美 증시는 블랙프라이데이 반장을 앞두고 프리마켓에서 다우 +1.29%, S&P500 +1.75%, 나스닥 +3.87%로 급등 중이고, 금·유가도 동반 강세다. 원화도 강세(1,334.30원). 이수페타시스·Broadcom(인기테마), 오뚜기·Kimberly-Clark(비인기업종) 4종목 심층 분석">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<style>
+  :root{
+    --paper:#F2F4EF;
+    --surface:#FFFFFF;
+    --surface-2:#EAEDE7;
+    --ink:#17231F;
+    --ink-soft:#4B5B54;
+    --ink-faint:#7C8A82;
+    --brand:#1F6E52;
+    --brand-ink:#0F4A36;
+    --brand-soft:#DCEAE2;
+    --gold:#9A7226;
+    --gold-soft:#F1E6CC;
+    --rise:#B5382C;
+    --fall:#2A5EA8;
+    --line:rgba(23,35,31,0.14);
+    --line-strong:rgba(23,35,31,0.28);
+    --shadow: 0 1px 2px rgba(23,35,31,0.06), 0 8px 24px rgba(23,35,31,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+      --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+      --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+      --gold:#D8AE5C; --gold-soft:#3A3018;
+      --rise:#E27164; --fall:#7FACE0;
+      --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1512; --surface:#151E19; --surface-2:#1C2822;
+    --ink:#E9EFEA; --ink-soft:#A6B6AD; --ink-faint:#75857C;
+    --brand:#57B78E; --brand-ink:#8FD6B6; --brand-soft:#1B3A2C;
+    --gold:#D8AE5C; --gold-soft:#3A3018;
+    --rise:#E27164; --fall:#7FACE0;
+    --line:rgba(233,239,234,0.14); --line-strong:rgba(233,239,234,0.26);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'Roboto Mono',monospace; font-variant-numeric: tabular-nums; letter-spacing:-0.01em;}
+  a{color:var(--brand-ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brand); outline-offset:2px; border-radius:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  .page{max-width:760px;margin:0 auto;padding:0 20px 96px;}
+  .back{display:inline-flex; align-items:center; gap:6px; margin-top:28px; font-size:13px; font-weight:700; color:var(--ink-soft); text-decoration:none;}
+  .back:hover{color:var(--brand-ink);}
+
+  .masthead{padding:20px 0 28px; border-bottom:2px solid var(--ink);}
+  .masthead .kicker{display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--brand-ink); margin-bottom:14px;}
+  .masthead .kicker::before{content:""; width:22px;height:2px;background:var(--brand);display:inline-block;}
+  .masthead h1{font-size:clamp(28px,5vw,38px); font-weight:800; letter-spacing:-0.01em; margin:0 0 12px; text-wrap:balance;}
+  .masthead .date{font-size:14px; color:var(--ink-soft); font-weight:600;}
+  .masthead .thesis{margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:62ch; text-wrap:balance;}
+
+  section{padding:36px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:18px;}
+  .eyebrow .label-kr{font-size:20px; font-weight:800; letter-spacing:-0.01em;}
+  .eyebrow .label-en{font-size:11px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-faint);}
+
+  .news-item{padding:14px 0; border-top:1px solid var(--line);}
+  .news-item:first-child{border-top:none;padding-top:0;}
+  .news-item p{margin:6px 0 0; color:var(--ink-soft); font-size:15px;}
+  .news-item .src{display:inline-block; margin-top:8px; font-size:12.5px; color:var(--ink-faint);}
+  .news-item strong{font-weight:700;}
+
+  table.idx{width:100%; border-collapse:collapse; font-size:14.5px;}
+  table.idx th{text-align:left; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); padding:0 10px 10px 0; border-bottom:1px solid var(--line-strong);}
+  table.idx td{padding:11px 10px 11px 0; border-bottom:1px solid var(--line); vertical-align:baseline;}
+  table.idx tr:last-child td{border-bottom:none;}
+  .chg{font-weight:700;}
+  .chg.up{color:var(--rise);}
+  .chg.down{color:var(--fall);}
+  .tbl-wrap{overflow-x:auto;}
+  .plain{font-family:'Pretendard Variable',sans-serif;letter-spacing:normal;color:var(--ink-soft);}
+
+  dl.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:0;}
+  dl.stat-grid .stat{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px;}
+  dl.stat-grid dt{font-size:11px; color:var(--ink-faint); font-weight:700; letter-spacing:0.04em; margin-bottom:4px;}
+  dl.stat-grid dd{margin:0; font-size:15px; font-weight:700;}
+
+  .stock{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--brand); border-radius:8px; padding:22px 22px 20px; margin-bottom:18px; box-shadow:var(--shadow);}
+  .stock.tag-nonpop{border-left-color:var(--gold);}
+  .stock-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .stock-name{font-size:18px; font-weight:800;}
+  .stock-code{font-size:13px; color:var(--ink-faint); font-weight:500; margin-left:6px;}
+  .stock-price{font-size:17px; font-weight:800; white-space:nowrap;}
+  .tags{display:flex; gap:6px; margin:8px 0 0;}
+  .tag{font-size:11px; font-weight:700; padding:3px 9px; border-radius:99px; letter-spacing:0.02em;}
+  .tag.pop{background:var(--brand-soft); color:var(--brand-ink);}
+  .tag.nonpop{background:var(--gold-soft); color:var(--gold);}
+  .tag.market{background:var(--surface-2); color:var(--ink-soft);}
+  .why{margin:14px 0 0; font-size:14.5px; color:var(--ink-soft);}
+  .why b{color:var(--ink); font-weight:700;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 0;}
+  .fin-grid .f{border-top:1px solid var(--line); padding-top:8px;}
+  .fin-grid .f .k{font-size:11px; color:var(--ink-faint); font-weight:600;}
+  .fin-grid .f .v{font-size:14.5px; font-weight:700; margin-top:2px;}
+
+  .points{margin:16px 0 0; padding:0; list-style:none; display:grid; gap:8px;}
+  .points li{font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative;}
+  .points.pos li::before{content:"+"; position:absolute; left:0; color:var(--brand); font-weight:800;}
+  .points.risk li::before{content:"–"; position:absolute; left:0; color:var(--rise); font-weight:800;}
+  .subhead{font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-faint); margin:16px 0 4px;}
+  .verdict{margin-top:16px; padding:12px 14px; border-radius:6px; background:var(--surface-2); font-size:14px; color:var(--ink-soft);}
+  .verdict b{color:var(--ink);}
+
+  .cal{list-style:none; margin:0; padding:0; display:grid; gap:12px;}
+  .cal li{display:flex; gap:14px; font-size:14.5px;}
+  .cal .when{flex:0 0 84px; color:var(--ink-faint); font-weight:700; font-size:13px;}
+
+  .vix-card{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:8px; padding:20px 22px; box-shadow:var(--shadow);}
+  .vix-top{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .vix-light{width:14px; height:14px; border-radius:50%; display:inline-block; flex:0 0 auto;}
+  .vix-value{font-size:28px; font-weight:800; letter-spacing:-0.01em;}
+  .vix-label{font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--surface-2); letter-spacing:0.02em;}
+  .vix-msg{margin:14px 0 0; font-size:15px; font-weight:600;}
+  .vix-note{margin:10px 0 0; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  .vix-low{border-left-color:var(--fall);} .vix-low .vix-light{background:var(--fall);} .vix-low .vix-label,.vix-low .vix-msg{color:var(--fall);}
+  .vix-stable{border-left-color:var(--brand);} .vix-stable .vix-light{background:var(--brand);} .vix-stable .vix-label,.vix-stable .vix-msg{color:var(--brand-ink);}
+  .vix-caution{border-left-color:var(--gold);} .vix-caution .vix-light{background:var(--gold);} .vix-caution .vix-label,.vix-caution .vix-msg{color:var(--gold);}
+  .vix-fear{border-left-color:var(--rise);} .vix-fear .vix-light{background:var(--rise);} .vix-fear .vix-label,.vix-fear .vix-msg{color:var(--rise);}
+
+  .disclaimer{margin-top:36px; padding:16px 18px; border:1px solid var(--line-strong); border-radius:8px; font-size:13px; color:var(--ink-faint); line-height:1.6;}
+  footer.page-foot{padding-top:32px; display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-faint); flex-wrap:wrap; gap:10px;}
+  footer.page-foot a{color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line-strong);}
+
+  @media (max-width:520px){
+    dl.stat-grid{grid-template-columns:1fr 1fr;}
+    .fin-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <a class="back" href="../index.html">← Jw경제</a>
+
+  <header class="masthead">
+    <div class="kicker">Jw Economy · Daily Brief</div>
+    <h1>글로벌 위험자산 랠리 재점화 — 코스피 4.34%·코스닥 8.13% 폭등</h1>
+    <div class="date">2026년 11월 27일 금요일 · 美 블랙프라이데이 반장 앞두고 프리마켓 급등, 원화도 강세</div>
+    <p class="thesis">코스피는 전일 대비 4.34%(204.47p) 폭등한 4,915.68, 코스닥은 8.13%(53.28p) 폭등한 708.99를 기록했다 — 외국인과 기관이 동반 순매수하며 지수를 밀어올렸다. 美 증시는 오늘(금) 블랙프라이데이 반장(오후 1시 조기 폐장)을 앞두고 프리마켓에서 다우 +1.29%, S&amp;P500 +1.75%, 나스닥 +3.87%로 급등 중이고, 금(+2.70%)·유가(+2.02%)도 동반 강세다. 지난주 브로드컴을 11% 끌어내렸던 구글의 TPU 주문축소 쇼크도 빠르게 회복 조짐을 보이며(브로드컴 프리마켓 +3.73%), 지난 2주간의 AI 버블 공포가 빠르게 되돌림되는 모습이다. 원/달러 환율도 1,334.30원(-0.72%)으로 원화가 강세를 보였다.</p>
+  </header>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">세계 경제 주요 뉴스</div><div class="label-en">Global News</div></div>
+    <div class="news-item">
+      <strong>글로벌 위험자산 랠리 재점화 — 美 증시 프리마켓 급등, 금·유가도 동반 강세</strong>
+      <p>stockanalysis.com에 따르면 美 증시는 오늘(11/27) 블랙프라이데이 반장을 앞두고 프리마켓에서 다우존스(DIA 환산) +1.29%, S&amp;P500(SPY 환산) +1.75%, 나스닥종합(ONEQ 환산) +3.87%로 강하게 반등 중이다. 금(GLD)도 프리마켓 +2.70%, 유가(USO)도 +2.02% 올라 위험자산·안전자산이 동반 강세를 보이는 '숏커버링·저가매수' 장세가 재연되고 있다. 다만 Kitco는 "Fed 추가 긴축 베팅이 지속되는 가운데 금의 반등은 제한적일 수 있다"고 짚었다.</p>
+      <span class="src">stockanalysis.com, Kitco 2026-11-27</span>
+    </div>
+    <div class="news-item">
+      <strong>브로드컴, 구글 TPU 주문축소 쇼크에서 회복 조짐 — 프리마켓 +3.73%</strong>
+      <p>지난주 구글의 2027년 TPU 8i 주문 20% 축소 소식에 11% 넘게 급락했던 브로드컴이 수요일(11/25)에는 거의 보합(-0.07%)으로 마감했고, 오늘 프리마켓에서는 +3.73% 반등하고 있다. TipRanks는 "AMD와 브로드컴이 엔비디아 경영 불확실성 국면에서 반사이익을 누리며 각각 30%·24% 올랐다"고 분석했다 — AI 반도체 밸류체인 내 종목별 반사이익·역풍이 빠르게 교차하는 국면이다.</p>
+      <span class="src">Stock Analysis, TipRanks, TheFly 2026-11-20~27</span>
+    </div>
+    <div class="news-item">
+      <strong>코스피 4.34%·코스닥 8.13% 폭등 — 외국인·기관 동반 순매수</strong>
+      <p>코스피에서 외국인이 1조 1,606억원, 기관이 2,195억원 순매수하며 지수를 밀어올렸고, 개인은 1조 7,902억원 순매도하며 차익실현에 나섰다. 코스닥에서는 외국인(+2,985억원)·기관(+5,881억원)이 동반 매수했고 개인(-8,844억원)이 매도했다. 지난 2주간의 급락·급등이 반복된 변동성 장세 속에서 오늘은 지수 전반이 강하게 반등하는 날이었다.</p>
+      <span class="src">Naver Finance 2026-11-27</span>
+    </div>
+    <div class="news-item">
+      <strong>원/달러 1,334.30원 — 원화 강세</strong>
+      <p>원/달러 환율은 전일 대비 9.7원(-0.72%) 내린 1,334.30원을 기록했다. 위험자산 전반에 대한 투자심리가 회복되며 외국인 자금이 국내 증시로 유입된 영향으로 풀이된다.</p>
+      <span class="src">Naver Finance(하나은행 고시) 2026-11-27</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">증시 동향</div><div class="label-en">Markets</div></div>
+    <div class="tbl-wrap">
+      <table class="idx mono">
+        <thead><tr><th>지수</th><th>종가</th><th>등락</th><th class="plain">비고</th></tr></thead>
+        <tbody>
+          <tr><td>코스피</td><td>4,915.68</td><td class="chg up">+4.34%</td><td class="plain">개인 -17,902억원, 외국인 +11,606억원, 기관 +2,195억원</td></tr>
+          <tr><td>코스닥</td><td>708.99</td><td class="chg up">+8.13%</td><td class="plain">개인 -8,844억원, 외국인 +2,985억원, 기관 +5,881억원</td></tr>
+          <tr><td>다우 (11/25 마감)</td><td>50,410</td><td class="chg up">+0.31%</td><td class="plain">DIA 환산 — 오늘(금) 반장 개장 전, 프리마켓 +1.29%</td></tr>
+          <tr><td>S&amp;P500 (11/25 마감)</td><td>7,206</td><td class="chg down">-0.29%</td><td class="plain">SPY 환산 — 오늘 프리마켓 +1.75%</td></tr>
+          <tr><td>나스닥 (11/25 마감)</td><td>23,651</td><td class="chg down">-0.66%</td><td class="plain">ONEQ 환산 — 오늘 프리마켓 +3.87%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">美 3대지수는 추수감사절 휴장 여파로 수요일(11/25) 마감치가 아직 최신이나, 오늘(금) 블랙프라이데이 반장 개장을 앞두고 프리마켓이 1~4%대로 강하게 반등하고 있어 오늘 밤 실제 개장에서도 강세 출발이 예상된다. 국내 증시는 이 글로벌 위험선호 회복을 하루 앞서 반영하며 코스피·코스닥 모두 폭등했다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">VIX 공포지수</div><div class="label-en">Fear &amp; Greed Signal</div></div>
+    <div class="vix-card vix-caution">
+      <div class="vix-top">
+        <span class="vix-light"></span>
+        <span class="vix-value mono">24.9</span>
+        <span class="vix-label">경계</span>
+      </div>
+      <p class="vix-msg">VIX 24.94(전일比 -6.94%, -1.86pt)로 변동성이 확대되고 있습니다. 시장 불확실성에 유의하세요.</p>
+      <p class="vix-note">VIX(변동성지수, CBOE Volatility Index)는 S&amp;P500 옵션 가격에 내재된 향후 30일간 예상 변동성을 수치화한 지표로, 흔히 "공포지수"라 불립니다. 수치가 높을수록 투자자들의 불안 심리가 크다는 뜻이며, 역사적으로 30을 넘는 극단적 수준은 시장이 단기 바닥을 형성하는 국면과 자주 맞물려 역발상 매수 신호로도 해석됩니다. 반대로 지나치게 낮은 수준은 시장의 과도한 낙관을 시사하기도 합니다. 지난주 올해 첫 '공포' 등급(35.89)을 찍었던 VIX가 빠르게 '경계' 등급 하단까지 내려오며 위험선호 회복을 뒷받침하고 있다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">환율 · 원자재 · 금리</div><div class="label-en">Rates &amp; FX</div></div>
+    <dl class="stat-grid mono">
+      <div class="stat"><dt>원/달러 (하나은행, 11/27 19:12 KST 실시간)</dt><dd>1,334.30원 (-0.72%)</dd></div>
+      <div class="stat"><dt>국제 금 (GLD, 11/25 마감)</dt><dd>$327.45 (+0.61%); 프리마켓 $336.30(+2.70%)</dd></div>
+      <div class="stat"><dt>WTI (USO, 11/25 마감)</dt><dd>$139.89 (+3.29%); 프리마켓 $142.72(+2.02%)</dd></div>
+    </dl>
+    <p style="font-size:14.5px;color:var(--ink-soft);margin-top:14px;">원/달러는 위험선호 회복에 따른 외국인 자금 유입으로 뚜렷한 강세를 보였다. 금·유가 모두 美 증시 반장 개장을 앞두고 프리마켓에서 강세를 보이고 있다 — 유가는 OPEC+ 회동(일요일)을 앞두고 중동 지정학적 리스크가 공급과잉 우려를 상쇄하며 올랐다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">컨센서스 목표주가</div><div class="label-en">Analyst Consensus</div></div>
+    <p style="font-size:14.5px;color:var(--ink-soft);">※ 국내 종목은 FnGuide(comp.wisereport.co.kr) 컨센서스 페이지, 美 종목은 stockanalysis.com 애널리스트 컨센서스를 사용했다.</p>
+    <ul class="points" style="display:grid;gap:10px;margin-top:14px;">
+      <li style="padding-left:0;"><b>이수페타시스</b> — 컨센서스 목표주가 137,727원(11개 기관 평균), 투자의견 4.00(Buy).</li>
+      <li style="padding-left:0;"><b>Broadcom</b> — 컨센서스 목표주가 $523.28(50명 애널리스트 평균, +73.93% 상승여력), 투자의견 Strong Buy.</li>
+      <li style="padding-left:0;"><b>오뚜기</b> — 최근 3개월 내 제시된 컨센서스 없음(FnGuide 기준 확보 못함).</li>
+      <li style="padding-left:0;"><b>Kimberly-Clark</b> — 컨센서스 목표주가 $118.12(18명 애널리스트 평균, +7.92% 상승여력), 투자의견 Hold.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">오늘의 관전 포인트 · 심층 분석 종목</div><div class="label-en">Stock Ledger · 4</div></div>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">이수페타시스</span><span class="stock-code mono">007660</span></div>
+        <div class="stock-price mono">68,300원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (오늘 거래범위 63,200~68,800원; 장마감 후 NXT 68,300원 +5.24%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 국내</span><span class="tag market">AI 서버용 PCB</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 코스피 폭등을 주도한 AI 서버·가속기용 초고다층 PCB 공급사로, 글로벌 위험선호 회복의 최대 수혜주 중 하나라 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">5조 138억원</div></div>
+        <div class="f"><div class="k">PER(2026E) · PBR</div><div class="v">17.45배 · 4.71배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">14.48%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">137,727원(4.00)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출액 +45.8%, 영업이익 +60.8%, 순이익 +58.1% — AI 가속기·스위치·서버 전방산업 전 제품군에서 수요가 확대됐다(FnGuide)</li>
+        <li>DS투자(11/25)는 "놀라운 수익성의 연속"이라는 리포트를 냈고, 5공장 증설로 생산능력을 지속 확대하고 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>최근 1개월 수익률 -22.28%, 3개월 -41.43% — 최근 AI 섹터 급락의 직격탄을 맞은 뒤 오늘 급반등한 것이다</li>
+        <li>DS투자(-36.84%)·다올투자(-36.11%)·한국투자(-25.71%) 등 다수 기관이 11월 들어 목표가를 큰 폭 하향했다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적이나 변동성 유의.</b> AI 서버 PCB 수요 확대라는 구조적 성장 스토리는 유효하나, 최근 한 달간 등락폭이 극심해 단기 트레이딩 리스크가 크다.</div>
+    </article>
+
+    <article class="stock">
+      <div class="stock-head">
+        <div><span class="stock-name">Broadcom</span><span class="stock-code mono">NASDAQ:AVGO</span></div>
+        <div class="stock-price mono">$300.86<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/25 종가, -0.07%; 오늘 프리마켓 $312.08 +3.73%)</span></div>
+      </div>
+      <div class="tags"><span class="tag pop">인기 테마 · 미국</span><span class="tag market">AI 반도체·네트워킹</span></div>
+      <p class="why"><b>선정 이유</b> — 이수페타시스와 짝을 이루는 美 대표 AI 반도체 기업으로, 구글 TPU 주문축소 쇼크에서 빠르게 회복하는 모습을 보여주기 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$1.44T</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">38.40배 · 17.31배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Strong Buy(50명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$523.28(+73.93%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>매출(ttm) $89.10B(+48.7%), 순이익 $38.27B(+102.1%) — AI 네트워킹·커스텀 실리콘 수요가 실적을 견인하고 있다</li>
+        <li>엔비디아 경영 불확실성 국면에서 AMD와 함께 반사이익을 누리며 지난 2주간 24% 올랐다는 분석이 있다(TipRanks)</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>구글이 2027년 TPU 8i 주문을 약 20% 줄였다는 애널리스트(궈밍치) 분석에 지난주 11.4% 급락했다 — AI 고객사 주문 변동성이 핵심 리스크다(Stock Analysis)</li>
+        <li>Rothschild & Co Redburn은 AI 금융 익스포저 확대를 우려하며 목표가를 하향한 바 있다(Invezz)</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 긍정적.</b> AI 네트워킹 펀더멘털과 Strong Buy 컨센서스가 견고하며, TPU 주문축소 쇼크에서도 빠르게 회복력을 보이고 있다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">오뚜기</span><span class="stock-code mono">007310</span></div>
+        <div class="stock-price mono">291,000원<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (오늘 거래범위 290,000~293,500원; 장마감 후 NXT 291,000원 -0.51%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 국내</span><span class="tag market">식품(라면·소스)</span></div>
+      <p class="why"><b>선정 이유</b> — 오늘 같은 폭등장에서 거의 영향을 받지 않은 국내 대표 종합식품 기업으로, 위험선호 랠리에서 소외되는 방어주의 전형을 보여주기 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">1조 1,662억원</div></div>
+        <div class="f"><div class="k">PER(2025A) · PBR</div><div class="v">16.94배 · 0.48배</div></div>
+        <div class="f"><div class="k">외국인지분율</div><div class="v">10.88%</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v">확보 못함(최근 3개월 리포트 없음)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>2026년 상반기 연결 매출액 +4.2%, 영업이익 +2.0%, 순이익 +5.8% — K-라면의 글로벌 인기에 수출용 라면 개발을 확대하고 있다(FnGuide)</li>
+        <li>PBR 0.48배로 업종PER(23.38배) 대비 PER(16.94배)도 낮은 수준이며, 미국·일본 법인 신설로 해외사업을 다각화하고 있다</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>국내 시장 경쟁 심화와 원자재 가격 변동으로 면제품류 매출이 감소하며 수익성이 제한적이다(FnGuide)</li>
+        <li>최근 3개월간 증권사 커버리지가 전혀 없어(컨센서스 미확보) 시장의 관심도가 낮다는 점을 그대로 보여준다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> 안정적인 내수 기반과 해외 확장은 긍정적이나, 낮은 시장 관심도와 제한적 수익성 개선이 상존한다.</div>
+    </article>
+
+    <article class="stock tag-nonpop">
+      <div class="stock-head">
+        <div><span class="stock-name">Kimberly-Clark</span><span class="stock-code mono">NASDAQ:KMB</span></div>
+        <div class="stock-price mono">$109.45<span style="font-size:11px;color:var(--ink-faint);font-weight:600;"> (11/25 종가, +0.69%; 오늘 프리마켓 $109.45 0.00%)</span></div>
+      </div>
+      <div class="tags"><span class="tag nonpop">비인기 업종 · 미국</span><span class="tag market">생활용품(필수소비재)</span></div>
+      <p class="why"><b>선정 이유</b> — 오뚜기와 짝을 이루는 美 대표 생활용품 기업으로, 오늘 같은 위험선호 랠리에서도 거의 움직이지 않는 방어적 성격을 보여주기 위해 선정했다.</p>
+      <div class="fin-grid mono">
+        <div class="f"><div class="k">시가총액</div><div class="v">$67.17B</div></div>
+        <div class="f"><div class="k">PER · Forward PER</div><div class="v">11.06배 · 15.78배</div></div>
+        <div class="f"><div class="k">애널리스트</div><div class="v">Hold(18명)</div></div>
+        <div class="f"><div class="k">목표주가</div><div class="v" style="color:var(--rise);">$118.12(+7.92%)</div></div>
+      </div>
+      <div class="subhead">투자 포인트</div>
+      <ul class="points pos">
+        <li>배당수익률 4.68%로 매력적이며, S&amp;P500 Dividend Aristocrats가 최근 변동성 장세에서도 견조한 모습을 보였다는 분석이 있다(Market Watch)</li>
+        <li>Kenvue 인수를 완료하고 $19억 규모 비용 시너지를 추진하는 등 사업 재편을 진행 중이다(실적발표 자료)</li>
+      </ul>
+      <div class="subhead">리스크</div>
+      <ul class="points risk">
+        <li>Goldman Sachs·JPMorgan 등이 최근 Neutral/Hold로 커버리지를 재개했고, 中 기저귀 사업은 허위 품질 논란 여파가 지속되고 있다(Reuters)</li>
+        <li>2026년 매출이 전년 대비 -2.13%로 역성장했다 — Kenvue 통합에 따른 2027년 EPS 희석도 예고돼 있다</li>
+      </ul>
+      <div class="verdict"><b>종합 의견: 중립적.</b> 고배당과 방어적 성격은 매력적이나, 매출 역성장과 사업 재편 과정의 불확실성이 상존한다.</div>
+    </article>
+
+    <p class="disclaimer">본 종목 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 책임은 본인에게 있습니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow"><div class="label-kr">다음 개장일 주목할 일정</div><div class="label-en">Calendar</div></div>
+    <ul class="cal">
+      <li><span class="when mono">오늘 밤</span><span>美 증시 블랙프라이데이 반장 개장(오후 1시 조기 폐장) — 프리마켓 강세(1~4%대)가 실제 장에서도 이어질지 주목</span></li>
+      <li><span class="when mono">11/30(일)</span><span>OPEC+ 정례회동 — 2027년 산유량 목표 결정, 중동 지정학적 리스크와 공급과잉 우려가 교차하는 변수</span></li>
+      <li><span class="when mono">진행 중</span><span>브로드컴 등 AI 반도체 밸류체인의 구글 TPU 주문축소 쇼크 회복세 지속 여부</span></li>
+      <li><span class="when mono">진행 중</span><span>VIX의 '안정' 등급(20 미만) 복귀 여부 — 현재 24.94로 지난주 '공포' 피크(35.89)에서 빠르게 하락 중</span></li>
+    </ul>
+  </section>
+
+  <footer class="page-foot">
+    <span>Jw경제 · 2026-11-27</span>
+    <a href="../index.html">모아보기로 돌아가기</a>
+  </footer>
+
+</div>
+</body>
+</html>
